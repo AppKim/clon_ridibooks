@@ -1,0 +1,38 @@
+version: "3"
+
+services:
+  back:
+    build: ./back
+    command: /bin/sh -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    volumes:
+      - ./back:/app
+      - bundle:/usr/local/bundle
+    tty: true
+    stdin_open: true
+  db:
+    platform: linux/x86_64
+    image: mysql:5.7
+    volumes:
+      - mysql_data:/var/lib/mysql/
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      TZ: Asia/Tokyo
+    ports:
+      - "3306:3306"
+  front:
+    build: ./front
+    volumes:
+      - ./front:/app
+    ports:
+      - "8080:8080"
+    tty: true
+    stdin_open: true
+    command: npm run serve
+
+volumes:
+  mysql_data:
+  bundle:
