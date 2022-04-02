@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-  back:
+  backend:
     build: ./back
     command: /bin/sh -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
     ports:
@@ -23,7 +23,7 @@ services:
       TZ: Asia/Tokyo
     ports:
       - "3306:3306"
-  front:
+  frontend:
     build: ./front
     volumes:
       - ./front:/app
