@@ -1,11 +1,13 @@
-FROM ruby:3.1.1
+FROM ruby:3.1.1-alpine
 
 RUN apt-get update -qq && \
     apt-get install -y build-essential \ 
-    libpq-dev \        
-    nodejs \
+    alpine-sdk \
+    mysql-client \
+    mysql-dev \
+    libpq-dev \
     && rm -rf /var/lib/apt/lists/* 
-
+    
 RUN mkdir /app
 ENV APP_ROOT /app
 ENV TZ=Asia/Tokyo
