@@ -36,7 +36,7 @@ services:
       - "8080:8080"
     tty: true
     stdin_open: true
-    command: npm run serve
+    command: npm run dev
 
 volumes:
   mysql_data:
