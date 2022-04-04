@@ -15,7 +15,12 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['~/assets/scss/reset.scss', '~/assets/scss/common.scss'],
+
+  styleResources: {
+    // your settings here
+    scss: ['~/assets/scss/mixin.scss', '~/assets/scss/variable.scss'],
+  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -29,6 +34,8 @@ export default {
     '@nuxtjs/eslint-module',
     // https://composition-api.nuxtjs.org/getting-started/setup/
     '@nuxtjs/composition-api/module',
+    // https://github.com/nuxt-community/style-resources-module
+    '@nuxtjs/style-resources',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
