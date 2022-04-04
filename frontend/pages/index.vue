@@ -1,5 +1,5 @@
 <template>
-  <Tutorial/>
+  <div>nuxt</div>
 </template>
 
 <script>
