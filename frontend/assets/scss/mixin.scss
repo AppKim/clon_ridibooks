@@ -1,17 +1,11 @@
 @mixin pc_view {
-  @media screen and (min-width: 1140px) {
-    @content;
-  }
-}
-
-@mixin tb_view {
-  @media screen and (max-width: 1139px) and (min-width: 768px) {
+  @media screen and (min-width: 834px) {
     @content;
   }
 }
 
 @mixin sp_view {
-  @media screen and (max-width: 767px) and (min-width: 320px) {
+  @media screen and (max-width: 834px) and (min-width: 300px) {
     @content;
   }
 }
