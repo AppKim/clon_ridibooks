@@ -1,6 +1,6 @@
 <template>
   <div class="category-select-wrap">
-    <select class="category_select">
+    <select>
       <option value="popular">인기순</option>
       <option value="recent">최신순</option>
     </select>
