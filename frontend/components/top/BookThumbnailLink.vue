@@ -1,12 +1,12 @@
 <template>
   <nuxt-link class="book-thumbnail-link" :class="styles" :to="to">
-    <book-thumbnail :size="size" :src="src" />
+    <book-thumbnail :size="size" :src="src" :loading="loading" :alt="alt" />
     <book-thumbnail-description :size="size" :title="title" :author="author" />
   </nuxt-link>
 </template>
 
 <script>
-import { defineComponent, computed } from '@vue/composition-api'
+import { defineComponent, computed } from '@nuxtjs/composition-api'
 import BookThumbnail from '@/components/BookThumbnail.vue'
 import BookThumbnailDescription from '@/components/top/BookThumbnailDescription'
 
@@ -30,7 +30,7 @@ export default defineComponent({
     },
     loading: {
       type: String,
-      default: '',
+      default: 'lazy',
     },
     to: {
       type: String,
