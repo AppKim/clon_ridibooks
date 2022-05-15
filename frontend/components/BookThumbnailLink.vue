@@ -8,7 +8,7 @@
 <script>
 import { defineComponent, computed } from '@nuxtjs/composition-api'
 import BookThumbnail from '@/components/BookThumbnail.vue'
-import BookThumbnailDescription from '@/components/top/BookThumbnailDescription'
+import BookThumbnailDescription from '@/components/BookThumbnailDescription.vue'
 
 export default defineComponent({
   components: {

@@ -16,7 +16,7 @@
 
 <script>
 import { defineComponent } from '@nuxtjs/composition-api'
-import BookThumbnailLink from './BookThumbnailLink.vue'
+import BookThumbnailLink from '@/components/BookThumbnailLink.vue'
 
 export default defineComponent({
   components: {
