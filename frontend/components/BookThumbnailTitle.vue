@@ -11,7 +11,7 @@
 
 <script>
 import BookThumbnail from './BookThumbnail.vue'
-import BookThumbnailTitle from './charts/BookThumbnailTitle.vue'
+import BookThumbnailTitle from './BookThumbnailTitle.vue'
 export default {
   components: { BookThumbnail, BookThumbnailTitle },
 }
