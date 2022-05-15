@@ -1,16 +1,9 @@
 <template>
-  <div>
-    <Mypage />
-  </div>
+  <div></div>
 </template>
 
 <script>
-import Mypage from '@/components/mypage/Mypage.vue'
-export default {
-  comments: {
-    Mypage,
-  },
-}
+export default {}
 </script>
 
 <style></style>
