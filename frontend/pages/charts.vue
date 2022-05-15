@@ -1,11 +1,11 @@
 <template>
-<BookRank></BookRank>
+<chart-thumbnail></chart-thumbnail>
 </template>
 
 <script>
-import BookRank from '../components/charts/BookRank.vue'
+import ChartThumbnail from '../components/charts/ChartThumbnail.vue'
 export default {
-  components: { BookRank },
+    components: { ChartThumbnail },
 }
 </script>
 

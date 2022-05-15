@@ -17,7 +17,7 @@ import BookReview from './BookReview.vue'
 import BookThumbnailTitle from './BookThumbnailTitle.vue'
 
 export default defineComponent({
-  components: { BookThumbnail, BookThumbnailTitle, BookReview },
+    components: { BookThumbnail, BookReview, BookThumbnailTitle },
     props: {
         src: {
             type: String,

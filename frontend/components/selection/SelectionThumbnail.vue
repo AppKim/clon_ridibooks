@@ -1,7 +1,5 @@
 <template>
-  <div>
-      <span>Title</span>
-  </div>
+<div>SelectionThumbnail</div>
 </template>
 
 <script>
