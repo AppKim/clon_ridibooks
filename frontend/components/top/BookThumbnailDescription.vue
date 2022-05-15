@@ -9,7 +9,7 @@
   </div>
 </template>
 <script>
-import { defineComponent, computed } from '@vue/composition-api'
+import { defineComponent, computed } from '@nuxtjs/composition-api'
 
 export default defineComponent({
   props: {

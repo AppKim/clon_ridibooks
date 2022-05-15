@@ -1,3 +1,6 @@
+@charset 'UTF-8';
+@use 'sass:math';
+
 @mixin pc_view {
   @media screen and (min-width: 834px) {
     @content;
@@ -5,7 +8,7 @@
 }
 
 @mixin sp_view {
-  @media screen and (max-width: 834px) and (min-width: 300px) {
+  @media screen and (max-width: 833px) {
     @content;
   }
 }
