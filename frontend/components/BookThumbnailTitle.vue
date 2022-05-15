@@ -1,19 +1,12 @@
 <template>
 <div>
-  <book-thumbnail
-  size="xLarge"
-  src="https://placeimg.com/150/200/any"
-  alt="sample image"
-  ></book-thumbnail>
-  <book-thumbnail-title></book-thumbnail-title>
+  BookThumbnailTitle
 </div>
 </template>
 
 <script>
-import BookThumbnail from './BookThumbnail.vue'
-import BookThumbnailTitle from './BookThumbnailTitle.vue'
 export default {
-  components: { BookThumbnail, BookThumbnailTitle },
+  components: {  },
 }
 </script>
 
