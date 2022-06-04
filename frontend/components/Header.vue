@@ -1,9 +1,11 @@
 <template>
-  <div>Header</div>
+  <div>
+    Header
+    <fa-icon icon="magnifying-glass" />
+    <fa-icon icon="user" />
+  </div>
 </template>
 
-<script>
-export default {}
-</script>
+<script></script>
 
-<style></style>
+<style lang="scss" scoped></style>
