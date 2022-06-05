@@ -3,7 +3,7 @@
     <div class="menu__wrapper">
       <nuxt-link class="menu__link active" to="/">홈</nuxt-link>
       <nuxt-link class="menu__link" to="/new-releases">최신 업데이트</nuxt-link>
-      <nuxt-link class="menu__link" to="/category">카테고리</nuxt-link>
+      <nuxt-link class="menu__link" to="/categories">카테고리</nuxt-link>
       <nuxt-link class="menu__link" to="/my-select">마이 셀렉트</nuxt-link>
     </div>
   </div>
