@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent } from '@nuxtjs/composition-api'
 
 export default defineComponent({
   setup() {},
@@ -27,7 +27,7 @@ export default defineComponent({
   border-bottom: 1px solid #d1d5d9;
   &__wrapper {
     display: flex;
-    width: 880px;
+    max-width: 880px;
     height: 58px;
     margin: auto;
     align-items: center;
@@ -75,6 +75,24 @@ export default defineComponent({
       font-weight: 700;
       letter-spacing: -0.5px;
       cursor: pointer;
+      margin-right: 8px;
+    }
+  }
+  @include sp_view {
+    &__wrapper {
+      height: 44px;
+    }
+    &__logo {
+      padding: 16px 0 16px 16px;
+      &-ridi {
+        width: 35px;
+        height: 13px;
+        margin-right: 8px;
+      }
+      &-select {
+        width: 70px;
+        height: 13px;
+      }
     }
   }
 }
