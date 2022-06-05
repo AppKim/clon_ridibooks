@@ -1,15 +1,17 @@
 <template>
-<div>
-  BookThumbnailTitle
-</div>
+  <div>{{ title }}</div>
 </template>
 
 <script>
 export default {
-  components: {  },
+  props: {
+    title: {
+      type: String,
+      defalut: '',
+      required: true,
+    },
+  },
 }
 </script>
 
-<style>
-
-</style>
+<style></style>

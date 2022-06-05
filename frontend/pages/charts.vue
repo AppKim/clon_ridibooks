@@ -1,14 +1,18 @@
 <template>
-<chart-thumbnail></chart-thumbnail>
+  <chart-thumbnail></chart-thumbnail>
 </template>
 
 <script>
 import ChartThumbnail from '../components/charts/ChartThumbnail.vue'
 export default {
-    components: { ChartThumbnail },
+  components: { ChartThumbnail },
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+.grid-booklist-container {
+  min-width: 320px;
+  max-width: 800px;
+  margin: 0px auto;
+}
 </style>
