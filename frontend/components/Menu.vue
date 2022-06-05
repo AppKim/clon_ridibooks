@@ -22,7 +22,7 @@ export default defineComponent({
   border-bottom: 1px solid #d1d5d9;
   &__wrapper {
     display: flex;
-    width: 880px;
+    max-width: 880px;
     height: 47px;
     margin: auto;
     align-items: center;
@@ -39,6 +39,16 @@ export default defineComponent({
     &.active {
       font-weight: 600;
       color: black;
+    }
+  }
+  @include sp_view {
+    &__wrapper {
+      justify-content: space-around;
+    }
+    &__link {
+      flex: 1;
+      justify-content: center;
+      padding: 0;
     }
   }
 }
