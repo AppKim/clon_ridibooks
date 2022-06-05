@@ -12,3 +12,10 @@
     @content;
   }
 }
+
+@mixin hover_opacity {
+  &:hover {
+    opacity: 0.6;
+    transition: 0.25s all;
+  }
+}
