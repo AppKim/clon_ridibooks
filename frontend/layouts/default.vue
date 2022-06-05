@@ -26,7 +26,7 @@ export default defineComponent({
   width: 100%;
   height: 100%;
   .main {
-    height: calc(100vh - 276px);
+    min-height: calc(100vh - 276px);
   }
 }
 </style>
