@@ -1,3 +1,5 @@
+import * as FontAwesome from './icon/fontawesome'
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -36,7 +38,17 @@ export default {
     '@nuxtjs/composition-api/module',
     // https://github.com/nuxt-community/style-resources-module
     '@nuxtjs/style-resources',
+    // https://www.npmjs.com/package/@nuxtjs/fontawesome
+    ['@nuxtjs/fontawesome', { component: 'fa', suffix: true }],
   ],
+
+  fontawesome: {
+    icons: {
+      solid: FontAwesome.solid,
+      regular: FontAwesome.regular,
+      brands: FontAwesome.brands,
+    },
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
