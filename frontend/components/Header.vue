@@ -2,8 +2,8 @@
   <div class="header">
     <div class="header__wrapper">
       <nuxt-link class="header__logo" to="/">
-        <img class="header__logo-ridi" src="@/assets/images/logo_ridi.svg" />
-        <img class="header__logo-select" src="@/assets/images/logo_select.svg" />
+        <img class="header__logo--ridi" src="@/assets/images/logo_ridi.svg" />
+        <img class="header__logo--select" src="@/assets/images/logo_select.svg" />
       </nuxt-link>
       <div class="header__buttons">
         <fa-icon class="header__buttons__search" icon="magnifying-glass" />
@@ -37,12 +37,12 @@ export default defineComponent({
     display: flex;
     @include hover_opacity;
 
-    &-ridi {
+    &--ridi {
       width: 43px;
       height: 16px;
       margin-right: 8px;
     }
-    &-select {
+    &--select {
       width: 85px;
       height: 16px;
     }
@@ -84,12 +84,12 @@ export default defineComponent({
     }
     &__logo {
       padding: 16px 0 16px 16px;
-      &-ridi {
+      &--ridi {
         width: 35px;
         height: 13px;
         margin-right: 8px;
       }
-      &-select {
+      &--select {
         width: 70px;
         height: 13px;
       }
