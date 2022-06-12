@@ -1,7 +1,7 @@
 {
   "selections": [
     {
-      "selection_id": 1,
+      "id": 1,
       "title": "셀렉트에서 오랫동안 사랑받아 온 도서들",
       "books": [
         {
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "selection_id": 2,
+      "id": 2,
       "title": "셀렉트에서 오랫동안 사랑받아 온 도서들2",
       "books": [
         {
