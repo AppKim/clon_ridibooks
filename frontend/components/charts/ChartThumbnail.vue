@@ -17,7 +17,7 @@
 import { defineComponent, ref } from '@vue/composition-api'
 import BookThumbnail from '../BookThumbnail.vue'
 import BookThumbnailTitle from '../BookThumbnailTitle.vue'
-import BookReview from './BookReview.vue'
+import BookReview from '../BookReview.vue'
 
 export default defineComponent({
   components: { BookThumbnail, BookReview, BookThumbnailTitle },
