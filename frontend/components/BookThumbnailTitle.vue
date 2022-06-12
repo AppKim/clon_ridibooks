@@ -1,15 +1,15 @@
 <template>
-<div>
-  BookThumbnailTitle
-</div>
+  <div class="bookthumnail__title">{{ title }}</div>
 </template>
 
 <script>
 export default {
-  components: {  },
+  components: {},
 }
 </script>
 
 <style>
-
+.bookthumnail__title {
+  font-size: 13px;
+}
 </style>
