@@ -34,7 +34,6 @@ export default defineComponent({
   display: inline-block;
   white-space: nowrap;
   color: #cccccc;
-  width: 100%;
   font-size: 12px;
   &:before {
     content: '★★★★★';
