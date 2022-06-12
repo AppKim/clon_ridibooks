@@ -5,6 +5,13 @@
 <script>
 export default {
   components: {},
+  props: {
+    title: {
+      type: String,
+      defalut: '',
+      required: true,
+    },
+  },
 }
 </script>
 
