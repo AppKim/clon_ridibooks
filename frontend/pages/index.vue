@@ -9,7 +9,7 @@ export default defineComponent({
   setup() {
     const { $repositories } = useContext()
     onMounted(async () => {
-      const result = await $repositories('posts').get()
+      const result = await $repositories('selections').get()
       console.log(result)
     })
   },
