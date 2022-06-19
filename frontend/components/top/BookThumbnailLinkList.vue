@@ -43,10 +43,14 @@ export default defineComponent({
 .book-thumbnail-link-list {
   display: flex;
   flex-wrap: nowrap;
+  align-items: flex-start;
   overflow: auto;
+  @include sp_view {
+    padding-bottom: 10px;
+  }
   &__item {
     &:not(:last-child) {
-      margin-right: 12px;
+      margin-right: 16px;
     }
     &:nth-of-type(n + 7) {
       display: none;
