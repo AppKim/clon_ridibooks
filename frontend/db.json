@@ -70,23 +70,184 @@
     }
   ],
   "categories": [
-    { "id": 100, "categoryName": "소설" },
-    { "id": 110, "categoryName": "에세이/시" },
-    { "id": 200, "categoryName": "경영/경제" },
-    { "id": 300, "categoryName": "자기계발" },
-    { "id": 400, "categoryName": "인문/사회/역사" },
-    { "id": 500, "categoryName": "건강/다이어트" },
-    { "id": 600, "categoryName": "가정/생활" },
-    { "id": 700, "categoryName": "종교" },
-    { "id": 800, "categoryName": "여행" },
-    { "id": 1000, "categoryName": "외국어" },
-    { "id": 1100, "categoryName": "과학" },
-    { "id": 1300, "categoryName": "어린이/청소년" },
-    { "id": 1500, "categoryName": "만화 e북" },
-    { "id": 1600, "categoryName": "웹툰" },
-    { "id": 1710, "categoryName": "판타지 e북" },
-    { "id": 1900, "categoryName": "진로/교육/교재" },
-    { "id": 2000, "categoryName": "잡지" },
-    { "id": 2200, "categoryName": "컴퓨터/IT" }
+    {
+      "id": 100,
+      "categoryName": "소설",
+      "categoryFieldItems": [
+        { "id": 101, "categoryName": "한국소설" },
+        { "id": 102, "categoryName": "영미소설" },
+        { "id": 103, "categoryName": "일본소설" },
+        { "id": 104, "categoryName": "기타 국가 소설" },
+        { "id": 105, "categoryName": "추리/미스터리/스릴러" },
+        { "id": 114, "categoryName": "독일 소설" },
+        { "id": 115, "categoryName": "프랑스 소설" },
+        { "id": 116, "categoryName": "북유럽 소설" },
+        { "id": 117, "categoryName": "중국 소설" },
+        { "id": 118, "categoryName": "국내 역사소설" },
+        { "id": 119, "categoryName": "해외 역사소설" },
+        { "id": 121, "categoryName": "동양 고전문학" },
+        { "id": 122, "categoryName": "서양 고전문학" },
+        { "id": 123, "categoryName": "SF 소설" },
+        { "id": 124, "categoryName": "국내 판타지 소설" },
+        { "id": 125, "categoryName": "해외 판타지 소설" }
+      ]
+    },
+    {
+      "id": 110,
+      "categoryName": "에세이/시",
+      "categoryFieldItems": [
+        { "id": 111, "categoryName": "에세이" },
+        { "id": 112, "categoryName": "시" }
+      ]
+    },
+    {
+      "id": 200,
+      "categoryName": "경영/경제",
+      "categoryFieldItems": [
+        { "id": 210, "categoryName": "경영일반" },
+        { "id": 220, "categoryName": "경제일반" },
+        { "id": 230, "categoryName": "마케팅/세일즈" },
+        { "id": 240, "categoryName": "제테크/금융/부동산" },
+        { "id": 250, "categoryName": "CEO/리더십" }
+      ]
+    },
+
+    {
+      "id": 300,
+      "categoryName": "자기계발",
+      "categoryFieldItems": [
+        { "id": 310, "categoryName": "성공/삶의자세" },
+        { "id": 320, "categoryName": "기획/창의/리더십" },
+        { "id": 330, "categoryName": "설득/화술/협상" },
+        { "id": 340, "categoryName": "취업/창업" },
+        { "id": 350, "categoryName": "여성" },
+        { "id": 360, "categoryName": "인간관계" }
+      ]
+    },
+
+    {
+      "id": 400,
+      "categoryName": "인문/사회/역사",
+      "categoryFieldItems": [
+        { "id": 410, "categoryName": "인문" },
+        { "id": 420, "categoryName": "정치/사회" },
+        { "id": 430, "categoryName": "예술/문화" },
+        { "id": 440, "categoryName": "역사" }
+      ]
+    },
+    {
+      "id": 500,
+      "categoryName": "건강/다이어트",
+      "categoryFieldItems": [
+        { "id": 510, "categoryName": "다이어트/운동/스포츠" },
+        { "id": 520, "categoryName": "스타일/뷰티" },
+        { "id": 530, "categoryName": "건강" }
+      ]
+    },
+    {
+      "id": 600,
+      "categoryName": "가정/생활",
+      "categoryFieldItems": [
+        { "id": 610, "categoryName": "결혼/임신/출산" },
+        { "id": 620, "categoryName": "육아/자녀교육" },
+        { "id": 630, "categoryName": "취미/요리/기타" }
+      ]
+    },
+    {
+      "id": 700,
+      "categoryName": "종교",
+      "categoryFieldItems": [
+        { "id": 710, "categoryName": "종교일반" },
+        { "id": 720, "categoryName": "기독교(개신교)" },
+        { "id": 730, "categoryName": "불교" }
+      ]
+    },
+    {
+      "id": 800,
+      "categoryName": "여행",
+      "categoryFieldItems": [
+        { "id": 810, "categoryName": "국내여행" },
+        { "id": 820, "categoryName": "해외여행" }
+      ]
+    },
+    {
+      "id": 1000,
+      "categoryName": "외국어",
+      "categoryFieldItems": [
+        { "id": 1010, "categoryName": "비지니스영어" },
+        { "id": 1020, "categoryName": "일반영어" },
+        { "id": 1030, "categoryName": "제2외국어" },
+        { "id": 1040, "categoryName": "어학시험" }
+      ]
+    },
+    {
+      "id": 1100,
+      "categoryName": "과학",
+      "categoryFieldItems": [
+        { "id": 1110, "categoryName": "과학일반" },
+        { "id": 1120, "categoryName": "수학" },
+        { "id": 1130, "categoryName": "자연과학" },
+        { "id": 1140, "categoryName": "응용과학" }
+      ]
+    },
+    {
+      "id": 1300,
+      "categoryName": "어린이/청소년",
+      "categoryFieldItems": [
+        { "id": 1310, "categoryName": "유아" },
+        { "id": 1320, "categoryName": "어린이" },
+        { "id": 1330, "categoryName": "청소년" }
+      ]
+    },
+    {
+      "id": 1500,
+      "categoryName": "만화 e북",
+      "categoryFieldItems": [
+        { "id": 1519, "categoryName": "드라마" },
+        { "id": 1523, "categoryName": "코믹" },
+        { "id": 1527, "categoryName": "판타지" }
+      ]
+    },
+    {
+      "id": 1600,
+      "categoryName": "웹툰",
+      "categoryFieldItems": [
+        { "id": 1601, "categoryName": "국내 순정" },
+        { "id": 1603, "categoryName": "드라마" },
+        { "id": 1605, "categoryName": "액션/무협" },
+        { "id": 1606, "categoryName": "판타지/SF" },
+        { "id": 1609, "categoryName": "GL" },
+        { "id": 1610, "categoryName": "공포/추리" }
+      ]
+    },
+    {
+      "id": 1710,
+      "categoryName": "판타지 e북",
+      "categoryFieldItems": [
+        { "id": 1711, "categoryName": "정통 판타지" },
+        { "id": 1713, "categoryName": "현대 판타지" }
+      ]
+    },
+    { "id": 1900, "categoryName": "진로/교육/교재", "categoryFieldItems": [{ "id": 1901, "categoryName": "공부법" }] },
+    {
+      "id": 2000,
+      "categoryName": "잡지",
+      "categoryFieldItems": [
+        { "id": 2002, "categoryName": "문학/교양" },
+        { "id": 2003, "categoryName": "여성/패션/뷰티" },
+        { "id": 2004, "categoryName": "디자인/예술" },
+        { "id": 2005, "categoryName": "건강/스포츠" },
+        { "id": 2006, "categoryName": "취미/여행/요리" }
+      ]
+    },
+    {
+      "id": 2200,
+      "categoryName": "컴퓨터/IT",
+      "categoryFieldItems": [
+        { "id": 2210, "categoryName": "IT 비즈니스" },
+        { "id": 2220, "categoryName": "개발/프로그래밍" },
+        { "id": 2230, "categoryName": "컴퓨터/앱 활용" }
+      ]
+    }
   ]
 }
