@@ -2,7 +2,7 @@
   <nav class="paginations">
     <ul class="nav-links">
       <li class="previous-button"><a href="#"></a></li>
-      <li v-for="i in total_page" :key="i" class="link-list">
+      <li v-for="i in 10" :key="i" class="link-list">
         <a href="#">{{ i }}</a>
       </li>
       <li class="next-button"><a href="#"></a></li>
