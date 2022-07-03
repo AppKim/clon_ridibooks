@@ -3,13 +3,13 @@
     <div class="top__banner">
       <TopBannerCarousel></TopBannerCarousel>
     </div>
+    <BestBookList :books="bestBooks" />
     <div class="top__main">
       <div v-for="(selection, i) in selections" :key="selection.id" class="top__selection">
         <div v-if="i === 2"></div>
         <SelectionPreview :selection="selection" />
       </div>
     </div>
-    {{ $window.width }}
   </div>
 </template>
 
@@ -17,11 +17,13 @@
 import { defineComponent, useContext, useAsync } from '@nuxtjs/composition-api'
 import TopBannerCarousel from '~/components/top/TopBannerCarousel'
 import SelectionPreview from '~/components/top/SelectionPreview'
+import BestBookList from '~/components/top/BestBookList'
 
 export default defineComponent({
   components: {
     SelectionPreview,
     TopBannerCarousel,
+    BestBookList,
   },
   setup() {
     const { $repositories } = useContext()
@@ -31,10 +33,12 @@ export default defineComponent({
     //   console.log(result[0])
     //   selections.value = result
     // })
-    const selections = useAsync(() => $repositories('selections').get())
+    const selections = useAsync(() => $repositories('books').get.selections())
+    const bestBooks = useAsync(() => $repositories('books').get.best())
 
     return {
       selections,
+      bestBooks,
     }
   },
 })
