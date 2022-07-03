@@ -34,7 +34,7 @@ export default defineComponent({
     },
     to: {
       type: String,
-      required: true,
+      default: '/',
     },
     title: {
       type: String,

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "json-server --watch ./db.json --port 7070 & nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -13,7 +13,9 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
     "core-js": "^3.15.1",
-    "nuxt": "^2.15.7"
+    "nuxt": "^2.15.7",
+    "swiper": "^5.2.0",
+    "vue-awesome-swiper": "^4.1.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",

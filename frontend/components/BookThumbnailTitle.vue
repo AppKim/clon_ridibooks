@@ -1,9 +1,10 @@
 <template>
-  <div>{{ title }}</div>
+  <div class="bookthumnail__title">{{ title }}</div>
 </template>
 
 <script>
 export default {
+  components: {},
   props: {
     title: {
       type: String,
@@ -14,4 +15,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.bookthumnail__title {
+  font-size: 13px;
+}
+</style>

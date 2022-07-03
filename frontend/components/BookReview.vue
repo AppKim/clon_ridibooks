@@ -1,9 +1,9 @@
 <template>
   <div class="review">
-    <span class="review__star">
+    <div class="review__star">
       <span class="star5_rating" :data-rate="rate" />
-    </span>
-    <span class="review__count">{{ score }}</span>
+      <span class="review__count">{{ score }}</span>
+    </div>
   </div>
 </template>
 
@@ -34,7 +34,11 @@ export default defineComponent({
   display: inline-block;
   white-space: nowrap;
   color: #cccccc;
+<<<<<<< HEAD
   font-size: 15px;
+=======
+  font-size: 12px;
+>>>>>>> develop
   &:before {
     content: '★★★★★';
   }
@@ -82,4 +86,10 @@ export default defineComponent({
     width: 0%;
   }
 }
+<<<<<<< HEAD
+=======
+.review__count {
+  font-size: 12px;
+}
+>>>>>>> develop
 </style>
