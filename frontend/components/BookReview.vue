@@ -34,11 +34,7 @@ export default defineComponent({
   display: inline-block;
   white-space: nowrap;
   color: #cccccc;
-<<<<<<< HEAD
-  font-size: 15px;
-=======
   font-size: 12px;
->>>>>>> develop
   &:before {
     content: '★★★★★';
   }
@@ -86,10 +82,7 @@ export default defineComponent({
     width: 0%;
   }
 }
-<<<<<<< HEAD
-=======
 .review__count {
   font-size: 12px;
 }
->>>>>>> develop
 </style>

@@ -1,26 +1,15 @@
 <template>
   <div class="grid-booklist-container">
     <ul class="grid-booklist">
-<<<<<<< HEAD
-      <li class="grid-bookilist__item" v-for="i in 24" :key="i">
-        <div class="rank">{{ i }}</div>
-        <div>
-          <book-thumbnail :size="xLarge" src="https://placeimg.com/150/200/any" alt="sample image"> </book-thumbnail>
-=======
       <li v-for="i in 24" :key="i" class="grid-booklist__item">
         <div class="grid-booklist__rank">{{ i }}</div>
         <div>
           <book-thumbnail size="medium" src="https://placeimg.com/150/200/any" alt="sample image"> </book-thumbnail>
->>>>>>> develop
           <book-thumbnail-title :title="title"></book-thumbnail-title>
           <book-review :rate="parseInt(rate)" :score="parseInt(score)"></book-review>
         </div>
       </li>
     </ul>
-<<<<<<< HEAD
-    <pager></pager>
-=======
->>>>>>> develop
   </div>
 </template>
 
