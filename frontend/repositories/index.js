@@ -1,7 +1,7 @@
-import { SelectionsRepository } from './selections'
+import { BooksRepository } from './books'
 
 const repositories = {
-  selections: SelectionsRepository,
+  books: BooksRepository,
 }
 
 export const RepositoryFactory = {
