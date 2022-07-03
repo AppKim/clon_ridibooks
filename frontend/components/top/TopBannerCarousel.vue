@@ -1,6 +1,6 @@
 <template>
   <div class="top-banner-carousel">
-    <swiper class="swiper" :options="swiperOption">
+    <swiper class="swiper" :options="topBannerSwiperOption">
       <swiper-slide><img src="https://placeimg.com/432/432/any1/1" /></swiper-slide>
       <swiper-slide><img src="https://placeimg.com/432/432/any2/2" /></swiper-slide>
       <swiper-slide><img src="https://placeimg.com/432/432/any3/3" /></swiper-slide>
@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import { defineComponent } from '@nuxtjs/composition-api'
 import 'swiper/css/swiper.css'
@@ -21,7 +21,7 @@ export default defineComponent({
     SwiperSlide,
   },
   setup() {
-    const swiperOption = {
+    const topBannerSwiperOption = {
       slidesPerView: 1,
       spaceBetween: 0,
       breakpoints: {
@@ -43,7 +43,7 @@ export default defineComponent({
       // },
     }
     return {
-      swiperOption,
+      topBannerSwiperOption,
     }
   },
 })
