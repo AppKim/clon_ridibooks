@@ -9,6 +9,7 @@
         <SelectionPreview :selection="selection" />
       </div>
     </div>
+    {{ $window.width }}
   </div>
 </template>
 

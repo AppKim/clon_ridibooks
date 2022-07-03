@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import { defineComponent } from '@nuxtjs/composition-api'
 import 'swiper/css/swiper.css'
