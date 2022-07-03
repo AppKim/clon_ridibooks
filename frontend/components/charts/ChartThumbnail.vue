@@ -10,6 +10,7 @@
         </div>
       </li>
     </ul>
+    <pager></pager>
   </div>
 </template>
 
@@ -18,9 +19,10 @@ import { defineComponent, ref } from '@vue/composition-api'
 import BookThumbnail from '../BookThumbnail.vue'
 import BookThumbnailTitle from '../BookThumbnailTitle.vue'
 import BookReview from '../BookReview.vue'
+import Pager from '../Pager.vue'
 
 export default defineComponent({
-  components: { BookThumbnail, BookReview, BookThumbnailTitle },
+  components: { BookThumbnail, BookReview, BookThumbnailTitle, Pager },
   setup() {
     const rate = ref(3)
     const score = ref(3)
