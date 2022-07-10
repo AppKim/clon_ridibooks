@@ -15,6 +15,7 @@
         </swiper-slide>
         <div slot="button-prev" class="swiper-button-prev"></div>
         <div slot="button-next" class="swiper-button-next"></div>
+        <div class="swiper-pagination" slot="pagination"></div>
       </swiper>
       <BookThumbnailLinkList v-else class="best-book-list__book-list" :book-list="books" size="large" />
     </div>
@@ -44,17 +45,17 @@ export default defineComponent({
       slidesPerView: 1,
       spaceBetween: 0,
       loop: true,
-      // pagination: {
-      //   el: '.swiper-pagination',
-      //   clickable: true,
-      // },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet(_, className) {
+          return `<span class="${className} swiper-pagination-bullet-custom"></span>`
+        },
+      },
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      // autoplay: {
-      //   delay: 3000,
-      // },
     }
     return {
       swiperOption,
@@ -66,6 +67,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 .best-book-list {
   background: url('@/assets/images/top_bestbook_background.png') center center / auto 100% no-repeat;
+  background-color: rgba(242, 244, 245, 0.5);
   height: 420px;
   width: 100%;
   @include sp_view {
@@ -95,16 +97,19 @@ export default defineComponent({
   }
   &__book-list {
     width: 825px;
-    margin: 48px 48px 0px 48px;
+    margin: 24px 68px 0px 68px;
     @include sp_view {
       width: 100%;
-      margin: 48px 0px 0px 0px;
+      margin: 24px 0px 0px 0px;
     }
   }
   .swiper {
-    width: 860px;
+    width: 900px;
     margin: auto;
     position: relative;
+    @include sp_view {
+      width: 100%;
+    }
     .swiper-button-prev {
       position: absolute;
       cursor: pointer;
@@ -130,9 +135,6 @@ export default defineComponent({
         display: none;
       }
     }
-    @include sp_view {
-      width: 100%;
-    }
     .swiper-button-next {
       cursor: pointer;
       width: 40px;
@@ -155,6 +157,28 @@ export default defineComponent({
       }
       @include sp_view {
         display: none;
+      }
+    }
+    .swiper-pagination {
+      width: fit-content;
+      top: 0px;
+      left: 90%;
+    }
+    ::v-deep .swiper-pagination-bullet-custom {
+      width: 12px;
+      height: 4px;
+      border-radius: 3px;
+      opacity: 0.7;
+      background: rgb(217, 216, 216);
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &.swiper-pagination-bullet-active {
+        opacity: 1;
+        color: white;
+        background: rgb(136, 135, 135);
       }
     }
   }
