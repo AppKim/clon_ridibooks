@@ -6,6 +6,7 @@
       <swiper-slide><img src="https://placeimg.com/432/432/any3/3" /></swiper-slide>
       <div slot="button-prev" class="swiper-button-prev"></div>
       <div slot="button-next" class="swiper-button-next"></div>
+      <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
   </div>
 </template>
@@ -21,6 +22,7 @@ export default defineComponent({
     SwiperSlide,
   },
   setup() {
+    // https://v1.github.surmon.me/vue-awesome-swiper/
     const topBannerSwiperOption = {
       slidesPerView: 1,
       spaceBetween: 0,
@@ -30,17 +32,17 @@ export default defineComponent({
         },
       },
       loop: true,
-      // pagination: {
-      //   el: '.swiper-pagination',
-      //   clickable: true,
-      // },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      },
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      // autoplay: {
-      //   delay: 3000,
-      // },
+      autoplay: {
+        delay: 5000,
+      },
     }
     return {
       topBannerSwiperOption,
@@ -51,52 +53,69 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .top-banner-carousel {
-  .swiper-button-prev {
-    left: 380px;
-    right: auto;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;
-    border: 1px solid rgba(0, 0, 0, 0.07);
-    background-color: rgba(255, 255, 255, 0.15);
-    transition: background-color 0.2s ease 0s;
-    &::after {
-      position: relative;
-      left: 2px;
-      border-right: 2px solid #fff;
-      border-top: 2px solid #fff;
-      content: '';
-      height: 8px;
-      transform: rotate(225deg);
-      width: 8px;
+  .swiper {
+    .swiper-button-prev {
+      left: 380px;
+      right: auto;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      border-radius: 40px;
+      border: 1px solid rgba(0, 0, 0, 0.07);
+      background-color: rgba(0, 0, 0, 0.2);
+      transition: background-color 0.2s ease 0s;
+      &::after {
+        position: relative;
+        left: 2px;
+        border-right: 2px solid #fff;
+        border-top: 2px solid #fff;
+        content: '';
+        height: 8px;
+        transform: rotate(225deg);
+        width: 8px;
+      }
+      @include sp_view {
+        display: none;
+      }
     }
-    @include sp_view {
-      display: none;
+    .swiper-button-next {
+      left: auto;
+      right: 380px;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      border-radius: 40px;
+      border: 1px solid rgba(0, 0, 0, 0.07);
+      background-color: rgba(0, 0, 0, 0.2);
+      transition: background-color 0.2s ease 0s;
+      &::after {
+        position: relative;
+        right: 2px;
+        border-right: 2px solid rgba(255, 255, 255, 0.932);
+        border-top: 2px solid rgba(255, 255, 255, 0.932);
+        content: '';
+        height: 8px;
+        transform: rotate(45deg);
+        width: 8px;
+      }
+      @include sp_view {
+        display: none;
+      }
     }
-  }
-  .swiper-button-next {
-    left: auto;
-    right: 380px;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;
-    border: 1px solid rgba(0, 0, 0, 0.07);
-    background-color: rgba(255, 255, 255, 0.15);
-    transition: background-color 0.2s ease 0s;
-    &::after {
-      position: relative;
-      right: 2px;
-      border-right: 2px solid rgba(255, 255, 255, 0.932);
-      border-top: 2px solid rgba(255, 255, 255, 0.932);
-      content: '';
-      height: 8px;
-      transform: rotate(45deg);
-      width: 8px;
-    }
-    @include sp_view {
-      display: none;
+    ::v-deep .swiper-pagination-fraction {
+      display: inline-block;
+      position: absolute;
+      left: 62%;
+      width: fit-content;
+      padding: 3px 10px;
+      border-radius: 16px;
+      font-size: 1.2rem;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      border: 1px solid #444;
+      @include sp_view {
+        left: 85%;
+      }
     }
   }
   @include sp_view {
