@@ -5,7 +5,7 @@
         한 주간 별점 베스트
         <img class="best-book-list__icon" src="@/assets/images/best.svg" />
       </h2>
-      <swiper class="swiper" :options="swiperOption">
+      <swiper class="swiper" :options="swiperOption" v-if="$window.width > 860">
         <swiper-slide v-for="index in 3" :key="index">
           <BookThumbnailLinkList
             class="best-book-list__book-list"
@@ -16,6 +16,7 @@
         <div slot="button-prev" class="swiper-button-prev"></div>
         <div slot="button-next" class="swiper-button-next"></div>
       </swiper>
+      <BookThumbnailLinkList v-else class="best-book-list__book-list" :book-list="books" size="large" />
     </div>
   </div>
 </template>
@@ -67,6 +68,11 @@ export default defineComponent({
   background: url('@/assets/images/top_bestbook_background.png') center center / auto 100% no-repeat;
   height: 420px;
   width: 100%;
+  @include sp_view {
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
   &__title {
     font-weight: 400;
     padding: 45px 0px 0px 10px;
@@ -80,6 +86,7 @@ export default defineComponent({
     margin: auto;
     @include sp_view {
       width: 100%;
+      padding: 32px 0px 0px 0px;
     }
   }
   &__icon {
@@ -88,11 +95,10 @@ export default defineComponent({
   }
   &__book-list {
     width: 825px;
-    margin: auto;
-    margin: 48px auto 0px auto;
-    justify-content: center;
+    margin: 48px 48px 0px 48px;
     @include sp_view {
       width: 100%;
+      margin: 48px 0px 0px 0px;
     }
   }
   .swiper {
