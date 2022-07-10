@@ -1,15 +1,15 @@
 <template>
-  <div class="book-thumbnail-description" :class="styles">
-    <div v-show="title" class="book-thumbnail-description__title">
+  <div class="book-thumbnail-description" :class="{ 'author-existed': author }">
+    <div v-show="title" class="book-thumbnail-description__title" :class="styles">
       {{ title }}
     </div>
-    <div v-show="author" class="book-thumbnail-description__author">
+    <div v-show="author" class="book-thumbnail-description__author" :class="styles">
       {{ author }}
     </div>
   </div>
 </template>
 <script>
-import { defineComponent, computed } from '@nuxtjs/composition-api'
+import { defineComponent } from '@nuxtjs/composition-api'
 
 export default defineComponent({
   props: {
@@ -26,19 +26,7 @@ export default defineComponent({
       default: '',
     },
   },
-  setup(props) {
-    const styles = computed(() => {
-      const classes = []
-      if (props.author) {
-        classes.push('author-existed')
-      }
-      classes.push(props.size)
-      return classes.join(' ')
-    })
-    return {
-      styles,
-    }
-  },
+  setup() {},
 })
 </script>
 
@@ -46,22 +34,22 @@ export default defineComponent({
 .book-thumbnail-description {
   position: relative;
   display: inline-block;
-  &.xLarge {
+  & .xLarge {
     width: 200px;
     @include sp_view {
       width: 150px;
     }
   }
-  &.large {
+  & .large {
     width: 140px;
   }
-  &.medium {
+  & .medium {
     width: 120px;
     @include sp_view {
       width: 110px;
     }
   }
-  &.small {
+  & .small {
     width: 50px;
   }
   .book-thumbnail-description__title {

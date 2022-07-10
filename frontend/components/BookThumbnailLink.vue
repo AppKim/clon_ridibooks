@@ -1,6 +1,8 @@
 <template>
-  <nuxt-link class="book-thumbnail-link" :class="styles" :to="to">
-    <book-thumbnail :size="size" :src="src" :loading="loading" :alt="alt" />
+  <nuxt-link class="book-thumbnail-link" :to="to">
+    <div class="book-thumbnail-link__thumbnail-wrapper" :class="size">
+      <book-thumbnail :src="src" :loading="loading" :alt="alt" />
+    </div>
     <book-thumbnail-description :size="size" :title="title" :author="author" />
   </nuxt-link>
 </template>
@@ -64,5 +66,39 @@ export default defineComponent({
   display: inline-flex;
   flex-direction: column;
   text-decoration: none;
+  &__thumbnail-wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
+  & .xLarge {
+    width: 200px;
+    height: 290px;
+    max-height: 290px;
+    @include sp_view {
+      width: 150px;
+      height: 218px;
+      max-height: 218px;
+    }
+  }
+  & .large {
+    width: 140px;
+    height: 216px;
+    max-height: 216px;
+  }
+  & .medium {
+    width: 120px;
+    height: 184px;
+    max-height: 184px;
+    @include sp_view {
+      width: 110px;
+      height: 167px;
+      max-height: 167px;
+    }
+  }
+  & .small {
+    width: 50px;
+    height: 70px;
+    max-height: 70px;
+  }
 }
 </style>
