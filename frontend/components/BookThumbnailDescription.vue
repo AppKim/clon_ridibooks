@@ -1,9 +1,9 @@
 <template>
   <div class="book-thumbnail-description" :class="{ 'author-existed': author }">
-    <div v-show="title" class="book-thumbnail-description__title" :class="styles">
+    <div v-show="title" class="book-thumbnail-description__title">
       {{ title }}
     </div>
-    <div v-show="author" class="book-thumbnail-description__author" :class="styles">
+    <div v-show="author" class="book-thumbnail-description__author">
       {{ author }}
     </div>
   </div>

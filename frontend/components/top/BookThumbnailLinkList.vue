@@ -4,7 +4,7 @@
       <BookThumbnailLink
         :size="size"
         :src="book.src"
-        :alt="book.alt"
+        :alt="book.alt || book.title"
         :to="book.link"
         :title="book.title"
         :author="book.author"

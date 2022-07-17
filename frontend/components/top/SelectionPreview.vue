@@ -1,6 +1,6 @@
 <template>
   <div class="selection-preview">
-    <SelectionPreviewHeader :title="selection.title" :selection-id="selection.id" />
+    <TopContentsHeader :title="selection.title" :link="`/selections/${selection.id}`" />
     <BookThumbnailLinkList :book-list="bookList" />
   </div>
 </template>
@@ -8,12 +8,12 @@
 <script>
 import { computed, defineComponent } from '@nuxtjs/composition-api'
 import BookThumbnailLinkList from './BookThumbnailLinkList.vue'
-import SelectionPreviewHeader from './SelectionPreviewHeader.vue'
+import TopContentsHeader from './TopContentsHeader.vue'
 
 export default defineComponent({
   components: {
     BookThumbnailLinkList,
-    SelectionPreviewHeader,
+    TopContentsHeader,
   },
   props: {
     selection: {
