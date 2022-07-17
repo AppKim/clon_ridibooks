@@ -19,15 +19,15 @@ export default defineComponent({
 <style lang="scss" scoped>
 .popular-books {
   &__contents {
+    overflow: auto;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     margin: 0 auto 60px auto;
-    column-gap: 16px;
     &__item {
-      &:nth-of-type(1) {
-        display: none;
+      &:nth-of-type(n + 5) {
+        border-left: 1px solid #998b8272;
       }
     }
   }

@@ -43,7 +43,7 @@ export default defineComponent({
   display: flex;
   align-items: center;
   min-height: 75px;
-  padding-right: 16px;
+  padding: 0 16px;
   &__ranking {
     min-width: 16px;
     margin-right: 10px;
