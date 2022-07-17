@@ -1,4 +1,4 @@
-const solid = ['faDownload', 'faUser', 'faMagnifyingGlass', 'faAngleRight']
+const solid = ['faDownload', 'faUser', 'faMagnifyingGlass', 'faAngleRight', 'faStar']
 
 const regular = ['faStar']
 
