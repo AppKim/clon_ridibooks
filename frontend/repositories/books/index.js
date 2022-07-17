@@ -4,6 +4,6 @@ export const BooksRepository = ($axios) => ({
     best: () => $axios.$get('/best'),
   },
   show: {
-    selection: (id) => $axios.$get('/selection', { params: id }),
+    selection: (id) => $axios.$get(`/selection/${id}`),
   },
 })
