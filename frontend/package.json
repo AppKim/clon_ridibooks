@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "json-server --watch ./db.json --port 7070 & nuxt",
+    "dev": "json-server --watch ./db/index.js --port 7070 & nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",

@@ -1,0 +1,84 @@
+[
+  {
+    "id": 1,
+    "title": "셀렉트에서 오랫동안 사랑받아 온 도서들",
+    "books": [
+      {
+        "id": "1",
+        "title": "숙명1",
+        "src": "https://placeimg.com/150/200/any",
+        "author": "히가시노 게이고1",
+        "publisher": "소미북스"
+      },
+      {
+        "id": "2",
+        "title": "숙명2",
+        "src": "https://placeimg.com/150/200/any",
+        "author": "히가시노 게이고2",
+        "publisher": "소미북스"
+      },
+      {
+        "id": "3",
+        "title": "숙명3",
+        "src": "https://placeimg.com/150/200/any",
+        "author": "히가시노 게이고3",
+        "publisher": "소미북스"
+      },
+      {
+        "id": "4",
+        "title": "숙명4",
+        "src": "https://placeimg.com/150/200/any",
+        "author": "히가시노 게이고4",
+        "publisher": "소미북스"
+      },
+      {
+        "id": "5",
+        "title": "숙명4",
+        "src": "https://placeimg.com/150/200/any",
+        "author": "히가시노 게이고4",
+        "publisher": "소미북스"
+      },
+      {
+        "id": "6",
+        "title": "숙명4",
+        "src": "https://placeimg.com/150/200/any",
+        "author": "히가시노 게이고4",
+        "publisher": "소미북스"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "셀렉트에서 오랫동안 사랑받아 온 도서들2",
+    "books": [
+      {
+        "id": "21",
+        "title": "숙명21",
+        "src": "https://placeimg.com/150/200/any",
+        "author": "히가시노 게이고21",
+        "publisher": "소미북스"
+      },
+      {
+        "id": "22",
+        "title": "숙명22",
+        "src": "https://placeimg.com/150/200/any",
+        "author": "히가시노 게이고22",
+        "publisher": "소미북스"
+      },
+      {
+        "id": "23",
+        "title": "숙명23",
+        "src": "https://placeimg.com/150/200/any",
+        "author": "히가시노 게이고23",
+        "publisher": "소미북스"
+      },
+      {
+        "id": "24",
+        "title": "숙명24",
+        "src": "https://placeimg.com/150/200/any",
+        "author": "히가시노 게이고24",
+        "publisher": "소미북스"
+      }
+    ]
+  }
+]
