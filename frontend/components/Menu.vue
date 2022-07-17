@@ -5,7 +5,7 @@
       <nuxt-link class="menu__link" :class="{ active: $route.path === '/new-releases' }" to="/new-releases"
         >최신 업데이트</nuxt-link
       >
-      <nuxt-link class="menu__link" :class="{ active: $route.path === '/categories' }" to="/categories"
+      <nuxt-link class="menu__link" :class="{ active: $route.path === '/categories/300' }" to="/categories"
         >카테고리</nuxt-link
       >
       <nuxt-link class="menu__link" :class="{ active: $route.path === '/my-select' }" to="/my-select"

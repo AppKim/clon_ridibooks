@@ -1,14 +1,12 @@
 <template>
-<chart-thumbnail></chart-thumbnail>
+  <chart-thumbnail></chart-thumbnail>
 </template>
 
 <script>
 import ChartThumbnail from '../components/charts/ChartThumbnail.vue'
 export default {
-    components: { ChartThumbnail },
+  components: { ChartThumbnail },
 }
 </script>
 
-<style>
-
-</style>
+<style lang="scss" scoped></style>
