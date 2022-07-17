@@ -1,9 +1,9 @@
 <template>
-  <div class="selection-preview-header">
-    <h2 class="selection-preview-header__title">
+  <div class="top-contents-header">
+    <h2 class="top-contents-header__title">
       {{ title }}
     </h2>
-    <nuxt-link class="selection-preview-header__button" :to="`selection/${selectionId}`">
+    <nuxt-link class="top-contents-header__button" :to="link">
       전체 보기
       <fa-icon class="icon" icon="angle-right" />
     </nuxt-link>
@@ -19,8 +19,8 @@ export default defineComponent({
       type: String,
       required: true,
     },
-    selectionId: {
-      type: Number,
+    link: {
+      type: String,
       required: true,
     },
   },
@@ -28,7 +28,7 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-.selection-preview-header {
+.top-contents-header {
   display: flex;
   justify-content: space-between;
   align-items: center;

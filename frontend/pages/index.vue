@@ -1,12 +1,10 @@
 <template>
   <div class="top">
-    <div class="top__banner">
-      <TopBannerCarousel></TopBannerCarousel>
-    </div>
+    <TopBannerCarousel></TopBannerCarousel>
     <BestBookList :books="bestBooks" />
     <div class="top__main">
       <div v-for="(selection, i) in selections" :key="selection.id" class="top__selection">
-        <div v-if="i === 2"></div>
+        <PopularBooks v-if="i === 2" />
         <SelectionPreview :selection="selection" />
       </div>
     </div>
@@ -18,12 +16,14 @@ import { defineComponent, useContext, useAsync } from '@nuxtjs/composition-api'
 import TopBannerCarousel from '~/components/top/TopBannerCarousel'
 import SelectionPreview from '~/components/top/SelectionPreview'
 import BestBookList from '~/components/top/BestBookList'
+import PopularBooks from '~/components/top/PopularBooks'
 
 export default defineComponent({
   components: {
     SelectionPreview,
     TopBannerCarousel,
     BestBookList,
+    PopularBooks,
   },
   setup() {
     const { $repositories } = useContext()
@@ -46,10 +46,6 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .top {
-  &__banner {
-    width: 1296px;
-    margin: 0 auto;
-  }
   &__main {
     width: 800px;
     margin: 0 auto;
@@ -58,9 +54,6 @@ export default defineComponent({
     padding: 60px 0 0;
   }
   @include sp_view {
-    &__banner {
-      width: 100%;
-    }
     &__main {
       width: 100%;
       margin: 0 auto;

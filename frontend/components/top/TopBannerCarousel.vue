@@ -53,6 +53,8 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .top-banner-carousel {
+  width: 1296px;
+  margin: 0 auto;
   .swiper {
     .swiper-button-prev {
       left: 380px;
@@ -119,6 +121,7 @@ export default defineComponent({
     }
   }
   @include sp_view {
+    width: 100%;
     .swiper {
       width: 100%;
       .swiper-slide {
