@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { defineComponent, useContext, useAsync } from '@nuxtjs/composition-api'
+import { defineComponent, useContext, useFetch, ref } from '@nuxtjs/composition-api'
 import TopBannerCarousel from '~/components/top/TopBannerCarousel'
 import SelectionPreview from '~/components/top/SelectionPreview'
 import BestBookList from '~/components/top/BestBookList'
@@ -26,15 +26,14 @@ export default defineComponent({
     PopularBooks,
   },
   setup() {
+    const selections = ref([])
+    const bestBooks = ref([])
     const { $repositories } = useContext()
-    // const selections = ref([])
-    // useFetch(async () => {
-    //   const result = await $repositories('selections').get()
-    //   console.log(result[0])
-    //   selections.value = result
-    // })
-    const selections = useAsync(() => $repositories('books').get.selections())
-    const bestBooks = useAsync(() => $repositories('books').get.best())
+
+    useFetch(async () => {
+      selections.value = await $repositories('books').get.selections()
+      bestBooks.value = await $repositories('books').get.best()
+    })
 
     return {
       selections,
