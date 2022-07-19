@@ -8,9 +8,7 @@
 </template>
 
 <script>
-import { ref } from '@vue/composition-api'
-import axios from 'axios'
-import { computed, useRoute } from '@nuxtjs/composition-api'
+import { ref, useContext, useFetch, useStore, computed } from '@nuxtjs/composition-api'
 import CategoryButton from '../../components/category/CategoryButton.vue'
 import CategoryModal from '../../components/category/CategoryModal.vue'
 import CategoryField from '../../components/category/CategoryField.vue'
@@ -18,29 +16,32 @@ import SelectButton from '../../components/category/SelectButton.vue'
 export default {
   components: { CategoryButton, CategoryModal, CategoryField, SelectButton },
   setup() {
+    const { $repositories } = useContext()
+    const store = useStore()
+    // const route = useRoute()
+    // const id = computed(() => route.value.params.id)
+
+    // 서버에서 불러온 카테고리를 저장할 변수
+    const categories = ref([])
     const categoryBtnName = ref('')
     const isModalBtn = ref(false)
-    const route = useRoute()
-    const categories = ref([])
-    const temp = ref({})
     const categoryFieldItem = ref([])
 
-    // category id
-    const id = computed(() => route.value.params.id)
+    /*
+    TODO:  서버에서 카테고리 전체를 불러와서 vuex state에 저장한 후
+           url 파라미터로 들어온 id값에 해당하는 카테고리를 불러와서 화면에 표시
+    */
 
-    // get categories
-    const getCategories = async () => {
-      try {
-        const res = await axios.get(`http://localhost:7070/categories`)
-        categories.value = res.data
-        temp.value = res.data.find((item) => item.id === Number(id.value))
-        categoryBtnName.value = temp.value.categoryName
-        categoryFieldItem.value = temp.value.categoryFieldItems
-      } catch (error) {
-        error.value = 'Failed to get data'
-      }
-    }
-    getCategories()
+    // 서버에서 카테고리 전체를 불러와서 vuex state에 저장
+    useFetch(async () => {
+      categories.value = await $repositories('categories').get.categories()
+      store.commit('add', categories.value)
+      // store.state.categories = categories.value
+    })
+
+    // vuex state categories
+    const storeCategories = computed(() => store.state.categories)
+    console.log(storeCategories.value)
 
     // open modal dialog
     const openModal = () => {
