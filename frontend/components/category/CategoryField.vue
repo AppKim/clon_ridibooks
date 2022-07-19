@@ -7,8 +7,8 @@
             v-for="item in categoryFieldItem"
             :key="item.id"
             class="category__field__item"
-            :class="{ active: isActive }"
-            @click="moveToCategory(item.id)"
+            :class="item.id === activeId ? 'active' : ''"
+            @click="moveToCategory(item.id, $event)"
           >
             {{ item.categoryName }}
           </li>
@@ -31,13 +31,16 @@ export default {
     const router = useRouter()
 
     const isActive = ref(false)
+    const activeId = ref('')
 
-    const moveToCategory = (id) => {
-      isActive.value = !isActive.value
+    const moveToCategory = (id, event) => {
+      activeId.value = id
+
       router.push(`/categories/${id}`)
     }
     return {
       isActive,
+      activeId,
       moveToCategory,
     }
   },
@@ -74,9 +77,41 @@ export default {
     padding: 10px;
     font-size: 15px;
     color: rgb(128, 137, 145);
+    &.active::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background: rgb(158, 167, 173);
+      left: 0px;
+      bottom: 3px;
+      z-index: 10px;
+    }
   }
 
-  &__item:active::after {
+  /* &__item::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: rgb(158, 167, 173);
+    left: 0px;
+    bottom: 3px;
+    z-index: 10px;
+  } */
+
+  /* &__item::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: rgb(158, 167, 173);
+    left: 0px;
+    bottom: 3px;
+    z-index: 10px;
+  } */
+
+  .active::after {
     content: '';
     display: block;
     width: 100%;
