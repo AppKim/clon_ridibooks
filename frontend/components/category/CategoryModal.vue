@@ -15,7 +15,7 @@
           <li v-for="category in categories" :key="category.id">
             <button type="button" class="category__item__btn" @click="moveToCategory(category.id)">
               <div class=""></div>
-              {{ category.categoryName }}
+              {{ category.name }}
             </button>
           </li>
         </ul>
@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import { useRouter } from '@nuxtjs/composition-api'
+import { useRouter, useStore } from '@nuxtjs/composition-api'
 export default {
   props: {
     categories: {
@@ -35,9 +35,10 @@ export default {
   },
   setup() {
     const router = useRouter()
-
+    const store = useStore()
     const moveToCategory = (id) => {
       router.push(`/categories/${id}`)
+      store.commit('deleteCategory')
     }
     return {
       moveToCategory,
