@@ -2,15 +2,15 @@
   <div>
     <div class="category__field__warp">
       <div>
-        <ul class="category__field__items">
+        <ul v-for="item in categoryFieldItem" :key="item.id" class="category__field__items">
           <li
-            v-for="item in categoryFieldItem"
-            :key="item.id"
+            v-for="children in item.children"
+            :key="children.id"
+            :class="children.id === activeId ? 'active' : ''"
             class="category__field__item"
-            :class="item.id === activeId ? 'active' : ''"
-            @click="moveToCategory(item.id, $event)"
+            @click="moveToCategory(children.id, $event)"
           >
-            {{ item.categoryName }}
+            {{ children.name }}
           </li>
         </ul>
       </div>
@@ -23,19 +23,17 @@ import { ref, useRouter } from '@nuxtjs/composition-api'
 export default {
   props: {
     categoryFieldItem: {
-      type: Array,
+      type: Object,
       required: true,
     },
   },
   setup() {
     const router = useRouter()
-
     const isActive = ref(false)
     const activeId = ref('')
 
     const moveToCategory = (id, event) => {
       activeId.value = id
-
       router.push(`/categories/${id}`)
     }
     return {
@@ -88,8 +86,7 @@ export default {
       z-index: 10px;
     }
   }
-
-  /* &__item::after {
+  /* .active::after {
     content: '';
     display: block;
     width: 100%;
@@ -99,27 +96,5 @@ export default {
     bottom: 3px;
     z-index: 10px;
   } */
-
-  /* &__item::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 3px;
-    background: rgb(158, 167, 173);
-    left: 0px;
-    bottom: 3px;
-    z-index: 10px;
-  } */
-
-  .active::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 3px;
-    background: rgb(158, 167, 173);
-    left: 0px;
-    bottom: 3px;
-    z-index: 10px;
-  }
 }
 </style>
