@@ -31,8 +31,10 @@ export default defineComponent({
     const { $repositories } = useContext()
 
     useFetch(async () => {
-      selections.value = await $repositories('books').get.selections()
-      bestBooks.value = await $repositories('books').get.best()
+      const homeResponse = await $repositories('top').get.home()
+      const bestBooksResponse = await $repositories('books').get.best()
+      selections.value = homeResponse.selections
+      bestBooks.value = bestBooksResponse
     })
 
     return {
