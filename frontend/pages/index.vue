@@ -30,21 +30,12 @@ export default defineComponent({
     const bestBooks = ref([])
     const { $repositories } = useContext()
 
-    useFetch(() => {
-      if (selections.value.length === 0) {
-        console.log('here')
-        $repositories('top').get.home().then((result) => {
-          selections.value = result
-        }).catch((err) => {
-          console.log(err)
-        })
-        selections.value = homeResponse.selections
-      }
-      if (bestBooks.value.length === 0) {
-        console.log('here2')
-        const bestBooksResponse = await $repositories('books').get.best()
-        bestBooks.value = bestBooksResponse
-      }
+    useFetch(async () => {
+      // TODO: store에 넣어서 관라?
+      const homeResponse = await $repositories('top').get.home()
+      selections.value = homeResponse.selections
+      const bestBooksResponse = await $repositories('books').get.best()
+      bestBooks.value = bestBooksResponse
     })
 
     return {
