@@ -31,8 +31,11 @@ export default defineComponent({
     const { $repositories } = useContext()
 
     useFetch(async () => {
-      selections.value = await $repositories('books').get.selections()
-      bestBooks.value = await $repositories('books').get.best()
+      // TODO: store에 넣어서 관라?
+      const homeResponse = await $repositories('top').get.home()
+      selections.value = homeResponse.selections
+      const bestBooksResponse = await $repositories('books').get.best()
+      bestBooks.value = bestBooksResponse
     })
 
     return {

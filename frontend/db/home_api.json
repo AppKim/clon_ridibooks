@@ -1,0 +1,2168 @@
+{
+  "banners": [
+    {
+      "id": 2723,
+      "title": "[이벤트] 리디셀렉트 8월 업데이트 (--08/31)",
+      "image_url": "https://select-img.ridicdn.net/images/7af6acdb-6a69-4b7b-bf98-7c4f71cab9e2",
+      "link_url": "https://ridibooks.com/event/43225?utm_source=operation&utm_medium=banner&utm_campaign=inhouse&utm_content=Y001"
+    },
+    {
+      "id": 2725,
+      "title": "[기획배너] 8월 잡지 업데이트 (--08/15)",
+      "image_url": "https://select-img.ridicdn.net/images/2801ea84-dda3-4d97-9847-2189a12e840f",
+      "link_url": "/selection/3173?utm_source=operation&utm_medium=banner&utm_campaign=inhouse&utm_content=Y001"
+    },
+    {
+      "id": 2698,
+      "title": "[추천 자녀 교육 도서] 임포스터 (--07/20)",
+      "image_url": "https://select-img.ridicdn.net/images/c1b23351-594f-411c-9682-15d96353c61b",
+      "link_url": "/book/222002729?utm_source=operation&utm_medium=banner&utm_campaign=inhouse&utm_content=Y001"
+    },
+    {
+      "id": 2661,
+      "title": "[기획배너] 먼저 준비하는 미래 (--08/13)",
+      "image_url": "https://select-img.ridicdn.net/images/8b8ef97d-8082-4ad8-8e56-488467d7c1a8",
+      "link_url": "/selection/3128?utm_source=operation&utm_medium=banner&utm_campaign=inhouse&utm_content=Y001"
+    },
+    {
+      "id": 2721,
+      "title": "[RIDI ONLY] 리와일드_기후 위기 (--08/30)",
+      "image_url": "https://select-img.ridicdn.net/images/a35ce3a4-f685-4948-8f11-ee5dd442d7f6",
+      "link_url": "/book/3120000561?utm_source=operation&utm_medium=banner&utm_campaign=inhouse&utm_content=Y001"
+    }
+  ],
+  "selections": [
+    {
+      "selection_id": 3170,
+      "title": "독자들이 선택한 도서 톺아보기",
+      "type": "SELECTION",
+      "books": [
+        {
+          "id": "734001113",
+          "title": { "main": "술꾼도시처녀들 1", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/734001113/small#1",
+            "large": "https://img.ridicdn.net/cover/734001113/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/734001113/xxlarge#1"
+          },
+          "authors": { "comic_author": [{ "id": 50841, "name": "미깡" }] },
+          "publisher": { "name": "예담" },
+          "review_summary": {
+            "buyer_rating_distribution": [11, 16, 90, 234, 729],
+            "buyer_rating_average": 4.5,
+            "buyer_rating_count": 1080,
+            "buyer_review_count": 41,
+            "total_rating_count": 1109,
+            "total_review_count": 44
+          },
+          "begin_datetime": "2021-10-15T00:00:00",
+          "end_datetime": "2022-10-14T23:59:59"
+        },
+        {
+          "id": "950000333",
+          "title": { "main": "공간의 미래", "sub": "코로나가 가속화시킨 공간 변화" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/950000333/small#1",
+            "large": "https://img.ridicdn.net/cover/950000333/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/950000333/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 50333, "name": "유현준" }] },
+          "publisher": { "name": "을유문화사" },
+          "review_summary": {
+            "buyer_rating_distribution": [4, 2, 18, 60, 132],
+            "buyer_rating_average": 4.5,
+            "buyer_rating_count": 216,
+            "buyer_review_count": 15,
+            "total_rating_count": 227,
+            "total_review_count": 16
+          },
+          "begin_datetime": "2021-09-22T06:55:00",
+          "end_datetime": "2022-09-21T23:59:59"
+        },
+        {
+          "id": "222002487",
+          "title": { "main": "사소해서 물어보지 못했지만 궁금했던 이야기", "sub": "일상에서 발견하는 호기심" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/222002487/small#1",
+            "large": "https://img.ridicdn.net/cover/222002487/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/222002487/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 111568, "name": "사물궁이 잡학지식" }] },
+          "publisher": { "name": "arte" },
+          "review_summary": {
+            "buyer_rating_distribution": [1, 5, 18, 39, 48],
+            "buyer_rating_average": 4.2,
+            "buyer_rating_count": 111,
+            "buyer_review_count": 8,
+            "total_rating_count": 116,
+            "total_review_count": 9
+          },
+          "begin_datetime": "2020-10-09T00:00:00",
+          "end_datetime": "2023-02-16T23:59:59"
+        },
+        {
+          "id": "606002040",
+          "title": { "main": "지금 바로 써먹는 심리학", "sub": "실험실을 나온 괴짜 교수의 기발한 심리학 뒤집기" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/606002040/small#1",
+            "large": "https://img.ridicdn.net/cover/606002040/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/606002040/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 26326, "name": "리처드 와이즈먼" }] },
+          "publisher": { "name": "웅진지식하우스" },
+          "review_summary": {
+            "buyer_rating_distribution": [0, 0, 6, 8, 26],
+            "buyer_rating_average": 4.5,
+            "buyer_rating_count": 40,
+            "buyer_review_count": 6,
+            "total_rating_count": 43,
+            "total_review_count": 6
+          },
+          "begin_datetime": "2021-06-02T00:00:00",
+          "end_datetime": "2023-06-01T23:59:59"
+        },
+        {
+          "id": "372007028",
+          "title": { "main": "스토아 수업", "sub": "철학은 어떻게 삶의 기술이 되는가" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/372007028/small#1",
+            "large": "https://img.ridicdn.net/cover/372007028/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/372007028/xxlarge#1"
+          },
+          "authors": {
+            "author": [
+              { "id": 53315, "name": "라이언 홀리데이" },
+              { "id": 90349, "name": "스티븐 핸슬먼" }
+            ],
+            "translator": [{ "id": 110871, "name": "조율리" }]
+          },
+          "publisher": { "name": "다산초당" },
+          "review_summary": {
+            "buyer_rating_distribution": [2, 1, 1, 12, 12],
+            "buyer_rating_average": 4.1,
+            "buyer_rating_count": 28,
+            "buyer_review_count": 1,
+            "total_rating_count": 33,
+            "total_review_count": 1
+          },
+          "begin_datetime": "2022-01-07T06:55:00",
+          "end_datetime": "2023-01-06T23:59:59"
+        },
+        {
+          "id": "2892000018",
+          "title": { "main": "오늘 조금 더 비건", "sub": "초식마녀의 쉽고 맛있는 네 컷 비건 요리 만화" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/2892000018/small#1",
+            "large": "https://img.ridicdn.net/cover/2892000018/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/2892000018/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 117702, "name": "초식마녀" }] },
+          "publisher": { "name": "채륜서" },
+          "review_summary": {
+            "buyer_rating_distribution": [1, 1, 7, 11, 49],
+            "buyer_rating_average": 4.5,
+            "buyer_rating_count": 69,
+            "buyer_review_count": 8,
+            "total_rating_count": 79,
+            "total_review_count": 10
+          },
+          "begin_datetime": "2022-01-01T00:00:00",
+          "end_datetime": "2022-12-31T23:59:59"
+        },
+        {
+          "id": "4335000001",
+          "title": { "main": "혼자여서 괜찮은 하루", "sub": "곽정은 에세이" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4335000001/small#1",
+            "large": "https://img.ridicdn.net/cover/4335000001/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4335000001/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 7438, "name": "곽정은" }] },
+          "publisher": { "name": "포르체" },
+          "review_summary": {
+            "buyer_rating_distribution": [1, 0, 6, 7, 33],
+            "buyer_rating_average": 4.5,
+            "buyer_rating_count": 47,
+            "buyer_review_count": 6,
+            "total_rating_count": 48,
+            "total_review_count": 6
+          },
+          "begin_datetime": "2022-03-21T06:55:00",
+          "end_datetime": "2023-03-20T23:59:59"
+        },
+        {
+          "id": "1046000110",
+          "title": { "main": "체인저블", "sub": "빈털터리 청년 백수에서 700억대 억만장자가 되기까지" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/1046000110/small#1",
+            "large": "https://img.ridicdn.net/cover/1046000110/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/1046000110/xxlarge#1"
+          },
+          "authors": {
+            "translator": [{ "id": 11522, "name": "이경식" }],
+            "author": [{ "id": 113303, "name": "안드레스 피라" }]
+          },
+          "publisher": { "name": "윌북" },
+          "review_summary": {
+            "buyer_rating_distribution": [0, 2, 7, 8, 20],
+            "buyer_rating_average": 4.2,
+            "buyer_rating_count": 37,
+            "buyer_review_count": 2,
+            "total_rating_count": 40,
+            "total_review_count": 2
+          },
+          "begin_datetime": "2022-01-07T06:55:00",
+          "end_datetime": "2023-01-06T23:59:59"
+        }
+      ]
+    },
+    {
+      "selection_id": 3169,
+      "title": "결혼해야만 가족인가요?",
+      "type": "SELECTION",
+      "books": [
+        {
+          "id": "3120000519",
+          "title": { "main": "어스라이크 - 내가 선택한 가족입니다", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/3120000519/small#1",
+            "large": "https://img.ridicdn.net/cover/3120000519/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/3120000519/xxlarge#1"
+          },
+          "authors": {
+            "author": [
+              { "id": 9975, "name": "신예희" },
+              { "id": 111213, "name": "백지선" },
+              { "id": 32980, "name": "박혜윤" },
+              { "id": 110422, "name": "정만춘" },
+              { "id": 18514, "name": "김얀" }
+            ]
+          },
+          "publisher": { "name": "어스라이크" },
+          "review_summary": {
+            "buyer_rating_distribution": [1, 0, 10, 30, 67],
+            "buyer_rating_average": 4.5,
+            "buyer_rating_count": 108,
+            "buyer_review_count": 13,
+            "total_rating_count": 116,
+            "total_review_count": 17
+          },
+          "begin_datetime": "2022-05-04T19:00:00",
+          "end_datetime": "2030-12-31T23:59:59"
+        },
+        {
+          "id": "476001377",
+          "title": { "main": "비혼수업", "sub": "즐거운 1인 가구 지침서" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/476001377/small#1",
+            "large": "https://img.ridicdn.net/cover/476001377/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/476001377/xxlarge#1"
+          },
+          "authors": {
+            "author": [
+              { "id": null, "name": "강한별" },
+              { "id": null, "name": "김아람" },
+              { "id": null, "name": "이예닮" },
+              { "id": null, "name": "지나리" },
+              { "id": null, "name": "하현지" }
+            ]
+          },
+          "publisher": { "name": "넥서스BOOKS" },
+          "review_summary": {
+            "buyer_rating_distribution": [0, 3, 4, 4, 10],
+            "buyer_rating_average": 4.0,
+            "buyer_rating_count": 21,
+            "buyer_review_count": 3,
+            "total_rating_count": 28,
+            "total_review_count": 3
+          },
+          "begin_datetime": "2021-09-24T06:55:00",
+          "end_datetime": "2022-09-23T23:59:59"
+        },
+        {
+          "id": "4335000022",
+          "title": { "main": "따님이 기가 세요", "sub": "유쾌한 여자 둘의 비혼 라이프" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4335000022/small#1",
+            "large": "https://img.ridicdn.net/cover/4335000022/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4335000022/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 125255, "name": "하말넘많" }] },
+          "publisher": { "name": "포르체" },
+          "review_summary": {
+            "buyer_rating_distribution": [1, 1, 10, 16, 112],
+            "buyer_rating_average": 4.7,
+            "buyer_rating_count": 140,
+            "buyer_review_count": 13,
+            "total_rating_count": 173,
+            "total_review_count": 17
+          },
+          "begin_datetime": "2022-03-04T06:55:00",
+          "end_datetime": "2023-03-03T23:59:59"
+        },
+        {
+          "id": "222002534",
+          "title": { "main": "결혼은 모르겠고 내 집은 있습니다", "sub": "지속 가능한 1인용 삶을 위한 인생 레시피" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/222002534/small#1",
+            "large": "https://img.ridicdn.net/cover/222002534/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/222002534/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 117819, "name": "김민정" }] },
+          "publisher": { "name": "21세기북스" },
+          "review_summary": {
+            "buyer_rating_distribution": [1, 0, 13, 41, 86],
+            "buyer_rating_average": 4.5,
+            "buyer_rating_count": 141,
+            "buyer_review_count": 7,
+            "total_rating_count": 151,
+            "total_review_count": 7
+          },
+          "begin_datetime": "2021-12-24T06:55:00",
+          "end_datetime": "2022-12-23T23:59:59"
+        },
+        {
+          "id": "734001798",
+          "title": { "main": "하면 좋습니까", "sub": "결혼해? 말아? 오늘도 고민하는 당신을 위한 현실 검증 솔루션" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/734001798/small#1",
+            "large": "https://img.ridicdn.net/cover/734001798/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/734001798/xxlarge#1"
+          },
+          "authors": { "comic_author": [{ "id": 50841, "name": "미깡" }] },
+          "publisher": { "name": "위즈덤하우스" },
+          "review_summary": {
+            "buyer_rating_distribution": [21, 15, 94, 203, 353],
+            "buyer_rating_average": 4.2,
+            "buyer_rating_count": 686,
+            "buyer_review_count": 86,
+            "total_rating_count": 705,
+            "total_review_count": 87
+          },
+          "begin_datetime": "2022-01-14T00:00:00",
+          "end_datetime": "2022-11-22T23:59:59"
+        },
+        {
+          "id": "3421000297",
+          "title": { "main": "비혼입니다만, 그게 어쨌다구요?!", "sub": "결혼이 위험 부담인 시대를 사는 이들에게" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/3421000297/small#1",
+            "large": "https://img.ridicdn.net/cover/3421000297/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/3421000297/xxlarge#1"
+          },
+          "authors": {
+            "author": [
+              { "id": 77716, "name": "미나시타 기류" },
+              { "id": 41363, "name": "우에노 치즈코" }
+            ],
+            "translator": [{ "id": 81195, "name": "조승미" }]
+          },
+          "publisher": { "name": "동녘" },
+          "review_summary": {
+            "buyer_rating_distribution": [2, 1, 3, 10, 27],
+            "buyer_rating_average": 4.4,
+            "buyer_rating_count": 43,
+            "buyer_review_count": 6,
+            "total_rating_count": 60,
+            "total_review_count": 6
+          },
+          "begin_datetime": "2022-07-15T00:00:00",
+          "end_datetime": "2023-07-14T23:59:59"
+        },
+        {
+          "id": "1890000144",
+          "title": { "main": "제가 결혼을 안 하겠다는 게 아니라", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/1890000144/small#1",
+            "large": "https://img.ridicdn.net/cover/1890000144/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/1890000144/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 78217, "name": "이주윤" }] },
+          "publisher": { "name": "한빛비즈" },
+          "review_summary": {
+            "buyer_rating_distribution": [5, 3, 13, 16, 35],
+            "buyer_rating_average": 4.0,
+            "buyer_rating_count": 72,
+            "buyer_review_count": 9,
+            "total_rating_count": 84,
+            "total_review_count": 11
+          },
+          "begin_datetime": "2022-01-07T00:00:00",
+          "end_datetime": "2023-01-06T23:59:59"
+        },
+        {
+          "id": "222002269",
+          "title": { "main": "결혼 고발", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/222002269/small#1",
+            "large": "https://img.ridicdn.net/cover/222002269/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/222002269/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 105304, "name": "사월날씨" }] },
+          "publisher": { "name": "arte" },
+          "review_summary": {
+            "buyer_rating_distribution": [2, 2, 7, 9, 40],
+            "buyer_rating_average": 4.4,
+            "buyer_rating_count": 60,
+            "buyer_review_count": 9,
+            "total_rating_count": 76,
+            "total_review_count": 12
+          },
+          "begin_datetime": "2020-09-21T00:00:00",
+          "end_datetime": "2022-09-20T23:59:59"
+        }
+      ]
+    },
+    {
+      "selection_id": 3168,
+      "title": "우리의 몸과 마음을 지배하는 뇌의 비밀",
+      "type": "SELECTION",
+      "books": [
+        {
+          "id": "2189000124",
+          "title": { "main": "우울할 땐 뇌과학", "sub": "최신 뇌과학과 신경생물학은 우울증을 어떻게 해결하는가" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/2189000124/small#1",
+            "large": "https://img.ridicdn.net/cover/2189000124/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/2189000124/xxlarge#1"
+          },
+          "authors": {
+            "author": [{ "id": 91631, "name": "알렉스 코브" }],
+            "translator": [{ "id": 56221, "name": "정지인" }]
+          },
+          "publisher": { "name": "심심" },
+          "review_summary": {
+            "buyer_rating_distribution": [6, 5, 49, 130, 293],
+            "buyer_rating_average": 4.4,
+            "buyer_rating_count": 483,
+            "buyer_review_count": 64,
+            "total_rating_count": 592,
+            "total_review_count": 72
+          },
+          "begin_datetime": "2022-01-07T00:00:00",
+          "end_datetime": "2023-01-06T23:59:59"
+        },
+        {
+          "id": "606002323",
+          "title": { "main": "아무것도 하기 싫은 사람을 위한 뇌 과학", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/606002323/small#1",
+            "large": "https://img.ridicdn.net/cover/606002323/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/606002323/xxlarge#1"
+          },
+          "authors": {
+            "translator": [{ "id": 54936, "name": "정현옥" }],
+            "author": [{ "id": 118102, "name": "가토 토시노리" }]
+          },
+          "publisher": { "name": "갤리온" },
+          "review_summary": {
+            "buyer_rating_distribution": [2, 6, 18, 26, 30],
+            "buyer_rating_average": 3.9,
+            "buyer_rating_count": 82,
+            "buyer_review_count": 8,
+            "total_rating_count": 85,
+            "total_review_count": 8
+          },
+          "begin_datetime": "2022-01-31T06:55:00",
+          "end_datetime": "2023-01-30T23:59:59"
+        },
+        {
+          "id": "606002361",
+          "title": { "main": "움직임의 뇌과학", "sub": "움직임은 어떻게 스트레스, 우울, 불안의 해답이 되는가" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/606002361/small#1",
+            "large": "https://img.ridicdn.net/cover/606002361/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/606002361/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 123064, "name": "캐롤라인 윌리엄스" }] },
+          "publisher": { "name": "갤리온" },
+          "review_summary": {
+            "buyer_rating_distribution": [1, 0, 2, 6, 10],
+            "buyer_rating_average": 4.3,
+            "buyer_rating_count": 19,
+            "buyer_review_count": 2,
+            "total_rating_count": 22,
+            "total_review_count": 2
+          },
+          "begin_datetime": "2022-06-17T06:55:00",
+          "end_datetime": "2023-06-16T23:59:59"
+        },
+        {
+          "id": "3421001465",
+          "title": { "main": "유쾌한 운동의 뇌 과학", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/3421001465/small#1",
+            "large": "https://img.ridicdn.net/cover/3421001465/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/3421001465/xxlarge#1"
+          },
+          "authors": {
+            "translator": [{ "id": 11915, "name": "박종대" }],
+            "author": [{ "id": 112323, "name": "마누엘라 마케도니아" }]
+          },
+          "publisher": { "name": "해리북스" },
+          "review_summary": {
+            "buyer_rating_distribution": [0, 0, 1, 10, 10],
+            "buyer_rating_average": 4.4,
+            "buyer_rating_count": 21,
+            "buyer_review_count": 1,
+            "total_rating_count": 23,
+            "total_review_count": 1
+          },
+          "begin_datetime": "2021-09-20T06:55:00",
+          "end_datetime": "2022-09-19T23:59:59"
+        },
+        {
+          "id": "2189000197",
+          "title": { "main": "뇌 과학의 모든 역사", "sub": "인간의 가장 깊은 비밀, 뇌를 이해하기 위한 눈부신 시도들" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/2189000197/small#1",
+            "large": "https://img.ridicdn.net/cover/2189000197/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/2189000197/xxlarge#1"
+          },
+          "authors": {
+            "author": [{ "id": 122391, "name": "매튜 콥" }],
+            "translator": [{ "id": 122392, "name": "이한나" }]
+          },
+          "publisher": { "name": "심심" },
+          "review_summary": {
+            "buyer_rating_distribution": [0, 0, 1, 0, 4],
+            "buyer_rating_average": 4.6,
+            "buyer_rating_count": 5,
+            "buyer_review_count": 0,
+            "total_rating_count": 6,
+            "total_review_count": 1
+          },
+          "begin_datetime": "2022-04-18T06:55:00",
+          "end_datetime": "2023-04-17T23:59:59"
+        },
+        {
+          "id": "222002721",
+          "title": {
+            "main": "서가명강 21 - 뇌를 읽다, 마음을 읽다",
+            "sub": "뇌과학과 정신의학으로 치유하는 고장 난 마음의 문제들"
+          },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/222002721/small#1",
+            "large": "https://img.ridicdn.net/cover/222002721/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/222002721/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 83269, "name": "권준수" }] },
+          "publisher": { "name": "21세기북스" },
+          "review_summary": {
+            "buyer_rating_distribution": [0, 0, 0, 1, 6],
+            "buyer_rating_average": 4.9,
+            "buyer_rating_count": 7,
+            "buyer_review_count": 0,
+            "total_rating_count": 9,
+            "total_review_count": 0
+          },
+          "begin_datetime": "2022-07-11T06:55:00",
+          "end_datetime": "2023-07-10T23:59:59"
+        },
+        {
+          "id": "1890000189",
+          "title": { "main": "오늘도 뇌는 거짓말을 한다", "sub": "착각에 빠진 뇌를 깨우는 메타인지 수업" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/1890000189/small#1",
+            "large": "https://img.ridicdn.net/cover/1890000189/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/1890000189/xxlarge#1"
+          },
+          "authors": {
+            "author": [{ "id": 109635, "name": "알베르 무케베르" }],
+            "translator": [{ "id": 36759, "name": "정수민" }]
+          },
+          "publisher": { "name": "한빛비즈" },
+          "review_summary": {
+            "buyer_rating_distribution": [0, 1, 4, 7, 4],
+            "buyer_rating_average": 3.9,
+            "buyer_rating_count": 16,
+            "buyer_review_count": 1,
+            "total_rating_count": 16,
+            "total_review_count": 1
+          },
+          "begin_datetime": "2021-04-07T00:00:00",
+          "end_datetime": "2023-04-06T23:59:59"
+        }
+      ]
+    },
+    {
+      "selection_id": 3167,
+      "title": "아름다움 뒤 예술가들의 극적인 삶",
+      "type": "SELECTION",
+      "books": [
+        {
+          "id": "4095000013",
+          "title": { "main": "반 고흐", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4095000013/small#1",
+            "large": "https://img.ridicdn.net/cover/4095000013/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4095000013/xxlarge#1"
+          },
+          "authors": {
+            "author": [{ "id": 98569, "name": "바바라 스톡" }],
+            "translator": [{ "id": 97659, "name": "이예원" }]
+          },
+          "publisher": { "name": "미메시스" },
+          "review_summary": {
+            "buyer_rating_distribution": [5, 5, 47, 213, 532],
+            "buyer_rating_average": 4.6,
+            "buyer_rating_count": 802,
+            "buyer_review_count": 50,
+            "total_rating_count": 808,
+            "total_review_count": 52
+          },
+          "begin_datetime": "2020-05-22T00:00:00",
+          "end_datetime": "2023-05-21T23:59:59"
+        },
+        {
+          "id": "4095000008",
+          "title": { "main": "피카소", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4095000008/small#1",
+            "large": "https://img.ridicdn.net/cover/4095000008/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4095000008/xxlarge#1"
+          },
+          "authors": {
+            "author": [
+              { "id": 98573, "name": "쥘리 비르망" },
+              { "id": 98574, "name": "클레망 우브르리" }
+            ],
+            "translator": [{ "id": 44477, "name": "임명주" }]
+          },
+          "publisher": { "name": "미메시스" },
+          "review_summary": {
+            "buyer_rating_distribution": [0, 0, 1, 2, 1],
+            "buyer_rating_average": 4.0,
+            "buyer_rating_count": 4,
+            "buyer_review_count": 0,
+            "total_rating_count": 5,
+            "total_review_count": 0
+          },
+          "begin_datetime": "2022-06-27T06:55:00",
+          "end_datetime": "2023-06-26T23:59:59"
+        },
+        {
+          "id": "4095000046",
+          "title": { "main": "바스키아", "sub": "미메시스 그래픽노블" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4095000046/small#1",
+            "large": "https://img.ridicdn.net/cover/4095000046/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4095000046/xxlarge#1"
+          },
+          "authors": {
+            "translator": [{ "id": 98578, "name": "김마림" }],
+            "author": [{ "id": 111853, "name": "파올로 파리시" }]
+          },
+          "publisher": { "name": "미메시스" },
+          "review_summary": {
+            "buyer_rating_distribution": [0, 1, 6, 7, 5],
+            "buyer_rating_average": 3.8,
+            "buyer_rating_count": 19,
+            "buyer_review_count": 0,
+            "total_rating_count": 31,
+            "total_review_count": 9
+          },
+          "begin_datetime": "2021-06-02T00:00:00",
+          "end_datetime": "2023-06-01T23:59:59"
+        },
+        {
+          "id": "3421001388",
+          "title": { "main": "시네마 인문학", "sub": "영화 속에서 만난 예술가의 삶과 작품" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/3421001388/small#1",
+            "large": "https://img.ridicdn.net/cover/3421001388/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/3421001388/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 39118, "name": "정장진" }] },
+          "publisher": { "name": "동녘" },
+          "review_summary": {
+            "buyer_rating_distribution": [0, 0, 2, 3, 3],
+            "buyer_rating_average": 4.1,
+            "buyer_rating_count": 8,
+            "buyer_review_count": 0,
+            "total_rating_count": 8,
+            "total_review_count": 0
+          },
+          "begin_datetime": "2022-07-15T00:00:00",
+          "end_datetime": "2023-07-14T23:59:59"
+        },
+        {
+          "id": "4095000053",
+          "title": { "main": "앤디 워홀", "sub": "미메시스 그래픽노블" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4095000053/small#1",
+            "large": "https://img.ridicdn.net/cover/4095000053/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4095000053/xxlarge#1"
+          },
+          "authors": {
+            "translator": [{ "id": 98578, "name": "김마림" }],
+            "author": [{ "id": 67119, "name": "타이펙스" }]
+          },
+          "publisher": { "name": "미메시스" },
+          "review_summary": {
+            "buyer_rating_distribution": [0, 0, 2, 0, 3],
+            "buyer_rating_average": 4.2,
+            "buyer_rating_count": 5,
+            "buyer_review_count": 0,
+            "total_rating_count": 7,
+            "total_review_count": 0
+          },
+          "begin_datetime": "2022-01-24T06:55:00",
+          "end_datetime": "2023-01-23T23:59:59"
+        },
+        {
+          "id": "4095000007",
+          "title": { "main": "뭉크", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4095000007/small#1",
+            "large": "https://img.ridicdn.net/cover/4095000007/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4095000007/xxlarge#1"
+          },
+          "authors": {
+            "translator": [{ "id": 2946, "name": "권세훈" }],
+            "author": [{ "id": 98576, "name": "스테펜 크베넬란" }]
+          },
+          "publisher": { "name": "미메시스" },
+          "review_summary": {
+            "buyer_rating_distribution": [4, 0, 3, 4, 2],
+            "buyer_rating_average": 3.0,
+            "buyer_rating_count": 13,
+            "buyer_review_count": 2,
+            "total_rating_count": 15,
+            "total_review_count": 2
+          },
+          "begin_datetime": "2022-04-15T00:00:00",
+          "end_datetime": "2023-04-14T23:59:59"
+        },
+        {
+          "id": "4095000060",
+          "title": { "main": "쿠사마 야요이", "sub": "미메시스 그래픽노블" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4095000060/small#1",
+            "large": "https://img.ridicdn.net/cover/4095000060/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4095000060/xxlarge#1"
+          },
+          "authors": {
+            "translator": [{ "id": 94987, "name": "김희진" }],
+            "author": [{ "id": 121082, "name": "엘리사 마첼라리" }]
+          },
+          "publisher": { "name": "미메시스" },
+          "review_summary": {
+            "buyer_rating_distribution": [1, 0, 3, 6, 11],
+            "buyer_rating_average": 4.2,
+            "buyer_rating_count": 21,
+            "buyer_review_count": 0,
+            "total_rating_count": 23,
+            "total_review_count": 0
+          },
+          "begin_datetime": "2022-06-20T06:55:00",
+          "end_datetime": "2023-06-19T23:59:59"
+        },
+        {
+          "id": "476000855",
+          "title": { "main": "인포그래픽 반 고흐", "sub": "그래픽으로 읽는 빈센트 반 고흐" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/476000855/small#1",
+            "large": "https://img.ridicdn.net/cover/476000855/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/476000855/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 97480, "name": "소피 콜린스" }] },
+          "publisher": { "name": "큐리어스" },
+          "review_summary": {
+            "buyer_rating_distribution": [1, 1, 12, 27, 36],
+            "buyer_rating_average": 4.2,
+            "buyer_rating_count": 77,
+            "buyer_review_count": 6,
+            "total_rating_count": 78,
+            "total_review_count": 6
+          },
+          "begin_datetime": "2020-10-12T00:00:00",
+          "end_datetime": "2022-10-11T23:59:59"
+        }
+      ]
+    },
+    {
+      "selection_id": 3162,
+      "title": "셀렉트에서 오랫동안 사랑받아 온 도서들",
+      "type": "SELECTION",
+      "books": [
+        {
+          "id": "1046000115",
+          "title": { "main": "소란스러운 세상 속 혼자를 위한 책", "sub": "혼자가 좋은 나를 사랑하는 법" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/1046000115/small#1",
+            "large": "https://img.ridicdn.net/cover/1046000115/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/1046000115/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 117070, "name": "데비 텅" }] },
+          "publisher": { "name": "윌북" },
+          "review_summary": {
+            "buyer_rating_distribution": [4, 7, 52, 131, 292],
+            "buyer_rating_average": 4.4,
+            "buyer_rating_count": 486,
+            "buyer_review_count": 48,
+            "total_rating_count": 492,
+            "total_review_count": 48
+          },
+          "begin_datetime": "2021-12-17T06:55:00",
+          "end_datetime": "2022-12-16T23:59:59"
+        },
+        {
+          "id": "1473000064",
+          "title": { "main": "나의 첫번째 머니 다이어리", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/1473000064/small#1",
+            "large": "https://img.ridicdn.net/cover/1473000064/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/1473000064/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": null, "name": "미스페니(진예지)" }] },
+          "publisher": { "name": "스마트북스" },
+          "review_summary": {
+            "buyer_rating_distribution": [6, 5, 21, 34, 57],
+            "buyer_rating_average": 4.1,
+            "buyer_rating_count": 123,
+            "buyer_review_count": 10,
+            "total_rating_count": 129,
+            "total_review_count": 11
+          },
+          "begin_datetime": "2020-04-25T00:00:00",
+          "end_datetime": "2023-04-16T23:59:59"
+        },
+        {
+          "id": "745000172",
+          "title": { "main": "타인을 읽는 말", "sub": "4가지 상징으로 풀어내는 대화의 심리학" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/745000172/small#1",
+            "large": "https://img.ridicdn.net/cover/745000172/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/745000172/xxlarge#1"
+          },
+          "authors": {
+            "author": [
+              { "id": 114346, "name": "로런스 앨리슨" },
+              { "id": 114347, "name": "에밀리 앨리슨" }
+            ]
+          },
+          "publisher": { "name": "흐름출판" },
+          "review_summary": {
+            "buyer_rating_distribution": [0, 1, 5, 13, 16],
+            "buyer_rating_average": 4.3,
+            "buyer_rating_count": 35,
+            "buyer_review_count": 3,
+            "total_rating_count": 48,
+            "total_review_count": 3
+          },
+          "begin_datetime": "2021-12-22T06:55:00",
+          "end_datetime": "2022-12-21T23:59:59"
+        },
+        {
+          "id": "862001306",
+          "title": { "main": "점성술 살인사건", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/862001306/small#1",
+            "large": "https://img.ridicdn.net/cover/862001306/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/862001306/xxlarge#1"
+          },
+          "authors": {
+            "author": [{ "id": 55089, "name": "시마다 소지" }],
+            "translator": [{ "id": 50726, "name": "한희선" }]
+          },
+          "publisher": { "name": "검은숲" },
+          "review_summary": {
+            "buyer_rating_distribution": [2, 1, 4, 25, 27],
+            "buyer_rating_average": 4.3,
+            "buyer_rating_count": 59,
+            "buyer_review_count": 6,
+            "total_rating_count": 67,
+            "total_review_count": 6
+          },
+          "begin_datetime": "2022-03-28T06:55:00",
+          "end_datetime": "2023-03-27T23:59:59"
+        },
+        {
+          "id": "222002448",
+          "title": { "main": "정체성의 심리학", "sub": "온전한 나로 살기 위한" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/222002448/small#1",
+            "large": "https://img.ridicdn.net/cover/222002448/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/222002448/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 82893, "name": "박선웅" }] },
+          "publisher": { "name": "21세기북스" },
+          "review_summary": {
+            "buyer_rating_distribution": [3, 3, 5, 22, 30],
+            "buyer_rating_average": 4.2,
+            "buyer_rating_count": 63,
+            "buyer_review_count": 4,
+            "total_rating_count": 67,
+            "total_review_count": 4
+          },
+          "begin_datetime": "2022-06-10T00:00:00",
+          "end_datetime": "2023-06-09T23:59:59"
+        },
+        {
+          "id": "1473000091",
+          "title": { "main": "아마도 가장 쉬운 배당투자 설명서", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/1473000091/small#1",
+            "large": "https://img.ridicdn.net/cover/1473000091/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/1473000091/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": null, "name": "권대경" }] },
+          "publisher": { "name": "스마트북스" },
+          "review_summary": {
+            "buyer_rating_distribution": [0, 0, 9, 20, 52],
+            "buyer_rating_average": 4.5,
+            "buyer_rating_count": 81,
+            "buyer_review_count": 7,
+            "total_rating_count": 83,
+            "total_review_count": 8
+          },
+          "begin_datetime": "2022-01-17T06:55:00",
+          "end_datetime": "2023-01-16T23:59:59"
+        },
+        {
+          "id": "852000736",
+          "title": { "main": "열 문장 쓰는 법", "sub": "못 쓰는 사람에서 쓰는 사람으로" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/852000736/small#1",
+            "large": "https://img.ridicdn.net/cover/852000736/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/852000736/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 60291, "name": "김정선" }] },
+          "publisher": { "name": "유유" },
+          "review_summary": {
+            "buyer_rating_distribution": [0, 2, 5, 7, 6],
+            "buyer_rating_average": 3.9,
+            "buyer_rating_count": 20,
+            "buyer_review_count": 1,
+            "total_rating_count": 25,
+            "total_review_count": 1
+          },
+          "begin_datetime": "2021-10-08T00:00:00",
+          "end_datetime": "2022-10-07T23:59:59"
+        },
+        {
+          "id": "606001835",
+          "title": { "main": "속임수의 심리학", "sub": "눈에 보이는 것이 전부는 아니다!" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/606001835/small#1",
+            "large": "https://img.ridicdn.net/cover/606001835/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/606001835/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 42577, "name": "김영헌" }] },
+          "publisher": { "name": "웅진지식하우스" },
+          "review_summary": {
+            "buyer_rating_distribution": [2, 4, 9, 13, 20],
+            "buyer_rating_average": 3.9,
+            "buyer_rating_count": 48,
+            "buyer_review_count": 5,
+            "total_rating_count": 51,
+            "total_review_count": 5
+          },
+          "begin_datetime": "2022-02-25T00:00:00",
+          "end_datetime": "2023-02-24T23:59:59"
+        }
+      ]
+    },
+    {
+      "selection_id": 3161,
+      "title": "아픈 마음 어루만지기",
+      "type": "SELECTION",
+      "books": [
+        {
+          "id": "3356000020",
+          "title": { "main": "내가 죽고 싶다고 하자 삶이 농담을 시작했다", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/3356000020/small#1",
+            "large": "https://img.ridicdn.net/cover/3356000020/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/3356000020/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 76692, "name": "김현진" }] },
+          "publisher": { "name": "프시케의숲" },
+          "review_summary": {
+            "buyer_rating_distribution": [15, 8, 30, 78, 221],
+            "buyer_rating_average": 4.4,
+            "buyer_rating_count": 352,
+            "buyer_review_count": 41,
+            "total_rating_count": 359,
+            "total_review_count": 41
+          },
+          "begin_datetime": "2021-09-10T06:55:00",
+          "end_datetime": "2022-09-09T23:59:59"
+        },
+        {
+          "id": "222001914",
+          "title": { "main": "어쩐지, 도망치고 싶더라니", "sub": "변화를 가로막는 내 마음의 정체는 무얼까?" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/222001914/small#1",
+            "large": "https://img.ridicdn.net/cover/222001914/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/222001914/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 91617, "name": "뇌부자들" }] },
+          "publisher": { "name": "arte" },
+          "review_summary": {
+            "buyer_rating_distribution": [1, 1, 14, 77, 173],
+            "buyer_rating_average": 4.6,
+            "buyer_rating_count": 266,
+            "buyer_review_count": 19,
+            "total_rating_count": 277,
+            "total_review_count": 20
+          },
+          "begin_datetime": "2020-09-23T00:00:00",
+          "end_datetime": "2023-02-04T23:59:59"
+        },
+        {
+          "id": "734001965",
+          "title": { "main": "어느 날, 마음이 불행하다고 말했다", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/734001965/small#1",
+            "large": "https://img.ridicdn.net/cover/734001965/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/734001965/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 1493, "name": "손미나" }] },
+          "publisher": { "name": "위즈덤하우스" },
+          "review_summary": {
+            "buyer_rating_distribution": [1, 0, 13, 36, 52],
+            "buyer_rating_average": 4.4,
+            "buyer_rating_count": 102,
+            "buyer_review_count": 11,
+            "total_rating_count": 105,
+            "total_review_count": 11
+          },
+          "begin_datetime": "2021-07-30T00:00:00",
+          "end_datetime": "2023-07-29T23:59:59"
+        },
+        {
+          "id": "3421000220",
+          "title": { "main": "죽고 싶지만 떡볶이는 먹고 싶어", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/3421000220/small#1",
+            "large": "https://img.ridicdn.net/cover/3421000220/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/3421000220/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 93128, "name": "백세희" }] },
+          "publisher": { "name": "도서출판 흔" },
+          "review_summary": {
+            "buyer_rating_distribution": [176, 137, 430, 572, 463],
+            "buyer_rating_average": 3.6,
+            "buyer_rating_count": 1778,
+            "buyer_review_count": 263,
+            "total_rating_count": 1987,
+            "total_review_count": 285
+          },
+          "begin_datetime": "2022-07-08T00:00:00",
+          "end_datetime": "2023-07-07T23:59:59"
+        },
+        {
+          "id": "606002359",
+          "title": { "main": "우리의 인생이 겨울을 지날 때", "sub": "얼어붙은 시간 속에서 희망을 찾는 법" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/606002359/small#1",
+            "large": "https://img.ridicdn.net/cover/606002359/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/606002359/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 122739, "name": "캐서린 메이" }] },
+          "publisher": { "name": "웅진지식하우스" },
+          "review_summary": {
+            "buyer_rating_distribution": [2, 0, 4, 5, 9],
+            "buyer_rating_average": 4.0,
+            "buyer_rating_count": 20,
+            "buyer_review_count": 5,
+            "total_rating_count": 23,
+            "total_review_count": 5
+          },
+          "begin_datetime": "2022-05-09T06:55:00",
+          "end_datetime": "2023-05-08T23:59:59"
+        },
+        {
+          "id": "852001127",
+          "title": { "main": "슬픈 세상의 기쁜 말", "sub": "당신을 살아 있게 하는 말은 무엇입니까" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/852001127/small#1",
+            "large": "https://img.ridicdn.net/cover/852001127/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/852001127/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 3300, "name": "정혜윤" }] },
+          "publisher": { "name": "위고" },
+          "review_summary": {
+            "buyer_rating_distribution": [0, 1, 2, 9, 25],
+            "buyer_rating_average": 4.6,
+            "buyer_rating_count": 37,
+            "buyer_review_count": 3,
+            "total_rating_count": 42,
+            "total_review_count": 3
+          },
+          "begin_datetime": "2022-03-11T06:55:00",
+          "end_datetime": "2023-03-10T23:59:59"
+        },
+        {
+          "id": "606001529",
+          "title": {
+            "main": "누구나 상처를 안고 살아간다",
+            "sub": "꼭꼭 숨겨두었던 나만의 트라우마를 해소하는 힐링북"
+          },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/606001529/small#1",
+            "large": "https://img.ridicdn.net/cover/606001529/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/606001529/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 6570, "name": "김선현" }] },
+          "publisher": { "name": "웅진지식하우스" },
+          "review_summary": {
+            "buyer_rating_distribution": [0, 0, 3, 2, 3],
+            "buyer_rating_average": 4.0,
+            "buyer_rating_count": 8,
+            "buyer_review_count": 0,
+            "total_rating_count": 8,
+            "total_review_count": 0
+          },
+          "begin_datetime": "2021-10-22T00:00:00",
+          "end_datetime": "2022-10-21T23:59:59"
+        },
+        {
+          "id": "2189000171",
+          "title": { "main": "어쩌다 정신과 의사", "sub": "뇌부자들 김지용의 은밀하고 솔직한 진짜 정신과 이야기" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/2189000171/small#1",
+            "large": "https://img.ridicdn.net/cover/2189000171/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/2189000171/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 109930, "name": "김지용" }] },
+          "publisher": { "name": "심심" },
+          "review_summary": {
+            "buyer_rating_distribution": [1, 4, 19, 71, 133],
+            "buyer_rating_average": 4.5,
+            "buyer_rating_count": 228,
+            "buyer_review_count": 14,
+            "total_rating_count": 231,
+            "total_review_count": 14
+          },
+          "begin_datetime": "2021-01-04T00:00:00",
+          "end_datetime": "2023-01-03T23:59:59"
+        }
+      ]
+    },
+    {
+      "selection_id": 3160,
+      "title": "칼퇴 하는 비법 알려드려요",
+      "type": "SELECTION",
+      "books": [
+        {
+          "id": "222002588",
+          "title": {
+            "main": "눈치껏 못 배웁니다, 일센스",
+            "sub": "이메일 작성법부터 엑셀 기본기까지, 친절한 선배 ‘공여사들’의 직팁 모음집"
+          },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/222002588/small#1",
+            "large": "https://img.ridicdn.net/cover/222002588/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/222002588/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 117278, "name": "공여사들" }] },
+          "publisher": { "name": "21세기북스" },
+          "review_summary": {
+            "buyer_rating_distribution": [2, 6, 8, 14, 49],
+            "buyer_rating_average": 4.3,
+            "buyer_rating_count": 79,
+            "buyer_review_count": 7,
+            "total_rating_count": 85,
+            "total_review_count": 8
+          },
+          "begin_datetime": "2021-11-05T06:55:00",
+          "end_datetime": "2022-11-04T23:59:59"
+        },
+        {
+          "id": "222002551",
+          "title": {
+            "main": "퇴근이 1시간 빨라지는 초간단 파워포인트",
+            "sub": "훅 들어온 일을 쓱 해결하는 PPT 디자인 레시피 50"
+          },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/222002551/small#1",
+            "large": "https://img.ridicdn.net/cover/222002551/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/222002551/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 105965, "name": "이지훈" }] },
+          "publisher": { "name": "21세기북스" },
+          "review_summary": {
+            "buyer_rating_distribution": [0, 0, 0, 2, 9],
+            "buyer_rating_average": 4.8,
+            "buyer_rating_count": 11,
+            "buyer_review_count": 3,
+            "total_rating_count": 11,
+            "total_review_count": 3
+          },
+          "begin_datetime": "2022-06-03T06:55:00",
+          "end_datetime": "2023-06-02T23:59:59"
+        },
+        {
+          "id": "3421001740",
+          "title": { "main": "구글 워크스페이스", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/3421001740/small#1",
+            "large": "https://img.ridicdn.net/cover/3421001740/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/3421001740/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 119688, "name": "김종원" }] },
+          "publisher": { "name": "길벗" },
+          "review_summary": {
+            "buyer_rating_distribution": [0, 0, 0, 0, 0],
+            "buyer_rating_average": 0.0,
+            "buyer_rating_count": 0,
+            "buyer_review_count": 0,
+            "total_rating_count": 0,
+            "total_review_count": 0
+          },
+          "begin_datetime": "2022-07-15T06:55:00",
+          "end_datetime": "2023-07-14T23:59:59"
+        },
+        {
+          "id": "3421001730",
+          "title": { "main": "무작정 따라하기 엑셀 파워포인트", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/3421001730/small#1",
+            "large": "https://img.ridicdn.net/cover/3421001730/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/3421001730/xxlarge#1"
+          },
+          "authors": {
+            "author": [
+              { "id": 19806, "name": "박은진" },
+              { "id": 19805, "name": "박미정" }
+            ]
+          },
+          "publisher": { "name": "길벗" },
+          "review_summary": {
+            "buyer_rating_distribution": [0, 0, 0, 0, 0],
+            "buyer_rating_average": 0.0,
+            "buyer_rating_count": 0,
+            "buyer_review_count": 0,
+            "total_rating_count": 0,
+            "total_review_count": 0
+          },
+          "begin_datetime": "2022-07-04T06:55:00",
+          "end_datetime": "2023-07-03T23:59:59"
+        },
+        {
+          "id": "3421001731",
+          "title": { "main": "무작정 따라하기 엑셀 파워포인트 워드", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/3421001731/small#1",
+            "large": "https://img.ridicdn.net/cover/3421001731/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/3421001731/xxlarge#1"
+          },
+          "authors": {
+            "author": [
+              { "id": 19806, "name": "박은진" },
+              { "id": 19805, "name": "박미정" }
+            ]
+          },
+          "publisher": { "name": "길벗" },
+          "review_summary": {
+            "buyer_rating_distribution": [0, 0, 0, 0, 0],
+            "buyer_rating_average": 0.0,
+            "buyer_rating_count": 0,
+            "buyer_review_count": 0,
+            "total_rating_count": 0,
+            "total_review_count": 0
+          },
+          "begin_datetime": "2022-07-11T06:55:00",
+          "end_datetime": "2023-07-10T23:59:59"
+        },
+        {
+          "id": "173003704",
+          "title": { "main": "만화로 배우는 엑셀", "sub": "업무 시간은 반으로 줄이고 능률은 두 배로 높인다!" },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/173003704/small#1",
+            "large": "https://img.ridicdn.net/cover/173003704/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/173003704/xxlarge#1"
+          },
+          "authors": {
+            "translator": [{ "id": 17890, "name": "신현호" }],
+            "author": [
+              { "id": 111158, "name": "기무라 사치코" },
+              { "id": 111159, "name": "아키나이 쓰네요시" }
+            ],
+            "illustrator": [{ "id": 111160, "name": "사노 마리나" }]
+          },
+          "publisher": { "name": "비전코리아" },
+          "review_summary": {
+            "buyer_rating_distribution": [2, 0, 6, 12, 23],
+            "buyer_rating_average": 4.3,
+            "buyer_rating_count": 43,
+            "buyer_review_count": 4,
+            "total_rating_count": 46,
+            "total_review_count": 4
+          },
+          "begin_datetime": "2021-08-18T06:55:00",
+          "end_datetime": "2022-08-17T23:59:59"
+        },
+        {
+          "id": "3421001739",
+          "title": { "main": "맥 OS 무작정 따라하기", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/3421001739/small#1",
+            "large": "https://img.ridicdn.net/cover/3421001739/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/3421001739/xxlarge#1"
+          },
+          "authors": { "author": [{ "id": 11450, "name": "고경희" }] },
+          "publisher": { "name": "길벗" },
+          "review_summary": {
+            "buyer_rating_distribution": [0, 1, 1, 1, 2],
+            "buyer_rating_average": 3.8,
+            "buyer_rating_count": 5,
+            "buyer_review_count": 0,
+            "total_rating_count": 5,
+            "total_review_count": 0
+          },
+          "begin_datetime": "2022-07-06T06:55:00",
+          "end_datetime": "2023-07-05T23:59:59"
+        }
+      ]
+    },
+    {
+      "selection_id": 2026,
+      "title": "이제 리디셀렉트에서 웹툰을 만나보세요!",
+      "type": "SELECTION",
+      "books": [
+        {
+          "id": "4176000010",
+          "title": { "main": "떠떠떠,떠", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000010/small",
+            "large": "https://img.ridicdn.net/cover/4176000010/large",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000010/xxlarge"
+          },
+          "authors": {
+            "comic_author": [
+              { "id": null, "name": "정용준" },
+              { "id": null, "name": "미보" },
+              { "id": null, "name": "책끝을접다" }
+            ]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [14, 8, 34, 47, 115],
+            "buyer_rating_average": 4.1,
+            "buyer_rating_count": 218,
+            "buyer_review_count": 14,
+            "total_rating_count": 220,
+            "total_review_count": 14
+          },
+          "begin_datetime": "2020-07-30T06:55:00",
+          "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+          "id": "4176000012",
+          "title": { "main": "로이 서비스", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000012/small",
+            "large": "https://img.ridicdn.net/cover/4176000012/large",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000012/xxlarge"
+          },
+          "authors": {
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "illustrator": [{ "id": 111157, "name": "잎가비" }],
+            "original_author": [{ "id": 106316, "name": "남유하" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [2, 5, 22, 35, 104],
+            "buyer_rating_average": 4.4,
+            "buyer_rating_count": 168,
+            "buyer_review_count": 15,
+            "total_rating_count": 175,
+            "total_review_count": 17
+          },
+          "begin_datetime": "2020-10-12T06:55:00",
+          "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+          "id": "4176000014",
+          "title": { "main": "가만한 나날", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000014/small",
+            "large": "https://img.ridicdn.net/cover/4176000014/large",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000014/xxlarge"
+          },
+          "authors": {
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "illustrator": [{ "id": 96482, "name": "캐노피" }],
+            "original_author": [{ "id": 92027, "name": "김세희" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [11, 17, 76, 155, 235],
+            "buyer_rating_average": 4.2,
+            "buyer_rating_count": 494,
+            "buyer_review_count": 37,
+            "total_rating_count": 500,
+            "total_review_count": 38
+          },
+          "begin_datetime": "2020-10-22T06:55:00",
+          "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+          "id": "4176000018",
+          "title": { "main": "키스 바이러스", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000018/small",
+            "large": "https://img.ridicdn.net/cover/4176000018/large",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000018/xxlarge"
+          },
+          "authors": {
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "illustrator": [{ "id": 100810, "name": "ㅁㅣㄱ" }],
+            "original_author": [{ "id": 7913, "name": "김혜정" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [16, 10, 11, 4, 15],
+            "buyer_rating_average": 2.9,
+            "buyer_rating_count": 56,
+            "buyer_review_count": 8,
+            "total_rating_count": 58,
+            "total_review_count": 9
+          },
+          "begin_datetime": "2020-11-19T06:55:00",
+          "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+          "id": "4176000020",
+          "title": { "main": "얼굴 빌려드립니다", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000020/small#1",
+            "large": "https://img.ridicdn.net/cover/4176000020/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000020/xxlarge#1"
+          },
+          "authors": {
+            "original_author": [{ "id": 106516, "name": "심너울" }],
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "illustrator": [{ "id": 112267, "name": "모조산호" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [4, 8, 32, 41, 34],
+            "buyer_rating_average": 3.8,
+            "buyer_rating_count": 119,
+            "buyer_review_count": 10,
+            "total_rating_count": 120,
+            "total_review_count": 10
+          },
+          "begin_datetime": "2020-11-30T06:55:00",
+          "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+          "id": "4176000017",
+          "title": { "main": "미래의 여자", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000017/small",
+            "large": "https://img.ridicdn.net/cover/4176000017/large",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000017/xxlarge"
+          },
+          "authors": {
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "original_author": [{ "id": 106316, "name": "남유하" }],
+            "illustrator": [{ "id": 111826, "name": "현진" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [3, 7, 33, 74, 144],
+            "buyer_rating_average": 4.3,
+            "buyer_rating_count": 261,
+            "buyer_review_count": 21,
+            "total_rating_count": 266,
+            "total_review_count": 21
+          },
+          "begin_datetime": "2020-11-13T06:55:00",
+          "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+          "id": "4176000001",
+          "title": { "main": "세상을 끝내는 데 필요한 점프의 횟수", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000001/small#1",
+            "large": "https://img.ridicdn.net/cover/4176000001/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000001/xxlarge#1"
+          },
+          "authors": {
+            "illustrator": [{ "id": 106517, "name": "겅생" }],
+            "original_author": [{ "id": 106516, "name": "심너울" }],
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [19, 25, 109, 267, 497],
+            "buyer_rating_average": 4.3,
+            "buyer_rating_count": 917,
+            "buyer_review_count": 76,
+            "total_rating_count": 923,
+            "total_review_count": 77
+          },
+          "begin_datetime": "2020-04-27T11:18:00",
+          "end_datetime": "2025-04-26T23:59:59"
+        },
+        {
+          "id": "4176000003",
+          "title": { "main": "우주인, 조안", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000003/small#1",
+            "large": "https://img.ridicdn.net/cover/4176000003/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000003/xxlarge#1"
+          },
+          "authors": {
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "illustrator": [{ "id": 105754, "name": "유나나" }],
+            "original_author": [{ "id": 103759, "name": "김효인" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [17, 30, 93, 235, 386],
+            "buyer_rating_average": 4.2,
+            "buyer_rating_count": 761,
+            "buyer_review_count": 31,
+            "total_rating_count": 763,
+            "total_review_count": 31
+          },
+          "begin_datetime": "2020-04-27T11:18:00",
+          "end_datetime": "2025-04-26T23:59:59"
+        },
+        {
+          "id": "4176000004",
+          "title": { "main": "묘생만경", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000004/small#1",
+            "large": "https://img.ridicdn.net/cover/4176000004/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000004/xxlarge#1"
+          },
+          "authors": {
+            "illustrator": [{ "id": 106517, "name": "겅생" }],
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "original_author": [{ "id": 75533, "name": "김현중" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [28, 29, 164, 535, 1668],
+            "buyer_rating_average": 4.6,
+            "buyer_rating_count": 2424,
+            "buyer_review_count": 191,
+            "total_rating_count": 2444,
+            "total_review_count": 193
+          },
+          "begin_datetime": "2020-04-27T11:18:00",
+          "end_datetime": "2025-04-26T23:59:59"
+        },
+        {
+          "id": "4176000002",
+          "title": { "main": "선택의 아이", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000002/small#1",
+            "large": "https://img.ridicdn.net/cover/4176000002/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000002/xxlarge#1"
+          },
+          "authors": {
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "illustrator": [{ "id": 104725, "name": "선민" }],
+            "original_author": [{ "id": 84269, "name": "범유진" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [18, 19, 70, 208, 618],
+            "buyer_rating_average": 4.5,
+            "buyer_rating_count": 933,
+            "buyer_review_count": 85,
+            "total_rating_count": 942,
+            "total_review_count": 86
+          },
+          "begin_datetime": "2020-04-27T11:18:00",
+          "end_datetime": "2025-04-26T23:59:59"
+        },
+        {
+          "id": "4176000005",
+          "title": { "main": "고장난", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000005/small",
+            "large": "https://img.ridicdn.net/cover/4176000005/large",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000005/xxlarge"
+          },
+          "authors": {
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "illustrator": [{ "id": 105754, "name": "유나나" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [9, 19, 57, 85, 150],
+            "buyer_rating_average": 4.1,
+            "buyer_rating_count": 320,
+            "buyer_review_count": 23,
+            "total_rating_count": 323,
+            "total_review_count": 24
+          },
+          "begin_datetime": "2020-04-27T11:18:00",
+          "end_datetime": "2025-04-26T23:59:59"
+        },
+        {
+          "id": "4176000025",
+          "title": { "main": "봄처럼 다시 만나요 1권", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000025/small#1",
+            "large": "https://img.ridicdn.net/cover/4176000025/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000025/xxlarge#1"
+          },
+          "authors": {
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "illustrator": [{ "id": 115669, "name": "퀀퀀" }],
+            "original_author": [{ "id": 108202, "name": "고재욱" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [0, 0, 3, 11, 181],
+            "buyer_rating_average": 4.9,
+            "buyer_rating_count": 195,
+            "buyer_review_count": 21,
+            "total_rating_count": 197,
+            "total_review_count": 22
+          },
+          "begin_datetime": "2021-04-30T06:55:00",
+          "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+          "id": "4176000026",
+          "title": { "main": "봄처럼 다시 만나요 2권", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000026/small#1",
+            "large": "https://img.ridicdn.net/cover/4176000026/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000026/xxlarge#1"
+          },
+          "authors": {
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "illustrator": [{ "id": 115669, "name": "퀀퀀" }],
+            "original_author": [{ "id": 108202, "name": "고재욱" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [0, 0, 3, 11, 181],
+            "buyer_rating_average": 4.9,
+            "buyer_rating_count": 195,
+            "buyer_review_count": 21,
+            "total_rating_count": 197,
+            "total_review_count": 22
+          },
+          "begin_datetime": "2021-04-30T06:55:00",
+          "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+          "id": "4176000027",
+          "title": { "main": "봄처럼 다시 만나요 3권 (완결)", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000027/small#1",
+            "large": "https://img.ridicdn.net/cover/4176000027/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000027/xxlarge#1"
+          },
+          "authors": {
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "illustrator": [{ "id": 115669, "name": "퀀퀀" }],
+            "original_author": [{ "id": 108202, "name": "고재욱" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [0, 0, 3, 11, 181],
+            "buyer_rating_average": 4.9,
+            "buyer_rating_count": 195,
+            "buyer_review_count": 21,
+            "total_rating_count": 197,
+            "total_review_count": 22
+          },
+          "begin_datetime": "2021-04-30T06:55:00",
+          "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+          "id": "4176000021",
+          "title": { "main": "인스타 걸 1권", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000021/small#1",
+            "large": "https://img.ridicdn.net/cover/4176000021/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000021/xxlarge#1"
+          },
+          "authors": {
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "illustrator": [{ "id": 111367, "name": "머스캣" }],
+            "original_author": [{ "id": 110530, "name": "김민혜" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [1, 2, 10, 7, 26],
+            "buyer_rating_average": 4.2,
+            "buyer_rating_count": 46,
+            "buyer_review_count": 10,
+            "total_rating_count": 47,
+            "total_review_count": 10
+          },
+          "begin_datetime": "2020-12-10T06:55:00",
+          "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+          "id": "4176000023",
+          "title": { "main": "인스타 걸 2권", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000023/small#1",
+            "large": "https://img.ridicdn.net/cover/4176000023/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000023/xxlarge#1"
+          },
+          "authors": {
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "illustrator": [{ "id": 111367, "name": "머스캣" }],
+            "original_author": [{ "id": 110530, "name": "김민혜" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [1, 2, 10, 7, 26],
+            "buyer_rating_average": 4.2,
+            "buyer_rating_count": 46,
+            "buyer_review_count": 10,
+            "total_rating_count": 47,
+            "total_review_count": 10
+          },
+          "begin_datetime": "2021-04-30T06:55:00",
+          "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+          "id": "4176000024",
+          "title": { "main": "인스타 걸 3권 (완결)", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000024/small#1",
+            "large": "https://img.ridicdn.net/cover/4176000024/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000024/xxlarge#1"
+          },
+          "authors": {
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "illustrator": [{ "id": 111367, "name": "머스캣" }],
+            "original_author": [{ "id": 110530, "name": "김민혜" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [1, 2, 10, 7, 26],
+            "buyer_rating_average": 4.2,
+            "buyer_rating_count": 46,
+            "buyer_review_count": 10,
+            "total_rating_count": 47,
+            "total_review_count": 10
+          },
+          "begin_datetime": "2021-04-30T06:55:00",
+          "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+          "id": "4176000028",
+          "title": { "main": "마땅한 살인 1권", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000028/small#1",
+            "large": "https://img.ridicdn.net/cover/4176000028/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000028/xxlarge#1"
+          },
+          "authors": {
+            "story_writer": [{ "id": 115840, "name": "김관유" }],
+            "illustrator": [
+              { "id": 115841, "name": "잼" },
+              { "id": 115842, "name": "곽승신" }
+            ],
+            "original_author": [{ "id": 69751, "name": "안세화" }],
+            "planner": [{ "id": 115839, "name": "스르륵코믹스" }]
+          },
+          "publisher": { "name": "스르륵코믹스" },
+          "review_summary": {
+            "buyer_rating_distribution": [2, 1, 8, 10, 46],
+            "buyer_rating_average": 4.4,
+            "buyer_rating_count": 67,
+            "buyer_review_count": 5,
+            "total_rating_count": 69,
+            "total_review_count": 5
+          },
+          "begin_datetime": "2021-04-30T06:55:00",
+          "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+          "id": "4176000029",
+          "title": { "main": "마땅한 살인 2권", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000029/small#1",
+            "large": "https://img.ridicdn.net/cover/4176000029/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000029/xxlarge#1"
+          },
+          "authors": {
+            "story_writer": [{ "id": 115840, "name": "김관유" }],
+            "illustrator": [
+              { "id": 115841, "name": "잼" },
+              { "id": 115842, "name": "곽승신" }
+            ],
+            "original_author": [{ "id": 69751, "name": "안세화" }],
+            "planner": [{ "id": 115839, "name": "스르륵코믹스" }]
+          },
+          "publisher": { "name": "스르륵코믹스" },
+          "review_summary": {
+            "buyer_rating_distribution": [2, 1, 8, 10, 46],
+            "buyer_rating_average": 4.4,
+            "buyer_rating_count": 67,
+            "buyer_review_count": 5,
+            "total_rating_count": 69,
+            "total_review_count": 5
+          },
+          "begin_datetime": "2021-04-30T06:55:00",
+          "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+          "id": "4176000031",
+          "title": { "main": "마땅한 살인 3권", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000031/small#1",
+            "large": "https://img.ridicdn.net/cover/4176000031/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000031/xxlarge#1"
+          },
+          "authors": {
+            "story_writer": [{ "id": 115840, "name": "김관유" }],
+            "illustrator": [
+              { "id": 115841, "name": "잼" },
+              { "id": 115842, "name": "곽승신" }
+            ],
+            "original_author": [{ "id": 69751, "name": "안세화" }],
+            "planner": [{ "id": 115839, "name": "스르륵코믹스" }]
+          },
+          "publisher": { "name": "스르륵코믹스" },
+          "review_summary": {
+            "buyer_rating_distribution": [2, 1, 8, 10, 46],
+            "buyer_rating_average": 4.4,
+            "buyer_rating_count": 67,
+            "buyer_review_count": 5,
+            "total_rating_count": 69,
+            "total_review_count": 5
+          },
+          "begin_datetime": "2021-04-30T06:55:00",
+          "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+          "id": "4176000032",
+          "title": { "main": "사소한 거짓말 1권", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000032/small#1",
+            "large": "https://img.ridicdn.net/cover/4176000032/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000032/xxlarge#1"
+          },
+          "authors": {
+            "illustrator": [{ "id": 106517, "name": "겅생" }],
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "original_author": [{ "id": 23863, "name": "박설미" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [1, 0, 7, 19, 123],
+            "buyer_rating_average": 4.8,
+            "buyer_rating_count": 150,
+            "buyer_review_count": 20,
+            "total_rating_count": 151,
+            "total_review_count": 20
+          },
+          "begin_datetime": "2021-04-30T06:55:00",
+          "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+          "id": "4176000033",
+          "title": { "main": "사소한 거짓말 2권", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000033/small#1",
+            "large": "https://img.ridicdn.net/cover/4176000033/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000033/xxlarge#1"
+          },
+          "authors": {
+            "illustrator": [{ "id": 106517, "name": "겅생" }],
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "original_author": [{ "id": 23863, "name": "박설미" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [1, 0, 7, 19, 123],
+            "buyer_rating_average": 4.8,
+            "buyer_rating_count": 150,
+            "buyer_review_count": 20,
+            "total_rating_count": 151,
+            "total_review_count": 20
+          },
+          "begin_datetime": "2021-04-30T06:55:00",
+          "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+          "id": "4176000034",
+          "title": { "main": "사소한 거짓말 3권 (완결)", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000034/small#1",
+            "large": "https://img.ridicdn.net/cover/4176000034/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000034/xxlarge#1"
+          },
+          "authors": {
+            "illustrator": [{ "id": 106517, "name": "겅생" }],
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "original_author": [{ "id": 23863, "name": "박설미" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [1, 0, 7, 19, 123],
+            "buyer_rating_average": 4.8,
+            "buyer_rating_count": 150,
+            "buyer_review_count": 20,
+            "total_rating_count": 151,
+            "total_review_count": 20
+          },
+          "begin_datetime": "2021-04-30T06:55:00",
+          "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+          "id": "4176000006",
+          "title": { "main": "러닝패밀리", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000006/small#1",
+            "large": "https://img.ridicdn.net/cover/4176000006/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000006/xxlarge#1"
+          },
+          "authors": {
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "illustrator": [{ "id": 105766, "name": "코츠" }],
+            "original_author": [{ "id": 8593, "name": "강지영" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [25, 20, 57, 41, 66],
+            "buyer_rating_average": 3.5,
+            "buyer_rating_count": 209,
+            "buyer_review_count": 15,
+            "total_rating_count": 210,
+            "total_review_count": 15
+          },
+          "begin_datetime": "2020-04-27T11:18:00",
+          "end_datetime": "2025-04-26T23:59:59"
+        },
+        {
+          "id": "4176000007",
+          "title": { "main": "박 과장 죽이기", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000007/small#1",
+            "large": "https://img.ridicdn.net/cover/4176000007/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000007/xxlarge#1"
+          },
+          "authors": {
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "illustrator": [{ "id": 105846, "name": "보일러김씨" }],
+            "original_author": [{ "id": 62098, "name": "신원섭" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [68, 48, 82, 60, 108],
+            "buyer_rating_average": 3.3,
+            "buyer_rating_count": 366,
+            "buyer_review_count": 34,
+            "total_rating_count": 370,
+            "total_review_count": 34
+          },
+          "begin_datetime": "2020-04-27T11:18:00",
+          "end_datetime": "2025-04-26T23:59:59"
+        },
+        {
+          "id": "4176000009",
+          "title": { "main": "허수아비", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000009/small#1",
+            "large": "https://img.ridicdn.net/cover/4176000009/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000009/xxlarge#1"
+          },
+          "authors": {
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "illustrator": [{ "id": 108454, "name": "임재명" }],
+            "original_author": [{ "id": 86922, "name": "배명은" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [23, 25, 94, 78, 74],
+            "buyer_rating_average": 3.5,
+            "buyer_rating_count": 294,
+            "buyer_review_count": 28,
+            "total_rating_count": 299,
+            "total_review_count": 28
+          },
+          "begin_datetime": "2020-06-19T06:55:00",
+          "end_datetime": "2025-06-18T23:59:59"
+        },
+        {
+          "id": "4176000022",
+          "title": { "main": "살을 섞다", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000022/small#1",
+            "large": "https://img.ridicdn.net/cover/4176000022/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000022/xxlarge#1"
+          },
+          "authors": {
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "illustrator": [{ "id": 112840, "name": "서글" }],
+            "original_author": [{ "id": 111272, "name": "남세오" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [24, 13, 40, 34, 88],
+            "buyer_rating_average": 3.7,
+            "buyer_rating_count": 199,
+            "buyer_review_count": 24,
+            "total_rating_count": 211,
+            "total_review_count": 26
+          },
+          "begin_datetime": "2020-12-28T06:55:00",
+          "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+          "id": "4176000008",
+          "title": { "main": "부활", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000008/small#1",
+            "large": "https://img.ridicdn.net/cover/4176000008/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000008/xxlarge#1"
+          },
+          "authors": {
+            "illustrator": [{ "id": 106517, "name": "겅생" }],
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "original_author": [{ "id": 23891, "name": "전건우" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [26, 23, 59, 61, 73],
+            "buyer_rating_average": 3.5,
+            "buyer_rating_count": 242,
+            "buyer_review_count": 16,
+            "total_rating_count": 249,
+            "total_review_count": 16
+          },
+          "begin_datetime": "2020-06-09T06:55:00",
+          "end_datetime": "2025-06-08T23:59:59"
+        },
+        {
+          "id": "4176000019",
+          "title": { "main": "말과 키스", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000019/small",
+            "large": "https://img.ridicdn.net/cover/4176000019/large",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000019/xxlarge"
+          },
+          "authors": {
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "original_author": [{ "id": 92027, "name": "김세희" }],
+            "illustrator": [{ "id": 104320, "name": "목마" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [9, 3, 16, 25, 72],
+            "buyer_rating_average": 4.2,
+            "buyer_rating_count": 125,
+            "buyer_review_count": 15,
+            "total_rating_count": 131,
+            "total_review_count": 15
+          },
+          "begin_datetime": "2020-11-24T06:55:00",
+          "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+          "id": "4176000016",
+          "title": { "main": "옥상으로 가는 길", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000016/small#1",
+            "large": "https://img.ridicdn.net/cover/4176000016/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000016/xxlarge#1"
+          },
+          "authors": {
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "illustrator": [{ "id": 111551, "name": "너구리" }],
+            "original_author": [{ "id": 51998, "name": "황태환" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [5, 6, 41, 87, 125],
+            "buyer_rating_average": 4.2,
+            "buyer_rating_count": 264,
+            "buyer_review_count": 23,
+            "total_rating_count": 270,
+            "total_review_count": 23
+          },
+          "begin_datetime": "2020-10-30T06:55:00",
+          "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+          "id": "4176000015",
+          "title": { "main": "초대받은 손", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000015/small",
+            "large": "https://img.ridicdn.net/cover/4176000015/large",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000015/xxlarge"
+          },
+          "authors": {
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "illustrator": [{ "id": 108454, "name": "임재명" }],
+            "original_author": [{ "id": 106316, "name": "남유하" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [9, 19, 44, 34, 54],
+            "buyer_rating_average": 3.7,
+            "buyer_rating_count": 160,
+            "buyer_review_count": 20,
+            "total_rating_count": 168,
+            "total_review_count": 22
+          },
+          "begin_datetime": "2020-10-29T06:55:00",
+          "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+          "id": "4176000013",
+          "title": { "main": "문 뒤에 지옥이 있다", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000013/small",
+            "large": "https://img.ridicdn.net/cover/4176000013/large",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000013/xxlarge"
+          },
+          "authors": {
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "illustrator": [{ "id": 111204, "name": "광광" }],
+            "original_author": [{ "id": 67188, "name": "지현상" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [10, 19, 36, 27, 46],
+            "buyer_rating_average": 3.6,
+            "buyer_rating_count": 138,
+            "buyer_review_count": 17,
+            "total_rating_count": 140,
+            "total_review_count": 17
+          },
+          "begin_datetime": "2020-10-14T06:55:00",
+          "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+          "id": "4176000011",
+          "title": { "main": "아이", "sub": null },
+          "thumbnail": {
+            "small": "https://img.ridicdn.net/cover/4176000011/small#1",
+            "large": "https://img.ridicdn.net/cover/4176000011/large#1",
+            "xxlarge": "https://img.ridicdn.net/cover/4176000011/xxlarge#1"
+          },
+          "authors": {
+            "planner": [{ "id": 97235, "name": "책 끝을 접다" }],
+            "illustrator": [{ "id": 110075, "name": "현검" }],
+            "original_author": [{ "id": 35764, "name": "정해연" }]
+          },
+          "publisher": { "name": "책끝을접다" },
+          "review_summary": {
+            "buyer_rating_distribution": [48, 12, 26, 12, 25],
+            "buyer_rating_average": 2.6,
+            "buyer_rating_count": 123,
+            "buyer_review_count": 13,
+            "total_rating_count": 126,
+            "total_review_count": 13
+          },
+          "begin_datetime": "2020-09-04T00:00:00",
+          "end_datetime": "2025-06-18T23:59:59"
+        }
+      ]
+    }
+  ]
+}
