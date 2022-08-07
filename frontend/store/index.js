@@ -1,33 +1,33 @@
 // state
 export const state = {
   categories: [],
-  category: [],
+  category: {},
 }
 
 export const mutations = {
-  addCategories(state, payload) {
+  ADD_CATEGORIES(state, payload) {
     state.categories = payload
   },
-  addCategory(state, payload) {
+  ADD_CATEGORY(state, payload) {
     state.category = payload
   },
-  deleteCategory(state) {
-    state.category = []
+  DELETE_CATEGORY(state) {
+    state.category = {}
   },
 }
-// Test
+
 export const actions = {
-  async get_selections({ commit }) {
-    const res = await this.$repositories('selections').get()
-    console.log('action', res)
+  async getCategories({ commit }) {
+    const res = await this.$repositories('categories').get.categories()
+    commit('ADD_CATEGORIES', res)
   },
 }
 
 export const getters = {
-  selectCategories(state) {
-    return state.categories
+  categories(state) {
+    return [...state.categories]
   },
   selectCategory(state) {
-    return state.category
+    return { ...state.category }
   },
 }
