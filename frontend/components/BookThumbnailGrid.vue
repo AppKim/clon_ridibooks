@@ -1,5 +1,5 @@
 <template>
-  <div>book-thumbnail-link-grid</div>
+  <div></div>
 </template>
 
 <script>

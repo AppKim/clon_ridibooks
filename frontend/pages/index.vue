@@ -4,7 +4,7 @@
     <BestBookList :books="bestBooks" />
     <div class="top__main">
       <div v-for="(selection, i) in selections" :key="selection.id" class="top__selection">
-        <PopularBookList v-if="i === 2" />
+        <PopularBooks v-if="i === 2" />
         <SelectionPreview :selection="selection" />
       </div>
     </div>
@@ -16,14 +16,14 @@ import { defineComponent, useContext, useFetch, ref } from '@nuxtjs/composition-
 import TopBannerCarousel from '~/components/top/TopBannerCarousel'
 import SelectionPreview from '~/components/top/SelectionPreview'
 import BestBookList from '~/components/top/BestBookList'
-import PopularBookList from '~/components/top/PopularBookList'
+import PopularBooks from '~/components/top/PopularBooks'
 
 export default defineComponent({
   components: {
     SelectionPreview,
     TopBannerCarousel,
     BestBookList,
-    PopularBookList,
+    PopularBooks,
   },
   setup() {
     const selections = ref([])
@@ -34,7 +34,7 @@ export default defineComponent({
       // TODO: store에 넣어서 관라?
       const homeResponse = await $repositories('top').get.home()
       selections.value = homeResponse.selections
-      const bestBooksResponse = await $repositories('collections').get.best()
+      const bestBooksResponse = await $repositories('books').get.best()
       bestBooks.value = bestBooksResponse
     })
 
