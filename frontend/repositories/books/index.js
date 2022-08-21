@@ -1,9 +1,8 @@
 export const BooksRepository = ($axios) => ({
   get: {
-    selections: () => $axios.$get('/selections'),
-    best: () => $axios.$get('/best'),
+    book: () => $axios.$get('/book'),
   },
   show: {
-    selection: (id) => $axios.$get(`/selection/${id}`),
+    book: (id) => $axios.$get(`/book/${id}`),
   },
 })

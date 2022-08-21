@@ -1,0 +1,580 @@
+{
+  "collection_id": 0,
+  "type": "COLLECTION",
+  "title": "최신 업데이트",
+  "total_count": 3186,
+  "total_page": 133,
+  "size": 24,
+  "books": [
+    {
+      "id": "1242001082",
+      "title": { "main": "스테이트 오브 테러", "sub": null },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/1242001082/small#1",
+        "large": "https://img.ridicdn.net/cover/1242001082/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/1242001082/xxlarge#1"
+      },
+      "authors": {
+        "translator": [{ "id": 26284, "name": "김승욱" }],
+        "author": [
+          { "id": 58611, "name": "루이즈 페니" },
+          { "id": 47468, "name": "힐러리 로댐 클린턴" }
+        ]
+      },
+      "publisher": { "name": "열린책들" },
+      "review_summary": {
+        "buyer_rating_distribution": [0, 0, 0, 4, 6],
+        "buyer_rating_average": 4.6,
+        "buyer_rating_count": 10,
+        "buyer_review_count": 1,
+        "total_rating_count": 32,
+        "total_review_count": 22
+      },
+      "begin_datetime": "2022-08-19T06:55:00",
+      "end_datetime": "2023-08-18T23:59:59"
+    },
+    {
+      "id": "1242001085",
+      "title": { "main": "낯선 사람에게 말 걸기", "sub": null },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/1242001085/small#1",
+        "large": "https://img.ridicdn.net/cover/1242001085/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/1242001085/xxlarge#1"
+      },
+      "authors": {
+        "translator": [
+          { "id": 2941, "name": "이종인" },
+          { "id": 7907, "name": "김석희" },
+          { "id": 11335, "name": "민승남" },
+          { "id": 8789, "name": "황보석" }
+        ],
+        "author": [{ "id": 21887, "name": "폴 오스터" }]
+      },
+      "publisher": { "name": "열린책들" },
+      "review_summary": {
+        "buyer_rating_distribution": [0, 0, 0, 2, 0],
+        "buyer_rating_average": 4.0,
+        "buyer_rating_count": 2,
+        "buyer_review_count": 0,
+        "total_rating_count": 4,
+        "total_review_count": 0
+      },
+      "begin_datetime": "2022-08-19T06:55:00",
+      "end_datetime": "2023-08-18T23:59:59"
+    },
+    {
+      "id": "1242001084",
+      "title": { "main": "트라우마 클리너", "sub": "특수 현장을 청소하는 트라우마 생존자의 이야기" },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/1242001084/small#1",
+        "large": "https://img.ridicdn.net/cover/1242001084/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/1242001084/xxlarge#1"
+      },
+      "authors": {
+        "translator": [{ "id": 125990, "name": "김희정" }],
+        "author": [{ "id": 125989, "name": "세라 크래스너스타인" }]
+      },
+      "publisher": { "name": "열린책들" },
+      "review_summary": {
+        "buyer_rating_distribution": [0, 0, 0, 0, 0],
+        "buyer_rating_average": 0.0,
+        "buyer_rating_count": 0,
+        "buyer_review_count": 0,
+        "total_rating_count": 0,
+        "total_review_count": 0
+      },
+      "begin_datetime": "2022-08-19T06:55:00",
+      "end_datetime": "2023-08-18T23:59:59"
+    },
+    {
+      "id": "3421001745",
+      "title": { "main": "쿠팡으로 돈 벌기", "sub": null },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/3421001745/small#1",
+        "large": "https://img.ridicdn.net/cover/3421001745/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/3421001745/xxlarge#1"
+      },
+      "authors": { "author": [{ "id": 109087, "name": "김경은" }] },
+      "publisher": { "name": "길벗" },
+      "review_summary": {
+        "buyer_rating_distribution": [0, 0, 1, 0, 1],
+        "buyer_rating_average": 4.0,
+        "buyer_rating_count": 2,
+        "buyer_review_count": 0,
+        "total_rating_count": 2,
+        "total_review_count": 0
+      },
+      "begin_datetime": "2022-08-19T06:55:00",
+      "end_datetime": "2023-08-18T23:59:59"
+    },
+    {
+      "id": "3421001744",
+      "title": { "main": "직장인을 위한 실무 데이터 분석 with 엑셀", "sub": null },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/3421001744/small#1",
+        "large": "https://img.ridicdn.net/cover/3421001744/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/3421001744/xxlarge#1"
+      },
+      "authors": { "author": [{ "id": 11453, "name": "선양미" }] },
+      "publisher": { "name": "길벗" },
+      "review_summary": {
+        "buyer_rating_distribution": [0, 0, 0, 0, 0],
+        "buyer_rating_average": 0.0,
+        "buyer_rating_count": 0,
+        "buyer_review_count": 0,
+        "total_rating_count": 2,
+        "total_review_count": 0
+      },
+      "begin_datetime": "2022-08-19T06:55:00",
+      "end_datetime": "2023-08-18T23:59:59"
+    },
+    {
+      "id": "3421001688",
+      "title": { "main": "아주 사적인 신화 읽기", "sub": null },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/3421001688/small#1",
+        "large": "https://img.ridicdn.net/cover/3421001688/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/3421001688/xxlarge#1"
+      },
+      "authors": { "author": [{ "id": 11004, "name": "김서영" }] },
+      "publisher": { "name": "현암사" },
+      "review_summary": {
+        "buyer_rating_distribution": [0, 0, 0, 0, 0],
+        "buyer_rating_average": 0.0,
+        "buyer_rating_count": 0,
+        "buyer_review_count": 0,
+        "total_rating_count": 0,
+        "total_review_count": 0
+      },
+      "begin_datetime": "2022-08-19T06:55:00",
+      "end_datetime": "2023-08-18T23:59:59"
+    },
+    {
+      "id": "3421001652",
+      "title": { "main": "우아하게 나이들 줄 알았더니", "sub": null },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/3421001652/small#1",
+        "large": "https://img.ridicdn.net/cover/3421001652/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/3421001652/xxlarge#1"
+      },
+      "authors": {
+        "translator": [{ "id": 66675, "name": "김하현" }],
+        "author": [{ "id": 113575, "name": "제나 매카시" }]
+      },
+      "publisher": { "name": "현암사" },
+      "review_summary": {
+        "buyer_rating_distribution": [0, 0, 0, 0, 0],
+        "buyer_rating_average": 0.0,
+        "buyer_rating_count": 0,
+        "buyer_review_count": 0,
+        "total_rating_count": 0,
+        "total_review_count": 0
+      },
+      "begin_datetime": "2022-08-19T06:55:00",
+      "end_datetime": "2023-08-18T23:59:59"
+    },
+    {
+      "id": "3421001607",
+      "title": { "main": "어느 존속 살해범의 편지 : 그리고 그 밖의 짧은 글들", "sub": null },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/3421001607/small#1",
+        "large": "https://img.ridicdn.net/cover/3421001607/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/3421001607/xxlarge#1"
+      },
+      "authors": {
+        "author": [{ "id": 41440, "name": "마르셀 프루스트" }],
+        "translator": [{ "id": 60931, "name": "유예진" }]
+      },
+      "publisher": { "name": "현암사" },
+      "review_summary": {
+        "buyer_rating_distribution": [0, 0, 0, 0, 0],
+        "buyer_rating_average": 0.0,
+        "buyer_rating_count": 0,
+        "buyer_review_count": 0,
+        "total_rating_count": 0,
+        "total_review_count": 0
+      },
+      "begin_datetime": "2022-08-19T06:55:00",
+      "end_datetime": "2023-08-18T23:59:59"
+    },
+    {
+      "id": "1242000650",
+      "title": { "main": "댈러웨이 부인", "sub": "열린책들 세계문학 8" },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/1242000650/small#1",
+        "large": "https://img.ridicdn.net/cover/1242000650/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/1242000650/xxlarge#1"
+      },
+      "authors": {
+        "author": [{ "id": 344, "name": "버지니아 울프" }],
+        "translator": [{ "id": 1444, "name": "최애리" }]
+      },
+      "publisher": { "name": "열린책들" },
+      "review_summary": {
+        "buyer_rating_distribution": [0, 1, 4, 10, 11],
+        "buyer_rating_average": 4.2,
+        "buyer_rating_count": 26,
+        "buyer_review_count": 5,
+        "total_rating_count": 35,
+        "total_review_count": 6
+      },
+      "begin_datetime": "2022-08-19T00:00:00",
+      "end_datetime": "2023-08-18T23:59:59"
+    },
+    {
+      "id": "1242000651",
+      "title": { "main": "변신", "sub": "열린책들 세계문학 10" },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/1242000651/small#1",
+        "large": "https://img.ridicdn.net/cover/1242000651/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/1242000651/xxlarge#1"
+      },
+      "authors": {
+        "author": [{ "id": 3250, "name": "프란츠 카프카" }],
+        "translator": [{ "id": 4052, "name": "홍성광" }]
+      },
+      "publisher": { "name": "열린책들" },
+      "review_summary": {
+        "buyer_rating_distribution": [1, 1, 7, 8, 19],
+        "buyer_rating_average": 4.2,
+        "buyer_rating_count": 36,
+        "buyer_review_count": 3,
+        "total_rating_count": 47,
+        "total_review_count": 5
+      },
+      "begin_datetime": "2022-08-19T00:00:00",
+      "end_datetime": "2023-08-18T23:59:59"
+    },
+    {
+      "id": "1242000655",
+      "title": { "main": "1984년", "sub": "열린책들 세계문학 17" },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/1242000655/small#1",
+        "large": "https://img.ridicdn.net/cover/1242000655/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/1242000655/xxlarge#1"
+      },
+      "authors": { "author": [{ "id": 3560, "name": "조지 오웰" }], "translator": [{ "id": 3826, "name": "박경서" }] },
+      "publisher": { "name": "열린책들" },
+      "review_summary": {
+        "buyer_rating_distribution": [2, 2, 12, 53, 146],
+        "buyer_rating_average": 4.6,
+        "buyer_rating_count": 215,
+        "buyer_review_count": 22,
+        "total_rating_count": 257,
+        "total_review_count": 26
+      },
+      "begin_datetime": "2022-08-19T00:00:00",
+      "end_datetime": "2023-08-18T23:59:59"
+    },
+    {
+      "id": "1242000657",
+      "title": { "main": "이상한 나라의 앨리스", "sub": "열린책들 세계문학 19" },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/1242000657/small#1",
+        "large": "https://img.ridicdn.net/cover/1242000657/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/1242000657/xxlarge#1"
+      },
+      "authors": {
+        "author": [{ "id": 1315, "name": "루이스 캐럴" }],
+        "translator": [{ "id": 4197, "name": "최용준" }],
+        "illustrator": [{ "id": 54750, "name": "머빈 피크" }]
+      },
+      "publisher": { "name": "열린책들" },
+      "review_summary": {
+        "buyer_rating_distribution": [1, 1, 4, 8, 14],
+        "buyer_rating_average": 4.2,
+        "buyer_rating_count": 28,
+        "buyer_review_count": 4,
+        "total_rating_count": 36,
+        "total_review_count": 4
+      },
+      "begin_datetime": "2022-08-19T00:00:00",
+      "end_datetime": "2023-08-18T23:59:59"
+    },
+    {
+      "id": "1242000688",
+      "title": { "main": "나는 고양이로소이다", "sub": "열린책들 세계문학 84" },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/1242000688/small#1",
+        "large": "https://img.ridicdn.net/cover/1242000688/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/1242000688/xxlarge#1"
+      },
+      "authors": {
+        "author": [{ "id": 2810, "name": "나쓰메 소세키" }],
+        "translator": [{ "id": 341, "name": "김난주" }]
+      },
+      "publisher": { "name": "열린책들" },
+      "review_summary": {
+        "buyer_rating_distribution": [4, 3, 14, 27, 40],
+        "buyer_rating_average": 4.1,
+        "buyer_rating_count": 88,
+        "buyer_review_count": 18,
+        "total_rating_count": 118,
+        "total_review_count": 21
+      },
+      "begin_datetime": "2022-08-19T00:00:00",
+      "end_datetime": "2023-08-18T23:59:59"
+    },
+    {
+      "id": "1242000719",
+      "title": { "main": "허클베리 핀의 모험", "sub": "열린책들 세계문학 132" },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/1242000719/small#1",
+        "large": "https://img.ridicdn.net/cover/1242000719/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/1242000719/xxlarge#1"
+      },
+      "authors": {
+        "author": [{ "id": 3832, "name": "마크 트웨인" }],
+        "translator": [{ "id": 3833, "name": "윤교찬" }]
+      },
+      "publisher": { "name": "열린책들" },
+      "review_summary": {
+        "buyer_rating_distribution": [0, 0, 3, 18, 23],
+        "buyer_rating_average": 4.5,
+        "buyer_rating_count": 44,
+        "buyer_review_count": 4,
+        "total_rating_count": 46,
+        "total_review_count": 4
+      },
+      "begin_datetime": "2022-08-19T00:00:00",
+      "end_datetime": "2023-08-18T23:59:59"
+    },
+    {
+      "id": "1242000722",
+      "title": { "main": "보물섬", "sub": "열린책들 세계문학 135" },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/1242000722/small#1",
+        "large": "https://img.ridicdn.net/cover/1242000722/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/1242000722/xxlarge#1"
+      },
+      "authors": {
+        "author": [{ "id": 5701, "name": "로버트 루이스 스티븐슨" }],
+        "translator": [{ "id": 4197, "name": "최용준" }]
+      },
+      "publisher": { "name": "열린책들" },
+      "review_summary": {
+        "buyer_rating_distribution": [1, 0, 4, 14, 35],
+        "buyer_rating_average": 4.5,
+        "buyer_rating_count": 54,
+        "buyer_review_count": 11,
+        "total_rating_count": 60,
+        "total_review_count": 12
+      },
+      "begin_datetime": "2022-08-19T00:00:00",
+      "end_datetime": "2023-08-18T23:59:59"
+    },
+    {
+      "id": "1242000739",
+      "title": { "main": "지킬 박사와 하이드 씨", "sub": "열린책들 세계문학 174" },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/1242000739/small#1",
+        "large": "https://img.ridicdn.net/cover/1242000739/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/1242000739/xxlarge#1"
+      },
+      "authors": {
+        "author": [{ "id": 5701, "name": "로버트 루이스 스티븐슨" }],
+        "translator": [{ "id": 6820, "name": "조영학" }]
+      },
+      "publisher": { "name": "열린책들" },
+      "review_summary": {
+        "buyer_rating_distribution": [1, 0, 0, 10, 5],
+        "buyer_rating_average": 4.1,
+        "buyer_rating_count": 16,
+        "buyer_review_count": 3,
+        "total_rating_count": 22,
+        "total_review_count": 3
+      },
+      "begin_datetime": "2022-08-19T00:00:00",
+      "end_datetime": "2023-08-18T23:59:59"
+    },
+    {
+      "id": "1242000759",
+      "title": { "main": "누구를 위하여 종은 울리나 (상)", "sub": "열린책들 세계문학 205" },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/1242000759/small#1",
+        "large": "https://img.ridicdn.net/cover/1242000759/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/1242000759/xxlarge#1"
+      },
+      "authors": {
+        "translator": [{ "id": 2941, "name": "이종인" }],
+        "author": [{ "id": 4129, "name": "어니스트 헤밍웨이" }]
+      },
+      "publisher": { "name": "열린책들" },
+      "review_summary": {
+        "buyer_rating_distribution": [1, 1, 3, 7, 11],
+        "buyer_rating_average": 4.1,
+        "buyer_rating_count": 23,
+        "buyer_review_count": 1,
+        "total_rating_count": 28,
+        "total_review_count": 1
+      },
+      "begin_datetime": "2022-08-19T00:00:00",
+      "end_datetime": "2023-08-18T23:59:59"
+    },
+    {
+      "id": "1242000760",
+      "title": { "main": "누구를 위하여 종은 울리나 (하)", "sub": "열린책들 세계문학 206" },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/1242000760/small#1",
+        "large": "https://img.ridicdn.net/cover/1242000760/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/1242000760/xxlarge#1"
+      },
+      "authors": {
+        "translator": [{ "id": 2941, "name": "이종인" }],
+        "author": [{ "id": 4129, "name": "어니스트 헤밍웨이" }]
+      },
+      "publisher": { "name": "열린책들" },
+      "review_summary": {
+        "buyer_rating_distribution": [1, 0, 3, 9, 10],
+        "buyer_rating_average": 4.2,
+        "buyer_rating_count": 23,
+        "buyer_review_count": 1,
+        "total_rating_count": 25,
+        "total_review_count": 1
+      },
+      "begin_datetime": "2022-08-19T00:00:00",
+      "end_datetime": "2023-08-18T23:59:59"
+    },
+    {
+      "id": "1242000767",
+      "title": { "main": "모비 딕 (하)", "sub": "열린책들 세계문학 215" },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/1242000767/small#1",
+        "large": "https://img.ridicdn.net/cover/1242000767/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/1242000767/xxlarge#1"
+      },
+      "authors": { "author": [{ "id": 9105, "name": "허먼 멜빌" }], "translator": [{ "id": 19905, "name": "강수정" }] },
+      "publisher": { "name": "열린책들" },
+      "review_summary": {
+        "buyer_rating_distribution": [1, 0, 2, 9, 22],
+        "buyer_rating_average": 4.5,
+        "buyer_rating_count": 34,
+        "buyer_review_count": 3,
+        "total_rating_count": 38,
+        "total_review_count": 3
+      },
+      "begin_datetime": "2022-08-19T00:00:00",
+      "end_datetime": "2023-08-18T23:59:59"
+    },
+    {
+      "id": "1242000773",
+      "title": { "main": "채털리 부인의 연인 (상)", "sub": "열린책들 세계문학 225" },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/1242000773/small#1",
+        "large": "https://img.ridicdn.net/cover/1242000773/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/1242000773/xxlarge#1"
+      },
+      "authors": {
+        "author": [{ "id": 3542, "name": "데이비드 허버트 로렌스" }],
+        "translator": [{ "id": 9022, "name": "이미선" }]
+      },
+      "publisher": { "name": "열린책들" },
+      "review_summary": {
+        "buyer_rating_distribution": [0, 1, 1, 9, 5],
+        "buyer_rating_average": 4.1,
+        "buyer_rating_count": 16,
+        "buyer_review_count": 2,
+        "total_rating_count": 22,
+        "total_review_count": 2
+      },
+      "begin_datetime": "2022-08-19T00:00:00",
+      "end_datetime": "2023-08-18T23:59:59"
+    },
+    {
+      "id": "1242000774",
+      "title": { "main": "채털리 부인의 연인 (하)", "sub": "열린책들 세계문학 226" },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/1242000774/small#1",
+        "large": "https://img.ridicdn.net/cover/1242000774/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/1242000774/xxlarge#1"
+      },
+      "authors": {
+        "author": [{ "id": 3542, "name": "데이비드 허버트 로렌스" }],
+        "translator": [{ "id": 9022, "name": "이미선" }]
+      },
+      "publisher": { "name": "열린책들" },
+      "review_summary": {
+        "buyer_rating_distribution": [0, 0, 2, 9, 6],
+        "buyer_rating_average": 4.2,
+        "buyer_rating_count": 17,
+        "buyer_review_count": 3,
+        "total_rating_count": 20,
+        "total_review_count": 3
+      },
+      "begin_datetime": "2022-08-19T00:00:00",
+      "end_datetime": "2023-08-18T23:59:59"
+    },
+    {
+      "id": "1242000778",
+      "title": { "main": "차라투스트라는 이렇게 말했다", "sub": "열린책들 세계문학 233" },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/1242000778/small#1",
+        "large": "https://img.ridicdn.net/cover/1242000778/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/1242000778/xxlarge#1"
+      },
+      "authors": {
+        "translator": [{ "id": 3963, "name": "김인순" }],
+        "author": [{ "id": 3685, "name": "프리드리히 니체" }]
+      },
+      "publisher": { "name": "열린책들" },
+      "review_summary": {
+        "buyer_rating_distribution": [0, 2, 2, 9, 19],
+        "buyer_rating_average": 4.4,
+        "buyer_rating_count": 32,
+        "buyer_review_count": 3,
+        "total_rating_count": 46,
+        "total_review_count": 6
+      },
+      "begin_datetime": "2022-08-19T00:00:00",
+      "end_datetime": "2023-08-18T23:59:59"
+    },
+    {
+      "id": "1242000788",
+      "title": { "main": "오만과 편견", "sub": "열린책들 세계문학 143" },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/1242000788/small#1",
+        "large": "https://img.ridicdn.net/cover/1242000788/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/1242000788/xxlarge#1"
+      },
+      "authors": {
+        "author": [{ "id": 1677, "name": "제인 오스틴" }],
+        "translator": [{ "id": 3930, "name": "원유경" }]
+      },
+      "publisher": { "name": "열린책들" },
+      "review_summary": {
+        "buyer_rating_distribution": [1, 2, 4, 33, 56],
+        "buyer_rating_average": 4.5,
+        "buyer_rating_count": 96,
+        "buyer_review_count": 16,
+        "total_rating_count": 116,
+        "total_review_count": 16
+      },
+      "begin_datetime": "2022-08-19T00:00:00",
+      "end_datetime": "2023-08-18T23:59:59"
+    },
+    {
+      "id": "1242000789",
+      "title": { "main": "도리언 그레이의 초상", "sub": "열린책들 세계문학 152" },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/1242000789/small#1",
+        "large": "https://img.ridicdn.net/cover/1242000789/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/1242000789/xxlarge#1"
+      },
+      "authors": {
+        "translator": [{ "id": 4433, "name": "윤희기" }],
+        "author": [{ "id": 1317, "name": "오스카 와일드" }]
+      },
+      "publisher": { "name": "열린책들" },
+      "review_summary": {
+        "buyer_rating_distribution": [2, 0, 2, 22, 26],
+        "buyer_rating_average": 4.3,
+        "buyer_rating_count": 52,
+        "buyer_review_count": 6,
+        "total_rating_count": 63,
+        "total_review_count": 6
+      },
+      "begin_datetime": "2022-08-19T00:00:00",
+      "end_datetime": "2023-08-18T23:59:59"
+    }
+  ]
+}
