@@ -19,12 +19,13 @@ export default {
     const store = useStore()
     const route = useRoute()
     const id = computed(() => route.value.params.id)
-
-    const categories = ref([])
-    const category = ref([])
-    const categoryBtnName = ref('')
     const isModalBtn = ref(false)
-    const categoryFieldItem = ref([])
+
+    // computed
+    const categories = computed(() => store.getters.categories)
+    const categoryBtnName = computed(() => store.getters.selectCategory.name)
+    // vuex state category
+    const categoryFieldItem = computed(() => store.getters.selectCategory)
 
     // store category가 null인지 판정하는 함수
     const isEmptyObject = (param) => {
@@ -36,28 +37,14 @@ export default {
       // store categories가 null이면 actions 실행
       if (store.state.categories.length === 0) {
         await store.dispatch('getCategories')
-        categories.value = computed(() => store.getters.categories)
-        categories.value = categories.value.value
-        category.value = categories.value.find((item) => item.id === Number(id.value))
-        categoryBtnName.value = category.value.name
-        store.commit('ADD_CATEGORY', category.value)
-      } else {
-        categories.value = computed(() => store.getters.categories)
-        categories.value = categories.value.value
-        // store category가 null인지 판정
+        store.commit('ADD_CATEGORY', Number(id.value))
+        // store categories가 not null
+      } else if (store.state.categories.length > 0) {
         if (isEmptyObject(store.getters.selectCategory)) {
-          console.log('test')
-          category.value = categories.value.find((item) => item.id === Number(id.value))
-          categoryBtnName.value = category.value.name
-          store.commit('ADD_CATEGORY', category.value)
-        } else {
-          category.value = computed(() => store.getters.selectCategory)
-          categoryBtnName.value = category.value.value.name
+          store.commit('ADD_CATEGORY', Number(id.value))
         }
       }
     })
-    // vuex state category
-    categoryFieldItem.value = computed(() => store.getters.selectCategory)
 
     // open modal dialog
     const openModal = () => {
