@@ -9,7 +9,8 @@ export const mutations = {
     state.categories = payload
   },
   ADD_CATEGORY(state, payload) {
-    state.category = payload
+    const res = state.categories.find((item) => item.id === payload)
+    state.category = res
   },
   DELETE_CATEGORY(state) {
     state.category = {}
