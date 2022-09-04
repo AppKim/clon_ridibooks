@@ -1,5 +1,6 @@
 <template>
   <div class="new-releases">
+<<<<<<< HEAD
     <PageTitle class="new-releases__title" title="최신 업데이트" />
     <BookThumbnailLinkGrid :bookList="recentReleaseBooks" />
     <Pager />
@@ -42,3 +43,20 @@ export default defineComponent({
   }
 }
 </style>
+=======
+    <h1 class="new-releases__title">최신 업데이트</h1>
+    <BookThumbnailLinkGrid />
+  </div>
+</template>
+<script>
+import { defineComponent } from '@nuxtjs/composition-api'
+import BookThumbnailLinkGrid from '~/components/BookThumbnailLinkGrid.vue'
+
+export default defineComponent({
+  components: { BookThumbnailLinkGrid },
+  setup() {},
+})
+</script>
+
+<style lang="scss" scoped></style>
+>>>>>>> 33ee0d6 (set)
