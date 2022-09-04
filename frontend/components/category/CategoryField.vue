@@ -1,7 +1,13 @@
 <template>
   <div>
     <div class="category__field__warp">
-      <div>
+      <div class="category__field__items">
+        <span
+          class="category__field__item"
+          :class="categoryFieldItem.id === activeId ? 'active' : ''"
+          @click="moveToCategory(categoryFieldItem.id)"
+          >{{ categoryBtnName }}전체</span
+        >
         <ul v-for="item in categoryFieldItem.children" :key="item.id" class="category__field__items">
           <li
             :class="item.id === activeId ? 'active' : ''"
@@ -22,6 +28,10 @@ export default {
   props: {
     categoryFieldItem: {
       type: Object,
+      required: true,
+    },
+    categoryBtnName: {
+      type: String,
       required: true,
     },
   },
@@ -56,7 +66,7 @@ export default {
   }
   &__warp {
     display: block;
-    margin: 0px;
+    margin: 12px 0px 0px 4px;
     padding: 0px;
     overflow: auto;
   }
@@ -72,7 +82,7 @@ export default {
   &__item {
     display: inline-block;
     padding: 15px 8px;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 15px;
     position: relative;
     color: rgb(128, 137, 145);
