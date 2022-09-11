@@ -28,7 +28,7 @@ export default defineComponent({
   border-bottom: 1px solid #d1d5d9;
   &__wrapper {
     display: flex;
-    max-width: 880px;
+    max-width: 800px;
     height: 47px;
     margin: auto;
     align-items: center;

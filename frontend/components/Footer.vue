@@ -29,6 +29,7 @@ export default {}
 
 <style lang="scss" scoped>
 .footer {
+  margin-top: 24px;
   padding: 22px 0px 28px;
   text-align: center;
   background: rgba(247, 250, 252, 0.5);
