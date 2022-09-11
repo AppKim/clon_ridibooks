@@ -1,7 +1,9 @@
 // state
-export const state = {
-  categories: [],
-  category: {},
+export const state = () => {
+  return {
+    categories: [],
+    category: {},
+  }
 }
 
 export const mutations = {
