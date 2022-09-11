@@ -1,4 +1,4 @@
-const baseURL = 'http://localhost:7070/api'
+const baseURL = 'http://localhost:7070'
 
 const initAxios = ({ $axios }) => {
   $axios.setBaseURL(baseURL)
