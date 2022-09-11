@@ -12,7 +12,10 @@ module.exports = () => ({
   },
   categories: categoriesSelectionsApi,
   home: homeApi,
+<<<<<<< HEAD
   recent: newreleasesRecentApi,
+=======
+>>>>>>> cfb16b6 (add charts repository)
   books: chartsBooksApi
   // Something more
 })

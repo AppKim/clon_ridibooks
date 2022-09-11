@@ -14,7 +14,11 @@ export default defineComponent({
 
     useFetch(async () => {
       const res = await $repositories('charts').get.books()
+<<<<<<< HEAD
       books.value = res.books
+=======
+      console.log(res)
+>>>>>>> cfb16b6 (add charts repository)
     })
 
     return {

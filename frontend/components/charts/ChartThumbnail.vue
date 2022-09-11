@@ -28,9 +28,25 @@ export default defineComponent({
   components: { BookThumbnail, BookReview, BookThumbnailTitle, Pager },
   props: {
     books: {
+<<<<<<< HEAD
       type: Array,
       required: true,
     },
+=======
+      type: Object,
+      required: true,
+    },
+  },
+  setup() {
+    const rate = ref(3)
+    const score = ref(3)
+    const title = 'This is Sample Title'
+    return {
+      rate,
+      score,
+      title,
+    }
+>>>>>>> cfb16b6 (add charts repository)
   },
   setup() {},
 })
