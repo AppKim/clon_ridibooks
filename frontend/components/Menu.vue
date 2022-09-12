@@ -39,12 +39,12 @@ export default defineComponent({
     height: 100%;
     padding: 0 8px;
     text-decoration: none;
-    color: #212b3b;
+    color: #3d4a5e;
     font-size: 1.5rem;
     font-weight: 400;
     &.active {
-      font-weight: 600;
       color: black;
+      font-weight: 800;
     }
   }
   @include sp_view {
