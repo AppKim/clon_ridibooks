@@ -12,6 +12,7 @@ module.exports = () => ({
   },
   categories: categoriesSelectionsApi,
   home: homeApi,
-  books: chartsBooksApi
+  books: chartsBooksApi,
+  recent: newreleasesRecentApi,
   // Something more
 })
