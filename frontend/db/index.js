@@ -11,5 +11,6 @@ module.exports = () => ({
   },
   categories: categoriesSelectionsApi,
   home: homeApi,
+  recent: newreleasesRecentApi,
   // Something more
 })

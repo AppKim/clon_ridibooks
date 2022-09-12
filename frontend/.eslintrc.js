@@ -12,6 +12,6 @@ module.exports = {
   plugins: [],
   // add your custom rules here
   rules: {
-    'no-lonely-if': false,
+    'no-lonely-if': 0,
   },
 }
