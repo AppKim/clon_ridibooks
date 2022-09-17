@@ -12,15 +12,7 @@ module.exports = () => ({
   },
   categories: categoriesSelectionsApi,
   home: homeApi,
-<<<<<<< HEAD
-<<<<<<< HEAD
   recent: newreleasesRecentApi,
-=======
->>>>>>> cfb16b6 (add charts repository)
   books: chartsBooksApi
-=======
-  books: chartsBooksApi,
-  recent: newreleasesRecentApi,
->>>>>>> e3a2935 (chore: add json adata)
   // Something more
 })
