@@ -23,7 +23,6 @@ import BookThumbnail from '../BookThumbnail.vue'
 import BookThumbnailTitle from '../BookThumbnailTitle.vue'
 import BookReview from '../BookReview.vue'
 import Pager from '../Pager.vue'
-
 export default defineComponent({
   components: { BookThumbnail, BookReview, BookThumbnailTitle, Pager },
   props: {

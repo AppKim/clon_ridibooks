@@ -10,13 +10,11 @@ import { defineComponent, ref, useContext, useFetch } from '@nuxtjs/composition-
 import BookThumbnailLinkGrid from '~/components/BookThumbnailLinkGrid.vue'
 import PageTitle from '~/components/PageTitle.vue'
 import Pager from '~/components/Pager.vue'
-
 export default defineComponent({
   components: { BookThumbnailLinkGrid, PageTitle, Pager },
   setup() {
     const { $repositories } = useContext()
     const recentReleaseBooks = ref([])
-
     useFetch(async () => {
       // TODO: store에 넣어서 관라?
       const { books } = await $repositories('collections').get.recent()
