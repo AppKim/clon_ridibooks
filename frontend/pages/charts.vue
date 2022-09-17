@@ -14,7 +14,7 @@ export default defineComponent({
 
     useFetch(async () => {
       const res = await $repositories('charts').get.books()
-      console.log(res)
+      books.value = res.books
     })
 
     return {
