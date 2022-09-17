@@ -23,6 +23,12 @@ import Pager from '../Pager.vue'
 
 export default defineComponent({
   components: { BookThumbnail, BookReview, BookThumbnailTitle, Pager },
+  props: {
+    books: {
+      type: Object,
+      required: true,
+    },
+  },
   setup() {
     const rate = ref(3)
     const score = ref(3)

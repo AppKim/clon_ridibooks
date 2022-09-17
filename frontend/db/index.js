@@ -2,6 +2,7 @@ const collectionsBestApi = require('./collections_best_api.json')
 const categoriesSelectionsApi = require('./categories_categories.json')
 const homeApi = require('./home_api.json')
 const newreleasesRecentApi = require('./newreleases_recent_api.json')
+const chartsBooksApi = require('./charts_books_api.json')
 // Something more
 
 module.exports = () => ({
@@ -11,6 +12,10 @@ module.exports = () => ({
   },
   categories: categoriesSelectionsApi,
   home: homeApi,
+<<<<<<< HEAD
   recent: newreleasesRecentApi,
+=======
+  books: chartsBooksApi
+>>>>>>> cfb16b6 (add charts repository)
   // Something more
 })
