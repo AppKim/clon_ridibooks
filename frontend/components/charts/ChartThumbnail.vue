@@ -1,12 +1,15 @@
 <template>
   <div class="grid-booklist-container">
     <ul class="grid-booklist">
-      <li v-for="i in 24" :key="i" class="grid-booklist__item">
-        <div class="grid-booklist__rank">{{ i }}</div>
+      <li v-for="(book, index) in books" :key="index" class="grid-booklist__item">
+        <div class="grid-booklist__rank">{{ index + 1 }}</div>
         <div>
-          <book-thumbnail size="medium" src="https://placeimg.com/150/200/any" alt="sample image"> </book-thumbnail>
-          <book-thumbnail-title :title="title"></book-thumbnail-title>
-          <book-review :rate="parseInt(rate)" :score="parseInt(score)"></book-review>
+          <book-thumbnail size="medium" :src="book.thumbnail.large" alt="sample image"> </book-thumbnail>
+          <book-thumbnail-title :title="book.title.main"></book-thumbnail-title>
+          <book-review
+            :rate="parseInt(book.review_summary.buyer_rating_average)"
+            :count="parseInt(book.review_summary.buyer_rating_count)"
+          ></book-review>
         </div>
       </li>
     </ul>
@@ -15,7 +18,7 @@
 </template>
 
 <script>
-import { defineComponent, ref } from '@vue/composition-api'
+import { defineComponent } from '@vue/composition-api'
 import BookThumbnail from '../BookThumbnail.vue'
 import BookThumbnailTitle from '../BookThumbnailTitle.vue'
 import BookReview from '../BookReview.vue'
@@ -23,23 +26,20 @@ import Pager from '../Pager.vue'
 
 export default defineComponent({
   components: { BookThumbnail, BookReview, BookThumbnailTitle, Pager },
-  setup() {
-    const rate = ref(3)
-    const score = ref(3)
-    const title = 'This is Sample Title'
-    return {
-      rate,
-      score,
-      title,
-    }
+  props: {
+    books: {
+      type: Array,
+      required: true,
+    },
   },
+  setup() {},
 })
 </script>
 
 <style lang="scss" scoped>
 .grid-booklist-container {
   min-width: 320px;
-  max-width: 800px;
+  max-width: 900px;
   margin: 10px auto;
   .grid-booklist {
     display: flex;

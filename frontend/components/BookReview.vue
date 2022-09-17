@@ -2,7 +2,7 @@
   <div class="review">
     <div class="review__star">
       <span class="star5_rating" :data-rate="rate" />
-      <span class="review__count">{{ score }}</span>
+      <span class="review__count">{{ count }}</span>
     </div>
   </div>
 </template>
@@ -17,7 +17,7 @@ export default defineComponent({
       defalut: 0,
       required: true,
     },
-    score: {
+    count: {
       type: Number,
       defalut: 0,
       required: true,
