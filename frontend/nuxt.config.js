@@ -40,7 +40,12 @@ export default {
     '@nuxtjs/style-resources',
     // https://www.npmjs.com/package/@nuxtjs/fontawesome
     ['@nuxtjs/fontawesome', { component: 'fa', suffix: true }],
+    // https://www.npmjs.com/package/@nuxtjs/device
+    '@nuxtjs/device',
   ],
+  device: {
+    refreshOnResize: true,
+  },
 
   fontawesome: {
     icons: {

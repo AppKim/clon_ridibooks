@@ -5,8 +5,8 @@
         한 주간 별점 베스트
         <img class="best-book-list__icon" src="@/assets/images/best.svg" />
       </h2>
-      <client-only>
-        <swiper class="swiper" :options="swiperOption" v-if="$window.width > 860">
+      <div v-if="$device.isDesktopOrTablet">
+        <swiper class="swiper" :options="swiperOption">
           <swiper-slide v-for="index in 3" :key="index">
             <BookThumbnailLinkList
               class="best-book-list__book-list"
@@ -18,8 +18,8 @@
           <div slot="button-next" class="swiper-button-next"></div>
           <div class="swiper-pagination" slot="pagination"></div>
         </swiper>
-        <BookThumbnailLinkList v-else class="best-book-list__book-list" :book-list="books" size="large" />
-      </client-only>
+      </div>
+      <BookThumbnailLinkList v-else class="best-book-list__book-list" :book-list="books" size="large" />
     </div>
   </div>
 </template>

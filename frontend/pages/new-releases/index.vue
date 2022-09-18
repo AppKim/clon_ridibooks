@@ -2,11 +2,11 @@
   <div class="new-releases">
     <PageTitle class="new-releases__title" title="최신 업데이트" />
     <BookThumbnailLinkGrid :bookList="recentReleaseBooks" />
-    <Pager />
+    <Pager @changePage="changePageHandler" :current-page="+$route.query.page || 1" :total-page="100" />
   </div>
 </template>
 <script>
-import { defineComponent, ref, useContext, useFetch } from '@nuxtjs/composition-api'
+import { defineComponent, ref, useContext, useFetch, watch, useRoute, useRouter } from '@nuxtjs/composition-api'
 import BookThumbnailLinkGrid from '~/components/BookThumbnailLinkGrid.vue'
 import PageTitle from '~/components/PageTitle.vue'
 import Pager from '~/components/Pager.vue'
@@ -15,13 +15,26 @@ export default defineComponent({
   setup() {
     const { $repositories } = useContext()
     const recentReleaseBooks = ref([])
+    const route = useRoute()
+    const router = useRouter()
+
+    const fetchRecentBooks = async (params) => {
+      const { books } = await $repositories('collections').get.recent(params)
+      recentReleaseBooks.value = books
+    }
     useFetch(async () => {
       // TODO: store에 넣어서 관라?
-      const { books } = await $repositories('collections').get.recent()
-      recentReleaseBooks.value = books
+      await fetchRecentBooks(route.query)
+    })
+    const changePageHandler = (pageNum) => {
+      router.push(`/new-releases?page=${pageNum}`)
+    }
+    watch(route, async (currRoute) => {
+      await fetchRecentBooks(currRoute.query)
     })
     return {
       recentReleaseBooks,
+      changePageHandler,
     }
   },
 })

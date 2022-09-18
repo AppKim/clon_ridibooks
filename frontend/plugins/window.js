@@ -8,7 +8,6 @@ export default ({ app }, inject) => {
   if (process.browser) {
     const onResize = () => {
       $window.width = window.innerWidth
-      console.log('onResize')
     }
     global.addEventListener('resize', onResize)
     onResize()
