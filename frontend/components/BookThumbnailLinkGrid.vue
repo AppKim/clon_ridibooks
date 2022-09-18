@@ -4,7 +4,7 @@
       v-for="(book, i) in bookList"
       :key="i"
       size="medium"
-      src="https://placeimg.com/150/200/any"
+      :src="book.thumbnail.small"
       :alt="book.alt && book.title && book.title.main"
       :to="book.link"
       :title="book.title && book.title.main"
@@ -24,9 +24,7 @@ export default defineComponent({
       default: () => [],
     },
   },
-  setup(props) {
-    console.log(props.bookList)
-  },
+  setup(props) {},
 })
 </script>
 
@@ -34,7 +32,7 @@ export default defineComponent({
 .book-thumbnail-link-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 0;
+  row-gap: 32px;
   margin-bottom: 32px;
   @include sp_view {
     display: flex;
