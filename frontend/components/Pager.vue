@@ -1,7 +1,7 @@
 <template>
   <nav class="paginations">
     <ul class="nav-links">
-      <li class="previous-button" @click="previousPage" />
+      <li v-show="offset > 1" class="previous-button" @click="previousPage" />
       <li
         :class="{ active: pageNum === currentPage }"
         v-for="pageNum in showPageNumArr"
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import { defineComponent, computed, ref } from '@nuxtjs/composition-api'
+import { defineComponent, computed } from '@nuxtjs/composition-api'
 
 export default defineComponent({
   props: {
@@ -62,6 +62,7 @@ export default defineComponent({
       onChangePageNum,
       previousPage,
       nextPage,
+      offset,
     }
   },
 })
