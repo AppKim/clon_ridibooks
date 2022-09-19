@@ -1,7 +1,7 @@
 <template>
   <nav class="paginations">
     <ul class="nav-links">
-      <li class="previous-button" @click="$emit('previousPage')" />
+      <li class="previous-button" @click="previousPage" />
       <li
         :class="{ active: pageNum === currentPage }"
         v-for="pageNum in showPageNumArr"
@@ -11,13 +11,13 @@
       >
         <span>{{ pageNum }}</span>
       </li>
-      <li class="next-button" @click="$emit('nextPage')" />
+      <li class="next-button" @click="nextPage" />
     </ul>
   </nav>
 </template>
 
 <script>
-import { defineComponent, computed } from '@nuxtjs/composition-api'
+import { defineComponent, computed, ref } from '@nuxtjs/composition-api'
 
 export default defineComponent({
   props: {
@@ -27,7 +27,7 @@ export default defineComponent({
     },
     totalPage: {
       type: Number,
-      required: true,
+      default: 1,
     },
     showPageCount: {
       type: Number,
@@ -35,10 +35,11 @@ export default defineComponent({
     },
   },
   setup(props, { emit }) {
+    const offset = computed(() => Math.ceil(props.currentPage / props.showPageCount))
+
     const showPageNumArr = computed(() => {
-      const offset = Math.ceil(props.currentPage / props.showPageCount)
-      const startPageNum = (offset - 1) * props.showPageCount + 1
-      let lastPageNum = offset * props.showPageCount
+      const startPageNum = (offset.value - 1) * props.showPageCount + 1
+      let lastPageNum = offset.value * props.showPageCount
       if (lastPageNum > props.totalPage) {
         lastPageNum = props.totalPage
       }
@@ -49,9 +50,18 @@ export default defineComponent({
       emit('changePage', pageNum)
     }
 
+    const previousPage = () => {
+      emit('changePage', (offset.value - 2) * props.showPageCount + 1)
+    }
+    const nextPage = () => {
+      emit('changePage', offset.value * props.showPageCount + 1)
+    }
+
     return {
       showPageNumArr,
       onChangePageNum,
+      previousPage,
+      nextPage,
     }
   },
 })
