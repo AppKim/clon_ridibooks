@@ -33,12 +33,13 @@ export default defineComponent({
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   row-gap: 32px;
-  margin-bottom: 32px;
+  margin: 32px 0;
   @include sp_view {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 8px;
+    column-gap: 8px;
+    row-gap: 24px;
     flex-flow: row wrap;
   }
 }

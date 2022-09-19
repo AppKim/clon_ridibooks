@@ -28,5 +28,10 @@ export default defineComponent({
   .main {
     min-height: calc(100vh - 276px);
   }
+  @include sp_view {
+    .main {
+      min-height: calc(100vh - 250px);
+    }
+  }
 }
 </style>
