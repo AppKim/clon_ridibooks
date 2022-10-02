@@ -3,6 +3,7 @@ export const state = () => {
   return {
     categories: [],
     category: {},
+    categoryChildrenId: 0,
   }
 }
 
@@ -16,6 +17,9 @@ export const mutations = {
   },
   DELETE_CATEGORY(state) {
     state.category = {}
+  },
+  ADD_CATEGORY_CHILDREN_ID(state, payload) {
+    state.categoryChildrenId = payload
   },
 }
 
@@ -32,5 +36,8 @@ export const getters = {
   },
   selectCategory(state) {
     return { ...state.category }
+  },
+  selectCategoryChildrenId(state) {
+    return state.categoryChildrenId
   },
 }
