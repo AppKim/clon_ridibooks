@@ -18,5 +18,6 @@ export default {
 <style>
 .bookthumnail__title {
   font-size: 13px;
+  margin: 10px 0 0;
 }
 </style>
