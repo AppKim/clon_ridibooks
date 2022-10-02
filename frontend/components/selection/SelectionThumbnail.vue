@@ -1,10 +1,10 @@
 <template>
   <div class="grid-booklist-container">
     <ul class="grid-booklist">
-      <li v-for="i in 24" :key="i" class="grid-booklist__item">
+      <li v-for="(book, index) in books" :key="index" class="grid-booklist__item">
         <div>
-          <book-thumbnail size="xLarge" src="https://placeimg.com/150/200/any" alt="sample image"></book-thumbnail>
-          <book-thumbnail-title :title="title"></book-thumbnail-title>
+          <book-thumbnail size="medium" :src="book.thumbnail.large" alt="sample image"></book-thumbnail>
+          <book-thumbnail-title :title="book.title.main"></book-thumbnail-title>
         </div>
       </li>
     </ul>
@@ -12,11 +12,18 @@
 </template>
 
 <script>
+import { defineComponent } from '@nuxtjs/composition-api'
 import BookThumbnail from '../BookThumbnail.vue'
 import BookThumbnailTitle from '../BookThumbnailTitle.vue'
-export default {
+export default defineComponent({
   components: { BookThumbnail, BookThumbnailTitle },
-}
+  props: {
+    books: {
+      type: Array,
+      required: true,
+    },
+  },
+})
 </script>
 
 <style lang="scss" scoped>

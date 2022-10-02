@@ -1,0 +1,1256 @@
+[
+{
+    "id": 2026,
+    "title": "이제 리디셀렉트에서 웹툰을 만나보세요!",
+    "type": "COLLECTION",
+    "books": [
+        {
+            "id": "4176000010",
+            "title": {
+                "main": "떠떠떠,떠",
+                "sub": null
+            },
+            "thumbnail": {
+                "small": "https://img.ridicdn.net/cover/4176000010/small#1",
+                "large": "https://img.ridicdn.net/cover/4176000010/large#1",
+                "xxlarge": "https://img.ridicdn.net/cover/4176000010/xxlarge#1"
+            },
+            "authors": {
+                "comic_author": [
+                    {
+                        "id": null,
+                        "name": "정용준"
+                    },
+                    {
+                        "id": null,
+                        "name": "미보"
+                    },
+                    {
+                        "id": null,
+                        "name": "책끝을접다"
+                    }
+                ]
+            },
+            "publisher": {
+                "name": "책끝을접다"
+            },
+            "review_summary": {
+                "buyer_rating_distribution": [
+                    14,
+                    8,
+                    37,
+                    52,
+                    128
+                ],
+                "buyer_rating_average": 4.1,
+                "buyer_rating_count": 239,
+                "buyer_review_count": 14,
+                "total_rating_count": 241,
+                "total_review_count": 14
+            },
+            "begin_datetime": "2020-07-30T06:55:00",
+            "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+            "id": "4176000012",
+            "title": {
+                "main": "로이 서비스",
+                "sub": null
+            },
+            "thumbnail": {
+                "small": "https://img.ridicdn.net/cover/4176000012/small",
+                "large": "https://img.ridicdn.net/cover/4176000012/large",
+                "xxlarge": "https://img.ridicdn.net/cover/4176000012/xxlarge"
+            },
+            "authors": {
+                "planner": [
+                    {
+                        "id": 97235,
+                        "name": "책 끝을 접다"
+                    }
+                ],
+                "illustrator": [
+                    {
+                        "id": 111157,
+                        "name": "잎가비"
+                    }
+                ],
+                "original_author": [
+                    {
+                        "id": 106316,
+                        "name": "남유하"
+                    }
+                ]
+            },
+            "publisher": {
+                "name": "책끝을접다"
+            },
+            "review_summary": {
+                "buyer_rating_distribution": [
+                    2,
+                    6,
+                    23,
+                    39,
+                    113
+                ],
+                "buyer_rating_average": 4.4,
+                "buyer_rating_count": 183,
+                "buyer_review_count": 15,
+                "total_rating_count": 190,
+                "total_review_count": 17
+            },
+            "begin_datetime": "2020-10-12T06:55:00",
+            "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+            "id": "4176000014",
+            "title": {
+                "main": "가만한 나날",
+                "sub": null
+            },
+            "thumbnail": {
+                "small": "https://img.ridicdn.net/cover/4176000014/small",
+                "large": "https://img.ridicdn.net/cover/4176000014/large",
+                "xxlarge": "https://img.ridicdn.net/cover/4176000014/xxlarge"
+            },
+            "authors": {
+                "planner": [
+                    {
+                        "id": 97235,
+                        "name": "책 끝을 접다"
+                    }
+                ],
+                "illustrator": [
+                    {
+                        "id": 96482,
+                        "name": "캐노피"
+                    }
+                ],
+                "original_author": [
+                    {
+                        "id": 92027,
+                        "name": "김세희"
+                    }
+                ]
+            },
+            "publisher": {
+                "name": "책끝을접다"
+            },
+            "review_summary": {
+                "buyer_rating_distribution": [
+                    12,
+                    17,
+                    78,
+                    161,
+                    241
+                ],
+                "buyer_rating_average": 4.2,
+                "buyer_rating_count": 509,
+                "buyer_review_count": 37,
+                "total_rating_count": 515,
+                "total_review_count": 38
+            },
+            "begin_datetime": "2020-10-22T06:55:00",
+            "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+            "id": "4176000018",
+            "title": {
+                "main": "키스 바이러스",
+                "sub": null
+            },
+            "thumbnail": {
+                "small": "https://img.ridicdn.net/cover/4176000018/small",
+                "large": "https://img.ridicdn.net/cover/4176000018/large",
+                "xxlarge": "https://img.ridicdn.net/cover/4176000018/xxlarge"
+            },
+            "authors": {
+                "planner": [
+                    {
+                        "id": 97235,
+                        "name": "책 끝을 접다"
+                    }
+                ],
+                "illustrator": [
+                    {
+                        "id": 100810,
+                        "name": "ㅁㅣㄱ"
+                    }
+                ],
+                "original_author": [
+                    {
+                        "id": 7913,
+                        "name": "김혜정"
+                    }
+                ]
+            },
+            "publisher": {
+                "name": "책끝을접다"
+            },
+            "review_summary": {
+                "buyer_rating_distribution": [
+                    17,
+                    11,
+                    12,
+                    4,
+                    16
+                ],
+                "buyer_rating_average": 2.9,
+                "buyer_rating_count": 60,
+                "buyer_review_count": 8,
+                "total_rating_count": 62,
+                "total_review_count": 9
+            },
+            "begin_datetime": "2020-11-19T06:55:00",
+            "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+            "id": "4176000020",
+            "title": {
+                "main": "얼굴 빌려드립니다",
+                "sub": null
+            },
+            "thumbnail": {
+                "small": "https://img.ridicdn.net/cover/4176000020/small#1",
+                "large": "https://img.ridicdn.net/cover/4176000020/large#1",
+                "xxlarge": "https://img.ridicdn.net/cover/4176000020/xxlarge#1"
+            },
+            "authors": {
+                "original_author": [
+                    {
+                        "id": 106516,
+                        "name": "심너울"
+                    }
+                ],
+                "planner": [
+                    {
+                        "id": 97235,
+                        "name": "책 끝을 접다"
+                    }
+                ],
+                "illustrator": [
+                    {
+                        "id": 112267,
+                        "name": "모조산호"
+                    }
+                ]
+            },
+            "publisher": {
+                "name": "책끝을접다"
+            },
+            "review_summary": {
+                "buyer_rating_distribution": [
+                    5,
+                    8,
+                    32,
+                    46,
+                    38
+                ],
+                "buyer_rating_average": 3.8,
+                "buyer_rating_count": 129,
+                "buyer_review_count": 10,
+                "total_rating_count": 130,
+                "total_review_count": 10
+            },
+            "begin_datetime": "2020-11-30T06:55:00",
+            "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+            "id": "4176000017",
+            "title": {
+                "main": "미래의 여자",
+                "sub": null
+            },
+            "thumbnail": {
+                "small": "https://img.ridicdn.net/cover/4176000017/small",
+                "large": "https://img.ridicdn.net/cover/4176000017/large",
+                "xxlarge": "https://img.ridicdn.net/cover/4176000017/xxlarge"
+            },
+            "authors": {
+                "planner": [
+                    {
+                        "id": 97235,
+                        "name": "책 끝을 접다"
+                    }
+                ],
+                "original_author": [
+                    {
+                        "id": 106316,
+                        "name": "남유하"
+                    }
+                ],
+                "illustrator": [
+                    {
+                        "id": 111826,
+                        "name": "현진"
+                    }
+                ]
+            },
+            "publisher": {
+                "name": "책끝을접다"
+            },
+            "review_summary": {
+                "buyer_rating_distribution": [
+                    3,
+                    7,
+                    34,
+                    77,
+                    160
+                ],
+                "buyer_rating_average": 4.4,
+                "buyer_rating_count": 281,
+                "buyer_review_count": 22,
+                "total_rating_count": 286,
+                "total_review_count": 22
+            },
+            "begin_datetime": "2020-11-13T06:55:00",
+            "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+            "id": "4176000001",
+            "title": {
+                "main": "세상을 끝내는 데 필요한 점프의 횟수",
+                "sub": null
+            },
+            "thumbnail": {
+                "small": "https://img.ridicdn.net/cover/4176000001/small#1",
+                "large": "https://img.ridicdn.net/cover/4176000001/large#1",
+                "xxlarge": "https://img.ridicdn.net/cover/4176000001/xxlarge#1"
+            },
+            "authors": {
+                "illustrator": [
+                    {
+                        "id": 106517,
+                        "name": "겅생"
+                    }
+                ],
+                "original_author": [
+                    {
+                        "id": 106516,
+                        "name": "심너울"
+                    }
+                ],
+                "planner": [
+                    {
+                        "id": 97235,
+                        "name": "책 끝을 접다"
+                    }
+                ]
+            },
+            "publisher": {
+                "name": "책끝을접다"
+            },
+            "review_summary": {
+                "buyer_rating_distribution": [
+                    19,
+                    25,
+                    112,
+                    268,
+                    505
+                ],
+                "buyer_rating_average": 4.3,
+                "buyer_rating_count": 929,
+                "buyer_review_count": 78,
+                "total_rating_count": 935,
+                "total_review_count": 79
+            },
+            "begin_datetime": "2020-04-27T11:18:00",
+            "end_datetime": "2025-04-26T23:59:59"
+        },
+        {
+            "id": "4176000003",
+            "title": {
+                "main": "우주인, 조안",
+                "sub": null
+            },
+            "thumbnail": {
+                "small": "https://img.ridicdn.net/cover/4176000003/small#1",
+                "large": "https://img.ridicdn.net/cover/4176000003/large#1",
+                "xxlarge": "https://img.ridicdn.net/cover/4176000003/xxlarge#1"
+            },
+            "authors": {
+                "planner": [
+                    {
+                        "id": 97235,
+                        "name": "책 끝을 접다"
+                    }
+                ],
+                "illustrator": [
+                    {
+                        "id": 105754,
+                        "name": "유나나"
+                    }
+                ],
+                "original_author": [
+                    {
+                        "id": 103759,
+                        "name": "김효인"
+                    }
+                ]
+            },
+            "publisher": {
+                "name": "책끝을접다"
+            },
+            "review_summary": {
+                "buyer_rating_distribution": [
+                    17,
+                    30,
+                    94,
+                    238,
+                    393
+                ],
+                "buyer_rating_average": 4.2,
+                "buyer_rating_count": 772,
+                "buyer_review_count": 31,
+                "total_rating_count": 774,
+                "total_review_count": 31
+            },
+            "begin_datetime": "2020-04-27T11:18:00",
+            "end_datetime": "2025-04-26T23:59:59"
+        },
+        {
+            "id": "4176000004",
+            "title": {
+                "main": "묘생만경",
+                "sub": null
+            },
+            "thumbnail": {
+                "small": "https://img.ridicdn.net/cover/4176000004/small#1",
+                "large": "https://img.ridicdn.net/cover/4176000004/large#1",
+                "xxlarge": "https://img.ridicdn.net/cover/4176000004/xxlarge#1"
+            },
+            "authors": {
+                "illustrator": [
+                    {
+                        "id": 106517,
+                        "name": "겅생"
+                    }
+                ],
+                "planner": [
+                    {
+                        "id": 97235,
+                        "name": "책 끝을 접다"
+                    }
+                ],
+                "original_author": [
+                    {
+                        "id": 75533,
+                        "name": "김현중"
+                    }
+                ]
+            },
+            "publisher": {
+                "name": "책끝을접다"
+            },
+            "review_summary": {
+                "buyer_rating_distribution": [
+                    28,
+                    29,
+                    164,
+                    542,
+                    1710
+                ],
+                "buyer_rating_average": 4.6,
+                "buyer_rating_count": 2473,
+                "buyer_review_count": 195,
+                "total_rating_count": 2493,
+                "total_review_count": 197
+            },
+            "begin_datetime": "2020-04-27T11:18:00",
+            "end_datetime": "2025-04-26T23:59:59"
+        },
+        {
+            "id": "4176000002",
+            "title": {
+                "main": "선택의 아이",
+                "sub": null
+            },
+            "thumbnail": {
+                "small": "https://img.ridicdn.net/cover/4176000002/small#1",
+                "large": "https://img.ridicdn.net/cover/4176000002/large#1",
+                "xxlarge": "https://img.ridicdn.net/cover/4176000002/xxlarge#1"
+            },
+            "authors": {
+                "planner": [
+                    {
+                        "id": 97235,
+                        "name": "책 끝을 접다"
+                    }
+                ],
+                "illustrator": [
+                    {
+                        "id": 104725,
+                        "name": "선민"
+                    }
+                ],
+                "original_author": [
+                    {
+                        "id": 84269,
+                        "name": "범유진"
+                    }
+                ]
+            },
+            "publisher": {
+                "name": "책끝을접다"
+            },
+            "review_summary": {
+                "buyer_rating_distribution": [
+                    18,
+                    19,
+                    70,
+                    209,
+                    625
+                ],
+                "buyer_rating_average": 4.5,
+                "buyer_rating_count": 941,
+                "buyer_review_count": 86,
+                "total_rating_count": 950,
+                "total_review_count": 87
+            },
+            "begin_datetime": "2020-04-27T11:18:00",
+            "end_datetime": "2025-04-26T23:59:59"
+        },
+        {
+            "id": "4176000005",
+            "title": {
+                "main": "고장난",
+                "sub": null
+            },
+            "thumbnail": {
+                "small": "https://img.ridicdn.net/cover/4176000005/small",
+                "large": "https://img.ridicdn.net/cover/4176000005/large",
+                "xxlarge": "https://img.ridicdn.net/cover/4176000005/xxlarge"
+            },
+            "authors": {
+                "planner": [
+                    {
+                        "id": 97235,
+                        "name": "책 끝을 접다"
+                    }
+                ],
+                "illustrator": [
+                    {
+                        "id": 105754,
+                        "name": "유나나"
+                    }
+                ]
+            },
+            "publisher": {
+                "name": "책끝을접다"
+            },
+            "review_summary": {
+                "buyer_rating_distribution": [
+                    9,
+                    19,
+                    57,
+                    87,
+                    158
+                ],
+                "buyer_rating_average": 4.1,
+                "buyer_rating_count": 330,
+                "buyer_review_count": 24,
+                "total_rating_count": 333,
+                "total_review_count": 25
+            },
+            "begin_datetime": "2020-04-27T11:18:00",
+            "end_datetime": "2025-04-26T23:59:59"
+        },
+        {
+            "id": "4176000025",
+            "title": {
+                "main": "봄처럼 다시 만나요 1권",
+                "sub": null
+            },
+            "thumbnail": {
+                "small": "https://img.ridicdn.net/cover/4176000025/small#1",
+                "large": "https://img.ridicdn.net/cover/4176000025/large#1",
+                "xxlarge": "https://img.ridicdn.net/cover/4176000025/xxlarge#1"
+            },
+            "authors": {
+                "planner": [
+                    {
+                        "id": 97235,
+                        "name": "책 끝을 접다"
+                    }
+                ],
+                "illustrator": [
+                    {
+                        "id": 115669,
+                        "name": "퀀퀀"
+                    }
+                ],
+                "original_author": [
+                    {
+                        "id": 108202,
+                        "name": "고재욱"
+                    }
+                ]
+            },
+            "publisher": {
+                "name": "책끝을접다"
+            },
+            "review_summary": {
+                "buyer_rating_distribution": [
+                    0,
+                    0,
+                    4,
+                    12,
+                    199
+                ],
+                "buyer_rating_average": 4.9,
+                "buyer_rating_count": 215,
+                "buyer_review_count": 22,
+                "total_rating_count": 217,
+                "total_review_count": 23
+            },
+            "begin_datetime": "2021-04-30T06:55:00",
+            "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+            "id": "4176000026",
+            "title": {
+                "main": "봄처럼 다시 만나요 2권",
+                "sub": null
+            },
+            "thumbnail": {
+                "small": "https://img.ridicdn.net/cover/4176000026/small#1",
+                "large": "https://img.ridicdn.net/cover/4176000026/large#1",
+                "xxlarge": "https://img.ridicdn.net/cover/4176000026/xxlarge#1"
+            },
+            "authors": {
+                "planner": [
+                    {
+                        "id": 97235,
+                        "name": "책 끝을 접다"
+                    }
+                ],
+                "illustrator": [
+                    {
+                        "id": 115669,
+                        "name": "퀀퀀"
+                    }
+                ],
+                "original_author": [
+                    {
+                        "id": 108202,
+                        "name": "고재욱"
+                    }
+                ]
+            },
+            "publisher": {
+                "name": "책끝을접다"
+            },
+            "review_summary": {
+                "buyer_rating_distribution": [
+                    0,
+                    0,
+                    4,
+                    12,
+                    199
+                ],
+                "buyer_rating_average": 4.9,
+                "buyer_rating_count": 215,
+                "buyer_review_count": 22,
+                "total_rating_count": 217,
+                "total_review_count": 23
+            },
+            "begin_datetime": "2021-04-30T06:55:00",
+            "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+            "id": "4176000027",
+            "title": {
+                "main": "봄처럼 다시 만나요 3권 (완결)",
+                "sub": null
+            },
+            "thumbnail": {
+                "small": "https://img.ridicdn.net/cover/4176000027/small#1",
+                "large": "https://img.ridicdn.net/cover/4176000027/large#1",
+                "xxlarge": "https://img.ridicdn.net/cover/4176000027/xxlarge#1"
+            },
+            "authors": {
+                "planner": [
+                    {
+                        "id": 97235,
+                        "name": "책 끝을 접다"
+                    }
+                ],
+                "illustrator": [
+                    {
+                        "id": 115669,
+                        "name": "퀀퀀"
+                    }
+                ],
+                "original_author": [
+                    {
+                        "id": 108202,
+                        "name": "고재욱"
+                    }
+                ]
+            },
+            "publisher": {
+                "name": "책끝을접다"
+            },
+            "review_summary": {
+                "buyer_rating_distribution": [
+                    0,
+                    0,
+                    4,
+                    12,
+                    199
+                ],
+                "buyer_rating_average": 4.9,
+                "buyer_rating_count": 215,
+                "buyer_review_count": 22,
+                "total_rating_count": 217,
+                "total_review_count": 23
+            },
+            "begin_datetime": "2021-04-30T06:55:00",
+            "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+            "id": "4176000021",
+            "title": {
+                "main": "인스타 걸 1권",
+                "sub": null
+            },
+            "thumbnail": {
+                "small": "https://img.ridicdn.net/cover/4176000021/small#1",
+                "large": "https://img.ridicdn.net/cover/4176000021/large#1",
+                "xxlarge": "https://img.ridicdn.net/cover/4176000021/xxlarge#1"
+            },
+            "authors": {
+                "planner": [
+                    {
+                        "id": 97235,
+                        "name": "책 끝을 접다"
+                    }
+                ],
+                "illustrator": [
+                    {
+                        "id": 111367,
+                        "name": "머스캣"
+                    }
+                ],
+                "original_author": [
+                    {
+                        "id": 110530,
+                        "name": "김민혜"
+                    }
+                ]
+            },
+            "publisher": {
+                "name": "책끝을접다"
+            },
+            "review_summary": {
+                "buyer_rating_distribution": [
+                    1,
+                    2,
+                    10,
+                    7,
+                    28
+                ],
+                "buyer_rating_average": 4.2,
+                "buyer_rating_count": 48,
+                "buyer_review_count": 10,
+                "total_rating_count": 49,
+                "total_review_count": 10
+            },
+            "begin_datetime": "2020-12-10T06:55:00",
+            "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+            "id": "4176000023",
+            "title": {
+                "main": "인스타 걸 2권",
+                "sub": null
+            },
+            "thumbnail": {
+                "small": "https://img.ridicdn.net/cover/4176000023/small#1",
+                "large": "https://img.ridicdn.net/cover/4176000023/large#1",
+                "xxlarge": "https://img.ridicdn.net/cover/4176000023/xxlarge#1"
+            },
+            "authors": {
+                "planner": [
+                    {
+                        "id": 97235,
+                        "name": "책 끝을 접다"
+                    }
+                ],
+                "illustrator": [
+                    {
+                        "id": 111367,
+                        "name": "머스캣"
+                    }
+                ],
+                "original_author": [
+                    {
+                        "id": 110530,
+                        "name": "김민혜"
+                    }
+                ]
+            },
+            "publisher": {
+                "name": "책끝을접다"
+            },
+            "review_summary": {
+                "buyer_rating_distribution": [
+                    1,
+                    2,
+                    10,
+                    7,
+                    28
+                ],
+                "buyer_rating_average": 4.2,
+                "buyer_rating_count": 48,
+                "buyer_review_count": 10,
+                "total_rating_count": 49,
+                "total_review_count": 10
+            },
+            "begin_datetime": "2021-04-30T06:55:00",
+            "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+            "id": "4176000024",
+            "title": {
+                "main": "인스타 걸 3권 (완결)",
+                "sub": null
+            },
+            "thumbnail": {
+                "small": "https://img.ridicdn.net/cover/4176000024/small#1",
+                "large": "https://img.ridicdn.net/cover/4176000024/large#1",
+                "xxlarge": "https://img.ridicdn.net/cover/4176000024/xxlarge#1"
+            },
+            "authors": {
+                "planner": [
+                    {
+                        "id": 97235,
+                        "name": "책 끝을 접다"
+                    }
+                ],
+                "illustrator": [
+                    {
+                        "id": 111367,
+                        "name": "머스캣"
+                    }
+                ],
+                "original_author": [
+                    {
+                        "id": 110530,
+                        "name": "김민혜"
+                    }
+                ]
+            },
+            "publisher": {
+                "name": "책끝을접다"
+            },
+            "review_summary": {
+                "buyer_rating_distribution": [
+                    1,
+                    2,
+                    10,
+                    7,
+                    28
+                ],
+                "buyer_rating_average": 4.2,
+                "buyer_rating_count": 48,
+                "buyer_review_count": 10,
+                "total_rating_count": 49,
+                "total_review_count": 10
+            },
+            "begin_datetime": "2021-04-30T06:55:00",
+            "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+            "id": "4176000028",
+            "title": {
+                "main": "마땅한 살인 1권",
+                "sub": null
+            },
+            "thumbnail": {
+                "small": "https://img.ridicdn.net/cover/4176000028/small#1",
+                "large": "https://img.ridicdn.net/cover/4176000028/large#1",
+                "xxlarge": "https://img.ridicdn.net/cover/4176000028/xxlarge#1"
+            },
+            "authors": {
+                "story_writer": [
+                    {
+                        "id": 115840,
+                        "name": "김관유"
+                    }
+                ],
+                "illustrator": [
+                    {
+                        "id": 115841,
+                        "name": "잼"
+                    },
+                    {
+                        "id": 115842,
+                        "name": "곽승신"
+                    }
+                ],
+                "original_author": [
+                    {
+                        "id": 69751,
+                        "name": "안세화"
+                    }
+                ],
+                "planner": [
+                    {
+                        "id": 115839,
+                        "name": "스르륵코믹스"
+                    }
+                ]
+            },
+            "publisher": {
+                "name": "스르륵코믹스"
+            },
+            "review_summary": {
+                "buyer_rating_distribution": [
+                    2,
+                    2,
+                    9,
+                    13,
+                    48
+                ],
+                "buyer_rating_average": 4.4,
+                "buyer_rating_count": 74,
+                "buyer_review_count": 5,
+                "total_rating_count": 77,
+                "total_review_count": 5
+            },
+            "begin_datetime": "2021-04-30T06:55:00",
+            "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+            "id": "4176000029",
+            "title": {
+                "main": "마땅한 살인 2권",
+                "sub": null
+            },
+            "thumbnail": {
+                "small": "https://img.ridicdn.net/cover/4176000029/small#1",
+                "large": "https://img.ridicdn.net/cover/4176000029/large#1",
+                "xxlarge": "https://img.ridicdn.net/cover/4176000029/xxlarge#1"
+            },
+            "authors": {
+                "story_writer": [
+                    {
+                        "id": 115840,
+                        "name": "김관유"
+                    }
+                ],
+                "illustrator": [
+                    {
+                        "id": 115841,
+                        "name": "잼"
+                    },
+                    {
+                        "id": 115842,
+                        "name": "곽승신"
+                    }
+                ],
+                "original_author": [
+                    {
+                        "id": 69751,
+                        "name": "안세화"
+                    }
+                ],
+                "planner": [
+                    {
+                        "id": 115839,
+                        "name": "스르륵코믹스"
+                    }
+                ]
+            },
+            "publisher": {
+                "name": "스르륵코믹스"
+            },
+            "review_summary": {
+                "buyer_rating_distribution": [
+                    2,
+                    2,
+                    9,
+                    13,
+                    48
+                ],
+                "buyer_rating_average": 4.4,
+                "buyer_rating_count": 74,
+                "buyer_review_count": 5,
+                "total_rating_count": 77,
+                "total_review_count": 5
+            },
+            "begin_datetime": "2021-04-30T06:55:00",
+            "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+            "id": "4176000031",
+            "title": {
+                "main": "마땅한 살인 3권",
+                "sub": null
+            },
+            "thumbnail": {
+                "small": "https://img.ridicdn.net/cover/4176000031/small#1",
+                "large": "https://img.ridicdn.net/cover/4176000031/large#1",
+                "xxlarge": "https://img.ridicdn.net/cover/4176000031/xxlarge#1"
+            },
+            "authors": {
+                "story_writer": [
+                    {
+                        "id": 115840,
+                        "name": "김관유"
+                    }
+                ],
+                "illustrator": [
+                    {
+                        "id": 115841,
+                        "name": "잼"
+                    },
+                    {
+                        "id": 115842,
+                        "name": "곽승신"
+                    }
+                ],
+                "original_author": [
+                    {
+                        "id": 69751,
+                        "name": "안세화"
+                    }
+                ],
+                "planner": [
+                    {
+                        "id": 115839,
+                        "name": "스르륵코믹스"
+                    }
+                ]
+            },
+            "publisher": {
+                "name": "스르륵코믹스"
+            },
+            "review_summary": {
+                "buyer_rating_distribution": [
+                    2,
+                    2,
+                    9,
+                    13,
+                    48
+                ],
+                "buyer_rating_average": 4.4,
+                "buyer_rating_count": 74,
+                "buyer_review_count": 5,
+                "total_rating_count": 77,
+                "total_review_count": 5
+            },
+            "begin_datetime": "2021-04-30T06:55:00",
+            "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+            "id": "4176000032",
+            "title": {
+                "main": "사소한 거짓말 1권",
+                "sub": null
+            },
+            "thumbnail": {
+                "small": "https://img.ridicdn.net/cover/4176000032/small#1",
+                "large": "https://img.ridicdn.net/cover/4176000032/large#1",
+                "xxlarge": "https://img.ridicdn.net/cover/4176000032/xxlarge#1"
+            },
+            "authors": {
+                "illustrator": [
+                    {
+                        "id": 106517,
+                        "name": "겅생"
+                    }
+                ],
+                "planner": [
+                    {
+                        "id": 97235,
+                        "name": "책 끝을 접다"
+                    }
+                ],
+                "original_author": [
+                    {
+                        "id": 23863,
+                        "name": "박설미"
+                    }
+                ]
+            },
+            "publisher": {
+                "name": "책끝을접다"
+            },
+            "review_summary": {
+                "buyer_rating_distribution": [
+                    2,
+                    0,
+                    10,
+                    23,
+                    135
+                ],
+                "buyer_rating_average": 4.7,
+                "buyer_rating_count": 170,
+                "buyer_review_count": 21,
+                "total_rating_count": 171,
+                "total_review_count": 21
+            },
+            "begin_datetime": "2021-04-30T06:55:00",
+            "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+            "id": "4176000033",
+            "title": {
+                "main": "사소한 거짓말 2권",
+                "sub": null
+            },
+            "thumbnail": {
+                "small": "https://img.ridicdn.net/cover/4176000033/small#1",
+                "large": "https://img.ridicdn.net/cover/4176000033/large#1",
+                "xxlarge": "https://img.ridicdn.net/cover/4176000033/xxlarge#1"
+            },
+            "authors": {
+                "illustrator": [
+                    {
+                        "id": 106517,
+                        "name": "겅생"
+                    }
+                ],
+                "planner": [
+                    {
+                        "id": 97235,
+                        "name": "책 끝을 접다"
+                    }
+                ],
+                "original_author": [
+                    {
+                        "id": 23863,
+                        "name": "박설미"
+                    }
+                ]
+            },
+            "publisher": {
+                "name": "책끝을접다"
+            },
+            "review_summary": {
+                "buyer_rating_distribution": [
+                    2,
+                    0,
+                    10,
+                    23,
+                    135
+                ],
+                "buyer_rating_average": 4.7,
+                "buyer_rating_count": 170,
+                "buyer_review_count": 21,
+                "total_rating_count": 171,
+                "total_review_count": 21
+            },
+            "begin_datetime": "2021-04-30T06:55:00",
+            "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+            "id": "4176000034",
+            "title": {
+                "main": "사소한 거짓말 3권 (완결)",
+                "sub": null
+            },
+            "thumbnail": {
+                "small": "https://img.ridicdn.net/cover/4176000034/small#1",
+                "large": "https://img.ridicdn.net/cover/4176000034/large#1",
+                "xxlarge": "https://img.ridicdn.net/cover/4176000034/xxlarge#1"
+            },
+            "authors": {
+                "illustrator": [
+                    {
+                        "id": 106517,
+                        "name": "겅생"
+                    }
+                ],
+                "planner": [
+                    {
+                        "id": 97235,
+                        "name": "책 끝을 접다"
+                    }
+                ],
+                "original_author": [
+                    {
+                        "id": 23863,
+                        "name": "박설미"
+                    }
+                ]
+            },
+            "publisher": {
+                "name": "책끝을접다"
+            },
+            "review_summary": {
+                "buyer_rating_distribution": [
+                    2,
+                    0,
+                    10,
+                    23,
+                    135
+                ],
+                "buyer_rating_average": 4.7,
+                "buyer_rating_count": 170,
+                "buyer_review_count": 21,
+                "total_rating_count": 171,
+                "total_review_count": 21
+            },
+            "begin_datetime": "2021-04-30T06:55:00",
+            "end_datetime": "2025-06-29T23:59:59"
+        },
+        {
+            "id": "4176000006",
+            "title": {
+                "main": "러닝패밀리",
+                "sub": null
+            },
+            "thumbnail": {
+                "small": "https://img.ridicdn.net/cover/4176000006/small#1",
+                "large": "https://img.ridicdn.net/cover/4176000006/large#1",
+                "xxlarge": "https://img.ridicdn.net/cover/4176000006/xxlarge#1"
+            },
+            "authors": {
+                "planner": [
+                    {
+                        "id": 97235,
+                        "name": "책 끝을 접다"
+                    }
+                ],
+                "illustrator": [
+                    {
+                        "id": 105766,
+                        "name": "코츠"
+                    }
+                ],
+                "original_author": [
+                    {
+                        "id": 8593,
+                        "name": "강지영"
+                    }
+                ]
+            },
+            "publisher": {
+                "name": "책끝을접다"
+            },
+            "review_summary": {
+                "buyer_rating_distribution": [
+                    25,
+                    20,
+                    59,
+                    41,
+                    66
+                ],
+                "buyer_rating_average": 3.5,
+                "buyer_rating_count": 211,
+                "buyer_review_count": 16,
+                "total_rating_count": 212,
+                "total_review_count": 16
+            },
+            "begin_datetime": "2020-04-27T11:18:00",
+            "end_datetime": "2025-04-26T23:59:59"
+        }
+    ],
+    "total_count": 33,
+    "total_page": 2,
+    "size": 24
+}
+]
