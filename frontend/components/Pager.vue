@@ -36,6 +36,7 @@ export default defineComponent({
   },
   setup(props, { emit }) {
     const showPageNumArr = computed(() => {
+      // 현재 페이지가 1~10일때 offset은 1 / 11~20 일때 offset은 2
       const offset = Math.ceil(props.currentPage / props.showPageCount)
       const startPageNum = (offset - 1) * props.showPageCount + 1
       let lastPageNum = offset * props.showPageCount
