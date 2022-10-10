@@ -1,6 +1,6 @@
 const mutations = {
-  SET_HEADER_COLOR(state, color) {
-    state.headerColor = color
+  SET_HEADER_COLOR(state, payload) {
+    const idx = state.bookImgThemeColorList.findIndex((item) => item.bookId === payload.bookId)
   },
 }
 

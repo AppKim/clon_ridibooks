@@ -1,5 +1,5 @@
 const state = () => ({
-  bookImgThemaColorList: [],
+  bookImgThemeColorList: [],
 })
 
 export default state
