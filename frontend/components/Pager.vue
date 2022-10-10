@@ -39,6 +39,7 @@ export default defineComponent({
       // 현재 페이지가 1~10일때 offset은 1 / 11~20 일때 offset은 2
       const offset = Math.ceil(props.currentPage / props.showPageCount)
       // offset과 showPageCount가 있으면 표시할 페이지의 번호들을 알아낼 수 있다
+      // offset이 2이면 11~20 까지 표시
       const startPageNum = (offset - 1) * props.showPageCount + 1
       let lastPageNum = offset * props.showPageCount
       if (lastPageNum > props.totalPage) {
