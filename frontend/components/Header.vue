@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="header" :style="bgColor">
     <div class="header__wrapper">
       <nuxt-link class="header__logo" to="/">
         <img class="header__logo-ridi" src="@/assets/images/logo_ridi.svg" />
@@ -15,10 +15,22 @@
 </template>
 
 <script>
-import { defineComponent } from '@nuxtjs/composition-api'
+import { computed, defineComponent, useStore, useRoute } from '@nuxtjs/composition-api'
 
 export default defineComponent({
-  setup() {},
+  setup() {
+    const store = useStore()
+    const route = useRoute()
+    const bgColor = computed(() => {
+      if (store.getters['commonUI/getIsUsedThemeColor']) {
+        return { backgroundColor: store.getters['commonUI/getBookImgThemeColorList'][route.value.params.id] }
+      }
+      return {}
+    })
+    return {
+      bgColor,
+    }
+  },
 })
 </script>
 

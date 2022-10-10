@@ -5,21 +5,35 @@
   </div>
 </template>
 <script>
-import { computed, defineComponent, onMounted, ref } from '@nuxtjs/composition-api'
+import { computed, defineComponent, onBeforeMount, onMounted, useRoute, useStore } from '@nuxtjs/composition-api'
 import { useVibrant } from '../../composables/useVibrant'
 
 export default defineComponent({
   setup() {
-    const { getPaletteData } = useVibrant()
-    const vibrant = ref({})
-    onMounted(async () => {
-      const sampleImgPath = require('@/assets/images/large-sample1.webp')
-      const result = await getPaletteData(sampleImgPath)
-      vibrant.value = result.Vibrant
+    const route = useRoute()
+    const store = useStore()
+    const bgColor = computed(() => {
+      const bgColor = store.getters['commonUI/getBookImgThemeColorList'][route.value.params.id]
+
+      return bgColor
+        ? { backgroundColor: store.getters['commonUI/getBookImgThemeColorList'][route.value.params.id] }
+        : undefined
     })
-    const bgColor = computed(() => ({
-      background: `rgb(${vibrant.value._rgb.join(',')})`,
-    }))
+    const { getPaletteData } = useVibrant()
+    onMounted(async () => {
+      if (bgColor.value === undefined) {
+        const sampleImgPath = require('@/assets/images/large-sample1.webp')
+        const result = await getPaletteData(sampleImgPath)
+        store.commit('commonUI/SET_THEME_COLOR', {
+          bookId: '734001113', // route.value.params.id,
+          bgColor: `rgb(${result.Vibrant._rgb.join(',')})`,
+        })
+      }
+      store.commit('commonUI/SET_IS_USED_THEME_COLOR', true)
+    })
+    onBeforeMount(() => {
+      store.commit('commonUI/SET_IS_USED_THEME_COLOR', false)
+    })
     return {
       bgColor,
     }
