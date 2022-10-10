@@ -7,7 +7,7 @@
         v-for="pageNum in showPageNumArr"
         :key="pageNum"
         class="link-list"
-        @click="onChangePageNum(pageNum)"
+        @click="changePageHandler(pageNum)"
       >
         <span>{{ pageNum }}</span>
       </li>
@@ -45,13 +45,13 @@ export default defineComponent({
       return new Array(lastPageNum - startPageNum + 1).fill().map((_, i) => i + startPageNum)
     })
 
-    const onChangePageNum = (pageNum) => {
-      emit('changePage', pageNum)
+    const changePageHandler = (pageNum) => {
+      emit('onChangePage', pageNum)
     }
 
     return {
       showPageNumArr,
-      onChangePageNum,
+      changePageHandler,
     }
   },
 })
