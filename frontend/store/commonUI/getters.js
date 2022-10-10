@@ -1,6 +1,9 @@
 const getters = {
-  getHeaderColor(state) {
-    return state.headerColor
+  getBookImgThemeColorList(state) {
+    return state.bookImgThemeColorList
+  },
+  getIsUsedThemeColor(state) {
+    return state.isUsedThemeColor
   },
 }
 
