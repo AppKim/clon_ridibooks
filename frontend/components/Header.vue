@@ -2,13 +2,13 @@
   <div class="header" :style="bgColor">
     <div class="header__wrapper">
       <nuxt-link class="header__logo" to="/">
-        <img class="header__logo-ridi" src="@/assets/images/logo_ridi.svg" />
-        <img class="header__logo-select" src="@/assets/images/logo_select.svg" />
+        <img class="header__logo--ridi" src="@/assets/images/logo_ridi.svg" />
+        <img class="header__logo--select" src="@/assets/images/logo_select.svg" />
       </nuxt-link>
       <div class="header__buttons">
-        <fa-icon class="header__buttons__search" icon="magnifying-glass" />
-        <fa-icon class="header__buttons__user" icon="user" />
-        <button class="header__buttons__mybooks">내 서재</button>
+        <fa-icon class="header__buttons__search" :class="{ white: isUsedThemeColor }" icon="magnifying-glass" />
+        <fa-icon class="header__buttons__user" :class="{ white: isUsedThemeColor }" icon="user" />
+        <button class="header__buttons__mybooks" :class="{ white: isUsedThemeColor }">내 서재</button>
       </div>
     </div>
   </div>
@@ -21,13 +21,15 @@ export default defineComponent({
   setup() {
     const store = useStore()
     const route = useRoute()
+    const isUsedThemeColor = computed(() => store.getters['commonUI/getIsUsedThemeColor'])
     const bgColor = computed(() => {
-      if (store.getters['commonUI/getIsUsedThemeColor']) {
+      if (isUsedThemeColor.value && store.getters['commonUI/getBookImgThemeColorList'][route.value.params.id]) {
         return { backgroundColor: store.getters['commonUI/getBookImgThemeColorList'][route.value.params.id] }
       }
       return {}
     })
     return {
+      isUsedThemeColor,
       bgColor,
     }
   },
@@ -49,12 +51,12 @@ export default defineComponent({
     display: flex;
     @include hover_opacity;
 
-    &-ridi {
+    &--ridi {
       width: 43px;
       height: 16px;
       margin-right: 8px;
     }
-    &-select {
+    &--select {
       width: 85px;
       height: 16px;
     }
@@ -70,12 +72,18 @@ export default defineComponent({
       color: #444;
       cursor: pointer;
       @include hover_opacity;
+      &.white {
+        color: white;
+      }
     }
     &__user {
       font-size: 1.8rem;
       color: #444;
       cursor: pointer;
       @include hover_opacity;
+      &.white {
+        color: white;
+      }
     }
     &__mybooks {
       padding: 6px 12px;
@@ -88,6 +96,9 @@ export default defineComponent({
       letter-spacing: -0.5px;
       cursor: pointer;
       margin-right: 8px;
+      &.white {
+        color: white;
+      }
     }
   }
   @include sp_view {
@@ -96,12 +107,12 @@ export default defineComponent({
     }
     &__logo {
       padding: 16px 0 16px 16px;
-      &-ridi {
+      &--ridi {
         width: 35px;
         height: 13px;
         margin-right: 8px;
       }
-      &-select {
+      &--select {
         width: 70px;
         height: 13px;
       }

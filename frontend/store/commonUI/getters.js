@@ -5,6 +5,9 @@ const getters = {
   getIsUsedThemeColor(state) {
     return state.isUsedThemeColor
   },
+  getIsShowMenu(state) {
+    return state.isShowMenu
+  },
 }
 
 export default getters
