@@ -4,7 +4,7 @@
       v-for="(book, i) in bookList"
       :key="i"
       size="medium"
-      :src="book.thumbnail.small"
+      :src="book.thumbnail.large"
       :alt="book.alt && book.title && book.title.main"
       :to="book.link"
       :title="book.title && book.title.main"

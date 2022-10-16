@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <Header />
-    <Menu />
+    <Menu v-show="isShowMenu" />
     <div class="main">
       <Nuxt />
     </div>
@@ -10,14 +10,21 @@
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
+import { useStore, computed, defineComponent } from '@nuxtjs/composition-api'
 import Menu from '@/components/Menu.vue'
 import Footer from '@/components/Footer.vue'
 import Header from '@/components/Header.vue'
 
 export default defineComponent({
   components: { Header, Footer, Menu },
-  setup() {},
+  setup() {
+    const store = useStore()
+    const isShowMenu = computed(() => store.getters['commonUI/getIsShowMenu'])
+
+    return {
+      isShowMenu,
+    }
+  },
 })
 </script>
 
