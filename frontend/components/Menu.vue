@@ -5,7 +5,11 @@
       <nuxt-link class="menu__link" :class="{ active: $route.path === '/new-releases' }" to="/new-releases"
         >최신 업데이트</nuxt-link
       >
-      <nuxt-link class="menu__link" :class="{ active: $route.path === '/categories/100' }" to="/categories/100"
+      <nuxt-link
+        class="menu__link"
+        :class="{ active: $route.path === '/categories/100' }"
+        to="/categories/100"
+        @click="getCategoryItem"
         >카테고리</nuxt-link
       >
       <nuxt-link class="menu__link" :class="{ active: $route.path === '/my-select' }" to="/my-select"
@@ -19,7 +23,14 @@
 import { defineComponent } from '@vue/composition-api'
 
 export default defineComponent({
-  setup() {},
+  setup() {
+    const getCategoryItem = () => {
+      sessionStorage.getItem('id')
+    }
+    return {
+      getCategoryItem,
+    }
+  },
 })
 </script>
 

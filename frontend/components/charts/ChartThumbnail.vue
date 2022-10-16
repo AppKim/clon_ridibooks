@@ -38,15 +38,15 @@ export default defineComponent({
 <style lang="scss" scoped>
 .grid-booklist-container {
   min-width: 320px;
-  max-width: 900px;
-  margin: 10px auto;
+  max-width: 800px;
+  margin: 0px auto;
   .grid-booklist {
     display: flex;
     flex-wrap: wrap;
     padding: 16px 0;
     .grid-booklist__item {
       width: 120px;
-      margin: 0 10px 50px 10px;
+      margin: 0 0px 50px 10px;
       .grid-booklist__rank {
         text-align: center;
         margin-bottom: 15px;

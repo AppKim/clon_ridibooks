@@ -2,7 +2,7 @@
   <div class="new-releases">
     <PageTitle class="new-releases__title" title="최신 업데이트" />
     <BookThumbnailLinkGrid :bookList="recentReleaseBooks" />
-    <Pager @changePage="changePageHandler" :current-page="+$route.query.page || 1" :total-page="100" />
+    <Pager @onChangePage="changePageHandler" :current-page="+$route.query.page || 1" :total-page="100" />
   </div>
 </template>
 <script>

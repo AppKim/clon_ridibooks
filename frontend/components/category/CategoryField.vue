@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import { ref, useRouter } from '@nuxtjs/composition-api'
+import { computed, ref, useRouter, useStore } from '@nuxtjs/composition-api'
 export default {
   props: {
     categoryFieldItem: {
@@ -34,15 +34,23 @@ export default {
       type: String,
       required: true,
     },
+    categoryChildrenId: {
+      type: Number,
+      required: true,
+    },
   },
-  setup() {
+  setup(props, context) {
     const router = useRouter()
+    const store = useStore()
     const isActive = ref(false)
-    const activeId = ref(0)
+    const activeId = computed(() => store.getters.selectCategoryChildrenId)
     const moveToCategory = (id) => {
       activeId.value = id
       router.push(`/categories/${id}`)
+      sessionStorage.setItem('id', id)
+      context.emit('categoryChildrenId', id)
     }
+
     return {
       isActive,
       activeId,
