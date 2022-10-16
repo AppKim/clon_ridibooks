@@ -1,8 +1,11 @@
 export const BooksRepository = ($axios) => ({
   get: {
-    book: () => $axios.$get('/book'),
+    books: () => $axios.$get('/books'),
   },
   show: {
-    book: (id) => $axios.$get(`/book/${id}`),
+    books: (id) => {
+      const books = $axios.$get(`/books/${id}`)
+      return books.find((book) => book.id === id)
+    },
   },
 })
