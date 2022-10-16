@@ -82,6 +82,7 @@ export default defineComponent({
   img {
     display: block;
     width: inherit;
+    // height는 되도록 설정안한다.책 이미지는 그대로 전부 보여지게 하는걸 우선시
   }
   & .shadow {
     box-sizing: border-box;
