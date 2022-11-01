@@ -24,7 +24,6 @@ export default defineComponent({
       default: () => [],
     },
   },
-  setup(props) {},
 })
 </script>
 
@@ -32,6 +31,7 @@ export default defineComponent({
 .book-thumbnail-link-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  padding-top: 32px;
   row-gap: 32px;
   margin-bottom: 32px;
   @include sp_view {
