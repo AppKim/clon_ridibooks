@@ -24,9 +24,10 @@ export default defineComponent({
   setup() {
     const route = useRoute()
     const store = useStore()
+    console.log(route.value.params.id)
     const bgColor = computed(() => {
-      if (store.getters['commonUI/getBookImgThemeColorList'][route.value.params.id]) {
-        // FIXME: '734001113' -> route.value.params.id
+      // FIXME: '1046000135' -> route.value.params.id
+      if (store.getters['commonUI/getBookImgThemeColorList']['1046000135']) {
         return { backgroundColor: store.getters['commonUI/getBookImgThemeColorList']['1046000135'] }
       }
       return {}
