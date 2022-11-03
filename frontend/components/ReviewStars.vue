@@ -8,9 +8,9 @@
         <fa-icon v-for="i in 5" :key="i" :icon="['fas', 'star']" />
       </div>
     </div>
-    <div class="review-stars__count" v-if="isShowRatingCount">149</div>
     <div class="review-stars__score" v-if="isShowReviewScore">4.5점</div>
     <div class="review-stars__review-count" v-if="isShowReviewCount">(43명)</div>
+    <div class="review-stars__count" v-if="isShowRatingCount">149</div>
   </div>
 </template>
 <script>
@@ -27,8 +27,8 @@ export default defineComponent({
   props: {
     reviewSummary: {
       // 0 ~ 100
-      type: () => {},
-      default: defaultReviewSummary,
+      type: Object,
+      default: () => defaultReviewSummary,
     },
     text: {
       type: String,
