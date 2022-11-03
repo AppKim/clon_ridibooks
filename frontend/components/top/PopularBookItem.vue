@@ -4,23 +4,14 @@
     <book-thumbnail src="https://placeimg.com/150/200/any" size="small" alt="book.title" />
     <div class="popular-book-item__book-info">
       <div>사상 최강의 철학 입문</div>
-      <div class="popular-book-item__review">
-        <div class="popular-book-item__review__stars">
-          <div class="popular-book-item__review__stars--forward" style="width: 92%">
-            <fa-icon v-for="i in 5" :key="i" :icon="['fas', 'star']" />
-          </div>
-          <div class="popular-book-item__review__stars--backward">
-            <fa-icon v-for="i in 5" :key="i" :icon="['fas', 'star']" />
-          </div>
-        </div>
-        <span class="popular-book-item__review__count"> 149 </span>
-      </div>
+      <ReviewStars star-size="medium" :isShowRatingCount="true" />
     </div>
   </div>
 </template>
 <script>
 import { defineComponent } from '@nuxtjs/composition-api'
 import BookThumbnail from '../BookThumbnail.vue'
+import ReviewStars from '../ReviewStars.vue'
 
 export default defineComponent({
   props: {
@@ -33,7 +24,7 @@ export default defineComponent({
       required: true,
     },
   },
-  components: { BookThumbnail },
+  components: { BookThumbnail, ReviewStars },
   setup() {},
 })
 </script>
@@ -57,39 +48,6 @@ export default defineComponent({
     margin: 10px;
     color: rgb(64, 71, 77);
     font-size: 13px;
-  }
-  &__review {
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center; // #f96b1f
-    &__stars {
-      position: relative;
-      min-height: 12px;
-      min-width: 62px;
-      font-size: 1.1rem;
-      &--forward {
-        top: 0;
-        position: absolute;
-        overflow: hidden;
-        z-index: 1;
-        display: flex;
-        color: #f96b1f;
-        background: transparent;
-      }
-      &--backward {
-        top: 0;
-        position: absolute;
-        display: flex;
-        color: #998b8272;
-      }
-    }
-    &__count {
-      display: inline-block;
-      margin-top: 1px;
-      margin-left: 3px;
-      color: rgb(158, 167, 173);
-      vertical-align: top;
-    }
   }
 }
 </style>

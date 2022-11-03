@@ -41,6 +41,7 @@ export default defineComponent({
   justify-content: center;
   transition: background 0.2s;
   border-radius: 3px;
+  cursor: pointer;
   &.small {
     height: 40px;
     font-size: 1.4rem;
