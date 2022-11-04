@@ -15,21 +15,6 @@ import BookMeta from './BookMeta.vue'
 
 export default defineComponent({
   components: { BookThumbnail, BookMeta },
-  setup() {
-    const categories = [
-      {
-        id: '12',
-        name: '소설',
-      },
-      {
-        id: '14',
-        name: '추리소설',
-      },
-    ]
-    return {
-      categories,
-    }
-  },
 })
 </script>
 
