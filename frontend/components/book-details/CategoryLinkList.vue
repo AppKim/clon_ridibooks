@@ -19,4 +19,24 @@ export default defineComponent({
 })
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.category-link-list {
+  color: #fff;
+  font-weight: 300;
+  font-size: 13px;
+  .icon {
+    font-size: 9px;
+    margin: 0 4px;
+  }
+  @include sp_view {
+    .category-link-list {
+      color: rgb(158, 167, 173);
+      font-size: 12px;
+    }
+    .icon {
+      font-size: 9px;
+      margin: 0 4px;
+    }
+  }
+}
+</style>

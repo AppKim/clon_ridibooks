@@ -15,13 +15,11 @@
 </template>
 
 <script>
-import { computed, defineComponent, useStore, useRoute } from '@nuxtjs/composition-api'
+import { computed, defineComponent, useStore } from '@nuxtjs/composition-api'
 
 export default defineComponent({
   setup() {
     const store = useStore()
-    const route = useRoute()
-    console.log(route.value.params.id)
     const isUsedThemeColor = computed(() => store.getters['commonUI/getIsUsedThemeColor'])
     const bgColor = computed(() => {
       // FIXME: '1046000135' -> route.value.params.id
