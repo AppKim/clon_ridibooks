@@ -1,3 +1,3 @@
-const state = () => ({ categories: [], category: {}, categoryChildrenId: 0 })
+const state = () => ({ counter: 1 })
 
 export default state
