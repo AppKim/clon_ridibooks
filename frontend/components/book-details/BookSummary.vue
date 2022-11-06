@@ -5,7 +5,7 @@
       size="xLarge"
       src="https://img.ridicdn.net/cover/1046000135/xxlarge#1"
     />
-    <BookMeta />
+    <BookMeta v-if="$device.isDesktopOrTablet" />
   </div>
 </template>
 <script>
@@ -28,6 +28,14 @@ export default defineComponent({
   &__thumbnail {
     cursor: zoom-in;
     margin-right: 56px;
+  }
+  @include sp_view {
+    width: 100%;
+    justify-content: center;
+    padding: 24px 0;
+    &__thumbnail {
+      margin: 0;
+    }
   }
 }
 </style>

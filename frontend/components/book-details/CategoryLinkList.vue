@@ -22,19 +22,17 @@ export default defineComponent({
 <style lang="scss" scoped>
 .category-link-list {
   color: #fff;
-  font-weight: 300;
-  font-size: 13px;
+  font-weight: 400;
+  font-size: 1.3rem;
   .icon {
-    font-size: 9px;
+    font-size: 0.9rem;
     margin: 0 4px;
   }
   @include sp_view {
-    .category-link-list {
-      color: rgb(158, 167, 173);
-      font-size: 12px;
-    }
+    color: rgb(99, 108, 115);
+    font-size: 1.2rem;
     .icon {
-      font-size: 9px;
+      font-size: 0.9rem;
       margin: 0 4px;
     }
   }

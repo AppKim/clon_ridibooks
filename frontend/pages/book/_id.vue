@@ -7,6 +7,7 @@
       </div>
     </div>
     <div class="book__main">
+      <BookMeta v-if="!$device.isDesktopOrTablet" class="book__book-meta" />
       <div class="book__section">
         <h3 class="book__section__title">책소개</h3>
         <ReadMore :visibleLine="6" :fontSize="16" :lineHeight="1.5">
@@ -56,12 +57,13 @@ import {
   useRoute,
   useStore,
 } from '@nuxtjs/composition-api'
+import BookMeta from '../../components/book-details/BookMeta.vue'
 import BookSummary from '../../components/book-details/BookSummary.vue'
 import ReadMore from '../../components/book-details/ReadMore.vue'
 import { useVibrant } from '../../composables/useVibrant'
 
 export default defineComponent({
-  components: { BookSummary, ReadMore },
+  components: { BookSummary, ReadMore, BookMeta },
   setup() {
     const route = useRoute()
     const store = useStore()
@@ -105,7 +107,6 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .book {
-  min-height: 100vh;
   &__header {
     position: relative;
     &__background {
@@ -140,11 +141,36 @@ export default defineComponent({
   }
   &__section {
     padding: 24px 0;
-    border-bottom: 2px solid #afb5ba;
+    border-bottom: 1px solid rgba(153, 139, 130, 0.4470588235);
     line-height: 1.5;
     &__title {
       font-size: 1.8rem;
       margin-bottom: 16px;
+    }
+  }
+  @include sp_view {
+    &__header {
+      position: relative;
+      &__background {
+        background-size: 100%;
+      }
+      &__mask {
+        background-size: 100%;
+      }
+    }
+    &__main {
+      width: 100%;
+    }
+    &__book-meta {
+      border-bottom: 6px solid rgb(242, 244, 245);
+    }
+    &__section {
+      padding: 16px;
+      border-bottom: 6px solid rgb(242, 244, 245);
+      &__title {
+        font-size: 1.8rem;
+        margin-bottom: 16px;
+      }
     }
   }
 }
