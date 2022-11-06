@@ -4,7 +4,10 @@
       <slot></slot>
     </div>
     <div class="read-more__btn">
-      <button v-show="isActivatedReadMore && !isShowAllText" @click="toggleAllText">계속읽기</button>
+      <button v-show="isActivatedReadMore && !isShowAllText" @click="toggleAllText">
+        <span>계속읽기</span>
+        <fa-icon class="icon" icon="angle-right" />
+      </button>
     </div>
   </div>
 </template>
@@ -79,13 +82,14 @@ export default defineComponent({
     text-align: right;
     margin-top: 8px;
     button {
-      padding: 5.5px;
-      font-size: 1.2rem;
-      font-weight: 600;
       color: #646c73;
-      text-decoration: underline;
       cursor: pointer;
-      backdrop-filter: blur(30px);
+      border: none;
+      background: transparent;
+    }
+    .icon {
+      transform: rotate(90deg);
+      margin-left: 2px;
     }
   }
 }

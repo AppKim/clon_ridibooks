@@ -52,7 +52,7 @@ export default defineComponent({
   }
   &__book-elements {
     margin-top: 16px;
-    font-size: 13px;
+    font-size: 1.3rem;
     color: #fff;
   }
   &__review {
@@ -61,6 +61,24 @@ export default defineComponent({
   &__add-select-btn {
     margin-top: 32px;
     width: 170px;
+  }
+  @include sp_view {
+    padding: 20px;
+    &__book-title {
+      color: #222;
+      margin-top: 8px;
+    }
+    &__book-elements {
+      margin-top: 8px;
+      color: #646c73;
+    }
+    &__review {
+      margin: 0;
+    }
+    &__add-select-btn {
+      margin-top: 16px;
+      width: 100%;
+    }
   }
 }
 </style>
