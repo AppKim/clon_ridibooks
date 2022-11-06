@@ -10,7 +10,7 @@
       <BookMeta v-if="!$device.isDesktopOrTablet" class="book__book-meta" />
       <div class="book__section">
         <h3 class="book__section__title">책소개</h3>
-        <ReadMore :visibleLine="6" :fontSize="16" :lineHeight="1.5">
+        <ReadMore :visible-line="6" :font-size="16" :line-height="1.5">
           우리가 사랑하는 많은 디저트들은 놀랍고 흥미로운 이야기들을 풍성하게 담고 있다. 다채로운 디저트들의 기원과 진화
           과정을 상세하게 살펴보며, 오븐이나 냉장고 같은 조리도구부터 시대별로 유행을 선도한 디저트 코스에 이르기까지
           디저트를 둘러싼 모든 것들을 담은 책이다.<br /><br />
@@ -22,7 +22,7 @@
       </div>
       <div class="book__section">
         <h3 class="book__section__title">책소개</h3>
-        <ReadMore :visibleLine="6" :fontSize="16" :lineHeight="1.5">
+        <ReadMore :visible-line="6" :font-size="16" :line-height="1.5">
           우리가 사랑하는 많은 디저트들은 놀랍고 흥미로운 이야기들을 풍성하게 담고 있다. 다채로운 디저트들의 기원과 진화
           과정을 상세하게 살펴보며, 오븐이나 냉장고 같은 조리도구부터 시대별로 유행을 선도한 디저트 코스에 이르기까지
           디저트를 둘러싼 모든 것들을 담은 책이다.<br /><br />
@@ -34,7 +34,7 @@
       </div>
       <div class="book__section">
         <h3 class="book__section__title">책소개</h3>
-        <ReadMore :visibleLine="6" :fontSize="16" :lineHeight="1.5">
+        <ReadMore :visible-line="6" :font-size="16" :line-height="1.5">
           우리가 사랑하는 많은 디저트들은 놀랍고 흥미로운 이야기들을 풍성하게 담고 있다. 다채로운 디저트들의 기원과 진화
           과정을 상세하게 살펴보며, 오븐이나 냉장고 같은 조리도구부터 시대별로 유행을 선도한 디저트 코스에 이르기까지
           디저트를 둘러싼 모든 것들을 담은 책이다.<br /><br />
