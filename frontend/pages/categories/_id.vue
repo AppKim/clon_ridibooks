@@ -19,6 +19,9 @@
         </ul>
       </nuxt-link>
     </div>
+    <div class="pagination--wrapper">
+      <pager></pager>
+    </div>
   </div>
 </template>
 
@@ -30,8 +33,9 @@ import CategoryField from '../../components/category/CategoryField.vue'
 import SelectButton from '../../components/category/SelectButton.vue'
 import BookThumbnail from '../../components/BookThumbnail.vue'
 import BookThumbnailTitle from '../../components/BookThumbnailTitle.vue'
+import Pager from '../../components/Pager.vue'
 export default {
-  components: { CategoryButton, CategoryModal, CategoryField, SelectButton, BookThumbnail, BookThumbnailTitle },
+  components: { CategoryButton, CategoryModal, CategoryField, SelectButton, BookThumbnail, BookThumbnailTitle, Pager },
   setup() {
     const store = useStore()
     const route = useRoute()
@@ -39,11 +43,11 @@ export default {
     const isModalBtn = ref(false)
     const bookTitle = '부자의 그릇'
     // computed
-    const categories = computed(() => store.getters.categories)
-    const categoryBtnName = computed(() => store.getters.selectCategory.name)
+    const categories = computed(() => store.getters['categories/categories'])
+    const categoryBtnName = computed(() => store.getters['categories/selectCategory'].name)
     // vuex state category
-    const categoryFieldItem = computed(() => store.getters.selectCategory)
-    const categoryChildrenId = computed(() => store.getters.selectCategoryId)
+    const categoryFieldItem = computed(() => store.getters['categories/selectCategory'])
+    const categoryChildrenId = computed(() => store.getters['categories/selectCategoryChildrenId'])
 
     // store category가 null인지 판정하는 함수
     const isEmptyObject = (param) => {
@@ -58,13 +62,13 @@ export default {
       }
 
       // store categories가 null이면 actions 실행
-      if (store.state.categories.length === 0) {
-        await store.dispatch('getCategories')
-        store.commit('ADD_CATEGORY', Number(id.value))
+      if (store.getters['categories/categories'].length === 0) {
+        await store.dispatch('categories/getCategories')
+        store.commit('categories/ADD_CATEGORY', Number(id.value))
         // store categories가 not null
       } else {
-        if (isEmptyObject(store.getters.selectCategory)) {
-          store.commit('ADD_CATEGORY', Number(id.value))
+        if (isEmptyObject(store.getters['categories/selectCategory'])) {
+          store.commit('categories/ADD_CATEGORY', Number(id.value))
         }
       }
     })
@@ -80,7 +84,7 @@ export default {
     }
 
     const setCategoryChildrenId = (id) => {
-      store.commit('ADD_CATEGORY_CHILDREN_ID', id)
+      store.commit('categories/ADD_CATEGORY_CHILDREN_ID', id)
     }
 
     return {
@@ -124,5 +128,9 @@ export default {
   margin-top: 10px;
   font-size: 13px;
   font-weight: 400px;
+}
+
+.pagination--wrapper {
+  padding-top: 40px;
 }
 </style>

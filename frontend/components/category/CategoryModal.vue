@@ -38,7 +38,7 @@ export default {
     const store = useStore()
     const moveToCategory = (id) => {
       router.push(`/categories/${id}`)
-      store.commit('DELETE_CATEGORY')
+      store.commit('categories/DELETE_CATEGORY')
     }
     return {
       moveToCategory,

@@ -43,7 +43,7 @@ export default {
     const router = useRouter()
     const store = useStore()
     const isActive = ref(false)
-    const activeId = computed(() => store.getters.selectCategoryChildrenId)
+    const activeId = computed(() => store.getters['categories/selectCategoryChildrenId'])
     const moveToCategory = (id) => {
       activeId.value = id
       router.push(`/categories/${id}`)
