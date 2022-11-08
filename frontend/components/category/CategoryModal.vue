@@ -39,7 +39,6 @@ export default {
     const activeId = computed(() => store.getters['categories/selectCategory'].id)
 
     const moveToCategory = (id) => {
-      activeId.value = id
       router.push(`/categories/${id}`)
       store.commit('categories/DELETE_CATEGORY')
     }
