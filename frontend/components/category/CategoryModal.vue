@@ -14,7 +14,7 @@
         <ul class="modal__content">
           <li v-for="category in categories" :key="category.id">
             <button type="button" class="category__item__btn" @click="moveToCategory(category.id)">
-              <div class=""></div>
+              <div class="select__dialog" :class="category.id === activeId ? 'active' : ''"></div>
               {{ category.name }}
             </button>
           </li>
@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import { useRouter, useStore } from '@nuxtjs/composition-api'
+import { useRouter, useStore, computed } from '@nuxtjs/composition-api'
 export default {
   props: {
     categories: {
@@ -36,12 +36,15 @@ export default {
   setup() {
     const router = useRouter()
     const store = useStore()
+    const activeId = computed(() => store.getters['categories/selectCategory'].id)
+
     const moveToCategory = (id) => {
       router.push(`/categories/${id}`)
       store.commit('categories/DELETE_CATEGORY')
     }
     return {
       moveToCategory,
+      activeId,
     }
   },
 }
@@ -59,14 +62,16 @@ export default {
     left: 0;
     height: 100%;
     width: 100%;
+    margin: 0px auto;
     background: rgba(0, 0, 0, 0.4);
+    animation: 0.2s ease 0s 1 normal forwards running animation-237xs;
   }
 
   &__header {
     display: flex;
     justify-content: space-between;
     font-size: 24px;
-    padding: 16px;
+    padding: 16px 20px;
   }
 
   &__close__btn {
@@ -85,14 +90,17 @@ export default {
   }
 
   &__window {
-    width: 25%;
-    height: 47%;
-    overflow: auto;
+    width: 420px;
+    height: 514px;
+    border-radius: 3px;
     background-color: white;
   }
 
   &__content {
+    margin: 0px;
     padding: 0px;
+    height: 450px;
+    overflow-y: auto;
   }
 }
 .category__item__btn {
@@ -117,6 +125,44 @@ svg {
   height: 26px;
   fill: rgb(184, 191, 196);
   outline: none;
+}
+
+/* 모달 라디오 버튼 스타일 */
+.select__dialog {
+  position: absolute;
+  left: 20px;
+  top: 14px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease 0s;
+  background: white;
+  border: 1px solid rgb(209, 213, 217);
+  &.active {
+    position: absolute;
+    left: 20px;
+    top: 14px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease 0s;
+    background: rgb(51, 156, 242);
+    border: 1px solid rgb(51, 156, 242);
+  }
+}
+.select__dialog::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0px);
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: white;
 }
 </style>
 >
