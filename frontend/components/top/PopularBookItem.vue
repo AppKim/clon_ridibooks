@@ -4,7 +4,7 @@
     <book-thumbnail src="https://placeimg.com/150/200/any" size="small" alt="book.title" />
     <div class="popular-book-item__book-info">
       <div>사상 최강의 철학 입문</div>
-      <ReviewStars star-size="medium" :isShowRatingCount="true" />
+      <ReviewStars star-size="medium" :is-show-rating-count="true" />
     </div>
   </div>
 </template>
@@ -14,6 +14,7 @@ import BookThumbnail from '../BookThumbnail.vue'
 import ReviewStars from '../ReviewStars.vue'
 
 export default defineComponent({
+  components: { BookThumbnail, ReviewStars },
   props: {
     rankNum: {
       type: Number,
@@ -24,7 +25,6 @@ export default defineComponent({
       required: true,
     },
   },
-  components: { BookThumbnail, ReviewStars },
   setup() {},
 })
 </script>
