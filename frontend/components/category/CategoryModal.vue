@@ -12,9 +12,9 @@
           </button>
         </div>
         <ul class="modal__content">
-          <li v-for="category in categories" :key="category.id">
+          <li v-for="category in categories" :key="category.id" :class="category.id === activeId ? 'selected' : ''">
             <button type="button" class="category__item__btn" @click="moveToCategory(category.id)">
-              <div class="select__dialog" :class="category.id === activeId ? 'active' : ''"></div>
+              <div class="select__dialog"></div>
               {{ category.name }}
             </button>
           </li>
@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import { useRouter, useStore, computed } from '@nuxtjs/composition-api'
+import { useRouter, useStore, computed, onMounted } from '@nuxtjs/composition-api'
 export default {
   props: {
     categories: {
@@ -38,10 +38,18 @@ export default {
     const store = useStore()
     const activeId = computed(() => store.getters['categories/selectCategory'].id)
 
+    onMounted(() => {
+      // 스크롤 위치
+      const scroller = document.querySelector('.modal__content')
+      const currentCategoryBtn = document.querySelector('.selected')
+      scroller.scrollTop = currentCategoryBtn.offsetTop
+    })
+
     const moveToCategory = (id) => {
       router.push(`/categories/${id}`)
       store.commit('categories/DELETE_CATEGORY')
     }
+
     return {
       moveToCategory,
       activeId,
@@ -100,7 +108,48 @@ export default {
     margin: 0px;
     padding: 0px;
     height: 450px;
+    position: relative;
     overflow-y: auto;
+
+    .selected {
+      .select__dialog {
+        position: absolute;
+        left: 20px;
+        top: 14px;
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        box-sizing: border-box;
+        transition: border-color 0.2s ease 0s;
+        background: rgb(51, 156, 242);
+        border: 1px solid rgb(51, 156, 242);
+      }
+    }
+
+    .select__dialog {
+      position: absolute;
+      left: 20px;
+      top: 14px;
+      width: 20px;
+      height: 20px;
+      border-radius: 20px;
+      box-sizing: border-box;
+      transition: border-color 0.2s ease 0s;
+      background: white;
+      border: 1px solid rgb(209, 213, 217);
+    }
+    .select__dialog::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate3d(-50%, -50%, 0px);
+      width: 8px;
+      height: 8px;
+      border-radius: 8px;
+      background: white;
+    }
   }
 }
 .category__item__btn {
@@ -113,7 +162,7 @@ export default {
   width: 100%;
   text-align: left;
   padding: 12px 20px 12px 50px;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
   color: rgb(33, 37, 41);
   position: relative;
@@ -126,43 +175,4 @@ svg {
   fill: rgb(184, 191, 196);
   outline: none;
 }
-
-/* 모달 라디오 버튼 스타일 */
-.select__dialog {
-  position: absolute;
-  left: 20px;
-  top: 14px;
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
-  box-sizing: border-box;
-  transition: border-color 0.2s ease 0s;
-  background: white;
-  border: 1px solid rgb(209, 213, 217);
-  &.active {
-    position: absolute;
-    left: 20px;
-    top: 14px;
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    box-sizing: border-box;
-    transition: border-color 0.2s ease 0s;
-    background: rgb(51, 156, 242);
-    border: 1px solid rgb(51, 156, 242);
-  }
-}
-.select__dialog::after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate3d(-50%, -50%, 0px);
-  width: 8px;
-  height: 8px;
-  border-radius: 8px;
-  background: white;
-}
 </style>
->
