@@ -9,7 +9,12 @@
       <span>5.3MB · </span>
       <span>약 13.2만 자</span>
     </div>
-    <ReviewStars class="book-meta__review" starSize="big" :isShowReviewScore="true" :isShowReviewCount="true" />
+    <ReviewStars
+      class="book-meta__review"
+      star-size="large"
+      :is-show-review-score="true"
+      :is-show-review-count="true"
+    />
     <CTAButton class="book-meta__add-select-btn"> 마이 셀렉트 추가 </CTAButton>
   </div>
 </template>

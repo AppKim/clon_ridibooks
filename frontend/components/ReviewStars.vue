@@ -8,9 +8,9 @@
         <fa-icon v-for="i in 5" :key="i" :icon="['fas', 'star']" />
       </div>
     </div>
-    <div class="review-stars__score" v-if="isShowReviewScore">4.5점</div>
-    <div class="review-stars__review-count" v-if="isShowReviewCount">(43명)</div>
-    <div class="review-stars__count" v-if="isShowRatingCount">149</div>
+    <div v-if="isShowReviewScore" class="review-stars__score">4.5점</div>
+    <div v-if="isShowReviewCount" class="review-stars__review-count">(43명)</div>
+    <div v-if="isShowRatingCount" class="review-stars__count">149</div>
   </div>
 </template>
 <script>
@@ -69,7 +69,7 @@ export default defineComponent({
       min-width: 62px;
       font-size: 1.1rem;
     }
-    &.big {
+    &.large {
       min-width: 74px;
       font-size: 1.4rem;
     }
