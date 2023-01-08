@@ -47,7 +47,6 @@ export default defineComponent({
 <style lang="scss" scoped>
 .book-thumbnail {
   display: flex;
-  align-items: flex-end;
   &.xLarge {
     width: 200px;
     height: 290px;
