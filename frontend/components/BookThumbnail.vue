@@ -1,5 +1,5 @@
 <template>
-  <div class="book-thumbnail" :class="size">
+  <div class="book-thumbnail" :class="[size, alignItems]">
     <div class="book-thumbnail__contents-wrapper">
       <img :src="src" :alt="alt" :loading="loading" :decoding="decoding" />
       <span v-show="onShadow" class="shadow"></span>
@@ -34,6 +34,10 @@ export default defineComponent({
     onShadow: {
       type: Boolean,
       default: true,
+    },
+    alignItems: {
+      type: String,
+      default: 'flex-end',
     },
   },
   setup() {},
@@ -73,6 +77,15 @@ export default defineComponent({
     width: 50px;
     height: 70px;
     max-height: 70px;
+  }
+  &.flexStart {
+    align-items: flex-start;
+  }
+  &.center {
+    align-items: center;
+  }
+  &.flexEnd {
+    align-items: flex-end;
   }
   &__contents-wrapper {
     position: relative;
