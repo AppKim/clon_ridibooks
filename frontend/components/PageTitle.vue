@@ -20,7 +20,6 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .page-title {
-  width: 800px;
   min-height: 24px;
   margin: 50px auto 17px;
   font-size: 2rem;

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="my-select">
     <div class="my-select-header">
       <page-title :title="pageTitle"></page-title>
     </div>
@@ -92,50 +92,60 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.my-select-body {
-  width: 800px;
+.my-select {
+  max-width: 800px;
   margin: auto;
-  .my-select-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    border-top: 2px solid #d1d5d9;
-    border-bottom: 1px solid #d1d5d9;
+  .my-select-header {
+    @include sp_view {
+      display: none;
+    }
   }
-  .download {
-    border: 1px solid rgb(0, 119, 217);
-    border-radius: 3px;
-    background: rgb(31, 140, 230);
-    color: white;
-    padding: 5px 10px;
-    font-size: 12px;
-    cursor: pointer;
-  }
-  .delete {
-    font-size: 12px;
-    border-radius: 3px;
-    border: 1px solid #d1d5d9;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  .my-select-list {
-    .my-select-list__item {
+  .my-select-body {
+    .my-select-nav {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      border-bottom: 2px solid #e6e8eb;
       padding: 10px;
-      .left {
-        display: flex;
-        align-items: center;
+      border-top: 2px solid #d1d5d9;
+      border-bottom: 1px solid #d1d5d9;
+      @include sp_view {
+        border-top: none;
       }
     }
-    .book-thumbnail {
-      margin: 0 15px 0 10px;
+    .download {
+      border: 1px solid rgb(0, 119, 217);
+      border-radius: 3px;
+      background: rgb(31, 140, 230);
+      color: white;
+      padding: 5px 10px;
+      font-size: 12px;
+      cursor: pointer;
     }
-    .book-thumbnail-description {
-      position: relative;
-      top: -30px;
+    .delete {
+      font-size: 12px;
+      border-radius: 3px;
+      border: 1px solid #d1d5d9;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    .my-select-list {
+      .my-select-list__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid #e6e8eb;
+        padding: 10px;
+        .left {
+          display: flex;
+          align-items: center;
+        }
+      }
+      .book-thumbnail {
+        margin: 0 15px 0 10px;
+      }
+      .book-thumbnail-description {
+        position: relative;
+        top: -30px;
+      }
     }
   }
 }
