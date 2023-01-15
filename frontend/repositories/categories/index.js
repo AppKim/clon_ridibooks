@@ -1,5 +1,7 @@
 export const CategoriesRepository = ($axios) => ({
   get: {
-    categories: () => $axios.$get('/categories'),
+    categories: (params) => {
+      return $axios.$get('/categories', { params })
+    },
   },
 })

@@ -1,14 +1,18 @@
 <template>
   <div class="container">
+    <!-- category select button -->
     <CategoryButton :category-btn-name="categoryBtnName" @open="openModal" />
+    <!-- category buttons  -->
     <CategoryField
       :category-field-item="categoryFieldItem"
       :category-btn-name="categoryBtnName"
       :category-children-id="categoryChildrenId"
       @categoryChildrenId="setCategoryChildrenId"
     />
+    <!-- Modal when category button is clicked -->
     <CategoryModal v-if="isModalBtn" :categories="categories" @close="closeModal" />
-    <SelectButton />
+    <!-- popular recent button -->
+    <SelectButton @changeBtnItem="changePopularRecent" />
     <div class="grid-booklist-wrapper">
       <nuxt-link to="">
         <ul class="book-wrapper">
@@ -26,7 +30,7 @@
 </template>
 
 <script>
-import { ref, useRoute, useFetch, useStore, computed } from '@nuxtjs/composition-api'
+import { ref, useRoute, useFetch, useStore, computed, useRouter, watch } from '@nuxtjs/composition-api'
 import CategoryButton from '../../components/category/CategoryButton.vue'
 import CategoryModal from '../../components/category/CategoryModal.vue'
 import CategoryField from '../../components/category/CategoryField.vue'
@@ -39,6 +43,7 @@ export default {
   setup() {
     const store = useStore()
     const route = useRoute()
+    const router = useRouter()
     const id = computed(() => route.value.params.id)
     const isModalBtn = ref(false)
     const bookTitle = '부자의 그릇'
@@ -53,6 +58,16 @@ export default {
     const isEmptyObject = (param) => {
       return Object.keys(param).length === 0 && param.constructor === Object
     }
+
+    // 인기순 최신순 버튼 change 이벤트 발생시 router 실행
+    const changePopularRecent = (params) => {
+      router.push(`/categories/${route.value.params.id}?sort=${params}&page=1`)
+    }
+
+    // route를 감지하여 백엔드에 쿼리 요청
+    watch(route, (newValue) => {
+      store.dispatch('categories/getSelectBtnItem', { sort: newValue })
+    })
 
     // 서버에서 카테고리 전체를 불러와서 vuex state에 저장
     useFetch(async () => {
@@ -97,6 +112,7 @@ export default {
       openModal,
       closeModal,
       setCategoryChildrenId,
+      changePopularRecent,
     }
   },
 }
