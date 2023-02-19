@@ -2,7 +2,7 @@
   <div class="popular-book-list">
     <TopContentsHeader title="인기도서" link="/charts" />
     <div class="popular-book-list__contents">
-      <PopularBookItem class="popular-book-list__contents__item" v-for="i in 12" :key="i" :rank-num="i" />
+      <PopularBookItem v-for="i in 12" :key="i" class="popular-book-list__contents__item" :rank-num="i" />
     </div>
   </div>
 </template>

@@ -3,11 +3,11 @@
     <ul class="nav-links">
       <li class="previous-button" @click="$emit('previousPage')" />
       <li
-        :class="{ active: pageNum === currentPage }"
         v-for="pageNum in showPageNumArr"
         :key="pageNum"
+        :class="{ active: pageNum === currentPage }"
         class="link-list"
-        @click="changePageHandler(pageNum)"
+        @click="onClick(pageNum)"
       >
         <span>{{ pageNum }}</span>
       </li>
@@ -48,13 +48,13 @@ export default defineComponent({
       return new Array(lastPageNum - startPageNum + 1).fill().map((_, i) => i + startPageNum)
     })
 
-    const changePageHandler = (pageNum) => {
+    const onClick = (pageNum) => {
       emit('onChangePage', pageNum)
     }
 
     return {
       showPageNumArr,
-      changePageHandler,
+      onClick,
     }
   },
 })

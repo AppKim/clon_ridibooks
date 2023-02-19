@@ -44,6 +44,9 @@
           즐길 만한 이야깃거리들을 여럿 발견할 수 있을 것이다.
         </ReadMore>
       </div>
+      <div class="book__section">
+        <BookReviews />
+      </div>
     </div>
   </div>
 </template>
@@ -58,12 +61,13 @@ import {
   useStore,
 } from '@nuxtjs/composition-api'
 import BookMeta from '../../components/book-details/BookMeta.vue'
+import BookReviews from '../../components/book-details/BookReviews.vue'
 import BookSummary from '../../components/book-details/BookSummary.vue'
 import ReadMore from '../../components/book-details/ReadMore.vue'
 import { useVibrant } from '../../composables/useVibrant'
 
 export default defineComponent({
-  components: { BookSummary, ReadMore, BookMeta },
+  components: { BookSummary, ReadMore, BookMeta, BookReviews },
   setup() {
     const route = useRoute()
     const store = useStore()
@@ -141,7 +145,9 @@ export default defineComponent({
   }
   &__section {
     padding: 24px 0;
-    border-bottom: 1px solid rgba(153, 139, 130, 0.4470588235);
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(153, 139, 130, 0.4470588235);
+    }
     line-height: 1.5;
     &__title {
       font-size: 1.8rem;

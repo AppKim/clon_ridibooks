@@ -1,5 +1,5 @@
 <template>
-  <button class="cta-button" :class="[type, size]" @click="clickHandler">
+  <button class="cta-button" :class="[type, size]" @click="onClick">
     <slot />
   </button>
 </template>
@@ -7,6 +7,7 @@
 import { defineComponent } from '@nuxtjs/composition-api'
 
 export default defineComponent({
+  name: 'CTAButton',
   props: {
     type: {
       type: String,
@@ -21,13 +22,12 @@ export default defineComponent({
       default: false,
     },
   },
-  name: 'CTAButton',
   setup(_, { emit }) {
-    const clickHandler = () => {
+    const onClick = () => {
       emit('click')
     }
     return {
-      clickHandler,
+      onClick,
     }
   },
 })
