@@ -10,7 +10,7 @@
       <BookMeta v-if="!$device.isDesktopOrTablet" class="book__book-meta" />
       <div class="book__section">
         <h3 class="book__section__title">책소개</h3>
-        <ReadMore :visibleLine="6" :fontSize="16" :lineHeight="1.5">
+        <ReadMore :visible-line="6" :font-size="16" :line-height="1.5">
           우리가 사랑하는 많은 디저트들은 놀랍고 흥미로운 이야기들을 풍성하게 담고 있다. 다채로운 디저트들의 기원과 진화
           과정을 상세하게 살펴보며, 오븐이나 냉장고 같은 조리도구부터 시대별로 유행을 선도한 디저트 코스에 이르기까지
           디저트를 둘러싼 모든 것들을 담은 책이다.<br /><br />
@@ -22,7 +22,7 @@
       </div>
       <div class="book__section">
         <h3 class="book__section__title">책소개</h3>
-        <ReadMore :visibleLine="6" :fontSize="16" :lineHeight="1.5">
+        <ReadMore :visible-line="6" :font-size="16" :line-height="1.5">
           우리가 사랑하는 많은 디저트들은 놀랍고 흥미로운 이야기들을 풍성하게 담고 있다. 다채로운 디저트들의 기원과 진화
           과정을 상세하게 살펴보며, 오븐이나 냉장고 같은 조리도구부터 시대별로 유행을 선도한 디저트 코스에 이르기까지
           디저트를 둘러싼 모든 것들을 담은 책이다.<br /><br />
@@ -34,7 +34,7 @@
       </div>
       <div class="book__section">
         <h3 class="book__section__title">책소개</h3>
-        <ReadMore :visibleLine="6" :fontSize="16" :lineHeight="1.5">
+        <ReadMore :visible-line="6" :font-size="16" :line-height="1.5">
           우리가 사랑하는 많은 디저트들은 놀랍고 흥미로운 이야기들을 풍성하게 담고 있다. 다채로운 디저트들의 기원과 진화
           과정을 상세하게 살펴보며, 오븐이나 냉장고 같은 조리도구부터 시대별로 유행을 선도한 디저트 코스에 이르기까지
           디저트를 둘러싼 모든 것들을 담은 책이다.<br /><br />
@@ -43,6 +43,9 @@
           이야기를 마무리 짓는다. 식탁을 화려하게 수놓은 디저트의 흥미진진한 역사를 따라가다 보면, 디저트를 지적으로
           즐길 만한 이야깃거리들을 여럿 발견할 수 있을 것이다.
         </ReadMore>
+      </div>
+      <div class="book__section">
+        <BookReviews />
       </div>
     </div>
   </div>
@@ -58,12 +61,13 @@ import {
   useStore,
 } from '@nuxtjs/composition-api'
 import BookMeta from '../../components/book-details/BookMeta.vue'
+import BookReviews from '../../components/book-details/BookReviews.vue'
 import BookSummary from '../../components/book-details/BookSummary.vue'
 import ReadMore from '../../components/book-details/ReadMore.vue'
 import { useVibrant } from '../../composables/useVibrant'
 
 export default defineComponent({
-  components: { BookSummary, ReadMore, BookMeta },
+  components: { BookSummary, ReadMore, BookMeta, BookReviews },
   setup() {
     const route = useRoute()
     const store = useStore()
@@ -141,7 +145,9 @@ export default defineComponent({
   }
   &__section {
     padding: 24px 0;
-    border-bottom: 1px solid rgba(153, 139, 130, 0.4470588235);
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(153, 139, 130, 0.4470588235);
+    }
     line-height: 1.5;
     &__title {
       font-size: 1.8rem;

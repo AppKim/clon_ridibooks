@@ -1,8 +1,8 @@
 <template>
   <div class="new-releases">
     <PageTitle class="new-releases__title" title="최신 업데이트" />
-    <BookThumbnailLinkGrid :bookList="recentReleaseBooks" />
-    <Pager @onChangePage="changePageHandler" :current-page="+$route.query.page || 1" :total-page="100" />
+    <BookThumbnailLinkGrid :book-list="recentReleaseBooks" />
+    <Pager :current-page="+$route.query.page || 1" :total-page="100" @onChangePage="handleChangePage" />
   </div>
 </template>
 <script>
@@ -26,7 +26,7 @@ export default defineComponent({
       // TODO: store에 넣어서 관라?
       await fetchRecentBooks(route.query)
     })
-    const changePageHandler = (pageNum) => {
+    const handleChangePage = (pageNum) => {
       router.push(`/new-releases?page=${pageNum}`)
     }
     watch(route, async (currRoute) => {
@@ -34,7 +34,7 @@ export default defineComponent({
     })
     return {
       recentReleaseBooks,
-      changePageHandler,
+      handleChangePage,
     }
   },
 })
