@@ -14,12 +14,12 @@ export default defineComponent({
   props: {
     rate: {
       type: Number,
-      defalut: 0,
+      default: 0,
       required: true,
     },
     count: {
       type: Number,
-      defalut: 0,
+      default: 0,
       required: true,
     },
   },

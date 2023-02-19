@@ -1,6 +1,6 @@
 <template>
   <div class="category-select-wrap">
-    <select>
+    <select @change="selected">
       <option value="popular">인기순</option>
       <option value="recent">최신순</option>
     </select>
@@ -8,7 +8,18 @@
 </template>
 
 <script>
-export default {}
+import {} from '@nuxtjs/composition-api'
+export default {
+  setup(props, context) {
+    // 인기순, 최신순 선택
+    const selected = (e) => {
+      context.emit('changeBtnItem', e.target.value)
+    }
+    return {
+      selected,
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped>

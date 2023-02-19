@@ -28,6 +28,10 @@ export const actions = {
     const res = await this.$repositories('categories').get.categories()
     commit('ADD_CATEGORIES', res)
   },
+  async getSelectBtnItem({ commit }, params) {
+    const query = params.sort.query
+    await this.$repositories('categories').get.categories(query)
+  },
 }
 
 export const getters = {

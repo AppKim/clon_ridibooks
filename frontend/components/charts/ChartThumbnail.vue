@@ -13,7 +13,6 @@
         </div>
       </li>
     </ul>
-    <pager></pager>
   </div>
 </template>
 
@@ -22,9 +21,8 @@ import { defineComponent } from '@vue/composition-api'
 import BookThumbnail from '../BookThumbnail.vue'
 import BookThumbnailTitle from '../BookThumbnailTitle.vue'
 import BookReview from '../BookReview.vue'
-import Pager from '../Pager.vue'
 export default defineComponent({
-  components: { BookThumbnail, BookReview, BookThumbnailTitle, Pager },
+  components: { BookThumbnail, BookReview, BookThumbnailTitle },
   props: {
     books: {
       type: Array,
