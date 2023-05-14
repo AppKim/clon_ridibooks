@@ -5,5 +5,5 @@ class Book < ActiveRecord::Base
   has_many :book_selections
   has_many :book_categories
   has_many :categories, through: :book_categories
-  has_one :book_details
+  has_one :book_detail
 end
