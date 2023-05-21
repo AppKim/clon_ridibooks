@@ -1,3 +1,3 @@
 class Selections < ApplicationRecord
-    has_many :book_selection
+    has_many :books, through: :book_selections
 end
