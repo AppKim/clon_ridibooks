@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+SEED_DIR = Rails.root.join('db', 'seeds')
+load "#{SEED_DIR}/category/category.rb"
+load "#{SEED_DIR}/publisher/publisher.rb"
