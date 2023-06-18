@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateReviewComments < ActiveRecord::Migration[7.0]
   def change
     create_table :review_comments do |t|
