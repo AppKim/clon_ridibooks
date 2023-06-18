@@ -1,0 +1,43 @@
+version: "3"
+
+services:
+  backend:
+    image: clon_ridibooks_backend
+    container_name: clon_ridibooks_backend
+    build: ./backend
+    command: /bin/sh -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    volumes:
+      - ./backend:/app
+      - bundle:/usr/local/bundle
+    tty: true
+    stdin_open: true
+  db:
+    platform: linux/x86_64
+    image: mysql:5.7
+    container_name: clon_ridibooks_db
+    volumes:
+      - mysql_data:/var/lib/mysql/
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      TZ: Asia/Tokyo
+    ports:
+      - "3306:3306"
+  frontend:
+    image: clon_ridibooks_frontend
+    container_name: clon_ridibooks_frontend
+    build: ./frontend
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "8080:8080"
+    tty: true
+    stdin_open: true
+    command: npm run dev
+
+volumes:
+  mysql_data:
+  bundle:
