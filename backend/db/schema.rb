@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_21_171304) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_11_081907) do
   create_table "banners", charset: "utf8mb4", force: :cascade do |t|
     t.string "image_url", limit: 50, comment: "バナーリンク"
     t.string "link_url", limit: 50, comment: "セレクションリンク"
@@ -80,7 +80,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_21_171304) do
   end
 
   create_table "people", charset: "utf8mb4", force: :cascade do |t|
-    t.integer "type", comment: "0: author 1: translator"
+    t.integer "person_type", comment: "0: author 1: translator"
     t.string "name", limit: 50, null: false, comment: "人の名前"
     t.string "introduction", limit: 50, null: false, comment: "人についての紹介"
     t.datetime "created_at", null: false

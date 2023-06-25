@@ -1,9 +1,11 @@
-class Book < ActiveRecord::Base
+# frozen_string_literal: true
+
+class Book < ApplicationRecord
   belongs_to :publisher
-  has_many :people
-  has_many :review_comments
-  has_many :book_selections
-  has_many :book_categories
+  has_many :people, dependent: :destroy
+  has_many :review_comments, dependent: :destroy
+  has_many :book_selections, dependent: :destroy
+  has_many :book_categories, dependent: :destroy
   has_many :categories, through: :book_categories
-  has_one :book_detail
+  has_one :book_detail, dependent: :destroy
 end
