@@ -11,3 +11,4 @@ SEED_DIR = Rails.root.join('db', 'seeds')
 load "#{SEED_DIR}/category/category.rb"
 load "#{SEED_DIR}/publisher/publisher.rb"
 load "#{SEED_DIR}/person/person.rb"
+load "#{SEED_DIR}/banners/banners.rb"
