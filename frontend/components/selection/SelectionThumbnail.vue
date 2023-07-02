@@ -3,8 +3,8 @@
     <ul class="grid-booklist">
       <li v-for="(book, index) in books" :key="index" class="grid-booklist__item">
         <div>
-          <book-thumbnail size="medium" :src="book.thumbnail.large" alt="sample image"></book-thumbnail>
-          <book-thumbnail-title :title="book.title.main"></book-thumbnail-title>
+          <BookThumbnail size="medium" :src="book.thumbnail.large" alt="sample image"></BookThumbnail>
+          <BookThumbnailTitle :title="book.title.main"></BookThumbnailTitle>
         </div>
       </li>
     </ul>

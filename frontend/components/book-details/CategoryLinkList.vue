@@ -12,7 +12,7 @@ import { defineComponent } from '@nuxtjs/composition-api'
 export default defineComponent({
   props: {
     categories: {
-      type: [],
+      type: Array,
       default: () => [],
     },
   },

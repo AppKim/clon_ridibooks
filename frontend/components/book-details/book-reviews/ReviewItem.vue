@@ -28,11 +28,11 @@ export default defineComponent({
   },
   setup() {
     const handleClickLikeButton = () => {
-      console.log("like")
+      console.log('like')
     }
 
     return {
-      handleClickLikeButton
+      handleClickLikeButton,
     }
   },
 })

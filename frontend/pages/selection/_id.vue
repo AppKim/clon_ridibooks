@@ -1,8 +1,8 @@
 <template>
   <div>
-    <page-title :title="title"></page-title>
-    <selection-thumbnail :books="books"></selection-thumbnail>
-    <pager :currentPage="pageParam" :totalPage="totalPage" @onChangePage="changePageHandler"></pager>
+    <PageTitle :title="title"></PageTitle>
+    <SelectionThumbnail :books="books"></SelectionThumbnail>
+    <pager :current-page="pageParam" :total-page="totalPage" @onChangePage="changePageHandler"></pager>
   </div>
 </template>
 
