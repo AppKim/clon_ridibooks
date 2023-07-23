@@ -1,6 +1,5 @@
 puts 'Banner START'
 Banner.create!(
-    id: 1,
     image_url: 'https://picsum.photos/200', 
     link_url: 'http://localhost:8080/select',
     title: '미리 보는 6월 업데이트'
@@ -23,4 +22,5 @@ Banner.create!(
     link_url: 'http://localhost:8080/select',
     title: '익숙한 듯 낯선 평범한 일상의 균열'
   )
+=======
 puts 'Banner END'

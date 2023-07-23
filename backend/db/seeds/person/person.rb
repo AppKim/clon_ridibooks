@@ -8,7 +8,7 @@ Person.create!(
 Person.create!(
   id: 2,
   person_type: 1, 
-  name: '안젤라 애커만',
+  name: '에드 마일렛',
   introduction: 'Writer'
 )
 Person.create!(
