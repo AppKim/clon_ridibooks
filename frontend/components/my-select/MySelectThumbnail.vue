@@ -1,13 +1,13 @@
 <template>
   <div class="my-select">
     <div class="my-select-header">
-      <page-title :title="pageTitle"></page-title>
+      <PageTitle :title="pageTitle"></PageTitle>
     </div>
     <div class="my-select-body">
       <div class="my-select-nav">
         <div class="left">
           <span class="checkbox-select-all">
-            <check-box :checked="isAllSelected" @change="allSeleted"></check-box>
+            <CheckBox :checked="isAllSelected" @change="allSeleted"></CheckBox>
             <span>전체선택</span>
           </span>
         </div>
@@ -19,15 +19,10 @@
       <div class="my-select-list">
         <ul v-for="(item, index) in items" :key="index" class="my-select-list__item">
           <div class="left">
-            <check-box :id="item.id" :checked="item.checked" @change="selected"></check-box>
-            <book-thumbnail
-              size="medium"
-              align-items="center"
-              src="https://placeimg.com/150/200/any"
-              alt="sample image"
-            >
-            </book-thumbnail>
-            <book-thumbnail-description :title="item.title" :author="item.author"></book-thumbnail-description>
+            <CheckBox :id="item.id" :checked="item.checked" @change="selected"></CheckBox>
+            <BookThumbnail size="medium" align-items="center" src="https://placeimg.com/150/200/any" alt="sample image">
+            </BookThumbnail>
+            <BookThumbnailDescription :title="item.title" :author="item.author"></BookThumbnailDescription>
           </div>
           <div class="right">
             <span class="download">다운로드</span>

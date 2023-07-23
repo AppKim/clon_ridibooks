@@ -1,8 +1,8 @@
 <template>
   <div>
-    <page-title :title="title"></page-title>
-    <chart-thumbnail :books="books"></chart-thumbnail>
-    <pager :currentPage="pageParam" :totalPage="totalPage" @onChangePage="changePageHandler"></pager>
+    <PageTitle :title="title"></PageTitle>
+    <ChartThumbnail :books="books"></ChartThumbnail>
+    <pager :current-page="pageParam" :total-page="totalPage" @onChangePage="changePageHandler"></pager>
   </div>
 </template>
 

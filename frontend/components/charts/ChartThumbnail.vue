@@ -4,12 +4,12 @@
       <li v-for="(book, index) in books" :key="index" class="grid-booklist__item">
         <div class="grid-booklist__rank">{{ index + 1 }}</div>
         <div>
-          <book-thumbnail size="medium" :src="book.thumbnail.large" alt="sample image"> </book-thumbnail>
-          <book-thumbnail-title :title="book.title.main"></book-thumbnail-title>
-          <book-review
+          <BookThumbnail size="medium" :src="book.thumbnail.large" alt="sample image"> </BookThumbnail>
+          <BookThumbnailTitle :title="book.title.main"></BookThumbnailTitle>
+          <BookReview
             :rate="parseInt(book.review_summary.buyer_rating_average)"
             :count="parseInt(book.review_summary.buyer_rating_count)"
-          ></book-review>
+          ></BookReview>
         </div>
       </li>
     </ul>

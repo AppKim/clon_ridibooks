@@ -6,18 +6,18 @@
         <img class="best-book-list__icon" src="@/assets/images/best.svg" />
       </h2>
       <div v-if="$device.isDesktopOrTablet">
-        <swiper class="swiper" :options="swiperOption">
-          <swiper-slide v-for="index in 3" :key="index">
+        <Swiper class="swiper" :options="swiperOption">
+          <SwiperSlide v-for="index in 3" :key="index">
             <BookThumbnailLinkList
               class="best-book-list__book-list"
               :book-list="books.slice((index - 1) * 5, (index - 1) * 5 + 5)"
               size="large"
             />
-          </swiper-slide>
+          </SwiperSlide>
           <div slot="button-prev" class="swiper-button-prev"></div>
           <div slot="button-next" class="swiper-button-next"></div>
-          <div class="swiper-pagination" slot="pagination"></div>
-        </swiper>
+          <div slot="pagination" class="swiper-pagination"></div>
+        </Swiper>
       </div>
       <BookThumbnailLinkList v-else class="best-book-list__book-list" :book-list="books" size="large" />
     </div>
@@ -31,18 +31,18 @@ import 'swiper/css/swiper.css'
 import BookThumbnailLinkList from './BookThumbnailLinkList.vue'
 
 export default defineComponent({
+  components: {
+    BookThumbnailLinkList,
+    Swiper,
+    SwiperSlide,
+  },
   props: {
     books: {
       type: Array,
       required: true,
     },
   },
-  components: {
-    BookThumbnailLinkList,
-    Swiper,
-    SwiperSlide,
-  },
-  setup(props) {
+  setup() {
     const swiperOption = {
       slidesPerView: 1,
       spaceBetween: 0,

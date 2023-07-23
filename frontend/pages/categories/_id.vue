@@ -24,7 +24,7 @@
       </nuxt-link>
     </div>
     <div class="pagination--wrapper">
-      <pager></pager>
+      <Pager></Pager>
     </div>
   </div>
 </template>

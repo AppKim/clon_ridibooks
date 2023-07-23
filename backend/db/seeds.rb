@@ -23,9 +23,4 @@ load "#{SEED_DIR}/person/person.rb"
 load "#{SEED_DIR}/book/book.rb"
 load "#{SEED_DIR}/book/book_detail.rb"
 load "#{SEED_DIR}/book/book_person.rb"
-
-# kim
-# book_detail
-# book
-# bookpeople
-
+load "#{SEED_DIR}/banners/banners.rb"

@@ -1,13 +1,13 @@
 <template>
   <div class="top-banner-carousel">
-    <swiper class="swiper" :options="topBannerSwiperOption">
-      <swiper-slide><img src="https://placeimg.com/432/432/any1/1" /></swiper-slide>
-      <swiper-slide><img src="https://placeimg.com/432/432/any2/2" /></swiper-slide>
-      <swiper-slide><img src="https://placeimg.com/432/432/any3/3" /></swiper-slide>
+    <Swiper class="swiper" :options="topBannerSwiperOption">
+      <SwiperSlide><img src="https://placeimg.com/432/432/any1/1" /></SwiperSlide>
+      <SwiperSlide><img src="https://placeimg.com/432/432/any2/2" /></SwiperSlide>
+      <SwiperSlide><img src="https://placeimg.com/432/432/any3/3" /></SwiperSlide>
       <div slot="button-prev" class="swiper-button-prev"></div>
       <div slot="button-next" class="swiper-button-next"></div>
-      <div class="swiper-pagination" slot="pagination"></div>
-    </swiper>
+      <div slot="pagination" class="swiper-pagination"></div>
+    </Swiper>
   </div>
 </template>
 

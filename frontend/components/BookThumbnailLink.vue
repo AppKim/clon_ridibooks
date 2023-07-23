@@ -1,7 +1,7 @@
 <template>
   <nuxt-link class="book-thumbnail-link" :to="to">
-    <book-thumbnail :src="src" :size="size" :loading="loading" :alt="alt" />
-    <book-thumbnail-description :size="size" :title="title" :author="author" />
+    <BookThumbnail :src="src" :size="size" :loading="loading" :alt="alt" />
+    <BookThumbnailDescription :size="size" :title="title" :author="author" />
   </nuxt-link>
 </template>
 
