@@ -9,8 +9,11 @@
 #   Character.create(name: "Luke", movie: movies.first)
 SEED_DIR = Rails.root.join('db', 'seeds')
 load "#{SEED_DIR}/category/category.rb"
+load "#{SEED_DIR}/book_categories/book_categories.rb"
+load "#{SEED_DIR}/review_comments/review_comments.rb"
+load "#{SEED_DIR}/banner/banner.rb"
 load "#{SEED_DIR}/publisher/publisher.rb"
 load "#{SEED_DIR}/person/person.rb"
-load "#{SEED_DIR}/banners/banners.rb"
 load "#{SEED_DIR}/selection/selection.rb"
 load "#{SEED_DIR}/book_selection/book_selection.rb"
+

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_11_081907) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_02_175007) do
   create_table "banners", charset: "utf8mb4", force: :cascade do |t|
     t.string "image_url", limit: 50, comment: "バナーリンク"
     t.string "link_url", limit: 50, comment: "セレクションリンク"
@@ -96,7 +96,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_11_081907) do
   create_table "review_comments", charset: "utf8mb4", force: :cascade do |t|
     t.bigint "book_id", null: false
     t.string "reviewer", null: false
-    t.integer "type", default: 0
+    t.integer "review_type", default: 0
     t.string "comment", null: false
     t.integer "spoiler", default: 0
     t.datetime "created_at", null: false
