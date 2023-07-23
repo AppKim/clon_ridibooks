@@ -7,7 +7,25 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+ActiveRecord::Base.establish_connection
+
+ActiveRecord::Base.connection.disable_referential_integrity do
+  ActiveRecord::Base.connection.tables.each do |table|
+    next if table == 'schema_migrations'
+    ActiveRecord::Base.connection.execute("TRUNCATE TABLE `#{table}`")
+  end
+end
+
 SEED_DIR = Rails.root.join('db', 'seeds')
 load "#{SEED_DIR}/category/category.rb"
 load "#{SEED_DIR}/publisher/publisher.rb"
 load "#{SEED_DIR}/person/person.rb"
+load "#{SEED_DIR}/book/book.rb"
+load "#{SEED_DIR}/book/book_detail.rb"
+load "#{SEED_DIR}/book/book_person.rb"
+
+# kim
+# book_detail
+# book
+# bookpeople
+
