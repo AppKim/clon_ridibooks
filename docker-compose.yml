@@ -21,6 +21,7 @@ services:
     container_name: clon_ridibooks_db
     volumes:
       - mysql_data:/var/lib/mysql/
+      - ./backend/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
     environment:
       MYSQL_ROOT_PASSWORD: password
       TZ: Asia/Tokyo
