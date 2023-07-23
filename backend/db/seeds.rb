@@ -14,3 +14,6 @@ load "#{SEED_DIR}/review_comments/review_comments.rb"
 load "#{SEED_DIR}/banner/banner.rb"
 load "#{SEED_DIR}/publisher/publisher.rb"
 load "#{SEED_DIR}/person/person.rb"
+load "#{SEED_DIR}/selection/selection.rb"
+load "#{SEED_DIR}/book_selection/book_selection.rb"
+
