@@ -1,0 +1,9 @@
+openapi: 3.0.3
+info:
+  title: mcs_ver2
+  version: 1.0.0
+tags:
+  - name: auth
+paths:
+  /api/auth/current_user:
+    $ref: "./paths/api/current_user/index.yml"
