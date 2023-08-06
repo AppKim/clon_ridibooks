@@ -1,0 +1,78 @@
+get:
+  tags:
+    - books
+  summary: 
+    本情報取得API
+  description:
+    全ての本の情報を取得します。
+  parameters:
+    - name: page
+      required: true
+      description: 取得する情報の範囲
+      in: query
+      type: integer
+    - name: size
+      required: true
+      description: 取得する情報量
+      in: query
+      type: integer
+  responses:
+    200:
+      description: Success
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              total_count:
+                type: integer
+              total_page:
+                type: integer
+              size:
+                type: integer
+              page:
+                type: integer
+              books:
+                schema: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                    review_summary:
+                      type: object
+                      properties:
+                        buyer_rating_average:
+                          type: integer
+                        buyer_rating_count:
+                          type: integer
+                    title:
+                      type: object
+                      properties:
+                        main:
+                          type: string
+                    thumbnail:
+                      type: object
+                      properties:
+                        large:
+                          type: string
+            example:
+              total_count: 2506
+              total_page: 105
+              size: 24
+              page:
+              books:
+                  id: 1780000387
+                  review_summary:
+                    buyer_rating_average: 4.6
+                    buyer_rating_count: 220
+                  title:
+                    main: 지적 대화를 위한 넓고 얕은 지식 2
+                  thumbnail:
+                    large: https://img.ridicdn.net/cover/2127000060/large#1
+            required:
+              - total_count
+              - total_page
+              - size
+              - page
+              - books

@@ -2,11 +2,10 @@ openapi: 3.0.3
 info:
   title: mcs_ver2
   version: 1.0.0
-tags:
-  - name: auth
-  - name: home
 paths:
-  /api/auth/current_user:
-    $ref: "./paths/api/current_user/index.yml"
   /api/home:
     $ref: "./paths/api/home/index.yml"
+  /v1/api/books/bestseller:
+    $ref: "./paths/api/book/bestseller.yml"
+  /v1/api/books:
+    $ref: "./paths/api/book/index.yml"
