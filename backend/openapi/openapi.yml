@@ -5,8 +5,11 @@ info:
 tags:
   - name: auth
   - name: home
+  - name: spotlight
 paths:
   /api/auth/current_user:
     $ref: "./paths/api/current_user/index.yml"
   /api/home:
     $ref: "./paths/api/home/index.yml"
+  /api/spotlight:
+    $ref: "./paths/api/spotlight/index.yml"
