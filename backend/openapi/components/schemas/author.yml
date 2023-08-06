@@ -1,0 +1,8 @@
+type: object
+properties:
+  id:
+    type: integer
+    description: Unique identifier for the author.
+  name:
+    type: string
+    description: Name of the author.

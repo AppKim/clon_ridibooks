@@ -1,0 +1,16 @@
+type: object
+properties:
+  id:
+    type: integer
+    description: Unique identifier for the banner.
+  title:
+    type: string
+    description: Title of the banner.
+  image_url:
+    type: string
+    format: uri
+    description: URL of the banner image.
+  link_url:
+    type: string
+    format: uri
+    description: URL where the banner points to.

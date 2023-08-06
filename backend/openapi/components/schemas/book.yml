@@ -1,0 +1,73 @@
+type: object
+properties:
+  id:
+    type: string
+    description: Unique identifier for the book.
+  title:
+    type: object
+    properties:
+      main:
+        type: string
+        description: Main title of the book.
+      sub:
+        type: string
+        nullable: true
+        description: Subtitle of the book.
+  thumbnail:
+    type: object
+    properties:
+      small:
+        type: string
+        format: uri
+        description: URL for the small thumbnail image.
+      large:
+        type: string
+        format: uri
+        description: URL for the large thumbnail image.
+      xxlarge:
+        type: string
+        format: uri
+        description: URL for the xxlarge thumbnail image.
+  authors:
+    type: object
+    properties:
+      comic_author:
+        type: array
+        items:
+          $ref: 'author.yml'
+      author:
+        type: array
+        items:
+          $ref: 'author.yml'
+  publisher:
+    type: object
+    properties:
+      name:
+        type: string
+        description: Name of the publisher.
+  review_summary:
+    type: object
+    properties:
+      buyer_rating_distribution:
+        type: array
+        items:
+          type: integer
+      buyer_rating_average:
+        type: number
+        format: float
+      buyer_rating_count:
+        type: integer
+      buyer_review_count:
+        type: integer
+      total_rating_count:
+        type: integer
+      total_review_count:
+        type: integer
+  begin_datetime:
+    type: string
+    format: date-time
+    description: Begin datetime of the book's availability.
+  end_datetime:
+    type: string
+    format: date-time
+    description: End datetime of the book's availability.

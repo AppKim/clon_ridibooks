@@ -1,0 +1,15 @@
+type: object
+properties:
+  selection_id:
+    type: integer
+    description: Unique identifier for the selection.
+  title:
+    type: string
+    description: Title of the selection.
+  type:
+    type: string
+    description: Type of the selection.
+  books:
+    type: array
+    items:
+      $ref: 'book.yml'
