@@ -5,6 +5,8 @@ info:
 paths:
   /api/home:
     $ref: "./paths/api/home/index.yml"
+  /api/spotlight:
+    $ref: "./paths/api/spotlight/index.yml"
   /v1/api/books/bestseller:
     $ref: "./paths/api/book/bestseller.yml"
   /v1/api/books:

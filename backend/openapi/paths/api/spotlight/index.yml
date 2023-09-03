@@ -1,0 +1,35 @@
+get:
+  tags:
+    - spotlight
+  summary: Retrieve spotlight books
+  responses:
+    '200':
+      description: Successful operation
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              collection_id:
+                type: integer
+                example: 0
+              type:
+                type: string
+                enum: [SPOTLIGHT]
+                example: SPOTLIGHT
+              title:
+                type: string
+                example: "이번 주 입고 도서"
+              total_count:
+                type: integer
+                example: 15
+              total_page:
+                type: integer
+                example: 1
+              size:
+                type: integer
+                example: 15
+              books:
+                type: array
+                items:
+                  $ref: '../../../components/schemas/book.yml'
