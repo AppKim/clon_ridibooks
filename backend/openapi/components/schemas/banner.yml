@@ -14,3 +14,5 @@ properties:
     type: string
     format: uri
     description: URL where the banner points to.
+example:
+  $ref: "../examples/banner_example.yml"
