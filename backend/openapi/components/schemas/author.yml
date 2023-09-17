@@ -6,3 +6,5 @@ properties:
   name:
     type: string
     description: Name of the author.
+example:
+  $ref: "../examples/author_example.yml"
