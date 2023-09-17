@@ -34,11 +34,11 @@ properties:
       comic_author:
         type: array
         items:
-          $ref: 'author.yml'
+          $ref: "author.yml"
       author:
         type: array
         items:
-          $ref: 'author.yml'
+          $ref: "author.yml"
   publisher:
     type: object
     properties:
@@ -71,3 +71,5 @@ properties:
     type: string
     format: date-time
     description: End datetime of the book's availability.
+example:
+  $ref: "../examples/book_example.yml"
