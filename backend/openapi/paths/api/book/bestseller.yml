@@ -1,10 +1,8 @@
 get:
   tags:
     - books
-  summary: 
-    本情報取得API
-  description:
-    全ての本の情報を取得します。
+  summary: ベストセラー情報取得API
+  description: ベストセラーの情報を取得します。
   parameters:
     - name: page
       required: true
@@ -26,50 +24,18 @@ get:
             properties:
               total_count:
                 type: integer
+                example: 2497
               total_page:
                 type: integer
+                example: 104
               size:
                 type: integer
+                example: 24
               page:
                 type: integer
+                example: 1
               books:
-                schema: array
-                items:
-                  type: object
-                  properties:
-                    id:
-                      type: string
-                    review_summary:
-                      type: object
-                      properties:
-                        buyer_rating_average:
-                          type: integer
-                        buyer_rating_count:
-                          type: integer
-                    title:
-                      type: object
-                      properties:
-                        main:
-                          type: string
-                    thumbnail:
-                      type: object
-                      properties:
-                        large:
-                          type: string
-            example:
-              total_count: 2506
-              total_page: 105
-              size: 24
-              page:
-              books:
-                  id: 1780000387
-                  review_summary:
-                    buyer_rating_average: 4.6
-                    buyer_rating_count: 220
-                  title:
-                    main: 지적 대화를 위한 넓고 얕은 지식 2
-                  thumbnail:
-                    large: https://img.ridicdn.net/cover/2127000060/large#1
+                $ref: '../../../components/schemas/bestseller_book.yml'
             required:
               - total_count
               - total_page
