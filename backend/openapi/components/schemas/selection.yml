@@ -3,13 +3,16 @@ properties:
   selection_id:
     type: integer
     description: Unique identifier for the selection.
+    example: 3170
   title:
     type: string
     description: Title of the selection.
+    example: "독자들이 선택한 도서 톺아보기"
   type:
     type: string
     description: Type of the selection.
+    example: "SELECTION"
   books:
     type: array
     items:
-      $ref: 'book.yml'
+      $ref: "book.yml"
