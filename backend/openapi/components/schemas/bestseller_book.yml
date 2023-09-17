@@ -1,0 +1,25 @@
+schema: array
+items:
+  type: object
+  properties:
+    id:
+      type: string
+    review_summary:
+      type: object
+      properties:
+        buyer_rating_average:
+          type: integer
+        buyer_rating_count:
+          type: integer
+    title:
+      type: object
+      properties:
+        main:
+          type: string
+    thumbnail:
+      type: object
+      properties:
+        large:
+          type: string
+example:
+  $ref: '../examples/bestseller_book_example.yml'

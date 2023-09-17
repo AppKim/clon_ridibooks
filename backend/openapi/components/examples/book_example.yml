@@ -1,17 +1,17 @@
-id: "734001113"
+id: '734001113'
 title:
-  main: "술꾼도시처녀들 1"
+  main: '술꾼도시처녀들 1'
   sub: null
 thumbnail:
-  small: "https://img.ridicdn.net/cover/734001113/small#1"
-  large: "https://img.ridicdn.net/cover/734001113/large#1"
-  xxlarge: "https://img.ridicdn.net/cover/734001113/xxlarge#1"
+  small: 'https://img.ridicdn.net/cover/734001113/small#1'
+  large: 'https://img.ridicdn.net/cover/734001113/large#1'
+  xxlarge: 'https://img.ridicdn.net/cover/734001113/xxlarge#1'
 authors:
   comic_author:
     - id: 50841
-      name: "미깡"
+      name: '미깡'
 publisher:
-  name: "예담"
+  name: '예담'
 review_summary:
   buyer_rating_distribution: [11, 16, 90, 234, 729]
   buyer_rating_average: 4.5
@@ -19,23 +19,23 @@ review_summary:
   buyer_review_count: 41
   total_rating_count: 1109
   total_review_count: 44
-begin_datetime: "2021-10-15T00:00:00"
-end_datetime: "2022-10-14T23:59:59"
+begin_datetime: '2021-10-15T00:00:00'
+end_datetime: '2022-10-14T23:59:59'
 ---
-id: "950000333"
+id: '950000333'
 title:
-  main: "공간의 미래"
-  sub: "코로나가 가속화시킨 공간 변화"
+  main: '공간의 미래'
+  sub: '코로나가 가속화시킨 공간 변화'
 thumbnail:
-  small: "https://img.ridicdn.net/cover/950000333/small#1"
-  large: "https://img.ridicdn.net/cover/950000333/large#1"
-  xxlarge: "https://img.ridicdn.net/cover/950000333/xxlarge#1"
+  small: 'https://img.ridicdn.net/cover/950000333/small#1'
+  large: 'https://img.ridicdn.net/cover/950000333/large#1'
+  xxlarge: 'https://img.ridicdn.net/cover/950000333/xxlarge#1'
 authors:
   author:
     - id: 50333
-      name: "유현준"
+      name: '유현준'
 publisher:
-  name: "을유문화사"
+  name: '을유문화사'
 review_summary:
   buyer_rating_distribution: [4, 2, 18, 60, 132]
   buyer_rating_average: 4.5
@@ -43,5 +43,5 @@ review_summary:
   buyer_review_count: 15
   total_rating_count: 227
   total_review_count: 16
-begin_datetime: "2021-09-22T06:55:00"
-end_datetime: "2022-09-21T23:59:59"
+begin_datetime: '2021-09-22T06:55:00'
+end_datetime: '2022-09-21T23:59:59'
