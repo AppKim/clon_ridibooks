@@ -1,0 +1,14 @@
+type: object
+properties:
+    id:
+        type: integer
+        description: Unique identifier for the selection.
+    name:
+        type: string
+        description: category name.
+    depth:
+        type: integer
+        description: category depth.
+    parent_id:
+        type: integer
+        description: parent category.
