@@ -28,13 +28,27 @@ properties:
         type: string
         format: uri
         description: URL for the xxlarge thumbnail image.
+  categories:
+    type: array
+    items:
+      type: object
+      properties:
+        id: integer
+        name: string
+  series_book:
+    type: string
+  file:
+    type: object
+    properties:
+      format:
+        type: string
+      size:
+        type: integer
+      character_count:
+        type: integer
   authors:
     type: object
     properties:
-      comic_author:
-        type: array
-        items:
-          $ref: 'author.yml'
       author:
         type: array
         items:
@@ -45,6 +59,45 @@ properties:
       name:
         type: string
         description: Name of the publisher.
+  publishing_date:
+    type: object
+    properties:
+      ridibooks_register_date:
+        type: date-time
+      ridibooks_publish_date:
+        type: date-time
+      paper_book_publish_date:
+        type: date-time
+      ebook_publish_date:
+        type: date-time
+  notices:
+    type: array
+  begin_datetime:
+    type: string
+    format: date-time
+    description: Begin datetime of the book's availability.
+  end_datetime:
+    type: string
+    format: date-time
+    description: End datetime of the book's availability.
+  introduction:
+    type: string
+  intro_video_url:
+    type: string
+  intro_image_url:
+    type: string
+  author_introduction:
+    type: string
+  table_of_contents:
+    type: string
+  publisher_review:
+    type: string
+  preview_b_id:
+    type: string
+  preview_available:
+    type: boolean
+  has_preview:
+    type: boolean
   review_summary:
     type: object
     properties:
@@ -63,13 +116,5 @@ properties:
         type: integer
       total_review_count:
         type: integer
-  begin_datetime:
-    type: string
-    format: date-time
-    description: Begin datetime of the book's availability.
-  end_datetime:
-    type: string
-    format: date-time
-    description: End datetime of the book's availability.
 example:
-  $ref: '../examples/book_example.yml'
+  $ref: '../examples/book_detail_example.yml'
