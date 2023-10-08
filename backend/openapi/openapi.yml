@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
-  title: mcs_ver2
-  version: 1.0.0
+    title: mcs_ver2
+    version: 1.0.0
 paths:
   /api/home:
     $ref: './paths/api/home/index.yml'
@@ -13,3 +13,5 @@ paths:
     $ref: './paths/api/book/index.yml'
   /v1/api/books/{id}:
     $ref: './paths/api/book/detail.yml'
+  /v1/api/categories:
+    $ref: './paths/api/category/index.yml'
