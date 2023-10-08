@@ -1,6 +1,7 @@
 class BooksController < ApplicationController
     def index
-
+        @list = Book.book_list
+        render json: @list, serializer: BookSerializer
     end
     
     def show
@@ -8,6 +9,6 @@ class BooksController < ApplicationController
     end
 
     def bestseller
-        
+
     end
 end

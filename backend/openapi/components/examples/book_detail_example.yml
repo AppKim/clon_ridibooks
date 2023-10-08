@@ -1,0 +1,50 @@
+id: '734001113'
+title:
+  main: '술꾼도시처녀들 1'
+  sub: null
+thumbnail:
+  small: 'https://img.ridicdn.net/cover/734001113/small#1'
+  large: 'https://img.ridicdn.net/cover/734001113/large#1'
+  xxlarge: 'https://img.ridicdn.net/cover/734001113/xxlarge#1'
+categories:
+  - id: 300,
+    name: '자기계발'
+  - id: 310,
+    name: '성공/삶의자세'
+  - id: 320,
+    name: '성공/삶의자세'
+series_book: null,
+file:
+  format: 'epub'
+  size: 25223,
+  character_count: 56229
+authors:
+  author:
+    - id: 137918
+      name: '전한길'
+publisher:
+  name: '예담'
+publishing_date:
+  ridibooks_register_date: '2023-06-27T11:22:48+09:00'
+  ridibooks_publish_date: '2023-06-27T17:00:55+09:00'
+  paper_book_publish_date: '2023-06-12T00:00:00+09:00'
+  ebook_publish_date: '2023-06-12T00:00:00+09:00'
+notices: []
+begin_datetime: '2023-09-11T06:55:00+09:00'
+end_datetime: '2024-09-10T23:59:59+09:00'
+introduction: '“그거 아나, 이 우주에서 네가 제일 소중하다!'
+intro_video_url: null
+intro_image_url: null
+author_introduction: '이름: 전한길\r\n약력'
+table_of_contents: '목차\r\n\r\n프롤로그'
+publisher_review: '출판사 서평\r'
+preview_b_id: '222003057'
+preview_available: true
+has_preview: true
+review_summary:
+  buyer_rating_distribution: [11, 16, 90, 234, 729]
+  buyer_rating_average: 4.5
+  buyer_rating_count: 1080
+  buyer_review_count: 41
+  total_rating_count: 1109
+  total_review_count: 44
