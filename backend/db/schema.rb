@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_02_175007) do
+ActiveRecord::Schema[7.0].define(version: 2023_11_01_141505) do
   create_table "banners", charset: "utf8mb4", force: :cascade do |t|
     t.string "image_url", limit: 50, comment: "バナーリンク"
     t.string "link_url", limit: 50, comment: "セレクションリンク"
@@ -108,6 +108,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_02_175007) do
     t.string "title", limit: 50, null: false, comment: "セレクションテーマ"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "selection_type"
   end
 
   add_foreign_key "book_categories", "books"
