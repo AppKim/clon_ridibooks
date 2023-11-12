@@ -2,8 +2,8 @@ puts 'review_comments START'
 ReviewComment.create!(
     book_id: Book.all.first.id,
     reviewer: 'nah',
-    review_type: 0,
+    is_buyer: true,
     comment: 'Good Story',
-    spoiler: 0
+    has_spoiler: true
   )
 puts 'review_comments END'
