@@ -27,17 +27,17 @@ services:
       TZ: Asia/Tokyo
     ports:
       - "3306:3306"
-  frontend:
-    image: clon_ridibooks_frontend
-    container_name: clon_ridibooks_frontend
-    build: ./frontend
-    volumes:
-      - ./frontend:/app
-    ports:
-      - "8080:8080"
-    tty: true
-    stdin_open: true
-    command: npm run dev
+  # frontend:
+  #   image: clon_ridibooks_frontend
+  #   container_name: clon_ridibooks_frontend
+  #   build: ./frontend
+  #   volumes:
+  #     - ./frontend:/app
+  #   ports:
+  #     - "8080:8080"
+  #   tty: true
+  #   stdin_open: true
+  #   command: npm run dev
 
 volumes:
   mysql_data:

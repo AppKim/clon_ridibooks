@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   namespace :v1, defaluts: { format: :json } do
     get 'spotlights', to: 'spotlights#index'
   end
+  namespace :v1, defaluts: { format: :json } do
+    get 'home', to: 'home#index'
+  end
 end
