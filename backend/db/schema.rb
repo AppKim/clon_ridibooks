@@ -101,14 +101,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_12_081217) do
   end
 
   create_table "reviews", charset: "utf8mb4", force: :cascade do |t|
-    t.bigint "review_comments_id"
-    t.bigint "books_id", null: false
+    t.bigint "review_comment_id"
+    t.bigint "book_id", null: false
     t.string "reviewer", null: false, comment: "作成者"
+    t.integer "score", null: false
     t.boolean "is_buyer"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["books_id"], name: "index_reviews_on_books_id"
-    t.index ["review_comments_id"], name: "index_reviews_on_review_comments_id"
+    t.index ["book_id"], name: "index_reviews_on_book_id"
+    t.index ["review_comment_id"], name: "index_reviews_on_review_comment_id"
   end
 
   create_table "selections", charset: "utf8mb4", force: :cascade do |t|
@@ -126,6 +127,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_12_081217) do
   add_foreign_key "book_selections", "books"
   add_foreign_key "book_selections", "selections"
   add_foreign_key "books", "publishers"
-  add_foreign_key "reviews", "books", column: "books_id"
-  add_foreign_key "reviews", "review_comments", column: "review_comments_id"
+  add_foreign_key "reviews", "books"
+  add_foreign_key "reviews", "review_comments"
 end
