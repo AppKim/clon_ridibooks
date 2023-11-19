@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 class ReviewComment < ApplicationRecord
-  belongs_to :book
+  scope :buyer, -> { where(is_buyer: true) }
 end
