@@ -1,9 +1,24 @@
 <template>
   <div class="top-banner-carousel">
     <Swiper class="swiper" :options="topBannerSwiperOption">
-      <SwiperSlide><img src="https://placeimg.com/432/432/any1/1" /></SwiperSlide>
-      <SwiperSlide><img src="https://placeimg.com/432/432/any2/2" /></SwiperSlide>
-      <SwiperSlide><img src="https://placeimg.com/432/432/any3/3" /></SwiperSlide>
+      <SwiperSlide
+        ><img
+          width="432"
+          height="432"
+          src="https://select-img.ridicdn.net/images/4f46058a-2f47-44ea-a265-0629627b10aa?w=450"
+      /></SwiperSlide>
+      <SwiperSlide
+        ><img
+          width="432"
+          height="432"
+          src="https://select-img.ridicdn.net/images/52971b4d-ba46-48fb-95f1-917f0449f448?w=450"
+      /></SwiperSlide>
+      <SwiperSlide
+        ><img
+          width="432"
+          height="432"
+          src="https://select-img.ridicdn.net/images/a6bfec9f-a4dd-44bc-8a49-188ed238a35c?w=450"
+      /></SwiperSlide>
       <div slot="button-prev" class="swiper-button-prev"></div>
       <div slot="button-next" class="swiper-button-next"></div>
       <div slot="pagination" class="swiper-pagination"></div>
