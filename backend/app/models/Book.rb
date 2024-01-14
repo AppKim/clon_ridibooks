@@ -2,9 +2,8 @@
 
 class Book < ApplicationRecord
   belongs_to :publisher
-  has_many :book_people
   has_many :book_people, dependent: :destroy
-  has_many :review_comments, dependent: :destroy
+  has_many :reviews, dependent: :destroy
   has_many :book_selections, dependent: :destroy
   has_many :book_categories, dependent: :destroy
   has_one :book_detail, dependent: :destroy
