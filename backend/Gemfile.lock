@@ -138,6 +138,8 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.3-aarch64-linux)
       racc (~> 1.4)
+    nokogiri (1.13.3-arm64-darwin)
+      racc (~> 1.4)
     nokogiri (1.13.3-x86_64-darwin)
       racc (~> 1.4)
     nokogiri (1.13.3-x86_64-linux)
@@ -151,6 +153,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.3)
+    rack-cors (2.0.1)
+      rack (>= 2.0.0)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (7.0.2.3)
@@ -243,6 +247,7 @@ GEM
 
 PLATFORMS
   aarch64-linux-musl
+  arm64-darwin-22
   x86_64-darwin-21
   x86_64-linux-musl
 
@@ -254,6 +259,7 @@ DEPENDENCIES
   importmap-rails
   mysql2 (~> 0.5)
   puma (~> 5.0)
+  rack-cors
   rails (~> 7.0.2, >= 7.0.2.3)
   rubocop
   rubocop-rails
