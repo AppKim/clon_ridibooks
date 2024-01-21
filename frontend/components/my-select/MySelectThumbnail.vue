@@ -20,7 +20,12 @@
         <ul v-for="(item, index) in items" :key="index" class="my-select-list__item">
           <div class="left">
             <CheckBox :id="item.id" :checked="item.checked" @change="selected"></CheckBox>
-            <BookThumbnail size="medium" align-items="center" src="https://placeimg.com/150/200/any" alt="sample image">
+            <BookThumbnail
+              size="medium"
+              align-items="center"
+              src="https://img.ridicdn.net/cover/1242001114/xlarge?dpi=xxhdpi"
+              alt="sample image"
+            >
             </BookThumbnail>
             <BookThumbnailDescription :title="item.title" :author="item.author"></BookThumbnailDescription>
           </div>

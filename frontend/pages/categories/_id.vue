@@ -17,7 +17,11 @@
       <nuxt-link to="">
         <ul class="book-wrapper">
           <li v-for="i in 24" :key="i" class="book-list-item">
-            <BookThumbnail size="medium" src="https://placeimg.com/150/200/any" alt="sample image" />
+            <BookThumbnail
+              size="medium"
+              src="https://img.ridicdn.net/cover/1242001114/xlarge?dpi=xxhdpi"
+              alt="sample image"
+            />
             <BookThumbnailTitle class="book-title" :title="bookTitle"></BookThumbnailTitle>
           </li>
         </ul>

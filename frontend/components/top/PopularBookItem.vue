@@ -1,7 +1,7 @@
 <template>
   <div class="popular-book-item">
     <div class="popular-book-item__ranking">{{ rankNum }}</div>
-    <BookThumbnail src="https://placeimg.com/150/200/any" size="small" alt="book.title" />
+    <BookThumbnail src="https://img.ridicdn.net/cover/1242001114/xlarge?dpi=xxhdpi" size="small" alt="book.title" />
     <div class="popular-book-item__book-info">
       <div>사상 최강의 철학 입문</div>
       <ReviewStars star-size="medium" :is-show-rating-count="true" />
@@ -22,7 +22,8 @@ export default defineComponent({
     },
     book: {
       type: Object,
-      required: true,
+      required: false,
+      default: () => ({}),
     },
   },
   setup() {},

@@ -30,6 +30,8 @@ export default defineComponent({
     const bestBooks = ref([])
     const { $repositories } = useContext()
 
+    console.log('asdasd')
+
     useFetch(async () => {
       // TODO: store에 넣어서 관라?
       const homeResponse = await $repositories('top').get.home()
