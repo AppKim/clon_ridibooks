@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_02_175007) do
+ActiveRecord::Schema[7.0].define(version: 2023_11_12_081217) do
   create_table "banners", charset: "utf8mb4", force: :cascade do |t|
     t.string "image_url", limit: 50, comment: "バナーリンク"
     t.string "link_url", limit: 50, comment: "セレクションリンク"
@@ -94,20 +94,29 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_02_175007) do
   end
 
   create_table "review_comments", charset: "utf8mb4", force: :cascade do |t|
-    t.bigint "book_id", null: false
-    t.string "reviewer", null: false
-    t.integer "review_type", default: 0
     t.string "comment", null: false
-    t.integer "spoiler", default: 0
+    t.boolean "has_spoiler", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["book_id"], name: "index_review_comments_on_book_id"
+  end
+
+  create_table "reviews", charset: "utf8mb4", force: :cascade do |t|
+    t.bigint "review_comment_id"
+    t.bigint "book_id", null: false
+    t.string "reviewer", null: false, comment: "作成者"
+    t.integer "score", null: false
+    t.boolean "is_buyer"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["book_id"], name: "index_reviews_on_book_id"
+    t.index ["review_comment_id"], name: "index_reviews_on_review_comment_id"
   end
 
   create_table "selections", charset: "utf8mb4", force: :cascade do |t|
     t.string "title", limit: 50, null: false, comment: "セレクションテーマ"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "selection_type"
   end
 
   add_foreign_key "book_categories", "books"
@@ -118,5 +127,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_02_175007) do
   add_foreign_key "book_selections", "books"
   add_foreign_key "book_selections", "selections"
   add_foreign_key "books", "publishers"
-  add_foreign_key "review_comments", "books"
+  add_foreign_key "reviews", "books"
+  add_foreign_key "reviews", "review_comments"
 end
