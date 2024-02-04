@@ -1,7 +1,7 @@
 import { RepositoryFactory } from '@/repositories'
 
 export default (context, inject) => {
-  const repositories = (name, isMock = true) => {
+  const repositories = (repositoryName, isMock = true) => {
     let baseURL
     if (isMock) {
       baseURL = 'http://localhost:7070'
@@ -10,7 +10,7 @@ export default (context, inject) => {
     }
     const axiosInstance = context.$axios
     axiosInstance.setBaseURL(baseURL)
-    return RepositoryFactory.get(name)(axiosInstance)
+    return RepositoryFactory.get(repositoryName)(axiosInstance)
   }
 
   inject('repositories', repositories)
