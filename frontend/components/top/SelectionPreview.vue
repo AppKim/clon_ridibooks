@@ -1,6 +1,6 @@
 <template>
   <div class="selection-preview">
-    <TopContentsHeader :title="selection.title" :link="`/selections/${selection.selection_id}`" />
+    <TopContentsHeader :title="selection.title" :link="`/selection/${selection.id}`" />
     <BookThumbnailLinkList :book-list="bookList" />
   </div>
 </template>
