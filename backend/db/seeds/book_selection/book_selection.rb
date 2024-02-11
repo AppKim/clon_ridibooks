@@ -1,12 +1,12 @@
 puts 'BookSelection START'
 
-Selection.find_each do |selection|
-  Book.find_each do |book|
-    BookSelection.create!(
-      book_id: book.id,
-      selection_id: selection.id
-    )
-  end
+selection_id_list = Selection.pluck(:id)
+book_id_list = Book.pluck(:id)
+
+book_selections = selection_id_list.product(book_id_list).map do |selection_id, book_id|
+  { book_id: book_id, selection_id: selection_id }
 end
+
+BookSelection.insert_all(book_selections)
 
 puts 'BookSelection END'
