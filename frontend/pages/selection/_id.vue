@@ -22,9 +22,9 @@ export default defineComponent({
     const id = params.value.id || 2026
     useFetch(async () => {
       const res = await $repositories('selections').get.books(id)
-      totalPage.value = res.total_page
-      books.value = res.books
-      title.value = res.title
+      totalPage.value = res[0].total_page
+      books.value = res[0].books
+      title.value = res[0].title
     })
     const pageParam = computed(() => {
       return Number(route.value.query.page) || 1
