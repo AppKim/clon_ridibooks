@@ -25,7 +25,7 @@ export default defineComponent({
     const bookList = computed(() => {
       return props.selection.books.map((book) => ({
         ...book,
-        src: 'https://img.ridicdn.net/cover/1242001114/xlarge?dpi=xxhdpi', // TODO: thumnail.smallから取ってくるようにする
+        src: book.thumnail || 'https://img.ridicdn.net/cover/1242001114/xlarge?dpi=xxhdpi', // TODO: thumnail.smallから取ってくるようにする
         alt: book.title.main,
         title: book.title.main,
         link: `book/${book.id}`,

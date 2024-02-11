@@ -1,14 +1,66 @@
 # frozen_string_literal: true
 
 puts 'book START'
-Book.create!({
-    title: '데일 카네기 성공대화론',
-    content: '들어가는 말\r\n\r\n1장 두려움이 나가면 용기가 찾아온다\r\n[목소리 훈련]',
-    introduction: '지은이 ∥ 데일 카네기 (Dale Carnegie, 1888-1955)\r\n자기계발 분야의 선구자로 손꼽히는 데일 카네기는 1888년 미국 미주리주에서 가난한 농부의 아들로 태어났다.',
-    thumnail: 'https://img.ridicdn.net/cover/1883000147/small#1',
-    publisher_review: '사람의 마음을 단박에 사로잡고\r\n원하는 대로 이끄는 품격 있는 말하기의 공식\r\n\r\n말이 중요한 시대다.',
-    ebook_publish_date: '2022-10-05 00:00:00',
-    paper_book_publish_date: '2022-10-05 00:00:00',
-    publisher_id: Publisher.all.first.id,
-})
+Book.create!([
+    {
+        title: '데일 카네기 성공대화론',
+        content: '이 책은 데일 카네기의 대화 기법을 소개합니다. 각 장에서는 사람들과 효과적으로 소통하는 방법을 다룹니다.',
+        introduction: '데일 카네기는 자기계발 분야에서 가장 유명한 인물 중 하나입니다. 이 책에서는 그의 대화 기법을 탐구합니다.',
+        thumnail: 'https://img.ridicdn.net/cover/1883000147/large#1',
+        publisher_review: '카네기의 대화 기법을 통해 인간 관계를 개선하는 법을 배워보세요.',
+        ebook_publish_date: '2022-10-05 00:00:00',
+        paper_book_publish_date: '2022-10-05 00:00:00',
+        publisher_id: Publisher.all.first.id,
+    },
+    {
+        title: '더 마인드',
+        content: '이 책은 인간의 마음과 생각의 힘에 대해 탐구합니다. 심리학과 철학의 교차점에서 흥미로운 통찰을 제공합니다.',
+        introduction: '인간의 마음은 어떻게 작동하는가? \'더 마인드\'에서는 이 복잡한 질문에 대한 답을 찾습니다.',
+        thumnail: 'https://img.ridicdn.net/cover/606002495/large#1',
+        publisher_review: '마음의 신비를 탐구하며, 우리가 어떻게 생각하고 느끼는지에 대한 이해를 넓힐 수 있습니다.',
+        ebook_publish_date: '2022-11-10 00:00:00',
+        paper_book_publish_date: '2022-11-15 00:00:00',
+        publisher_id: Publisher.all.first.id,
+    },
+    {
+        title: '겨울의 언어',
+        content: '이 책은 겨울이라는 계절을 통해 인생의 깊이를 탐구합니다. 시와 산문이 어우러진 독특한 구성을 가지고 있습니다.',
+        introduction: '겨울은 말없이 많은 것을 전달합니다. 이 책에서는 겨울의 언어를 통해 삶의 의미를 되새깁니다.',
+        thumnail: 'https://img.ridicdn.net/cover/606002496/large#1',
+        publisher_review: '겨울의 차가운 바람 속에서도 따뜻한 위로와 깊은 통찰을 발견할 수 있습니다.',
+        ebook_publish_date: '2023-01-05 00:00:00',
+        paper_book_publish_date: '2023-01-10 00:00:00',
+        publisher_id: Publisher.all.first.id,
+    },
+    {
+        title: '지적 대화를 위한 넓고 얕은 지식',
+        content: '다양한 분야에 대한 기본적인 지식을 소개하며, 지적 대화의 기술을 향상시키는 데 중점을 둡니다.',
+        introduction: '지적 대화를 위해 알아야 할 필수 지식을 담은 책입니다. 다양한 분야의 기초 지식을 탐구합니다.',
+        thumnail: 'https://img.ridicdn.net/cover/1780000217/large#1',
+        publisher_review: '이 책을 통해 다양한 주제에 대한 대화를 이끌고, 지식의 폭을 넓힐 수 있습니다.',
+        ebook_publish_date: '2022-08-20 00:00:00',
+        paper_book_publish_date: '2022-08-25 00:00:00',
+        publisher_id: Publisher.all.first.id,
+    },
+    {
+        title: '과학자의 흑역사',
+        content: '역사 속 위대한 과학자들의 실패와 시행착오를 통해 과학의 발전 과정을 탐구합니다.',
+        introduction: '과학자들의 실패담을 통해 과학적 발견이 어떻게 이루어지는지 이해할 수 있습니다.',
+        thumnail: 'https://img.ridicdn.net/cover/1883000167/large#1',
+        publisher_review: '과학자들의 흑역사를 통해, 실패가 곧 성공으로 가는 길임을 깨달을 수 있습니다.',
+        ebook_publish_date: '2023-03-15 00:00:00',
+        paper_book_publish_date: '2023-03-20 00:00:00',
+        publisher_id: Publisher.all.first.id,
+    },
+    {
+        title: '사소해서 물어보지 못했지만 궁금했던 이야기',
+        content: '목차\r\n\r\n프롤로그\r\n\r\n1부 사소해서 물어보지 못했던 몸에 관한 이야기\r\n1 아침에 일어난 직후는 왜 그렇게 피곤할까?\r\n2 자다가 갑자기 움찔하는 이유는?',
+        introduction: '구독자 115만 명, 누적 조회 수 1.4억 회\r\n국내 최대 과학 유튜브 ‘사물궁이 잡학지식’을 책으로 만난다! \r\n\r\n\r\n\r\n\r\n\r\n◎ 도서 소개\r\n\r\n“나는 특별한 재능이 없다. 열렬한 호기심이 있을 뿐이다.”\r\n- 알베르트 아인슈타인 \r\n\r\n 일상 속 사소하고 엉뚱한 궁금증을 해결하며 115만 유튜브 구독자를 사로잡은 과학 채널',
+        thumnail: 'https://img.ridicdn.net/cover/222002487/large#1"',
+        publisher_review: '사소해서 물어보지 못했지만 궁금했던 이야기',
+        ebook_publish_date: '2023-03-22 00:00:00',
+        paper_book_publish_date: '2023-03-27 00:00:00',
+        publisher_id: Publisher.all.first.id,
+    },
+])
 puts 'book END'
