@@ -4,15 +4,15 @@ const initAxios = ({ $axios }) => {
   $axios.setBaseURL(baseURL)
 
   $axios.onRequest((config) => {
-    // console.log(config)
+    console.dir(config)
   })
 
   $axios.onResponse((config) => {
-    // console.log(config)
+    console.dir(config)
   })
 
   $axios.onError((e) => {
-    // console.log(e.response)
+    console.error(e.response)
   })
 }
 
