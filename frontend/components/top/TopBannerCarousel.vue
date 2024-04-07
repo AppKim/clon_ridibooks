@@ -19,9 +19,9 @@
           height="432"
           src="https://select-img.ridicdn.net/images/a6bfec9f-a4dd-44bc-8a49-188ed238a35c?w=450"
       /></SwiperSlide>
-      <div slot="button-prev" class="swiper-button-prev"></div>
-      <div slot="button-next" class="swiper-button-next"></div>
-      <div slot="pagination" class="swiper-pagination"></div>
+      <div slot="button-prev" class="top-swiper-button-prev"></div>
+      <div slot="button-next" class="top-swiper-button-next"></div>
+      <div slot="pagination" class="top-swiper-pagination"></div>
     </Swiper>
   </div>
 </template>
@@ -48,12 +48,12 @@ export default defineComponent({
       },
       loop: true,
       pagination: {
-        el: '.swiper-pagination',
+        el: '.top-swiper-pagination',
         type: 'fraction',
       },
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.top-swiper-button-next',
+        prevEl: '.top-swiper-button-prev',
       },
       autoplay: {
         delay: 5000,
@@ -71,9 +71,13 @@ export default defineComponent({
   width: 1296px;
   margin: 0 auto;
   .swiper {
-    .swiper-button-prev {
+    .top-swiper-button-prev {
+      position: absolute;
+      top: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       left: 380px;
-      right: auto;
       cursor: pointer;
       width: 40px;
       height: 40px;
@@ -81,6 +85,7 @@ export default defineComponent({
       border: 1px solid rgba(0, 0, 0, 0.07);
       background-color: rgba(0, 0, 0, 0.2);
       transition: background-color 0.2s ease 0s;
+      z-index: 10;
       &::after {
         position: relative;
         left: 2px;
@@ -95,9 +100,14 @@ export default defineComponent({
         display: none;
       }
     }
-    .swiper-button-next {
-      left: auto;
+    .top-swiper-button-next {
+      position: absolute;
+      top: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       right: 380px;
+      z-index: 10;
       cursor: pointer;
       width: 40px;
       height: 40px;
@@ -119,11 +129,12 @@ export default defineComponent({
         display: none;
       }
     }
-    ::v-deep .swiper-pagination-fraction {
+    ::v-deep .top-swiper-pagination {
       display: inline-block;
       position: absolute;
       left: 62%;
       width: fit-content;
+      z-index: 10;
       padding: 3px 10px;
       border-radius: 16px;
       font-size: 1.2rem;
