@@ -17,7 +17,7 @@ class V1::SpotlightSerializer < ActiveModel::Serializer
     def total_page
         total_count.remainder(size)
     end
-
+    
     def total_count
         object.book_selections.size
     end
