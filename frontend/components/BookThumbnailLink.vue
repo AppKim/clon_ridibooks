@@ -1,7 +1,7 @@
 <template>
   <nuxt-link class="book-thumbnail-link" :to="to">
     <BookThumbnail :src="src" :size="size" :loading="loading" :alt="alt" />
-    <BookThumbnailDescription :size="size" :title="title" :author="author_name" />
+    <BookThumbnailDescription :size="size" :title="title" :author="authorName" />
   </nuxt-link>
 </template>
 
@@ -54,9 +54,9 @@ export default defineComponent({
       }
       return ''
     })
-    const author_name = props.author.map((author) => author['name']).join()
+    const authorName = props.author.map((author) => author['name']).join()
     return {
-      author_name,
+      authorName,
       styles,
     }
   },
