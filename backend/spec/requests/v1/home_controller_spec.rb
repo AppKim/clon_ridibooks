@@ -22,20 +22,20 @@ describe V1::HomeController, type: :request do
             end
         end
 
-        context 'home apiの正常系、データがない場合' do
+        context 'home apiのデータがない場合' do
             before do
                 Banner.delete_all
                 BookSelection.delete_all
                 Selection.delete_all
             end
 
-        it '200, 空の配列' do
-            home_api.call
-            expect(response).to have_http_status(200)
-            json_response = JSON.parse(response.body)
-            expect(json_response["banners"]).to be_empty
-            expect(json_response["selections"]).to be_empty
+            it '200, 空の配列' do
+                home_api.call
+                expect(response).to have_http_status(200)
+                json_response = JSON.parse(response.body)
+                expect(json_response["banners"]).to be_empty
+                expect(json_response["selections"]).to be_empty
+            end
         end
-end
     end
 end
