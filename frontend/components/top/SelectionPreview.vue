@@ -29,7 +29,7 @@ export default defineComponent({
         alt: book.title.main,
         title: book.title.main,
         link: `book/${book.id}`,
-        author: '',
+        author: book.authors['author'] || [],
       }))
     })
     return { bookList }
