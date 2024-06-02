@@ -10,12 +10,11 @@
         <Swiper class="swiper" :options="swiperOption">
           <SwiperSlide v-for="(book, i) in books" :key="i" class="book-thumbnail-link-list__item">
             <BookThumbnailLink
-              :src="book.src"
-              :alt="book.alt || book.title"
-              :to="book.link"
+              :src="book.thumnail"
+              :alt="book.title"
               :title="book.title"
-              :author="book.author"
-              :loading="loading"
+              :author="book.authors['author']"
+              :loading="'lazy'"
             ></BookThumbnailLink>
           </SwiperSlide>
         </Swiper>

@@ -23,6 +23,7 @@ export default defineComponent({
     },
     author: {
       type: String,
+      required: false,
       default: '',
     },
   },
