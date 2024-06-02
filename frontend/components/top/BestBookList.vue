@@ -5,21 +5,23 @@
         한 주간 별점 베스트
         <img class="best-book-list__icon" src="@/assets/images/best.svg" />
       </h2>
-      <div v-if="$device.isDesktopOrTablet">
+      <div v-if="$device.isDesktopOrTablet" class="best-book-list__swiper">
+        <div slot="pagination" class="best-book-pagination"></div>
         <Swiper class="swiper" :options="swiperOption">
-          <SwiperSlide v-for="index in 3" :key="index">
-            <BookThumbnailLinkList
-              class="best-book-list__book-list"
-              :book-list="books.slice((index - 1) * 5, (index - 1) * 5 + 5)"
-              size="large"
-            />
+          <SwiperSlide v-for="(book, i) in books" :key="i" class="book-thumbnail-link-list__item">
+            <BookThumbnailLink
+              :src="book.thumnail"
+              :alt="book.title"
+              :title="book.title"
+              :author="book.authors['author']"
+              :loading="'lazy'"
+            ></BookThumbnailLink>
           </SwiperSlide>
-          <div slot="button-prev" class="swiper-button-prev"></div>
-          <div slot="button-next" class="swiper-button-next"></div>
-          <div slot="pagination" class="swiper-pagination"></div>
         </Swiper>
+        <div slot="button-prev" class="swiper-button-prev"></div>
+        <div slot="button-next" class="swiper-button-next"></div>
       </div>
-      <BookThumbnailLinkList v-else class="best-book-list__book-list" :book-list="books" size="large" />
+      <BookThumbnailLink v-else class="best-book-list__book-list" :book-list="books" size="large" />
     </div>
   </div>
 </template>
@@ -28,11 +30,11 @@
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import { defineComponent } from '@nuxtjs/composition-api'
 import 'swiper/css/swiper.css'
-import BookThumbnailLinkList from './BookThumbnailLinkList.vue'
+import BookThumbnailLink from '../BookThumbnailLink.vue'
 
 export default defineComponent({
   components: {
-    BookThumbnailLinkList,
+    BookThumbnailLink,
     Swiper,
     SwiperSlide,
   },
@@ -44,15 +46,13 @@ export default defineComponent({
   },
   setup() {
     const swiperOption = {
-      slidesPerView: 1,
-      spaceBetween: 0,
+      spaceBetween: 20,
+      slidesPerView: 5,
+      slidesPerGroup: 5,
       loop: true,
       pagination: {
-        el: '.swiper-pagination',
+        el: '.best-book-pagination',
         clickable: true,
-        renderBullet(_, className) {
-          return `<span class="${className} swiper-pagination-bullet-custom"></span>`
-        },
       },
       navigation: {
         nextEl: '.swiper-button-next',
@@ -86,67 +86,32 @@ export default defineComponent({
     color: black;
     display: flex;
     align-items: center;
-    width: 825px;
+    width: 800px;
     margin: auto;
     @include sp_view {
       width: 100%;
       padding: 32px 0px 0px 0px;
     }
   }
-  &__icon {
-    margin-left: 8px;
-    width: 40px;
-  }
-  &__book-list {
-    width: 825px;
-    margin: 24px 68px 0px 68px;
-    @include sp_view {
-      width: 100%;
-      margin: 24px 0px 0px 0px;
-    }
-  }
-  .swiper {
-    width: 900px;
-    margin: auto;
+  &__swiper {
     position: relative;
-    @include sp_view {
-      width: 100%;
-    }
-    .swiper-button-prev {
-      position: absolute;
-      cursor: pointer;
-      width: 40px;
-      height: 40px;
-      left: 0;
-      border-radius: 40px;
-      border: 1px solid rgba(0, 0, 0, 0.07);
-      background-color: white;
-      transition: background-color 0.2s ease 0s;
-      box-shadow: rgb(0 0 0 / 15%) 0px 1px 3px 0px, rgb(0 0 0 / 10%) 0px 1px 5px 0px;
-      &::after {
-        position: relative;
-        left: 2px;
-        border-right: 2px solid #444;
-        border-top: 2px solid #444;
-        content: '';
-        height: 8px;
-        transform: rotate(225deg);
-        width: 8px;
-      }
+    width: 810px;
+    margin: auto;
+    padding: 45px 10px 0px 10px;
+    .swiper {
+      width: 800px;
+      position: relative;
       @include sp_view {
-        display: none;
+        width: 100%;
       }
     }
     .swiper-button-next {
-      cursor: pointer;
       width: 40px;
       height: 40px;
-      right: 0;
-      border-radius: 40px;
-      border: 1px solid rgba(0, 0, 0, 0.07);
+      right: -30px;
+      border-radius: 20px;
       background-color: white;
-      transition: background-color 0.2s ease 0s;
-      box-shadow: rgb(0 0 0 / 15%) 0px 1px 3px 0px, rgb(0 0 0 / 10%) 0px 1px 5px 0px;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 5px 0px;
       &::after {
         position: relative;
         right: 2px;
@@ -157,31 +122,51 @@ export default defineComponent({
         transform: rotate(45deg);
         width: 8px;
       }
-      @include sp_view {
-        display: none;
+    }
+    .swiper-button-prev {
+      width: 40px;
+      height: 40px;
+      left: -50px;
+      border-radius: 20px;
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 5px 0px;
+      &::after {
+        position: relative;
+        left: 2px;
+        border-right: 2px solid #444;
+        border-top: 2px solid #444;
+        content: '';
+        height: 8px;
+        transform: rotate(225deg);
+        width: 8px;
       }
     }
-    .swiper-pagination {
-      width: fit-content;
-      top: 0px;
-      left: 90%;
+    .best-book-pagination {
+      position: absolute;
+      margin: 0px;
+      padding: 0px;
+      white-space: nowrap;
+      top: -22px;
+      right: 11px;
+      ::v-deep .swiper-pagination-bullet {
+        width: 10px;
+        height: 3px;
+        margin: 0 2px;
+        background: rgb(184, 191, 196);
+        border-radius: 0%;
+      }
     }
-    ::v-deep .swiper-pagination-bullet-custom {
-      width: 12px;
-      height: 4px;
-      border-radius: 3px;
-      opacity: 0.7;
-      background: rgb(217, 216, 216);
-
-      &:hover {
-        opacity: 1;
-      }
-
-      &.swiper-pagination-bullet-active {
-        opacity: 1;
-        color: white;
-        background: rgb(136, 135, 135);
-      }
+  }
+  &__icon {
+    margin-left: 8px;
+    width: 40px;
+  }
+  &__book-list {
+    width: 100%;
+    margin: 24px 68px 0px 68px;
+    @include sp_view {
+      width: 100%;
+      margin: 24px 0px 0px 0px;
     }
   }
 }

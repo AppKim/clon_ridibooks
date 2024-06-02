@@ -27,14 +27,14 @@ export default defineComponent({
   },
   setup() {
     const selections = ref([])
-    const bestBooks = ref([])
+    const bestBooks = ref()
     const { $repositories } = useContext()
 
     useFetch(async () => {
       const homeResponse = await $repositories('top', false).get.home()
       selections.value = homeResponse.selections
-      const bestBooksResponse = await $repositories('collections').get.best()
-      bestBooks.value = bestBooksResponse
+      const bestBooksResponse = await $repositories('collections', false).get.spotlight()
+      bestBooks.value = bestBooksResponse.books
     })
 
     return {

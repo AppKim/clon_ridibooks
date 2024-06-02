@@ -21,7 +21,6 @@ export default defineComponent({
     const totalPage = ref()
     useFetch(async () => {
       const res = await $repositories('charts').get.books(pageParam.value)
-      console.log(pageParam.value)
       books.value = res.books
       totalPage.value = res.total_page
     })
