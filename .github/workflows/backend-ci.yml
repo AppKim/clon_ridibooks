@@ -32,10 +32,20 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - uses: actions/cache@v2
+        with:
+          path: |
+            backend/vendor/bundle
+            ~/.gem
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.1.1"
+          bundler-cache: true
 
       - name: Install MySQL client
         run: sudo apt-get install default-mysql-client
