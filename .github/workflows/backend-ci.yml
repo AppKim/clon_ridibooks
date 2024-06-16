@@ -57,12 +57,7 @@ jobs:
           cd backend
           bundle install --jobs 4 --retry 3
 
-      - name: Setup database
-        env:
-          RAILS_ENV: test
-          DB_USERNAME: root
-          DB_PASSWORD: password
-          DB_HOST: localhost
+      - name: Setup DB Schema
         run: |
           cd backend
           cp ../config/database.ci.yml config/database.yml
