@@ -4,4 +4,4 @@ test:
   database: app_test
   username: root
   password: password
-  host: mysql
+  host: 127.0.0.1
