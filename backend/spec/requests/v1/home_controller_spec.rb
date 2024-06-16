@@ -6,23 +6,23 @@ describe V1::HomeController, type: :request do
 
         context 'home apiの正常系' do
             before do
-                create(:banner, :fixed_id)
+                create(:banner, id: 2)
                 create(:book_selection, book: book, selection: selection)
             end
             let(:book) { create(:book, publisher: publisher) }
             let(:publisher) { create(:publisher) }
-            let(:selection) { create(:selection, :fixed_id) }
+            let(:selection) { create(:selection, id: 2) }
 
             let(:response_body) do
                 {
                     "banners" => [{
-                        "id" => 1,
+                        "id" => 2,
                         "title" => "미리 보는 6월 업데이트",
                         "image_url" => "https://picsum.photos/200",
                         "link_url" => "http://localhost:8080/select"
                     }],
                     "selections" => [{
-                        "id" => 1,
+                        "id" => 2,
                         "title" => "TestSelection",
                         "selection_type" => "COLLECTION",
                         "books" => [{
