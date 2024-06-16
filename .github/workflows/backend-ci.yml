@@ -40,10 +40,11 @@ jobs:
       - name: Install MySQL client
         run: sudo apt-get install default-mysql-client
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: |
-          sudo apt-get update
+          sudo apt-get update -qq
           gem install bundler
+          cd backend
           bundle install --jobs 4 --retry 3
 
       - name: Setup database
