@@ -55,6 +55,7 @@ jobs:
           DB_HOST: localhost
         run: |
           cp config/database.ci.yml config/database.yml
+          cd backend
           bundle exec rails db:create RAILS_ENV=test
           bundle exec rails db:migrate RAILS_ENV=test
 
