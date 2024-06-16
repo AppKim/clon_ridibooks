@@ -54,7 +54,8 @@ jobs:
           DB_PASSWORD: password
           DB_HOST: localhost
         run: |
-          cp config/database.ci.yml config/database.yml
+          cp config/database.ci.yml config/database.ci.yml
+          cd backend
           bin/rails db:create db:schema:load
         working-directory: .
 
