@@ -2,9 +2,12 @@
   <div class="top">
     <TopBannerCarousel></TopBannerCarousel>
     <BestBookList :books="bestBooks" />
-    <div class="top__main">
-      <div v-for="(selection, i) in selections" :key="selection.id" class="top__selection">
-        <PopularBookList v-if="i === 2" />
+    <div class="selection-list">
+      <div v-for="selection in selections.slice(0, 2)" :key="selection.id" class="selection">
+        <SelectionPreview :selection="selection" />
+      </div>
+      <PopularBookList></PopularBookList>
+      <div v-for="selection in selections.slice(3)" :key="selection.id" class="selection">
         <SelectionPreview :selection="selection" />
       </div>
     </div>
@@ -47,20 +50,20 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .top {
-  &__main {
+  .selection-list {
     width: 800px;
     margin: 0 auto;
-  }
-  &__selection {
-    padding: 60px 0 0;
+    .selection {
+      padding: 60px 0 0;
+    }
   }
   @include sp_view {
-    &__main {
+    .selection-list {
       width: 100%;
       margin: 0 auto;
-    }
-    &__selection {
-      padding: 30px 20px 0px;
+      .selection {
+        padding: 30px 20px 0px;
+      }
     }
   }
 }

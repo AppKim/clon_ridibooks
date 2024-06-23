@@ -37,7 +37,4 @@ export default defineComponent({
 })
 </script>
 
-<style lang="scss" scoped>
-.selection-preview {
-}
-</style>
+<style lang="scss" scoped></style>

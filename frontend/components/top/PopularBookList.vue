@@ -1,8 +1,8 @@
 <template>
-  <div class="popular-book-list">
+  <div class="popular-books">
     <TopContentsHeader title="인기도서" link="/charts" />
-    <div class="popular-book-list__contents">
-      <PopularBookItem v-for="i in 12" :key="i" class="popular-book-list__contents__item" :rank-num="i" />
+    <div class="popular-books__contents">
+      <PopularBookItem v-for="i in 12" :key="i" class="popular-books__contents__item" :rank-num="i" />
     </div>
   </div>
 </template>
@@ -17,7 +17,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.popular-book-list {
+.popular-books {
   &__contents {
     overflow: auto;
     display: grid;
@@ -31,5 +31,6 @@ export default defineComponent({
       }
     }
   }
+  padding: 60px 0 0;
 }
 </style>
