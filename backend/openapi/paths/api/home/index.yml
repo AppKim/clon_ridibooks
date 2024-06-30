@@ -1,0 +1,20 @@
+get:
+  tags:
+    - home
+  summary: Retrieve banners and selections data
+  responses:
+    '200':
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              banners:
+                type: array
+                items:
+                  $ref: '../../../components/schemas/banner.yml'
+              selections:
+                type: array
+                items:
+                  $ref: '../../../components/schemas/selection.yml'

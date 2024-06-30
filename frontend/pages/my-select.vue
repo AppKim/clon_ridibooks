@@ -1,7 +1,7 @@
 <template>
-<div>
-    <my-select-thumbnail></my-select-thumbnail>
-</div>
+  <div>
+    <MySelectThumbnail></MySelectThumbnail>
+  </div>
 </template>
 
 <script>
@@ -11,6 +11,4 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
+<style></style>

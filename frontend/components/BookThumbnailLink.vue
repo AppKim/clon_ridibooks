@@ -1,7 +1,7 @@
 <template>
-  <nuxt-link class="book-thumbnail-link" :class="styles" :to="to">
-    <book-thumbnail :size="size" :src="src" :loading="loading" :alt="alt" />
-    <book-thumbnail-description :size="size" :title="title" :author="author" />
+  <nuxt-link class="book-thumbnail-link" :to="to">
+    <BookThumbnail :src="src" :size="size" :loading="loading" :alt="alt" />
+    <BookThumbnailDescription :size="size" :title="title" :author="author_name" />
   </nuxt-link>
 </template>
 
@@ -26,7 +26,8 @@ export default defineComponent({
     },
     alt: {
       type: String,
-      required: true,
+      required: false,
+      default: '',
     },
     loading: {
       type: String,
@@ -34,15 +35,16 @@ export default defineComponent({
     },
     to: {
       type: String,
-      required: true,
+      default: '/',
     },
     title: {
       type: String,
       default: '',
     },
     author: {
-      type: String,
-      default: '',
+      type: Array,
+      required: false,
+      default: () => [],
     },
   },
   setup(props) {
@@ -52,7 +54,9 @@ export default defineComponent({
       }
       return ''
     })
+    const author_name = props.author.map((author) => author['name']).join()
     return {
+      author_name,
       styles,
     }
   },

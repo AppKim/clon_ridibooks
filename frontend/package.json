@@ -3,17 +3,23 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "json-server --watch ./db/index.js --port 7070 & nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
-    "lint": "npm run lint:js"
+    "lint": "run-s lint:eslint:fix lint:prettier:fix",
+    "lint:prettier": "prettier --check \"./**/*.(ts|vue|css|scss|md)\"",
+    "lint:prettier:fix": "prettier --write \"./**/*.(ts|vue|css|scss|md)\"",
+    "lint:eslint": "eslint -c .eslintrc.js --ext .vue,.ts .",
+    "lint:eslint:fix": "eslint -c .eslintrc.js --fix  --ext .vue,.ts ."
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
     "core-js": "^3.15.1",
-    "nuxt": "^2.15.7"
+    "node-vibrant": "^3.1.6",
+    "nuxt": "^2.15.7",
+    "swiper": "^5.2.0",
+    "vue-awesome-swiper": "^4.1.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",
@@ -21,15 +27,20 @@
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@nuxtjs/composition-api": "^0.32.0",
+    "@nuxtjs/device": "^2.1.0",
     "@nuxtjs/eslint-config": "^6.0.1",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/fontawesome": "^1.1.2",
     "@nuxtjs/style-resources": "^1.2.1",
-    "eslint": "^7.29.0",
-    "eslint-config-prettier": "^8.3.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-loader": "^4.0.2",
     "eslint-plugin-nuxt": "^2.0.0",
-    "eslint-plugin-vue": "^7.12.1",
-    "prettier": "^2.3.2",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^7.20.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.8.8",
     "sass": "^1.49.0",
     "sass-loader": "^10.1.1"
   }

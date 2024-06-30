@@ -1,0 +1,22 @@
+get:
+    tags:
+        - category
+    summary: Retrieve banners and selections data
+    responses:
+        '200':
+            description: Successful response
+            content:
+                application/json:
+                    schema:
+                        type: object
+                        properties:
+                            categories:
+                                type: array
+                                items:
+                                    $ref: '../../../components/schemas/category.yml'
+                        example:
+                            categories:
+                                - id: 100
+                                  name: '소설'
+                                  depth: 0
+                                  parent_id: null

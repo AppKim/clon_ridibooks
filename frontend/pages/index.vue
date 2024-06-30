@@ -1,35 +1,67 @@
 <template>
-  <div style="padding: 200px">
-    <BookThumbnail size="xLarge" src="https://placeimg.com/150/200/any" alt="sample image" />
-    <BookThumbnail size="large" src="https://placeimg.com/150/200/any" alt="sample image" />
-    <BookThumbnail size="medium" src="https://placeimg.com/150/200/any" alt="sample image" />
-    <BookThumbnail size="small" src="https://placeimg.com/150/200/any" alt="sample image" />
-
-    <BookThumbnailLink
-      src="https://placeimg.com/150/200/any"
-      alt="sample image"
-      to="/category"
-      title="악의 마음을 읽는 자들asdㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ"
-    />
-    <BookThumbnailLink
-      size="large"
-      src="https://placeimg.com/150/200/any"
-      alt="sample image"
-      to="/category"
-      title="유괴의 날"
-      author="정해연 저"
-    />
+  <div class="top">
+    <TopBannerCarousel></TopBannerCarousel>
+    <BestBookList :books="bestBooks" />
+    <div class="top__main">
+      <div v-for="(selection, i) in selections" :key="selection.id" class="top__selection">
+        <PopularBookList v-if="i === 2" />
+        <SelectionPreview :selection="selection" />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import BookThumbnail from '../components/BookThumbnail.vue'
-import BookThumbnailLink from '../components/BookThumbnailLink.vue'
+import { defineComponent, useContext, useFetch, ref } from '@nuxtjs/composition-api'
+import TopBannerCarousel from '~/components/top/TopBannerCarousel'
+import SelectionPreview from '~/components/top/SelectionPreview'
+import BestBookList from '~/components/top/BestBookList'
+import PopularBookList from '~/components/top/PopularBookList'
 
-export default {
+export default defineComponent({
   components: {
-    BookThumbnail,
-    BookThumbnailLink,
+    SelectionPreview,
+    TopBannerCarousel,
+    BestBookList,
+    PopularBookList,
   },
-}
+  setup() {
+    const selections = ref([])
+    const bestBooks = ref()
+    const { $repositories } = useContext()
+
+    useFetch(async () => {
+      const homeResponse = await $repositories('top', false).get.home()
+      selections.value = homeResponse.selections
+      const bestBooksResponse = await $repositories('collections', false).get.spotlight()
+      bestBooks.value = bestBooksResponse.books
+    })
+
+    return {
+      selections,
+      bestBooks,
+    }
+  },
+})
 </script>
+
+<style lang="scss" scoped>
+.top {
+  &__main {
+    width: 800px;
+    margin: 0 auto;
+  }
+  &__selection {
+    padding: 60px 0 0;
+  }
+  @include sp_view {
+    &__main {
+      width: 100%;
+      margin: 0 auto;
+    }
+    &__selection {
+      padding: 30px 20px 0px;
+    }
+  }
+}
+</style>

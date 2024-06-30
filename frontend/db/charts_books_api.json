@@ -1,0 +1,2786 @@
+{
+  "total_count": 1774,
+  "total_page": 74,
+  "size": 24,
+  "page": 1,
+  "books": [
+    {
+      "id": "3356000019",
+      "title": {
+        "main": "글쓰기에 대하여",
+        "sub": "작가가 된다는 것에 대한 여섯 번의 강의"
+      },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/3356000019/small#1",
+        "large": "https://img.ridicdn.net/cover/3356000019/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/3356000019/xxlarge#1"
+      },
+      "categories": [
+        {
+          "id": 111,
+          "name": "에세이",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            110,
+            0
+          ]
+        },
+        {
+          "id": 410,
+          "name": "인문",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            400,
+            0
+          ]
+        }
+      ],
+      "price_info": {
+        "paper": {
+          "price": 16000
+        },
+        "buy": {
+          "regular_price": 11200,
+          "price": 11200,
+          "discount_percentage": 0
+        }
+      },
+      "authors": [
+        {
+          "name": "마거릿 애트우드",
+          "role": "author"
+        },
+        {
+          "name": "박설영",
+          "role": "translator"
+        }
+      ],
+      "file": {
+        "size": 22764,
+        "format": "epub",
+        "is_drm_free": false,
+        "is_comic": false,
+        "is_webtoon": false,
+        "is_manga": false,
+        "is_comic_hd": false,
+        "variants": [
+          {
+            "quality": "recommended",
+            "size": 22764
+          }
+        ],
+        "character_count": 159658
+      },
+      "property": {
+        "is_novel": false,
+        "is_magazine": false,
+        "is_adult_only": false,
+        "is_new_book": false,
+        "is_open": true,
+        "is_somedeal": false,
+        "is_trial": false,
+        "use_free_serial_schedule": false,
+        "preview_rate": 7,
+        "preview_max_characters": 11176
+      },
+      "support": {
+        "android": true,
+        "ios": true,
+        "mac": true,
+        "paper": true,
+        "windows": true,
+        "web_viewer": false
+      },
+      "publish": {
+        "ridibooks_register": "2021-03-30T12:05:41+09:00",
+        "ebook_publish": "2021-03-30T00:00:00+09:00",
+        "ridibooks_publish": "2021-03-30T16:42:19+09:00",
+        "paper_book_publish": "2021-03-01T00:00:00+09:00"
+      },
+      "publisher": {
+        "id": 3356,
+        "name": "프시케의숲",
+        "cp_name": "프시케의숲_E/P"
+      },
+      "review_summary": {
+        "buyer_rating_distribution": [
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "buyer_rating_average": 5,
+        "buyer_rating_count": 2,
+        "buyer_review_count": 0,
+        "total_rating_count": 3,
+        "total_review_count": 0
+      }
+    },
+    {
+      "id": "852001243",
+      "title": {
+        "main": "물고기는 존재하지 않는다",
+        "sub": "상실, 사랑 그리고 숨어 있는 삶의 질서에 관한 이야기"
+      },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/852001243/small#1",
+        "large": "https://img.ridicdn.net/cover/852001243/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/852001243/xxlarge#1"
+      },
+      "categories": [
+        {
+          "id": 1130,
+          "name": "자연과학",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            1100,
+            0
+          ]
+        }
+      ],
+      "price_info": {
+        "paper": {
+          "price": 17000
+        },
+        "buy": {
+          "regular_price": 11900,
+          "price": 11900,
+          "discount_percentage": 0
+        }
+      },
+      "authors": [
+        {
+          "name": "룰루 밀러",
+          "id": 124180,
+          "role": "author"
+        },
+        {
+          "name": "정지인",
+          "id": 56221,
+          "role": "translator"
+        }
+      ],
+      "file": {
+        "size": 46319,
+        "format": "epub",
+        "is_drm_free": false,
+        "is_comic": false,
+        "is_webtoon": false,
+        "is_manga": false,
+        "is_comic_hd": false,
+        "variants": [
+          {
+            "quality": "recommended",
+            "size": 46319
+          }
+        ],
+        "character_count": 166851
+      },
+      "property": {
+        "is_novel": false,
+        "is_magazine": false,
+        "is_adult_only": false,
+        "is_new_book": false,
+        "is_open": true,
+        "is_somedeal": false,
+        "is_trial": false,
+        "use_free_serial_schedule": false,
+        "review_display_id": "1508006000",
+        "preview_rate": 10,
+        "preview_max_characters": 16685
+      },
+      "support": {
+        "android": true,
+        "ios": true,
+        "mac": true,
+        "paper": true,
+        "windows": true,
+        "web_viewer": false
+      },
+      "publish": {
+        "ridibooks_register": "2022-01-19T10:37:46+09:00",
+        "ebook_publish": "2022-01-04T00:00:00+09:00",
+        "ridibooks_publish": "2022-01-19T12:02:05+09:00",
+        "paper_book_publish": "2021-12-17T00:00:00+09:00"
+      },
+      "publisher": {
+        "id": 852,
+        "name": "곰출판",
+        "cp_name": "롤링다이스_E/P"
+      },
+      "review_summary": {
+        "buyer_rating_distribution": [
+          14,
+          8,
+          25,
+          79,
+          222
+        ],
+        "buyer_rating_average": 4.4,
+        "buyer_rating_count": 348,
+        "buyer_review_count": 44,
+        "total_rating_count": 419,
+        "total_review_count": 50
+      }
+    },
+    {
+      "id": "1890000136",
+      "title": {
+        "main": "미라클 모닝 밀리어네어",
+        "sub": "부자들만 아는 6가지 기적의 아침 습관"
+      },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/1890000136/small#1",
+        "large": "https://img.ridicdn.net/cover/1890000136/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/1890000136/xxlarge#1"
+      },
+      "categories": [
+        {
+          "id": 310,
+          "name": "성공/삶의자세",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            300,
+            0
+          ]
+        }
+      ],
+      "price_info": {
+        "paper": {
+          "price": 15000
+        },
+        "buy": {
+          "regular_price": 10500,
+          "price": 10500,
+          "discount_percentage": 0
+        }
+      },
+      "authors": [
+        {
+          "name": "할 엘로드",
+          "id": 63400,
+          "role": "author"
+        },
+        {
+          "name": "데이비드 오스본",
+          "id": 90708,
+          "role": "author"
+        },
+        {
+          "name": "이주만",
+          "id": 8665,
+          "role": "translator"
+        }
+      ],
+      "file": {
+        "size": 24280,
+        "format": "epub",
+        "is_drm_free": false,
+        "is_comic": false,
+        "is_webtoon": false,
+        "is_manga": false,
+        "is_comic_hd": false,
+        "variants": [
+          {
+            "quality": "recommended",
+            "size": 24280
+          }
+        ],
+        "character_count": 150225
+      },
+      "property": {
+        "is_novel": false,
+        "is_magazine": false,
+        "is_adult_only": false,
+        "is_new_book": false,
+        "is_open": true,
+        "is_somedeal": false,
+        "is_trial": false,
+        "use_free_serial_schedule": false,
+        "preview_rate": 8,
+        "preview_max_characters": 12018
+      },
+      "support": {
+        "android": true,
+        "ios": true,
+        "mac": true,
+        "paper": true,
+        "windows": true,
+        "web_viewer": false
+      },
+      "publish": {
+        "ridibooks_register": "2019-04-15T15:01:32+09:00",
+        "ebook_publish": "2019-04-02T00:00:00+09:00",
+        "ridibooks_publish": "2019-04-15T16:42:01+09:00",
+        "paper_book_publish": "2019-04-01T00:00:00+09:00"
+      },
+      "publisher": {
+        "id": 1890,
+        "name": "한빛비즈",
+        "cp_name": "한빛비즈_E/P"
+      },
+      "review_summary": {
+        "buyer_rating_distribution": [
+          1,
+          4,
+          17,
+          57,
+          110
+        ],
+        "buyer_rating_average": 4.4,
+        "buyer_rating_count": 189,
+        "buyer_review_count": 8,
+        "total_rating_count": 198,
+        "total_review_count": 8
+      }
+    },
+    {
+      "id": "3421001758",
+      "title": {
+        "main": "일곱 번째 달 일곱 번째 밤"
+      },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/3421001758/small#1",
+        "large": "https://img.ridicdn.net/cover/3421001758/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/3421001758/xxlarge#1"
+      },
+      "categories": [
+        {
+          "id": 102,
+          "name": "영미소설",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            100,
+            0
+          ]
+        },
+        {
+          "id": 123,
+          "name": "SF 소설",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            100,
+            0
+          ]
+        }
+      ],
+      "price_info": {
+        "paper": {
+          "price": 11620
+        },
+        "buy": {
+          "regular_price": 11620,
+          "price": 11620,
+          "discount_percentage": 0
+        }
+      },
+      "authors": [
+        {
+          "name": "켄 리우",
+          "id": 96476,
+          "role": "author"
+        }
+      ],
+      "file": {
+        "size": 28880,
+        "format": "epub",
+        "is_drm_free": false,
+        "is_comic": false,
+        "is_webtoon": false,
+        "is_manga": false,
+        "is_comic_hd": false,
+        "variants": [
+          {
+            "quality": "recommended",
+            "size": 28880
+          }
+        ],
+        "character_count": 158197
+      },
+      "property": {
+        "is_novel": true,
+        "is_magazine": false,
+        "is_adult_only": false,
+        "is_new_book": false,
+        "is_open": false,
+        "is_somedeal": false,
+        "is_trial": false,
+        "use_free_serial_schedule": false,
+        "kd_stage": 2,
+        "preview_rate": 0
+      },
+      "support": {
+        "android": true,
+        "ios": true,
+        "mac": true,
+        "paper": true,
+        "windows": true,
+        "web_viewer": false
+      },
+      "publish": {
+        "ridibooks_register": "2021-07-27T09:12:24+09:00",
+        "ridibooks_publish": "2021-07-27T12:01:55+09:00",
+        "paper_book_publish": "2021-07-30T00:00:00+09:00"
+      },
+      "publisher": {
+        "id": 3421,
+        "name": "알마 출판사",
+        "cp_name": "한국출판콘텐츠_(셀렉트)"
+      },
+      "review_summary": {
+        "buyer_rating_distribution": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "buyer_rating_average": 4,
+        "buyer_rating_count": 1,
+        "buyer_review_count": 0,
+        "total_rating_count": 1,
+        "total_review_count": 0
+      }
+    },
+    {
+      "id": "1518000034",
+      "title": {
+        "main": "아르미안의 네 딸들 1권",
+        "prefix": "[e북]"
+      },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/1518000034/small#1",
+        "large": "https://img.ridicdn.net/cover/1518000034/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/1518000034/xxlarge#1"
+      },
+      "categories": [
+        {
+          "id": 1521,
+          "name": "국내 순정",
+          "genre": "comic",
+          "sub_genre": "comic",
+          "is_series_category": true,
+          "ancestor_ids": [
+            1500,
+            0
+          ]
+        },
+        {
+          "id": 1519,
+          "name": "드라마",
+          "genre": "comic",
+          "sub_genre": "comic",
+          "is_series_category": true,
+          "ancestor_ids": [
+            1500,
+            0
+          ]
+        }
+      ],
+      "price_info": {
+        "buy": {
+          "regular_price": 2000,
+          "price": 2000,
+          "discount_percentage": 0
+        },
+        "rent": {
+          "regular_price": 500,
+          "price": 500,
+          "rent_days": 1,
+          "discount_percentage": 0
+        }
+      },
+      "series": {
+        "id": "1518000034",
+        "volume": 1,
+        "property": {
+          "last_volume_id": "1518000053",
+          "opened_last_volume_id": "1518000053",
+          "title": "아르미안의 네 딸들",
+          "unit": "권",
+          "opened_book_count": 20,
+          "total_book_count": 20,
+          "is_serial": false,
+          "is_completed": true,
+          "is_comic_hd": false,
+          "is_serial_complete": true,
+          "is_wait_free": false,
+          "prev_books": [],
+          "next_books": {
+            "1518000035": {
+              "b_id": "1518000035",
+              "is_opened": true,
+              "use_free_serial_schedule": false
+            }
+          }
+        },
+        "price_info": {
+          "buy": {
+            "total_book_count": 20,
+            "free_book_count": 0,
+            "regular_price": 40000,
+            "price": 40000,
+            "discount_percentage": 0
+          },
+          "rent": {
+            "total_book_count": 20,
+            "free_book_count": 0,
+            "regular_price": 10000,
+            "rent_price": 10000,
+            "discount_percentage": 0,
+            "rent_days": 7
+          }
+        }
+      },
+      "authors": [
+        {
+          "name": "신일숙",
+          "id": 17055,
+          "role": "comic_author"
+        }
+      ],
+      "file": {
+        "size": 61114,
+        "format": "bom",
+        "is_drm_free": false,
+        "is_comic": true,
+        "is_webtoon": false,
+        "is_manga": false,
+        "is_comic_hd": false,
+        "variants": [
+          {
+            "quality": "recommended",
+            "size": 61114
+          },
+          {
+            "quality": "original",
+            "size": 175607
+          }
+        ],
+        "page_count": 172
+      },
+      "property": {
+        "is_novel": false,
+        "is_magazine": false,
+        "is_adult_only": false,
+        "is_new_book": false,
+        "is_open": true,
+        "is_somedeal": false,
+        "is_trial": false,
+        "use_free_serial_schedule": false,
+        "preview_rate": 10,
+        "preview_max_pages": 18
+      },
+      "support": {
+        "android": true,
+        "ios": true,
+        "mac": true,
+        "paper": true,
+        "windows": true,
+        "web_viewer": false
+      },
+      "publish": {
+        "ridibooks_register": "2017-12-16T19:23:08+09:00",
+        "ebook_publish": "2017-12-13T00:00:00+09:00",
+        "ridibooks_publish": "2017-12-18T11:08:08+09:00"
+      },
+      "publisher": {
+        "id": 1518,
+        "name": "거북이북스",
+        "cp_name": "(주)거북이북스_JPG"
+      },
+      "review_summary": {
+        "buyer_rating_distribution": [
+          3,
+          6,
+          6,
+          18,
+          186
+        ],
+        "buyer_rating_average": 4.7,
+        "buyer_rating_count": 219,
+        "buyer_review_count": 20,
+        "total_rating_count": 293,
+        "total_review_count": 31
+      }
+    },
+    {
+      "id": "3356000024",
+      "title": {
+        "main": "인공지능은 무엇이 되려 하는가",
+        "sub": "AI의 가능성과 위험을 바라보는 석학 25인의 시선"
+      },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/3356000024/small#1",
+        "large": "https://img.ridicdn.net/cover/3356000024/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/3356000024/xxlarge#1"
+      },
+      "categories": [
+        {
+          "id": 1110,
+          "name": "과학일반",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            1100,
+            0
+          ]
+        },
+        {
+          "id": 2230,
+          "name": "컴퓨터/앱 활용",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            2200,
+            0
+          ]
+        }
+      ],
+      "price_info": {
+        "paper": {
+          "price": 22000
+        },
+        "buy": {
+          "regular_price": 15400,
+          "price": 15400,
+          "discount_percentage": 0
+        }
+      },
+      "authors": [
+        {
+          "name": "스티븐 핑커",
+          "id": 10932,
+          "role": "author"
+        },
+        {
+          "name": "맥스 테그마크",
+          "id": 80421,
+          "role": "author"
+        },
+        {
+          "name": "김보은",
+          "id": 54647,
+          "role": "translator"
+        },
+        {
+          "name": "존 브록만",
+          "id": 11901,
+          "role": "compiler"
+        }
+      ],
+      "file": {
+        "size": 24341,
+        "format": "epub",
+        "is_drm_free": false,
+        "is_comic": false,
+        "is_webtoon": false,
+        "is_manga": false,
+        "is_comic_hd": false,
+        "variants": [
+          {
+            "quality": "recommended",
+            "size": 24341
+          }
+        ],
+        "character_count": 218085
+      },
+      "property": {
+        "is_novel": false,
+        "is_magazine": false,
+        "is_adult_only": false,
+        "is_new_book": false,
+        "is_open": true,
+        "is_somedeal": false,
+        "is_trial": false,
+        "use_free_serial_schedule": false,
+        "preview_rate": 5,
+        "preview_max_characters": 10904
+      },
+      "support": {
+        "android": true,
+        "ios": true,
+        "mac": true,
+        "paper": true,
+        "windows": true,
+        "web_viewer": false
+      },
+      "publish": {
+        "ridibooks_register": "2021-11-16T18:32:39+09:00",
+        "ebook_publish": "2021-11-16T00:00:00+09:00",
+        "ridibooks_publish": "2021-11-17T12:02:31+09:00",
+        "paper_book_publish": "2021-08-23T00:00:00+09:00"
+      },
+      "publisher": {
+        "id": 3356,
+        "name": "프시케의숲",
+        "cp_name": "프시케의숲_E/P"
+      },
+      "review_summary": {
+        "buyer_rating_distribution": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "buyer_rating_average": 4,
+        "buyer_rating_count": 1,
+        "buyer_review_count": 0,
+        "total_rating_count": 2,
+        "total_review_count": 0
+      }
+    },
+    {
+      "id": "3356000020",
+      "title": {
+        "main": "내가 죽고 싶다고 하자 삶이 농담을 시작했다"
+      },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/3356000020/small#1",
+        "large": "https://img.ridicdn.net/cover/3356000020/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/3356000020/xxlarge#1"
+      },
+      "categories": [
+        {
+          "id": 111,
+          "name": "에세이",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            110,
+            0
+          ]
+        }
+      ],
+      "price_info": {
+        "paper": {
+          "price": 13000
+        },
+        "buy": {
+          "regular_price": 9100,
+          "price": 9100,
+          "discount_percentage": 0
+        }
+      },
+      "authors": [
+        {
+          "name": "김현진",
+          "id": 485,
+          "role": "author"
+        }
+      ],
+      "file": {
+        "size": 24569,
+        "format": "epub",
+        "is_drm_free": false,
+        "is_comic": false,
+        "is_webtoon": false,
+        "is_manga": false,
+        "is_comic_hd": false,
+        "variants": [
+          {
+            "quality": "recommended",
+            "size": 24569
+          }
+        ],
+        "character_count": 76362
+      },
+      "property": {
+        "is_novel": false,
+        "is_magazine": false,
+        "is_adult_only": false,
+        "is_new_book": false,
+        "is_open": true,
+        "is_somedeal": false,
+        "is_trial": false,
+        "use_free_serial_schedule": false,
+        "preview_rate": 7,
+        "preview_max_characters": 5345
+      },
+      "support": {
+        "android": true,
+        "ios": true,
+        "mac": true,
+        "paper": true,
+        "windows": true,
+        "web_viewer": false
+      },
+      "publish": {
+        "ridibooks_register": "2021-03-30T12:35:05+09:00",
+        "ebook_publish": "2021-03-30T00:00:00+09:00",
+        "ridibooks_publish": "2021-03-30T16:41:54+09:00",
+        "paper_book_publish": "2020-12-01T00:00:00+09:00"
+      },
+      "publisher": {
+        "id": 3356,
+        "name": "프시케의숲",
+        "cp_name": "프시케의숲_E/P"
+      },
+      "review_summary": {
+        "buyer_rating_distribution": [
+          16,
+          9,
+          35,
+          88,
+          247
+        ],
+        "buyer_rating_average": 4.4,
+        "buyer_rating_count": 395,
+        "buyer_review_count": 43,
+        "total_rating_count": 402,
+        "total_review_count": 43
+      }
+    },
+    {
+      "id": "2177000101",
+      "title": {
+        "main": "불편한 편의점"
+      },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/2177000101/small#1",
+        "large": "https://img.ridicdn.net/cover/2177000101/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/2177000101/xxlarge#1"
+      },
+      "categories": [
+        {
+          "id": 101,
+          "name": "한국소설",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            100,
+            0
+          ]
+        }
+      ],
+      "price_info": {
+        "paper": {
+          "price": 14000
+        },
+        "buy": {
+          "regular_price": 9800,
+          "price": 9800,
+          "discount_percentage": 0
+        }
+      },
+      "authors": [
+        {
+          "name": "김호연",
+          "id": 62866,
+          "role": "author"
+        }
+      ],
+      "file": {
+        "size": 13904,
+        "format": "epub",
+        "is_drm_free": false,
+        "is_comic": false,
+        "is_webtoon": false,
+        "is_manga": false,
+        "is_comic_hd": false,
+        "variants": [
+          {
+            "quality": "recommended",
+            "size": 13904
+          }
+        ],
+        "character_count": 126038
+      },
+      "property": {
+        "is_novel": true,
+        "is_magazine": false,
+        "is_adult_only": false,
+        "is_new_book": false,
+        "is_open": true,
+        "is_somedeal": false,
+        "is_trial": false,
+        "use_free_serial_schedule": false,
+        "preview_rate": 10,
+        "preview_max_characters": 12603
+      },
+      "support": {
+        "android": true,
+        "ios": true,
+        "mac": true,
+        "paper": true,
+        "windows": true,
+        "web_viewer": false
+      },
+      "publish": {
+        "ridibooks_register": "2021-05-03T14:14:01+09:00",
+        "ebook_publish": "2021-05-06T00:00:00+09:00",
+        "ridibooks_publish": "2021-05-03T17:05:53+09:00",
+        "paper_book_publish": "2021-04-20T00:00:00+09:00"
+      },
+      "publisher": {
+        "id": 2177,
+        "name": "나무옆의자",
+        "cp_name": "나무옆의자_E/P"
+      },
+      "review_summary": {
+        "buyer_rating_distribution": [
+          13,
+          8,
+          117,
+          470,
+          2124
+        ],
+        "buyer_rating_average": 4.7,
+        "buyer_rating_count": 2732,
+        "buyer_review_count": 309,
+        "total_rating_count": 2829,
+        "total_review_count": 319
+      }
+    },
+    {
+      "id": "606002388",
+      "title": {
+        "main": "역행자",
+        "sub": "돈.시간.운명으로부터 완전한 자유를 얻는 7단계 인생 공략집"
+      },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/606002388/small#1",
+        "large": "https://img.ridicdn.net/cover/606002388/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/606002388/xxlarge#1"
+      },
+      "categories": [
+        {
+          "id": 310,
+          "name": "성공/삶의자세",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            300,
+            0
+          ]
+        }
+      ],
+      "price_info": {
+        "paper": {
+          "price": 17500
+        },
+        "buy": {
+          "regular_price": 12300,
+          "price": 12300,
+          "discount_percentage": 0
+        }
+      },
+      "authors": [
+        {
+          "name": "자청",
+          "id": 127608,
+          "role": "author"
+        }
+      ],
+      "file": {
+        "size": 14466,
+        "format": "epub",
+        "is_drm_free": false,
+        "is_comic": false,
+        "is_webtoon": false,
+        "is_manga": false,
+        "is_comic_hd": false,
+        "variants": [
+          {
+            "quality": "recommended",
+            "size": 14466
+          }
+        ],
+        "character_count": 129228
+      },
+      "property": {
+        "is_novel": false,
+        "is_magazine": false,
+        "is_adult_only": false,
+        "is_new_book": false,
+        "is_open": true,
+        "is_somedeal": false,
+        "is_trial": false,
+        "use_free_serial_schedule": false,
+        "preview_rate": 10,
+        "preview_max_characters": 12922
+      },
+      "support": {
+        "android": true,
+        "ios": true,
+        "mac": true,
+        "paper": true,
+        "windows": true,
+        "web_viewer": false
+      },
+      "publish": {
+        "ridibooks_register": "2022-05-30T10:54:22+09:00",
+        "ebook_publish": "2022-05-30T00:00:00+09:00",
+        "ridibooks_publish": "2022-05-30T17:02:46+09:00",
+        "paper_book_publish": "2022-05-30T00:00:00+09:00"
+      },
+      "publisher": {
+        "id": 606,
+        "name": "웅진지식하우스",
+        "cp_name": "웅진씽크빅_E/P"
+      },
+      "review_summary": {
+        "buyer_rating_distribution": [
+          21,
+          10,
+          23,
+          118,
+          490
+        ],
+        "buyer_rating_average": 4.6,
+        "buyer_rating_count": 662,
+        "buyer_review_count": 60,
+        "total_rating_count": 696,
+        "total_review_count": 69
+      }
+    },
+    {
+      "id": "734001567",
+      "title": {
+        "main": "파과"
+      },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/734001567/small#1",
+        "large": "https://img.ridicdn.net/cover/734001567/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/734001567/xxlarge#1"
+      },
+      "categories": [
+        {
+          "id": 101,
+          "name": "한국소설",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            100,
+            0
+          ]
+        }
+      ],
+      "price_info": {
+        "paper": {
+          "price": 14000
+        },
+        "buy": {
+          "regular_price": 9800,
+          "price": 8820,
+          "discount_percentage": 10
+        }
+      },
+      "authors": [
+        {
+          "name": "구병모",
+          "id": 8141,
+          "role": "author"
+        }
+      ],
+      "file": {
+        "size": 12146,
+        "format": "epub",
+        "is_drm_free": false,
+        "is_comic": false,
+        "is_webtoon": false,
+        "is_manga": false,
+        "is_comic_hd": false,
+        "variants": [
+          {
+            "quality": "recommended",
+            "size": 12146
+          }
+        ],
+        "character_count": 135084
+      },
+      "property": {
+        "is_novel": true,
+        "is_magazine": false,
+        "is_adult_only": false,
+        "is_new_book": false,
+        "is_open": true,
+        "is_somedeal": false,
+        "is_trial": false,
+        "use_free_serial_schedule": false,
+        "review_display_id": "1508005718",
+        "preview_rate": 10,
+        "preview_max_characters": 13508
+      },
+      "support": {
+        "android": true,
+        "ios": true,
+        "mac": true,
+        "paper": true,
+        "windows": true,
+        "web_viewer": false
+      },
+      "publish": {
+        "ridibooks_register": "2018-04-20T16:59:48+09:00",
+        "ebook_publish": "2018-04-20T00:00:00+09:00",
+        "ridibooks_publish": "2018-04-23T11:42:48+09:00",
+        "paper_book_publish": "2018-04-16T00:00:00+09:00"
+      },
+      "publisher": {
+        "id": 734,
+        "name": "위즈덤하우스",
+        "cp_name": "위즈덤하우스_E/P/J"
+      },
+      "review_summary": {
+        "buyer_rating_distribution": [
+          18,
+          21,
+          94,
+          322,
+          668
+        ],
+        "buyer_rating_average": 4.4,
+        "buyer_rating_count": 1123,
+        "buyer_review_count": 143,
+        "total_rating_count": 2375,
+        "total_review_count": 250
+      }
+    },
+    {
+      "id": "606002323",
+      "title": {
+        "main": "아무것도 하기 싫은 사람을 위한 뇌 과학"
+      },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/606002323/small#1",
+        "large": "https://img.ridicdn.net/cover/606002323/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/606002323/xxlarge#1"
+      },
+      "categories": [
+        {
+          "id": 310,
+          "name": "성공/삶의자세",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            300,
+            0
+          ]
+        }
+      ],
+      "price_info": {
+        "paper": {
+          "price": 14800
+        },
+        "buy": {
+          "regular_price": 10400,
+          "price": 10400,
+          "discount_percentage": 0
+        }
+      },
+      "authors": [
+        {
+          "name": "가토 토시노리",
+          "id": 118102,
+          "role": "author"
+        },
+        {
+          "name": "정현옥",
+          "id": 54936,
+          "role": "translator"
+        }
+      ],
+      "file": {
+        "size": 25183,
+        "format": "epub",
+        "is_drm_free": false,
+        "is_comic": false,
+        "is_webtoon": false,
+        "is_manga": false,
+        "is_comic_hd": false,
+        "variants": [
+          {
+            "quality": "recommended",
+            "size": 25183
+          }
+        ],
+        "character_count": 57096
+      },
+      "property": {
+        "is_novel": false,
+        "is_magazine": false,
+        "is_adult_only": false,
+        "is_new_book": false,
+        "is_open": true,
+        "is_somedeal": false,
+        "is_trial": false,
+        "use_free_serial_schedule": false,
+        "preview_rate": 10,
+        "preview_max_characters": 5709
+      },
+      "support": {
+        "android": true,
+        "ios": true,
+        "mac": true,
+        "paper": true,
+        "windows": true,
+        "web_viewer": false
+      },
+      "publish": {
+        "ridibooks_register": "2021-06-09T08:46:21+09:00",
+        "ebook_publish": "2021-06-09T00:00:00+09:00",
+        "ridibooks_publish": "2021-06-09T12:01:51+09:00",
+        "paper_book_publish": "2021-06-04T00:00:00+09:00"
+      },
+      "publisher": {
+        "id": 606,
+        "name": "갤리온",
+        "cp_name": "웅진씽크빅_E/P"
+      },
+      "review_summary": {
+        "buyer_rating_distribution": [
+          2,
+          7,
+          23,
+          40,
+          53
+        ],
+        "buyer_rating_average": 4.1,
+        "buyer_rating_count": 125,
+        "buyer_review_count": 14,
+        "total_rating_count": 129,
+        "total_review_count": 14
+      }
+    },
+    {
+      "id": "3421001762",
+      "title": {
+        "main": "하품의 언덕"
+      },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/3421001762/small#1",
+        "large": "https://img.ridicdn.net/cover/3421001762/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/3421001762/xxlarge#1"
+      },
+      "categories": [
+        {
+          "id": 101,
+          "name": "한국소설",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            100,
+            0
+          ]
+        }
+      ],
+      "price_info": {
+        "paper": {
+          "price": 10360
+        },
+        "buy": {
+          "regular_price": 10360,
+          "price": 10360,
+          "discount_percentage": 0
+        }
+      },
+      "authors": [
+        {
+          "name": "문보영",
+          "id": 90054,
+          "role": "author"
+        }
+      ],
+      "file": {
+        "size": 21810,
+        "format": "epub",
+        "is_drm_free": false,
+        "is_comic": false,
+        "is_webtoon": false,
+        "is_manga": false,
+        "is_comic_hd": false,
+        "variants": [
+          {
+            "quality": "recommended",
+            "size": 21810
+          }
+        ],
+        "character_count": 90825
+      },
+      "property": {
+        "is_novel": true,
+        "is_magazine": false,
+        "is_adult_only": false,
+        "is_new_book": false,
+        "is_open": false,
+        "is_somedeal": false,
+        "is_trial": false,
+        "use_free_serial_schedule": false,
+        "kd_stage": 2,
+        "preview_rate": 0
+      },
+      "support": {
+        "android": true,
+        "ios": true,
+        "mac": true,
+        "paper": true,
+        "windows": true,
+        "web_viewer": false
+      },
+      "publish": {
+        "ridibooks_register": "2021-07-27T09:12:42+09:00",
+        "ridibooks_publish": "2021-07-27T12:02:05+09:00",
+        "paper_book_publish": "2021-07-30T00:00:00+09:00"
+      },
+      "publisher": {
+        "id": 3421,
+        "name": "알마 출판사",
+        "cp_name": "한국출판콘텐츠_(셀렉트)"
+      },
+      "review_summary": {
+        "buyer_rating_distribution": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "buyer_rating_average": 0,
+        "buyer_rating_count": 0,
+        "buyer_review_count": 0,
+        "total_rating_count": 0,
+        "total_review_count": 0
+      }
+    },
+    {
+      "id": "4097000118",
+      "title": {
+        "main": "천 개의 파랑"
+      },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/4097000118/small#1",
+        "large": "https://img.ridicdn.net/cover/4097000118/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/4097000118/xxlarge#1"
+      },
+      "categories": [
+        {
+          "id": 101,
+          "name": "한국소설",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            100,
+            0
+          ]
+        },
+        {
+          "id": 123,
+          "name": "SF 소설",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            100,
+            0
+          ]
+        }
+      ],
+      "price_info": {
+        "paper": {
+          "price": 14000
+        },
+        "buy": {
+          "regular_price": 9800,
+          "price": 9800,
+          "discount_percentage": 0
+        }
+      },
+      "authors": [
+        {
+          "name": "천선란",
+          "id": 109709,
+          "role": "author"
+        }
+      ],
+      "file": {
+        "size": 31110,
+        "format": "epub",
+        "is_drm_free": false,
+        "is_comic": false,
+        "is_webtoon": false,
+        "is_manga": false,
+        "is_comic_hd": false,
+        "variants": [
+          {
+            "quality": "recommended",
+            "size": 31110
+          }
+        ],
+        "character_count": 162061
+      },
+      "property": {
+        "is_novel": true,
+        "is_magazine": false,
+        "is_adult_only": false,
+        "is_new_book": false,
+        "is_open": true,
+        "is_somedeal": false,
+        "is_trial": false,
+        "use_free_serial_schedule": false,
+        "preview_rate": 10,
+        "preview_max_characters": 16206
+      },
+      "support": {
+        "android": true,
+        "ios": true,
+        "mac": true,
+        "paper": true,
+        "windows": true,
+        "web_viewer": false
+      },
+      "publish": {
+        "ridibooks_register": "2020-08-13T17:14:54+09:00",
+        "ebook_publish": "2020-08-19T00:00:00+09:00",
+        "ridibooks_publish": "2020-08-18T11:00:19+09:00",
+        "paper_book_publish": "2020-08-19T00:00:00+09:00"
+      },
+      "publisher": {
+        "id": 4097,
+        "name": "허블",
+        "cp_name": "동아시아_E/P"
+      },
+      "review_summary": {
+        "buyer_rating_distribution": [
+          6,
+          10,
+          37,
+          173,
+          907
+        ],
+        "buyer_rating_average": 4.7,
+        "buyer_rating_count": 1133,
+        "buyer_review_count": 151,
+        "total_rating_count": 1220,
+        "total_review_count": 160
+      }
+    },
+    {
+      "id": "288000090",
+      "title": {
+        "main": "한 줄 정리의 힘",
+        "sub": "모든 지식을 한 줄로 압축하고, 설명하는 기술"
+      },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/288000090/small#1",
+        "large": "https://img.ridicdn.net/cover/288000090/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/288000090/xxlarge#1"
+      },
+      "categories": [
+        {
+          "id": 310,
+          "name": "성공/삶의자세",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            300,
+            0
+          ]
+        },
+        {
+          "id": 230,
+          "name": "마케팅/세일즈",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            200,
+            0
+          ]
+        }
+      ],
+      "price_info": {
+        "paper": {
+          "price": 15000
+        },
+        "buy": {
+          "regular_price": 12000,
+          "price": 12000,
+          "discount_percentage": 0
+        }
+      },
+      "authors": [
+        {
+          "name": "아사다 스구루",
+          "id": 110745,
+          "role": "author"
+        },
+        {
+          "name": "황혜숙",
+          "id": 49190,
+          "role": "translator"
+        }
+      ],
+      "file": {
+        "size": 17915,
+        "format": "epub",
+        "is_drm_free": false,
+        "is_comic": false,
+        "is_webtoon": false,
+        "is_manga": false,
+        "is_comic_hd": false,
+        "variants": [
+          {
+            "quality": "recommended",
+            "size": 17915
+          }
+        ],
+        "character_count": 56016
+      },
+      "property": {
+        "is_novel": false,
+        "is_magazine": false,
+        "is_adult_only": false,
+        "is_new_book": false,
+        "is_open": true,
+        "is_somedeal": false,
+        "is_trial": false,
+        "use_free_serial_schedule": false,
+        "preview_rate": 10,
+        "preview_max_characters": 5601
+      },
+      "support": {
+        "android": true,
+        "ios": true,
+        "mac": true,
+        "paper": true,
+        "windows": true,
+        "web_viewer": false
+      },
+      "publish": {
+        "ridibooks_register": "2020-04-17T16:55:32+09:00",
+        "ebook_publish": "2019-12-16T00:00:00+09:00",
+        "ridibooks_publish": "2020-04-20T17:25:50+09:00",
+        "paper_book_publish": "2019-12-16T00:00:00+09:00"
+      },
+      "publisher": {
+        "id": 288,
+        "name": "센시오",
+        "cp_name": "센시오_E/P"
+      },
+      "review_summary": {
+        "buyer_rating_distribution": [
+          5,
+          7,
+          39,
+          63,
+          103
+        ],
+        "buyer_rating_average": 4.2,
+        "buyer_rating_count": 217,
+        "buyer_review_count": 24,
+        "total_rating_count": 229,
+        "total_review_count": 24
+      }
+    },
+    {
+      "id": "606001613",
+      "title": {
+        "main": "90일 완성 돈 버는 평생 습관",
+        "sub": "저절로 돈이 모이는 초간단 재테크"
+      },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/606001613/small#1",
+        "large": "https://img.ridicdn.net/cover/606001613/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/606001613/xxlarge#1"
+      },
+      "categories": [
+        {
+          "id": 240,
+          "name": "재테크/금융/부동산",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            200,
+            0
+          ]
+        }
+      ],
+      "price_info": {
+        "paper": {
+          "price": 12000
+        },
+        "buy": {
+          "regular_price": 8000,
+          "price": 8000,
+          "discount_percentage": 0
+        }
+      },
+      "authors": [
+        {
+          "name": "요코야마 미츠아키",
+          "id": 77692,
+          "role": "author"
+        },
+        {
+          "name": "정세영",
+          "id": 71980,
+          "role": "translator"
+        }
+      ],
+      "file": {
+        "size": 30104,
+        "format": "epub",
+        "is_drm_free": false,
+        "is_comic": false,
+        "is_webtoon": false,
+        "is_manga": false,
+        "is_comic_hd": false,
+        "variants": [
+          {
+            "quality": "recommended",
+            "size": 30104
+          }
+        ],
+        "character_count": 52532
+      },
+      "property": {
+        "is_novel": false,
+        "is_magazine": false,
+        "is_adult_only": false,
+        "is_new_book": false,
+        "is_open": true,
+        "is_somedeal": false,
+        "is_trial": false,
+        "use_free_serial_schedule": false,
+        "review_display_id": "1508002921",
+        "preview_rate": 10,
+        "preview_max_characters": 5253
+      },
+      "support": {
+        "android": true,
+        "ios": true,
+        "mac": true,
+        "paper": true,
+        "windows": true,
+        "web_viewer": false
+      },
+      "publish": {
+        "ridibooks_register": "2017-03-13T13:45:53+09:00",
+        "ebook_publish": "2017-03-13T00:00:00+09:00",
+        "ridibooks_publish": "2017-03-13T18:02:01+09:00",
+        "paper_book_publish": "2017-03-03T00:00:00+09:00"
+      },
+      "publisher": {
+        "id": 606,
+        "name": "걷는나무",
+        "cp_name": "웅진씽크빅_E/P"
+      },
+      "review_summary": {
+        "buyer_rating_distribution": [
+          21,
+          45,
+          207,
+          407,
+          386
+        ],
+        "buyer_rating_average": 4,
+        "buyer_rating_count": 1066,
+        "buyer_review_count": 114,
+        "total_rating_count": 1144,
+        "total_review_count": 117
+      }
+    },
+    {
+      "id": "606000343",
+      "title": {
+        "main": "그 많던 싱아는 누가 다 먹었을까",
+        "sub": "소설로 그린 자화상 1 - 유년의 기억"
+      },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/606000343/small#1",
+        "large": "https://img.ridicdn.net/cover/606000343/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/606000343/xxlarge#1"
+      },
+      "categories": [
+        {
+          "id": 101,
+          "name": "한국소설",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            100,
+            0
+          ]
+        }
+      ],
+      "price_info": {
+        "paper": {
+          "price": 10000
+        },
+        "buy": {
+          "regular_price": 7000,
+          "price": 7000,
+          "discount_percentage": 0
+        }
+      },
+      "authors": [
+        {
+          "name": "박완서",
+          "id": 1309,
+          "role": "author"
+        }
+      ],
+      "file": {
+        "size": 8164,
+        "format": "epub",
+        "is_drm_free": false,
+        "is_comic": false,
+        "is_webtoon": false,
+        "is_manga": false,
+        "is_comic_hd": false,
+        "variants": [
+          {
+            "quality": "recommended",
+            "size": 8164
+          }
+        ],
+        "character_count": 147854
+      },
+      "property": {
+        "is_novel": true,
+        "is_magazine": false,
+        "is_adult_only": false,
+        "is_new_book": false,
+        "is_open": false,
+        "is_somedeal": false,
+        "is_trial": false,
+        "use_free_serial_schedule": false,
+        "preview_rate": 0
+      },
+      "support": {
+        "android": true,
+        "ios": true,
+        "mac": true,
+        "paper": true,
+        "windows": true,
+        "web_viewer": false
+      },
+      "publish": {
+        "ridibooks_register": "2012-09-11T17:21:03+09:00",
+        "ebook_publish": "2005-09-14T00:00:00+09:00",
+        "ridibooks_publish": "2012-09-13T13:46:34+09:00"
+      },
+      "publisher": {
+        "id": 606,
+        "name": "웅진지식하우스",
+        "cp_name": "웅진씽크빅_E/P"
+      },
+      "review_summary": {
+        "buyer_rating_distribution": [
+          3,
+          1,
+          12,
+          48,
+          318
+        ],
+        "buyer_rating_average": 4.8,
+        "buyer_rating_count": 382,
+        "buyer_review_count": 24,
+        "total_rating_count": 384,
+        "total_review_count": 26
+      }
+    },
+    {
+      "id": "852001207",
+      "title": {
+        "main": "호텔에 관한 거의 모든 것",
+        "sub": "보이는 것부터 보이지 않는 곳까지"
+      },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/852001207/small#1",
+        "large": "https://img.ridicdn.net/cover/852001207/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/852001207/xxlarge#1"
+      },
+      "categories": [
+        {
+          "id": 410,
+          "name": "인문",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            400,
+            0
+          ]
+        }
+      ],
+      "price_info": {
+        "paper": {
+          "price": 18500
+        },
+        "buy": {
+          "regular_price": 13000,
+          "price": 13000,
+          "discount_percentage": 0
+        }
+      },
+      "authors": [
+        {
+          "name": "한이경",
+          "id": 123105,
+          "role": "author"
+        }
+      ],
+      "file": {
+        "size": 69655,
+        "format": "epub",
+        "is_drm_free": false,
+        "is_comic": false,
+        "is_webtoon": false,
+        "is_manga": false,
+        "is_comic_hd": false,
+        "variants": [
+          {
+            "quality": "recommended",
+            "size": 69655
+          }
+        ],
+        "character_count": 139863
+      },
+      "property": {
+        "is_novel": false,
+        "is_magazine": false,
+        "is_adult_only": false,
+        "is_new_book": false,
+        "is_open": true,
+        "is_somedeal": false,
+        "is_trial": false,
+        "use_free_serial_schedule": false,
+        "preview_rate": 10,
+        "preview_max_characters": 13986
+      },
+      "support": {
+        "android": true,
+        "ios": true,
+        "mac": true,
+        "paper": true,
+        "windows": true,
+        "web_viewer": false
+      },
+      "publish": {
+        "ridibooks_register": "2021-12-06T16:02:08+09:00",
+        "ebook_publish": "2021-12-07T00:00:00+09:00",
+        "ridibooks_publish": "2021-12-06T17:00:45+09:00",
+        "paper_book_publish": "2021-12-01T00:00:00+09:00"
+      },
+      "publisher": {
+        "id": 852,
+        "name": "혜화1117",
+        "cp_name": "롤링다이스_E/P"
+      },
+      "review_summary": {
+        "buyer_rating_distribution": [
+          0,
+          0,
+          1,
+          2,
+          0
+        ],
+        "buyer_rating_average": 3.7,
+        "buyer_rating_count": 3,
+        "buyer_review_count": 0,
+        "total_rating_count": 3,
+        "total_review_count": 0
+      }
+    },
+    {
+      "id": "222001882",
+      "title": {
+        "main": "백래시",
+        "sub": "누가 페미니즘을 두려워하는가?"
+      },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/222001882/small#1",
+        "large": "https://img.ridicdn.net/cover/222001882/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/222001882/xxlarge#1"
+      },
+      "categories": [
+        {
+          "id": 410,
+          "name": "인문",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            400,
+            0
+          ]
+        }
+      ],
+      "price_info": {
+        "paper": {
+          "price": 38000
+        },
+        "buy": {
+          "regular_price": 30400,
+          "price": 30400,
+          "discount_percentage": 0
+        }
+      },
+      "authors": [
+        {
+          "name": "수전 팔루디",
+          "id": 89854,
+          "role": "author"
+        },
+        {
+          "name": "황성원",
+          "id": 4823,
+          "role": "translator"
+        }
+      ],
+      "file": {
+        "size": 14437,
+        "format": "epub",
+        "is_drm_free": false,
+        "is_comic": false,
+        "is_webtoon": false,
+        "is_manga": false,
+        "is_comic_hd": false,
+        "variants": [
+          {
+            "quality": "recommended",
+            "size": 14437
+          }
+        ],
+        "character_count": 720211
+      },
+      "property": {
+        "is_novel": false,
+        "is_magazine": false,
+        "is_adult_only": false,
+        "is_new_book": false,
+        "is_open": true,
+        "is_somedeal": false,
+        "is_trial": false,
+        "use_free_serial_schedule": false,
+        "preview_rate": 10,
+        "preview_max_characters": 72021
+      },
+      "support": {
+        "android": true,
+        "ios": true,
+        "mac": true,
+        "paper": true,
+        "windows": true,
+        "web_viewer": false
+      },
+      "publish": {
+        "ridibooks_register": "2018-01-16T18:43:35+09:00",
+        "ebook_publish": "2017-12-21T00:00:00+09:00",
+        "ridibooks_publish": "2018-01-17T12:04:39+09:00",
+        "paper_book_publish": "2017-12-13T00:00:00+09:00"
+      },
+      "publisher": {
+        "id": 222,
+        "name": "arte",
+        "cp_name": "북이십일_E/P/J"
+      },
+      "review_summary": {
+        "buyer_rating_distribution": [
+          1,
+          0,
+          0,
+          5,
+          37
+        ],
+        "buyer_rating_average": 4.8,
+        "buyer_rating_count": 43,
+        "buyer_review_count": 12,
+        "total_rating_count": 102,
+        "total_review_count": 22
+      }
+    },
+    {
+      "id": "852000613",
+      "title": {
+        "main": "여자는 체력",
+        "sub": "근육운동부터 자기방어까지 운동 코치 박은지의 내 몸 단련법"
+      },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/852000613/small#1",
+        "large": "https://img.ridicdn.net/cover/852000613/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/852000613/xxlarge#1"
+      },
+      "categories": [
+        {
+          "id": 530,
+          "name": "건강",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            500,
+            0
+          ]
+        }
+      ],
+      "price_info": {
+        "paper": {
+          "price": 15000
+        },
+        "buy": {
+          "regular_price": 10000,
+          "price": 10000,
+          "discount_percentage": 0
+        }
+      },
+      "authors": [
+        {
+          "name": "박은지",
+          "id": 104127,
+          "role": "author"
+        }
+      ],
+      "file": {
+        "size": 14010,
+        "format": "epub",
+        "is_drm_free": false,
+        "is_comic": false,
+        "is_webtoon": false,
+        "is_manga": false,
+        "is_comic_hd": false,
+        "variants": [
+          {
+            "quality": "recommended",
+            "size": 14010
+          }
+        ],
+        "character_count": 93648
+      },
+      "property": {
+        "is_novel": false,
+        "is_magazine": false,
+        "is_adult_only": false,
+        "is_new_book": false,
+        "is_open": true,
+        "is_somedeal": false,
+        "is_trial": false,
+        "use_free_serial_schedule": false,
+        "preview_rate": 10,
+        "preview_max_characters": 9364
+      },
+      "support": {
+        "android": true,
+        "ios": true,
+        "mac": true,
+        "paper": true,
+        "windows": true,
+        "web_viewer": false
+      },
+      "publish": {
+        "ridibooks_register": "2019-11-19T14:59:55+09:00",
+        "ebook_publish": "2019-11-20T00:00:00+09:00",
+        "ridibooks_publish": "2019-11-19T18:09:10+09:00",
+        "paper_book_publish": "2019-10-18T00:00:00+09:00"
+      },
+      "publisher": {
+        "id": 852,
+        "name": "메멘토",
+        "cp_name": "롤링다이스_E/P"
+      },
+      "review_summary": {
+        "buyer_rating_distribution": [
+          2,
+          5,
+          31,
+          39,
+          50
+        ],
+        "buyer_rating_average": 4,
+        "buyer_rating_count": 127,
+        "buyer_review_count": 7,
+        "total_rating_count": 145,
+        "total_review_count": 8
+      }
+    },
+    {
+      "id": "222002561",
+      "title": {
+        "main": "반지의 제왕 1 - 반지원정대"
+      },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/222002561/small#1",
+        "large": "https://img.ridicdn.net/cover/222002561/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/222002561/xxlarge#1"
+      },
+      "categories": [
+        {
+          "id": 102,
+          "name": "영미소설",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            100,
+            0
+          ]
+        }
+      ],
+      "price_info": {
+        "paper": {
+          "price": 42000
+        },
+        "buy": {
+          "regular_price": 33600,
+          "price": 33600,
+          "discount_percentage": 0
+        },
+        "rent": {
+          "regular_price": 16800,
+          "price": 16800,
+          "rent_days": 90,
+          "discount_percentage": 0
+        }
+      },
+      "series": {
+        "id": "222002561",
+        "volume": 1,
+        "property": {
+          "last_volume_id": "222002564",
+          "opened_last_volume_id": "222002564",
+          "title": "반지의 제왕",
+          "unit": "권",
+          "opened_book_count": 4,
+          "total_book_count": 4,
+          "is_serial": false,
+          "is_completed": false,
+          "is_comic_hd": false,
+          "is_serial_complete": false,
+          "is_wait_free": false,
+          "prev_books": [],
+          "next_books": {
+            "222002562": {
+              "b_id": "222002562",
+              "is_opened": true,
+              "use_free_serial_schedule": false
+            }
+          }
+        },
+        "price_info": {
+          "buy": {
+            "total_book_count": 4,
+            "free_book_count": 0,
+            "regular_price": 126400,
+            "price": 126400,
+            "discount_percentage": 0
+          },
+          "rent": {
+            "total_book_count": 4,
+            "free_book_count": 0,
+            "regular_price": 63200,
+            "rent_price": 63200,
+            "discount_percentage": 0,
+            "rent_days": 360
+          }
+        }
+      },
+      "authors": [
+        {
+          "name": "J.R.R.톨킨",
+          "id": 14374,
+          "role": "author"
+        },
+        {
+          "name": "김보원",
+          "id": 12766,
+          "role": "translator"
+        },
+        {
+          "name": "김번",
+          "id": 14375,
+          "role": "translator"
+        },
+        {
+          "name": "이미애",
+          "id": 9269,
+          "role": "translator"
+        }
+      ],
+      "file": {
+        "size": 10312,
+        "format": "epub",
+        "is_drm_free": false,
+        "is_comic": false,
+        "is_webtoon": false,
+        "is_manga": false,
+        "is_comic_hd": false,
+        "variants": [
+          {
+            "quality": "recommended",
+            "size": 10312
+          }
+        ],
+        "character_count": 419754
+      },
+      "property": {
+        "is_novel": true,
+        "is_magazine": false,
+        "is_adult_only": false,
+        "is_new_book": false,
+        "is_open": true,
+        "is_somedeal": false,
+        "is_trial": false,
+        "use_free_serial_schedule": false,
+        "preview_rate": 10,
+        "preview_max_characters": 41975
+      },
+      "support": {
+        "android": true,
+        "ios": true,
+        "mac": true,
+        "paper": true,
+        "windows": true,
+        "web_viewer": false
+      },
+      "publish": {
+        "ridibooks_register": "2021-03-30T17:00:00+09:00",
+        "ebook_publish": "2021-03-30T00:00:00+09:00",
+        "ridibooks_publish": "2021-03-31T16:00:42+09:00",
+        "paper_book_publish": "2021-02-24T00:00:00+09:00"
+      },
+      "publisher": {
+        "id": 222,
+        "name": "arte",
+        "cp_name": "북이십일_E/P/J"
+      },
+      "review_summary": {
+        "buyer_rating_distribution": [
+          0,
+          1,
+          5,
+          6,
+          29
+        ],
+        "buyer_rating_average": 4.5,
+        "buyer_rating_count": 41,
+        "buyer_review_count": 5,
+        "total_rating_count": 55,
+        "total_review_count": 6
+      }
+    },
+    {
+      "id": "2189000124",
+      "title": {
+        "main": "우울할 땐 뇌과학",
+        "sub": "최신 뇌과학과 신경생물학은 우울증을 어떻게 해결하는가"
+      },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/2189000124/small#1",
+        "large": "https://img.ridicdn.net/cover/2189000124/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/2189000124/xxlarge#1"
+      },
+      "categories": [
+        {
+          "id": 410,
+          "name": "인문",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            400,
+            0
+          ]
+        },
+        {
+          "id": 1110,
+          "name": "과학일반",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            1100,
+            0
+          ]
+        }
+      ],
+      "price_info": {
+        "paper": {
+          "price": 17000
+        },
+        "buy": {
+          "regular_price": 12750,
+          "price": 12750,
+          "discount_percentage": 0
+        }
+      },
+      "authors": [
+        {
+          "name": "알렉스 코브",
+          "id": 91631,
+          "role": "author"
+        },
+        {
+          "name": "정지인",
+          "id": 56221,
+          "role": "translator"
+        }
+      ],
+      "file": {
+        "size": 14913,
+        "format": "epub",
+        "is_drm_free": false,
+        "is_comic": false,
+        "is_webtoon": false,
+        "is_manga": false,
+        "is_comic_hd": false,
+        "variants": [
+          {
+            "quality": "recommended",
+            "size": 14913
+          }
+        ],
+        "character_count": 178905
+      },
+      "property": {
+        "is_novel": false,
+        "is_magazine": false,
+        "is_adult_only": false,
+        "is_new_book": false,
+        "is_open": true,
+        "is_somedeal": false,
+        "is_trial": false,
+        "use_free_serial_schedule": false,
+        "preview_rate": 10,
+        "preview_max_characters": 17890
+      },
+      "support": {
+        "android": true,
+        "ios": true,
+        "mac": true,
+        "paper": true,
+        "windows": true,
+        "web_viewer": false
+      },
+      "publish": {
+        "ridibooks_register": "2018-04-09T15:49:55+09:00",
+        "ebook_publish": "2018-03-23T00:00:00+09:00",
+        "ridibooks_publish": "2018-04-09T17:32:53+09:00",
+        "paper_book_publish": "2018-03-20T00:00:00+09:00"
+      },
+      "publisher": {
+        "id": 2189,
+        "name": "심심",
+        "cp_name": "푸른숲_E/P"
+      },
+      "review_summary": {
+        "buyer_rating_distribution": [
+          6,
+          5,
+          49,
+          133,
+          300
+        ],
+        "buyer_rating_average": 4.5,
+        "buyer_rating_count": 493,
+        "buyer_review_count": 65,
+        "total_rating_count": 603,
+        "total_review_count": 73
+      }
+    },
+    {
+      "id": "3120000588",
+      "title": {
+        "main": "일의 감각",
+        "sub": "일과 성장에 대한 앤솔로지"
+      },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/3120000588/small#1",
+        "large": "https://img.ridicdn.net/cover/3120000588/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/3120000588/xxlarge#1"
+      },
+      "categories": [
+        {
+          "id": 350,
+          "name": "여성",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            300,
+            0
+          ]
+        }
+      ],
+      "price_info": {
+        "buy": {
+          "regular_price": 6000,
+          "price": 6000,
+          "discount_percentage": 0
+        }
+      },
+      "authors": [
+        {
+          "name": "데이나",
+          "id": 130328,
+          "role": "author"
+        },
+        {
+          "name": "손하빈",
+          "id": 130329,
+          "role": "author"
+        },
+        {
+          "name": "윤진",
+          "id": 130330,
+          "role": "author"
+        },
+        {
+          "name": "정혜윤",
+          "id": 101482,
+          "role": "author"
+        },
+        {
+          "name": "RIDI",
+          "id": 122135,
+          "role": "compiler"
+        }
+      ],
+      "file": {
+        "size": 22398,
+        "format": "epub",
+        "is_drm_free": false,
+        "is_comic": false,
+        "is_webtoon": false,
+        "is_manga": false,
+        "is_comic_hd": false,
+        "variants": [
+          {
+            "quality": "recommended",
+            "size": 22398
+          }
+        ],
+        "character_count": 40122
+      },
+      "property": {
+        "is_novel": false,
+        "is_magazine": false,
+        "is_adult_only": false,
+        "is_new_book": true,
+        "is_open": false,
+        "is_somedeal": false,
+        "is_trial": false,
+        "use_free_serial_schedule": false,
+        "preview_rate": 0
+      },
+      "support": {
+        "android": true,
+        "ios": true,
+        "mac": true,
+        "paper": true,
+        "windows": true,
+        "web_viewer": false
+      },
+      "publish": {
+        "ridibooks_register": "2022-08-26T18:49:26+09:00",
+        "ebook_publish": "2022-08-29T00:00:00+09:00"
+      },
+      "publisher": {
+        "id": 3120,
+        "name": "리디",
+        "cp_name": "리디_콘텐츠기획"
+      },
+      "review_summary": {
+        "buyer_rating_distribution": [
+          0,
+          0,
+          2,
+          1,
+          5
+        ],
+        "buyer_rating_average": 4.4,
+        "buyer_rating_count": 8,
+        "buyer_review_count": 3,
+        "total_rating_count": 11,
+        "total_review_count": 5
+      }
+    },
+    {
+      "id": "1153000080",
+      "title": {
+        "main": "문예춘추사 셜록 홈즈 전집 1권",
+        "sub": "진홍색 연구"
+      },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/1153000080/small#1",
+        "large": "https://img.ridicdn.net/cover/1153000080/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/1153000080/xxlarge#1"
+      },
+      "categories": [
+        {
+          "id": 102,
+          "name": "영미소설",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            100,
+            0
+          ]
+        },
+        {
+          "id": 107,
+          "name": "추리/미스터리/스릴러",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            100,
+            0
+          ]
+        }
+      ],
+      "price_info": {
+        "paper": {
+          "price": 0
+        },
+        "buy": {
+          "regular_price": 3600,
+          "price": 3600,
+          "discount_percentage": 0
+        }
+      },
+      "series": {
+        "id": "1153000080",
+        "volume": 1,
+        "property": {
+          "last_volume_id": "1153000078",
+          "opened_last_volume_id": "1153000078",
+          "title": "문예춘추사 셜록 홈즈 전집",
+          "unit": "권",
+          "opened_book_count": 20,
+          "total_book_count": 21,
+          "is_serial": false,
+          "is_completed": false,
+          "is_comic_hd": false,
+          "is_serial_complete": false,
+          "is_wait_free": false,
+          "prev_books": [],
+          "next_books": {
+            "1153000062": {
+              "b_id": "1153000062",
+              "is_opened": true,
+              "use_free_serial_schedule": false
+            },
+            "1508000604": {
+              "b_id": "1508000604",
+              "is_opened": false,
+              "use_free_serial_schedule": false
+            }
+          }
+        },
+        "price_info": {
+          "buy": {
+            "total_book_count": 10,
+            "free_book_count": 0,
+            "regular_price": 40700,
+            "price": 40700,
+            "discount_percentage": 0
+          }
+        }
+      },
+      "authors": [
+        {
+          "name": "아서 코난 도일",
+          "id": 506,
+          "role": "author"
+        },
+        {
+          "name": "박상은",
+          "id": 17549,
+          "role": "translator"
+        }
+      ],
+      "file": {
+        "size": 10829,
+        "format": "epub",
+        "is_drm_free": false,
+        "is_comic": false,
+        "is_webtoon": false,
+        "is_manga": false,
+        "is_comic_hd": false,
+        "variants": [
+          {
+            "quality": "recommended",
+            "size": 10829
+          }
+        ],
+        "character_count": 91442
+      },
+      "property": {
+        "is_novel": true,
+        "is_magazine": false,
+        "is_adult_only": false,
+        "is_new_book": false,
+        "is_open": true,
+        "is_somedeal": false,
+        "is_trial": false,
+        "use_free_serial_schedule": false,
+        "review_display_id": "1153000080",
+        "preview_rate": 10,
+        "preview_max_characters": 9144
+      },
+      "support": {
+        "android": true,
+        "ios": true,
+        "mac": true,
+        "paper": true,
+        "windows": true,
+        "web_viewer": false
+      },
+      "publish": {
+        "ridibooks_register": "2014-07-03T17:57:48+09:00",
+        "ebook_publish": "2012-12-10T00:00:00+09:00",
+        "ridibooks_publish": "2014-07-07T14:48:12+09:00",
+        "paper_book_publish": "2012-12-10T00:00:00+09:00"
+      },
+      "publisher": {
+        "id": 1153,
+        "name": "문예춘추사",
+        "cp_name": "문예춘추사_E/P"
+      },
+      "review_summary": {
+        "buyer_rating_distribution": [
+          11,
+          10,
+          54,
+          258,
+          983
+        ],
+        "buyer_rating_average": 4.7,
+        "buyer_rating_count": 1316,
+        "buyer_review_count": 84,
+        "total_rating_count": 1381,
+        "total_review_count": 86
+      }
+    },
+    {
+      "id": "222002375",
+      "title": {
+        "main": "회사 밥맛"
+      },
+      "thumbnail": {
+        "small": "https://img.ridicdn.net/cover/222002375/small#1",
+        "large": "https://img.ridicdn.net/cover/222002375/large#1",
+        "xxlarge": "https://img.ridicdn.net/cover/222002375/xxlarge#1"
+      },
+      "categories": [
+        {
+          "id": 111,
+          "name": "에세이",
+          "genre": "general",
+          "sub_genre": "general",
+          "is_series_category": false,
+          "ancestor_ids": [
+            110,
+            0
+          ]
+        }
+      ],
+      "price_info": {
+        "paper": {
+          "price": 14000
+        },
+        "buy": {
+          "regular_price": 11200,
+          "price": 11200,
+          "discount_percentage": 0
+        }
+      },
+      "authors": [
+        {
+          "name": "서귤",
+          "id": 103939,
+          "role": "author"
+        }
+      ],
+      "file": {
+        "size": 18598,
+        "format": "epub",
+        "is_drm_free": false,
+        "is_comic": false,
+        "is_webtoon": false,
+        "is_manga": false,
+        "is_comic_hd": false,
+        "variants": [
+          {
+            "quality": "recommended",
+            "size": 18598
+          }
+        ],
+        "character_count": 35668
+      },
+      "property": {
+        "is_novel": false,
+        "is_magazine": false,
+        "is_adult_only": false,
+        "is_new_book": false,
+        "is_open": true,
+        "is_somedeal": false,
+        "is_trial": false,
+        "use_free_serial_schedule": false,
+        "preview_rate": 10,
+        "preview_max_characters": 3566
+      },
+      "support": {
+        "android": true,
+        "ios": true,
+        "mac": true,
+        "paper": true,
+        "windows": true,
+        "web_viewer": false
+      },
+      "publish": {
+        "ridibooks_register": "2020-05-22T11:06:16+09:00",
+        "ebook_publish": "2020-04-08T00:00:00+09:00",
+        "ridibooks_publish": "2020-05-22T16:55:07+09:00",
+        "paper_book_publish": "2020-04-02T00:00:00+09:00"
+      },
+      "publisher": {
+        "id": 222,
+        "name": "arte",
+        "cp_name": "북이십일_E/P/J"
+      },
+      "review_summary": {
+        "buyer_rating_distribution": [
+          3,
+          6,
+          21,
+          37,
+          60
+        ],
+        "buyer_rating_average": 4.1,
+        "buyer_rating_count": 127,
+        "buyer_review_count": 17,
+        "total_rating_count": 129,
+        "total_review_count": 18
+      }
+    }
+  ]
+}

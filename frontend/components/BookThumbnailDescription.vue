@@ -9,7 +9,7 @@
   </div>
 </template>
 <script>
-import { defineComponent, computed } from '@nuxtjs/composition-api'
+import { computed, defineComponent } from '@nuxtjs/composition-api'
 
 export default defineComponent({
   props: {
@@ -23,6 +23,7 @@ export default defineComponent({
     },
     author: {
       type: String,
+      required: false,
       default: '',
     },
   },
@@ -46,6 +47,27 @@ export default defineComponent({
 .book-thumbnail-description {
   position: relative;
   display: inline-block;
+  &.author-existed {
+    .book-thumbnail-description__title {
+      font-size: 1.5rem;
+      font-weight: $font-weight-bold;
+      margin-top: 8px;
+      color: $black;
+    }
+    .book-thumbnail-description__author {
+      font-size: 1.4rem;
+      margin-top: 2px;
+      color: $light-gray;
+    }
+    @include sp_view {
+      .book-thumbnail-description__title {
+        font-size: 1.4rem;
+      }
+      .book-thumbnail-description__author {
+        font-size: 1.3rem;
+      }
+    }
+  }
   &.xLarge {
     width: 200px;
     @include sp_view {
@@ -73,27 +95,6 @@ export default defineComponent({
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-  }
-  &.author-existed {
-    .book-thumbnail-description__title {
-      font-size: 1.5rem;
-      font-weight: $font-weight-bold;
-      margin-top: 8px;
-      color: $black;
-    }
-    .book-thumbnail-description__author {
-      font-size: 1.4rem;
-      margin-top: 2px;
-      color: $light-gray;
-    }
-    @include sp_view {
-      .book-thumbnail-description__title {
-        font-size: 1.4rem;
-      }
-      .book-thumbnail-description__author {
-        font-size: 1.3rem;
-      }
-    }
   }
 }
 </style>

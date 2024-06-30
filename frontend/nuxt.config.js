@@ -25,7 +25,7 @@ export default {
   },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['~/plugins/repositories', '~/plugins/axios.js', '~/plugins/window.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -40,7 +40,12 @@ export default {
     '@nuxtjs/style-resources',
     // https://www.npmjs.com/package/@nuxtjs/fontawesome
     ['@nuxtjs/fontawesome', { component: 'fa', suffix: true }],
+    // https://www.npmjs.com/package/@nuxtjs/device
+    '@nuxtjs/device',
   ],
+  device: {
+    refreshOnResize: true,
+  },
 
   fontawesome: {
     icons: {

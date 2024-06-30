@@ -1,0 +1,26 @@
+get:
+  tags:
+    - books
+  summary:
+  description:
+  parameters:
+  responses:
+    200:
+      description: Success
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              total_count:
+                type: integer
+              total_page:
+                type: integer
+              size:
+                type: integer
+              books:
+                schema: 
+                  type: array
+                items:
+                  $ref: '../../../components/schemas/book.yml'
+

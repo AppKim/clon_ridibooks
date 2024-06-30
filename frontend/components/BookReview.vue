@@ -1,9 +1,9 @@
 <template>
   <div class="review">
-    <span class="review__star">
+    <div class="review__star">
       <span class="star5_rating" :data-rate="rate" />
-    </span>
-    <span class="review__count">{{ score }}</span>
+      <span class="review__count">{{ count }}</span>
+    </div>
   </div>
 </template>
 
@@ -14,12 +14,12 @@ export default defineComponent({
   props: {
     rate: {
       type: Number,
-      defalut: 0,
+      default: 0,
       required: true,
     },
-    score: {
+    count: {
       type: Number,
-      defalut: 0,
+      default: 0,
       required: true,
     },
   },
@@ -34,7 +34,7 @@ export default defineComponent({
   display: inline-block;
   white-space: nowrap;
   color: #cccccc;
-  font-size: 15px;
+  font-size: 12px;
   &:before {
     content: '★★★★★';
   }
@@ -81,5 +81,8 @@ export default defineComponent({
   &[data-rate='0']:after {
     width: 0%;
   }
+}
+.review__count {
+  font-size: 12px;
 }
 </style>

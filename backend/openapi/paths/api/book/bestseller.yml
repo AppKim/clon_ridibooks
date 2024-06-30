@@ -1,0 +1,44 @@
+get:
+  tags:
+    - books
+  summary: ベストセラー情報取得API
+  description: ベストセラーの情報を取得します。
+  parameters:
+    - name: page
+      required: true
+      description: 取得する情報の範囲
+      in: query
+      type: integer
+    - name: size
+      required: true
+      description: 取得する情報量
+      in: query
+      type: integer
+  responses:
+    200:
+      description: Success
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              total_count:
+                type: integer
+                example: 2497
+              total_page:
+                type: integer
+                example: 104
+              size:
+                type: integer
+                example: 24
+              page:
+                type: integer
+                example: 1
+              books:
+                $ref: '../../../components/schemas/bestseller_book.yml'
+            required:
+              - total_count
+              - total_page
+              - size
+              - page
+              - books

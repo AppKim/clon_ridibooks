@@ -1,12 +1,15 @@
 <template>
   <div class="grid-booklist-container">
     <ul class="grid-booklist">
-      <li class="grid-bookilist__item" v-for="i in 24" :key="i">
-        <div class="rank">{{ i }}</div>
+      <li v-for="(book, index) in books" :key="index" class="grid-booklist__item">
+        <div class="grid-booklist__rank">{{ index + 1 }}</div>
         <div>
-          <book-thumbnail :size="xLarge" src="https://placeimg.com/150/200/any" alt="sample image"> </book-thumbnail>
-          <book-thumbnail-title :title="title"></book-thumbnail-title>
-          <book-review :rate="parseInt(rate)" :score="parseInt(score)"></book-review>
+          <BookThumbnail size="medium" :src="book.thumbnail.large" alt="sample image"> </BookThumbnail>
+          <BookThumbnailTitle :title="book.title.main"></BookThumbnailTitle>
+          <BookReview
+            :rate="parseInt(book.review_summary.buyer_rating_average)"
+            :count="parseInt(book.review_summary.buyer_rating_count)"
+          ></BookReview>
         </div>
       </li>
     </ul>
@@ -14,23 +17,19 @@
 </template>
 
 <script>
-import { defineComponent, ref } from '@vue/composition-api'
+import { defineComponent } from '@vue/composition-api'
 import BookThumbnail from '../BookThumbnail.vue'
 import BookThumbnailTitle from '../BookThumbnailTitle.vue'
 import BookReview from '../BookReview.vue'
-
 export default defineComponent({
   components: { BookThumbnail, BookReview, BookThumbnailTitle },
-  setup() {
-    const rate = ref(3)
-    const score = ref(3)
-    const title = ''
-    return {
-      rate,
-      score,
-      title,
-    }
+  props: {
+    books: {
+      type: Array,
+      required: true,
+    },
   },
+  setup() {},
 })
 </script>
 
@@ -43,13 +42,10 @@ export default defineComponent({
     display: flex;
     flex-wrap: wrap;
     padding: 16px 0;
-    li {
+    .grid-booklist__item {
       width: 120px;
-      margin: 0 10px;
-      &:nth-child(n + 6) {
-        margin-top: 60px;
-      }
-      & .rank {
+      margin: 0 0px 50px 10px;
+      .grid-booklist__rank {
         text-align: center;
         margin-bottom: 15px;
       }

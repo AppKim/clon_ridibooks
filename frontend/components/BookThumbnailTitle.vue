@@ -1,17 +1,25 @@
 <template>
-  <div>{{ title }}</div>
+  <div class="bookthumnail__title">{{ title }}</div>
 </template>
 
 <script>
-export default {
+import { defineComponent } from '@nuxtjs/composition-api'
+
+export default defineComponent({
+  components: {},
   props: {
     title: {
       type: String,
-      defalut: '',
-      required: true,
+      default: '',
     },
   },
-}
+  setup: {},
+})
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.bookthumnail__title {
+  font-size: 13px;
+  margin: 10px 0 0;
+}
+</style>

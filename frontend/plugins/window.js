@@ -1,0 +1,16 @@
+import { reactive } from '@nuxtjs/composition-api'
+
+export default ({ app }, inject) => {
+  const $window = reactive({
+    width: 0,
+  })
+
+  if (process.browser) {
+    const onResize = () => {
+      $window.width = window.innerWidth
+    }
+    global.addEventListener('resize', onResize)
+    onResize()
+  }
+  inject('window', $window)
+}
