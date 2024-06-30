@@ -8,8 +8,9 @@ on:
       - ".github/workflows/backend-ci.yml"
   pull_request:
     types:
-      - ready_for_review
-      - review_requested
+      - opened
+      - synchronize
+      - reopened
     paths:
       - "backend/**/*.rb"
       - ".github/workflows/backend-ci.yml"
