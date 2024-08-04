@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   namespace :v1, defaluts: { format: :json } do
     get 'spotlights', to: 'spotlights#index'
+    get 'categories', to: 'categories#index'
   end
   namespace :v1, defaluts: { format: :json } do
     get 'home', to: 'home#index'
