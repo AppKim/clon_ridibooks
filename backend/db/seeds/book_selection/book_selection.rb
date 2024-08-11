@@ -1,12 +1,12 @@
-puts 'BookSelection START'
+puts 'BookCollection START'
 
-selection_id_list = Selection.pluck(:id)
+collection_id_list = Collection.pluck(:id)
 book_id_list = Book.pluck(:id)
 
-book_selections = selection_id_list.product(book_id_list).map do |selection_id, book_id|
-  { book_id: book_id, selection_id: selection_id }
+book_collections = collection_id_list.product(book_id_list).map do |collection_id, book_id|
+  { book_id: book_id, collection_id: collection_id }
 end
 
-BookSelection.insert_all(book_selections)
+BookSelection.insert_all(book_collections)
 
-puts 'BookSelection END'
+puts 'BookCollection END'

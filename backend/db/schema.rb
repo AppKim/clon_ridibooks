@@ -83,7 +83,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_07_14_080416) do
     t.string "title", limit: 50, null: false, comment: "セレクションテーマ"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "type"
+    t.string "collection_type"
   end
 
   create_table "people", charset: "utf8mb4", force: :cascade do |t|

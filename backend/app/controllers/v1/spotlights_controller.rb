@@ -1,6 +1,6 @@
 class V1::SpotlightsController < ApplicationController
   def index
-    head :not_found and return if BookSelection.spotlight_sellection.blank?
-    render json: BookSelection.spotlight_sellection, each_serializer: V1::SpotlightSerializer
+    head :not_found and return if BookCollection.spotlight_collection.blank?
+    render json: BookCollection.spotlight_collection, each_serializer: V1::SpotlightSerializer
   end
 end
