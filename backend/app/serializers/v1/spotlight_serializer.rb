@@ -1,13 +1,13 @@
 class V1::SpotlightSerializer < ActiveModel::Serializer
-    attributes :collection_id, :type, :title, :total_count, :total_page, :size
+    attributes :collection_id, :collection_type, :title, :total_count, :total_page, :size
     has_many :books, each_serializer: V1::BookSerializer
     
     def collection_id
         object.id
     end
 
-    def type
-        object.selection_type
+    def collection_type
+        object.collection_type
     end
 
     def title
@@ -19,7 +19,7 @@ class V1::SpotlightSerializer < ActiveModel::Serializer
     end
     
     def total_count
-        object.book_selections.size
+        object.book_collections.size
     end
 
     def size

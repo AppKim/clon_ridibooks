@@ -5,10 +5,10 @@ class V1::HomeSerializer < ActiveModel::Serializer
       each_serializer: V1::BannerSerializer
     )
   end
-  attribute :selections do
+  attribute :collections do
     ActiveModel::SerializableResource.new(
-      object[:selections],
-      each_serializer: V1::SelectionSerializer
+      object[:collections],
+      each_serializer: V1::CollectionSerializer
     )
   end
 end

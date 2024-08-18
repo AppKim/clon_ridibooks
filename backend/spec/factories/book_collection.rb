@@ -1,7 +1,7 @@
 FactoryBot.define do
-    factory :book_selection do
+    factory :book_collection do
         sequence(:id, 1) {|n| n}
         association :book
-        association :selection
+        association :collection
     end
 end

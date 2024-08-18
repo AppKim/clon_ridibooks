@@ -3,12 +3,12 @@
     <TopBannerCarousel></TopBannerCarousel>
     <BestBookList :books="bestBooks" />
     <div class="selection-list">
-      <div v-for="selection in selections.slice(0, 2)" :key="selection.id" class="selection">
-        <SelectionPreview :selection="selection" />
+      <div v-for="collection in collections.slice(0, 2)" :key="collection.id" class="selection">
+        <SelectionPreview :selection="collection" />
       </div>
       <PopularBookList></PopularBookList>
-      <div v-for="selection in selections.slice(3)" :key="selection.id" class="selection">
-        <SelectionPreview :selection="selection" />
+      <div v-for="collection in collections.slice(3)" :key="collection.id" class="selection">
+        <SelectionPreview :selection="collection" />
       </div>
     </div>
   </div>
@@ -29,19 +29,19 @@ export default defineComponent({
     PopularBookList,
   },
   setup() {
-    const selections = ref([])
+    const collections = ref([])
     const bestBooks = ref()
     const { $repositories } = useContext()
 
     useFetch(async () => {
       const homeResponse = await $repositories('top', false).get.home()
-      selections.value = homeResponse.selections
+      collections.value = homeResponse.collections
       const bestBooksResponse = await $repositories('collections', false).get.spotlight()
       bestBooks.value = bestBooksResponse.books
     })
 
     return {
-      selections,
+      collections,
       bestBooks,
     }
   },
