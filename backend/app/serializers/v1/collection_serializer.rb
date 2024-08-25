@@ -1,4 +1,4 @@
-class V1::SpotlightSerializer < ActiveModel::Serializer
+class V1::CollectionSerializer < ActiveModel::Serializer
     attributes :collection_id, :collection_type, :title, :total_count, :total_page, :size
     has_many :books, each_serializer: V1::BookSerializer
     

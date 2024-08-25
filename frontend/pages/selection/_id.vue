@@ -21,7 +21,7 @@ export default defineComponent({
     const { $repositories, params } = useContext()
     const id = params.value.id || 2026
     useFetch(async () => {
-      const res = await $repositories('selections').get.books(id)
+      const res = await $repositories('collections').get.books(id)
       totalPage.value = res[0].total_page
       books.value = res[0].books
       title.value = res[0].title
