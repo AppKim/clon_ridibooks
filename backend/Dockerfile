@@ -12,7 +12,8 @@ RUN apk add --no-cache \
     tzdata \
     libxml2-dev \
     libxslt-dev \
-    libc6-compat
+    libc6-compat \
+    less
 
 RUN mkdir /app
 ENV APP_ROOT /app

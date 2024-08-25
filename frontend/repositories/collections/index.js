@@ -10,7 +10,7 @@ export const CollectionsRepository = ($axios) => ({
       return res[id]
     },
     spotlight: async () => {
-      const { data } = await $axios.get('/spotlights')
+      const { data } = await $axios.get('/collections/spotlight')
       return data
     },
     best: async () => {
@@ -18,5 +18,8 @@ export const CollectionsRepository = ($axios) => ({
       return best
     },
     recent: (params) => $axios.$get('/recent', { params }),
+    books: (id) => {
+      return $axios.$get(`/collections/${id}`)
+    },
   },
 })

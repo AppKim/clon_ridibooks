@@ -4,7 +4,7 @@ describe V1::SpotlightsController, type: :request do
     describe 'GET /v1/spotlights' do
 
         before do
-            create(:book_selection, book: book, selection: selection)
+            create(:book_collection, book: book, collection: collection)
         end
 
         let(:spotlights_api) do
@@ -14,11 +14,11 @@ describe V1::SpotlightsController, type: :request do
         let(:publisher) { create(:publisher) }
 
         context 'spotlightの本が存在する場合' do
-            let(:selection) { create(:selection, :fixed_id, :spotlight) }
+            let(:collection) { create(:collection, :fixed_id, :spotlight) }
             let(:response_body) do
                 {
                     "collection_id"=>1,
-                    "type"=>"SPOTLIGHT",
+                    "collection_type"=>"SPOTLIGHT",
                     "title"=>"TestSelection",
                     "total_count"=>1,
                     "total_page"=>1,
@@ -48,12 +48,13 @@ describe V1::SpotlightsController, type: :request do
             it '1件返却されること' do
                 spotlights_api.call
                 expect(response).to have_http_status 200
-                expect(JSON.parse(response.body)[0]['collection_id']).to eq 1
+                binding.pry
+                expect(JSON.parse(response.body)['collection_id']).to eq 1
             end
         end
 
         context 'spotlightの本が存在しない場合' do
-            let(:selection) { create(:selection) }
+            let(:collection) { create(:collection) }
 
             it '0件返却されること' do
                 spotlights_api.call
