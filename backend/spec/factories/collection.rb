@@ -1,14 +1,14 @@
 FactoryBot.define do
-    factory :selection do
+    factory :collection do
         title { "TestSelection" }
-        selection_type { "COLLECTION" }
+        collection_type { "COLLECTION" }
 
         trait :fixed_id do
             id { 1 }
         end
 
         trait :spotlight do
-            selection_type { "SPOTLIGHT" }
+            collection_type { "SPOTLIGHT" }
         end
     end
 end

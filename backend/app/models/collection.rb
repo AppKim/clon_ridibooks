@@ -1,9 +1,12 @@
 # frozen_string_literal: true
 
-class Selection < ApplicationRecord
+class Collection < ApplicationRecord
   has_many :book_collections
   has_many :books, through: :book_collections
 
-  scope :spotlight, -> { find_by(selection_type: 'SPOTLIGHT') }
-  scope :collection, -> { where(selection_type: 'COLLECTION') }
+  scope :collection, -> { where(collection_type: 'COLLECTION') }
+
+  def self.spotlight
+    find_by(collection_type: 'SPOTLIGHT')
+  end
 end
