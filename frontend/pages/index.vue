@@ -2,10 +2,13 @@
   <div class="top">
     <TopBannerCarousel></TopBannerCarousel>
     <BestBookList :books="bestBooks" />
-    <div class="top__main">
-      <div v-for="(selection, i) in selections" :key="selection.id" class="top__selection">
-        <PopularBookList v-if="i === 2" />
-        <SelectionPreview :selection="selection" />
+    <div class="selection-list">
+      <div v-for="collection in collections.slice(0, 2)" :key="collection.collection_id" class="selection">
+        <SelectionPreview :collection="collection" />
+      </div>
+      <PopularBookList></PopularBookList>
+      <div v-for="collection in collections.slice(3)" :key="collection.collection_id" class="selection">
+        <SelectionPreview :collection="collection" />
       </div>
     </div>
   </div>
@@ -26,22 +29,19 @@ export default defineComponent({
     PopularBookList,
   },
   setup() {
-    const selections = ref([])
-    const bestBooks = ref([])
+    const collections = ref([])
+    const bestBooks = ref()
     const { $repositories } = useContext()
 
-    console.log('asdasd')
-
     useFetch(async () => {
-      // TODO: store에 넣어서 관라?
-      const homeResponse = await $repositories('top').get.home()
-      selections.value = homeResponse.selections
-      const bestBooksResponse = await $repositories('collections').get.best()
-      bestBooks.value = bestBooksResponse
+      const homeResponse = await $repositories('top', false).get.home()
+      collections.value = homeResponse.collections
+      const bestBooksResponse = await $repositories('collections', false).get.spotlight()
+      bestBooks.value = bestBooksResponse.books
     })
 
     return {
-      selections,
+      collections,
       bestBooks,
     }
   },
@@ -50,20 +50,20 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .top {
-  &__main {
+  .selection-list {
     width: 800px;
     margin: 0 auto;
-  }
-  &__selection {
-    padding: 60px 0 0;
+    .selection {
+      padding: 60px 0 0;
+    }
   }
   @include sp_view {
-    &__main {
+    .selection-list {
       width: 100%;
       margin: 0 auto;
-    }
-    &__selection {
-      padding: 30px 20px 0px;
+      .selection {
+        padding: 30px 20px 0px;
+      }
     }
   }
 }

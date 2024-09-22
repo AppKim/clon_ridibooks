@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_11_12_081217) do
+ActiveRecord::Schema[7.0].define(version: 2024_07_14_080416) do
   create_table "banners", charset: "utf8mb4", force: :cascade do |t|
     t.string "image_url", limit: 50, comment: "バナーリンク"
     t.string "link_url", limit: 50, comment: "セレクションリンク"
@@ -26,6 +26,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_12_081217) do
     t.datetime "updated_at", null: false
     t.index ["book_id"], name: "index_book_categories_on_book_id"
     t.index ["category_id"], name: "index_book_categories_on_category_id"
+  end
+
+  create_table "book_collections", charset: "utf8mb4", force: :cascade do |t|
+    t.bigint "book_id", null: false
+    t.bigint "collection_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["book_id"], name: "index_book_collections_on_book_id"
+    t.index ["collection_id"], name: "index_book_collections_on_collection_id"
   end
 
   create_table "book_details", charset: "utf8mb4", force: :cascade do |t|
@@ -45,15 +54,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_12_081217) do
     t.datetime "updated_at", null: false
     t.index ["book_id"], name: "index_book_people_on_book_id"
     t.index ["person_id"], name: "index_book_people_on_person_id"
-  end
-
-  create_table "book_selections", charset: "utf8mb4", force: :cascade do |t|
-    t.bigint "book_id", null: false
-    t.bigint "selection_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["book_id"], name: "index_book_selections_on_book_id"
-    t.index ["selection_id"], name: "index_book_selections_on_selection_id"
   end
 
   create_table "books", charset: "utf8mb4", force: :cascade do |t|
@@ -77,6 +77,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_12_081217) do
     t.integer "parent_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "collections", charset: "utf8mb4", force: :cascade do |t|
+    t.string "title", limit: 50, null: false, comment: "セレクションテーマ"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "collection_type"
   end
 
   create_table "people", charset: "utf8mb4", force: :cascade do |t|
@@ -112,20 +119,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_12_081217) do
     t.index ["review_comment_id"], name: "index_reviews_on_review_comment_id"
   end
 
-  create_table "selections", charset: "utf8mb4", force: :cascade do |t|
-    t.string "title", limit: 50, null: false, comment: "セレクションテーマ"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "selection_type"
-  end
-
   add_foreign_key "book_categories", "books"
   add_foreign_key "book_categories", "categories"
+  add_foreign_key "book_collections", "books"
+  add_foreign_key "book_collections", "collections"
   add_foreign_key "book_details", "books"
   add_foreign_key "book_people", "books"
   add_foreign_key "book_people", "people"
-  add_foreign_key "book_selections", "books"
-  add_foreign_key "book_selections", "selections"
   add_foreign_key "books", "publishers"
   add_foreign_key "reviews", "books"
   add_foreign_key "reviews", "review_comments"

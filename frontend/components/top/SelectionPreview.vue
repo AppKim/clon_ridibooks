@@ -1,6 +1,6 @@
 <template>
   <div class="selection-preview">
-    <TopContentsHeader :title="selection.title" :link="`/selections/${selection.selection_id}`" />
+    <TopContentsHeader :title="collection.title" :link="`/selection/${collection.collection_id}`" />
     <BookThumbnailLinkList :book-list="bookList" />
   </div>
 </template>
@@ -16,20 +16,20 @@ export default defineComponent({
     TopContentsHeader,
   },
   props: {
-    selection: {
+    collection: {
       type: Object,
       default: () => ({}),
     },
   },
   setup(props) {
     const bookList = computed(() => {
-      return props.selection.books.map((book) => ({
+      return props.collection.books.map((book) => ({
         ...book,
-        src: 'https://img.ridicdn.net/cover/1242001114/xlarge?dpi=xxhdpi', // TODO: thumnail.smallから取ってくるようにする
+        src: book.thumnail || 'https://img.ridicdn.net/cover/1242001114/xlarge?dpi=xxhdpi', // TODO: thumnail.smallから取ってくるようにする
         alt: book.title.main,
         title: book.title.main,
         link: `book/${book.id}`,
-        author: '',
+        author: book.authors || [],
       }))
     })
     return { bookList }
@@ -37,7 +37,4 @@ export default defineComponent({
 })
 </script>
 
-<style lang="scss" scoped>
-.selection-preview {
-}
-</style>
+<style lang="scss" scoped></style>
