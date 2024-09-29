@@ -2,7 +2,7 @@
 
 class Review < ApplicationRecord
   belongs_to :book
-  has_many :review_comments, dependent: :destroy
+  has_many :review_comments
 
   def self.buyer_rating(book)
     buyer_review(book).pluck(:score)
