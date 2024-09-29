@@ -3,7 +3,7 @@ class ModifyReviewsAndReviewComments < ActiveRecord::Migration[6.1]
     change_table :reviews do |t|
       remove_foreign_key :reviews, column: :review_comment_id
       remove_index :reviews, :review_comment_id
-      t.remove :review_comment_id # 기존의 review_comment_id 필드 삭제
+      t.remove :review_comment_id
       t.text :content, null: true, comment: "レビュー内容"
       t.boolean :has_spoiler, null: false, default: false
     end
