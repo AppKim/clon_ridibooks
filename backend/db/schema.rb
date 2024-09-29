@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_07_14_080416) do
+ActiveRecord::Schema[7.0].define(version: 2024_09_29_082240) do
   create_table "banners", charset: "utf8mb4", force: :cascade do |t|
     t.string "image_url", limit: 50, comment: "バナーリンク"
     t.string "link_url", limit: 50, comment: "セレクションリンク"
@@ -101,22 +101,23 @@ ActiveRecord::Schema[7.0].define(version: 2024_07_14_080416) do
   end
 
   create_table "review_comments", charset: "utf8mb4", force: :cascade do |t|
-    t.string "comment", null: false
-    t.boolean "has_spoiler", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "content", null: false, comment: "コメント内容"
+    t.bigint "review_id", null: false
+    t.index ["review_id"], name: "fk_rails_ab6c7224c3"
   end
 
   create_table "reviews", charset: "utf8mb4", force: :cascade do |t|
-    t.bigint "review_comment_id"
     t.bigint "book_id", null: false
     t.string "reviewer", null: false, comment: "作成者"
     t.integer "score", null: false
     t.boolean "is_buyer"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "content", comment: "レビュー内容"
+    t.boolean "has_spoiler", default: false, null: false
     t.index ["book_id"], name: "index_reviews_on_book_id"
-    t.index ["review_comment_id"], name: "index_reviews_on_review_comment_id"
   end
 
   add_foreign_key "book_categories", "books"
@@ -127,6 +128,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_07_14_080416) do
   add_foreign_key "book_people", "books"
   add_foreign_key "book_people", "people"
   add_foreign_key "books", "publishers"
+  add_foreign_key "review_comments", "reviews"
   add_foreign_key "reviews", "books"
-  add_foreign_key "reviews", "review_comments"
 end
