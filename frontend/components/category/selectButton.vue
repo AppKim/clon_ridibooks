@@ -26,7 +26,7 @@ export default {
 .category-select-wrap {
   width: 100px;
   height: 30px;
-  margin: 15px 0px 0px 12px;
+  margin: 15px 0px 15px 12px;
   select {
     -webkit-appearance: none;
     -moz-appearance: none;
