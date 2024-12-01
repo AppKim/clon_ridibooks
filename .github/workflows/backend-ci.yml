@@ -1,0 +1,79 @@
+name: backend-ci
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "backend/**/*.rb"
+      - ".github/workflows/backend-ci.yml"
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+    paths:
+      - "backend/**/*.rb"
+      - ".github/workflows/backend-ci.yml"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    services:
+      mysql:
+        image: mysql:5.7
+        env:
+          MYSQL_ROOT_PASSWORD: password
+          MYSQL_DATABASE: app_test
+        ports:
+          - 3306:3306
+        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=10
+
+    steps:
+      - name: CheckOut
+        uses: actions/checkout@v2
+
+      - name: Set up Cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            backend/vendor/bundle
+            ~/.gem
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1.1"
+          bundler-cache: true
+
+      - name: Install MySQL client
+        run: sudo apt-get install default-mysql-client
+
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update -qq
+          gem install bundler
+          cd backend
+          bundle install --jobs 4 --retry 3
+
+      - name: Setup database
+        env:
+          RAILS_ENV: test
+          DB_USERNAME: root
+          DB_PASSWORD: password
+          DB_HOST: localhost
+        run: |
+          cd backend
+          cp ../config/database.ci.yml config/database.yml
+          bundle exec rails db:reset
+          bundle exec rails db:migrate
+
+      - name: Run tests
+        env:
+          RAILS_ENV: test
+        run: |
+          cd backend
+          bundle exec rspec

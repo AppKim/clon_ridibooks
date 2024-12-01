@@ -13,7 +13,6 @@ describe V1::HomeController, type: :request do
             let(:_20190128) { Time.parse("2019-01-28T00:00:00.000Z") }
             let(:publisher) { create(:publisher, id: 16) }
             let(:collection) { create(:collection, id: 2) }
-
             let(:response_body) do
                 {
                     "banners" => [{

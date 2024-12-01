@@ -12,7 +12,7 @@
           </button>
         </div>
         <ul class="modal__content">
-          <li v-for="category in categories" :key="category.id" :class="category.id === activeId ? 'selected' : ''">
+          <li v-for="category in categories" :key="category.id" :class="{ selected: category.id === activeId }">
             <button type="button" class="category__item__btn" @click="moveToCategory(category.id)">
               <div class="select__dialog"></div>
               {{ category.name }}
@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import { useRouter, useStore, computed, onMounted } from '@nuxtjs/composition-api'
+import { useRouter, onMounted, useStore, nextTick, computed } from '@nuxtjs/composition-api'
 export default {
   props: {
     categories: {
@@ -33,21 +33,28 @@ export default {
       required: true,
     },
   },
-  setup() {
+  setup(_, { emit }) {
     const router = useRouter()
     const store = useStore()
-    const activeId = computed(() => store.getters['categories/selectCategory'].id)
+    const activeId = computed(() => store.getters['categories/getSelectedCategoryId'])
 
     onMounted(() => {
       // 스크롤 위치
       const scroller = document.querySelector('.modal__content')
       const currentCategoryBtn = document.querySelector('.selected')
-      scroller.scrollTop = currentCategoryBtn.offsetTop
+
+      // currentCategoryBtn이 존재하는 경우에만 scrollTop 값을 설정
+      if (currentCategoryBtn) {
+        scroller.scrollTop = currentCategoryBtn.offsetTop
+      }
     })
 
-    const moveToCategory = (id) => {
+    const moveToCategory = async (id) => {
+      await nextTick()
+      store.commit('categories/ADD_SELECTED_CATEGORY_ID', id)
+      store.commit('categories/ADD_CATEGORY', id)
       router.push(`/categories/${id}`)
-      store.commit('categories/DELETE_CATEGORY')
+      emit('close')
     }
 
     return {
@@ -58,7 +65,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .modal {
   &__overlay {
     display: flex;
