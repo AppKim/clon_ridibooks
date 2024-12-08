@@ -5,12 +5,12 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  namespace :v1, defaluts: { format: :json } do
+  namespace :v1, defaults: { format: :json } do
+    get 'spotlights', to: 'spotlights#index'
     namespace :collections do 
       get 'spotlight'
     end
-  end
-  namespace :v1, defaluts: { format: :json } do
     get 'home', to: 'home#index'
+    get 'categories', to: 'categories#index'
   end
 end

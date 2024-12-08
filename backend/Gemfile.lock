@@ -234,10 +234,15 @@ GEM
       unicode-display_width (>= 2.4.0, < 3.0)
     rubocop-ast (1.29.0)
       parser (>= 3.2.1.0)
+    rubocop-performance (1.19.1)
+      rubocop (>= 1.7.0, < 2.0)
+      rubocop-ast (>= 0.4.0)
     rubocop-rails (2.20.0)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.33.0, < 2.0)
+    rubocop-rspec (3.0.0)
+      rubocop (~> 1.40)
     ruby-progressbar (1.13.0)
     rubyzip (2.3.2)
     selenium-webdriver (4.1.0)
@@ -282,6 +287,7 @@ PLATFORMS
   aarch64-linux-musl
   arm64-darwin-22
   x86_64-darwin-21
+  x86_64-darwin-23
   x86_64-linux-musl
 
 DEPENDENCIES
@@ -299,7 +305,9 @@ DEPENDENCIES
   rails (~> 7.0.2, >= 7.0.2.3)
   rspec-rails
   rubocop
+  rubocop-performance
   rubocop-rails
+  rubocop-rspec
   selenium-webdriver
   sprockets-rails
   stimulus-rails

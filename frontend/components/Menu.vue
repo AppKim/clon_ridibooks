@@ -7,8 +7,8 @@
       >
       <nuxt-link
         class="menu__link"
-        :class="{ active: $route.path === '/categories/100' }"
-        to="/categories/100"
+        :class="{ active: $route.path === '/categories/1' }"
+        to="/categories/1"
         @click="getCategoryItem"
         >카테고리</nuxt-link
       >

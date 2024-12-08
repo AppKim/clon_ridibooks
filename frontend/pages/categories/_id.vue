@@ -2,15 +2,15 @@
   <div class="container">
     <!-- category select button -->
     <CategoryButton :category-btn-name="categoryBtnName" @open="openModal" />
-    <!-- category buttons  -->
     <CategoryField
       :category-field-item="categoryFieldItem"
       :category-btn-name="categoryBtnName"
+      :category-btn-id="categoryBtnId"
       :category-children-id="categoryChildrenId"
       @categoryChildrenId="setCategoryChildrenId"
     />
     <!-- Modal when category button is clicked -->
-    <CategoryModal v-if="isModalBtn" :categories="categories" @close="closeModal" />
+    <CategoryModal v-if="isModalBtn" :categories="categoryModalItems" @close="closeModal" />
     <!-- popular recent button -->
     <SelectButton @changeBtnItem="changePopularRecent" />
     <div class="grid-booklist-wrapper">
@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import { ref, useRoute, useFetch, useStore, computed, useRouter, watch } from '@nuxtjs/composition-api'
+import { ref, useRoute, useStore, computed, useRouter, watch, onMounted } from '@nuxtjs/composition-api'
 import CategoryButton from '../../components/category/CategoryButton.vue'
 import CategoryModal from '../../components/category/CategoryModal.vue'
 import CategoryField from '../../components/category/CategoryField.vue'
@@ -43,25 +43,48 @@ import BookThumbnail from '../../components/BookThumbnail.vue'
 import BookThumbnailTitle from '../../components/BookThumbnailTitle.vue'
 import Pager from '../../components/Pager.vue'
 export default {
-  components: { CategoryButton, CategoryModal, CategoryField, SelectButton, BookThumbnail, BookThumbnailTitle, Pager },
+  components: { CategoryButton, CategoryModal, SelectButton, BookThumbnail, BookThumbnailTitle, Pager, CategoryField },
   setup() {
+    // 서버에서 카테고리 전체를 불러와서 vuex state에 저장
+    onMounted(async () => {
+      if (store.getters['categories/categories'].length === 0) {
+        try {
+          await store.dispatch('categories/getCategories')
+        } catch (error) {
+          console.error(error)
+        }
+      }
+      const id = parseInt(route.value.params.id, 10)
+      const found = categoryModalItems.value.find((item) => item.id === id)
+      if (found) {
+        categoryBtnName.value = found.name
+        categoryBtnId.value = found.id
+      }
+
+      const foundCategory = findCategoryById(categories.value, id)
+      if (foundCategory) {
+        categoryBtnName.value = foundCategory.name
+        if (foundCategory.children && foundCategory.children.length > 0) {
+          categoryFieldItem.value = foundCategory.children // 자식 요소를 categoryFieldItem에 할당
+        }
+      }
+    })
     const store = useStore()
     const route = useRoute()
     const router = useRouter()
-    const id = computed(() => route.value.params.id)
+    // const id = computed(() => route.value.params.id)
     const isModalBtn = ref(false)
+    const categoryBtnName = ref('소설')
+    const categoryBtnId = ref(1)
+    const activeId = ref(1)
     const bookTitle = '부자의 그릇'
+
     // computed
     const categories = computed(() => store.getters['categories/categories'])
-    const categoryBtnName = computed(() => store.getters['categories/selectCategory'].name)
-    // vuex state category
-    const categoryFieldItem = computed(() => store.getters['categories/selectCategory'])
+    const categoryModalItems = computed(() => store.getters['categories/categoryModalItems'])
+    // const category = computed(() => store.getters['categories/category'])
     const categoryChildrenId = computed(() => store.getters['categories/selectCategoryChildrenId'])
-
-    // store category가 null인지 판정하는 함수
-    const isEmptyObject = (param) => {
-      return Object.keys(param).length === 0 && param.constructor === Object
-    }
+    const categoryFieldItem = ref([])
 
     // 인기순 최신순 버튼 change 이벤트 발생시 router 실행
     const changePopularRecent = (params) => {
@@ -71,25 +94,6 @@ export default {
     // route를 감지하여 백엔드에 쿼리 요청
     watch(route, (newValue) => {
       store.dispatch('categories/getSelectBtnItem', { sort: newValue })
-    })
-
-    // 서버에서 카테고리 전체를 불러와서 vuex state에 저장
-    useFetch(async () => {
-      // 카테고리에서 선택한 탭을 기억하여 다시 불러오기
-      if (sessionStorage.length > 0) {
-        id.value = sessionStorage.getItem(id)
-      }
-
-      // store categories가 null이면 actions 실행
-      if (store.getters['categories/categories'].length === 0) {
-        await store.dispatch('categories/getCategories')
-        store.commit('categories/ADD_CATEGORY', Number(id.value))
-        // store categories가 not null
-      } else {
-        if (isEmptyObject(store.getters['categories/selectCategory'])) {
-          store.commit('categories/ADD_CATEGORY', Number(id.value))
-        }
-      }
     })
 
     // open modal dialog
@@ -106,9 +110,25 @@ export default {
       store.commit('categories/ADD_CATEGORY_CHILDREN_ID', id)
     }
 
+    const findCategoryById = (categories, id) => {
+      for (const category of categories) {
+        if (category.id === id) {
+          // ID가 일치하는 카테고리 찾기
+          return category
+        }
+        if (category.children) {
+          // 자식 카테고리에서 ID 검색
+          const found = findCategoryById(category.children, id)
+          if (found) {
+            // 자식 카테고리에서 찾았다면 부모 카테고리의 자식을 반환
+            return category
+          }
+        }
+      }
+      return null
+    }
     return {
       categories,
-      categoryFieldItem,
       categoryBtnName,
       isModalBtn,
       bookTitle,
@@ -117,6 +137,11 @@ export default {
       closeModal,
       setCategoryChildrenId,
       changePopularRecent,
+      categoryModalItems,
+      categoryFieldItem,
+      activeId,
+      findCategoryById,
+      categoryBtnId,
     }
   },
 }

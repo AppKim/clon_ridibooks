@@ -1,14 +1,14 @@
 require 'rails_helper'
 
-describe V1::SpotlightsController, type: :request do
-    describe 'GET /v1/spotlights' do
+describe V1::CollectionsController, type: :request do
+    describe 'GET /v1/collections/spotlight' do
 
         before do
             create(:book_collection, book: book, collection: collection)
         end
 
         let(:spotlights_api) do
-            -> { get '/v1/spotlights' }
+            -> { get '/v1/collections/spotlight' }
         end
         let(:book) { create(:book, publisher: publisher) }
         let(:publisher) { create(:publisher) }
@@ -48,7 +48,6 @@ describe V1::SpotlightsController, type: :request do
             it '1件返却されること' do
                 spotlights_api.call
                 expect(response).to have_http_status 200
-                binding.pry
                 expect(JSON.parse(response.body)['collection_id']).to eq 1
             end
         end

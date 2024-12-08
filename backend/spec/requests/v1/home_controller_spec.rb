@@ -7,12 +7,12 @@ describe V1::HomeController, type: :request do
         context 'home apiの正常系' do
             before do
                 create(:banner, id: 2)
-                create(:book_selection, book: book, selection: selection)
+                create(:book_collection, book: book, collection: collection)
             end
-            let(:book) { create(:book, publisher: publisher) }
-            let(:publisher) { create(:publisher) }
-            let(:selection) { create(:selection, id: 2) }
-
+            let(:book) { create(:book, publisher: publisher, created_at: _20190128, updated_at: _20190128) }
+            let(:_20190128) { Time.parse("2019-01-28T00:00:00.000Z") }
+            let(:publisher) { create(:publisher, id: 16) }
+            let(:collection) { create(:collection, id: 2) }
             let(:response_body) do
                 {
                     "banners" => [{
@@ -21,25 +21,14 @@ describe V1::HomeController, type: :request do
                         "image_url" => "https://picsum.photos/200",
                         "link_url" => "http://localhost:8080/select"
                     }],
-                    "selections" => [{
-                        "id" => 2,
+                    "collections" => [{
+                        "collection_id" => 2,
                         "title" => "TestSelection",
-                        "selection_type" => "COLLECTION",
-                        "books" => [{
-                            "id" => 1,
-                            "title" => "TestBook",
-                            "thumnail" => "TestThumnail",
-                            "authors" => {},
-                            "publisher" => "TestPublisher",
-                            "review_summary" => {
-                                "buyer_rating_distribution" => [],
-                                "buyer_rating_average" => 0.0,
-                                "buyer_rating_count" => 0,
-                                "buyer_review_count" => 0,
-                                "total_rating_count" => 0.0,
-                                "total_review_count" => 0
-                            }
-                        }]
+                        "collection_type" => "COLLECTION",
+                        "total_count": 1,
+                        "total_page": 1,
+                        "size": 15,
+                        "books" => [{"content"=>"TestContent", "created_at"=>_20190128, "ebook_publish_date"=>nil, "id"=>1, "introduction"=>"TestIntrodction", "paper_book_publish_date"=>nil, "publisher_id"=>16, "publisher_review"=>nil, "thumnail"=>"TestThumnail", "title"=>"TestBook", "updated_at"=>_20190128}]
                     }]
                 }.to_json
             end
@@ -48,6 +37,7 @@ describe V1::HomeController, type: :request do
                 home_api.call
                 expect(response).to have_http_status(200)
                 json_response = JSON.parse(response.body)
+                collection.reload
                 expect(json_response).to eq(JSON.parse(response_body))
             end
         end
@@ -58,7 +48,7 @@ describe V1::HomeController, type: :request do
                 expect(response).to have_http_status(200)
                 json_response = JSON.parse(response.body)
                 expect(json_response["banners"]).to be_empty
-                expect(json_response["selections"]).to be_empty
+                expect(json_response["collections"]).to be_empty
             end
         end
     end
