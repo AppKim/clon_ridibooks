@@ -30,7 +30,7 @@ export default defineComponent({
   },
   setup() {
     const collections = ref([])
-    const bestBooks = ref()
+    const bestBooks = ref([])
     const { $repositories } = useContext()
 
     useFetch(async () => {
