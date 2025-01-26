@@ -19,7 +19,7 @@ export default defineComponent({
     const router = useRouter()
 
     const fetchRecentBooks = async (params) => {
-      const { books } = await $repositories('collections').get.recent(params)
+      const books = await $repositories('collections', false).get.recent(params)
       recentReleaseBooks.value = books
     }
     useFetch(async () => {

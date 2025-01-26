@@ -17,7 +17,7 @@ export const CollectionsRepository = ($axios) => ({
       const { best } = await $axios.$get('/collections')
       return best
     },
-    recent: (params) => $axios.$get('/recent', { params }),
+    recent: (params) => $axios.$get('/collections/recent', { params }),
     books: (id) => {
       return $axios.$get(`/collections/${id}`)
     },
