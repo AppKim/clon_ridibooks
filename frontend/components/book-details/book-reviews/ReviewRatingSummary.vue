@@ -1,33 +1,60 @@
 <template>
   <div class="review-rating-summary">
     <p class="review-rating-summary__title">구매자 별점</p>
-    <div class="review-rating-summary__score">4.1</div>
-    <ReviewStars class="review-rating-summary__stars" star-size="large" />
-    <ScoreDistribution class="review-rating-summary__score-distribution" />
+    <div class="review-rating-summary__score">{{ reviewSummary.averageScore }}</div>
+    <ReviewStars class="review-rating-summary__stars" star-size="large" :review-summary="reviewSummary" />
+    <ScoreDistribution
+      class="review-rating-summary__score-distribution"
+      :distribution="reviewSummary.distribution"
+      :total-count="reviewSummary.totalCount"
+    />
   </div>
 </template>
+
 <script>
-import { defineComponent } from '@nuxtjs/composition-api'
+import { computed, defineComponent } from '@nuxtjs/composition-api'
 import ScoreDistribution from './ScoreDistribution.vue'
 import ReviewStars from '~/components/ReviewStars.vue'
 
-// "review_summary": {
-//   "buyer_rating_distribution": [0, 0, 1, 0, 2],
-//   "buyer_rating_average": 4.3,
-//   "buyer_rating_count": 3,
-//   "buyer_review_count": 1,
-//   "total_rating_count": 12,
-//   "total_review_count": 1
-// }
 export default defineComponent({
   components: { ReviewStars, ScoreDistribution },
   props: {
-    reviewSummary: {
-      type: Object,
-      default: () => ({}),
+    reviews: {
+      type: Array,
+      default: () => [],
     },
   },
-  setup() {},
+  setup(props) {
+    const reviewSummary = computed(() => {
+      if (!props.reviews.length) {
+        return {
+          averageScore: 0,
+          distribution: [0, 0, 0, 0, 0],
+          totalCount: 0,
+        }
+      }
+
+      // 평균 점수 계산
+      const totalScore = props.reviews.reduce((acc, review) => acc + review.score, 0)
+      const averageScore = Number((totalScore / props.reviews.length).toFixed(1))
+
+      // 점수 분포 계산 (1점~5점)
+      const distribution = Array(5).fill(0)
+      props.reviews.forEach((review) => {
+        distribution[review.score - 1]++
+      })
+
+      return {
+        averageScore,
+        distribution,
+        totalCount: props.reviews.length,
+      }
+    })
+
+    return {
+      reviewSummary,
+    }
+  },
 })
 </script>
 

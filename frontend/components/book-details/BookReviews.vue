@@ -1,11 +1,11 @@
 <template>
   <div class="book-reviews">
     <div class="book-reviews__top">
-      <ReviewRatingSummary class="book-reviews__summary" />
+      <ReviewRatingSummary class="book-reviews__summary" :reviews="reviews" />
       <ReviewForm class="book-reviews__form" />
     </div>
     <div class="book-reviews__bottom">
-      <ReviewList />
+      <ReviewList :reviews="reviews" />
     </div>
   </div>
 </template>
@@ -17,7 +17,12 @@ import ReviewRatingSummary from './book-reviews/ReviewRatingSummary.vue'
 
 export default defineComponent({
   components: { ReviewRatingSummary, ReviewForm, ReviewList },
-  setup() {},
+  props: {
+    reviews: {
+      type: Array,
+      required: true,
+    },
+  },
 })
 </script>
 

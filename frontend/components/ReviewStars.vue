@@ -1,7 +1,7 @@
 <template>
   <div class="review-stars">
     <div class="review-stars__icon" :class="starSize">
-      <div class="review-stars__icon--forward" :style="`width: ${reviewSummary['rating_average'] * 20}%`">
+      <div class="review-stars__icon--forward" :style="`width: ${reviewSummary.averageScore * 20}%`">
         <fa-icon v-for="i in 5" :key="i" :icon="['fas', 'star']" />
       </div>
       <div class="review-stars__icon--backward">
