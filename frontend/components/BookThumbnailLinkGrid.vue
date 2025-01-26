@@ -4,11 +4,10 @@
       v-for="(book, i) in bookList"
       :key="i"
       size="medium"
-      :src="book.thumbnail.large"
+      :src="book.thumnail"
       :alt="book.alt && book.title && book.title.main"
-      :to="book.link"
       :title="book.title && book.title.main"
-      :author="book.author"
+      :to="`/book/${book.id}`"
       class="book-thumbnail-link-grid__item"
     />
   </div>

@@ -7,8 +7,9 @@ Rails.application.routes.draw do
   # root "articles#index"
   namespace :v1, defaults: { format: :json } do
     get 'spotlights', to: 'spotlights#index'
-    namespace :collections do 
+    namespace :collections do
       get 'spotlight'
+      get 'recent'
     end
     get 'home', to: 'home#index'
     get 'categories', to: 'categories#index'

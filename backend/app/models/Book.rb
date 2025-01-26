@@ -10,4 +10,8 @@ class Book < ApplicationRecord
   has_many :collections, through: :book_collections
   has_many :person, through: :book_people
   has_many :categories, through: :book_categories
+
+  def self.recent
+    where('ebook_publish_date < ?', 6.month.ago)
+  end
 end

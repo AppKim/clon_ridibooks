@@ -15,6 +15,7 @@
               :title="book.title"
               :author="book.authors['author']"
               :loading="'lazy'"
+              :to="`/book/${book.id}`"
             ></BookThumbnailLink>
           </SwiperSlide>
         </Swiper>
