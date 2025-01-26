@@ -12,5 +12,11 @@ Rails.application.routes.draw do
     end
     get 'home', to: 'home#index'
     get 'categories', to: 'categories#index'
+
+    resources :books, only: [] do
+      scope module: :books do
+        resources :reviews, only: [:index]
+      end
+    end
   end
 end

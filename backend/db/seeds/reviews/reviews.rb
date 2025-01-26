@@ -1,9 +1,18 @@
-puts 'review_comments START'
+puts 'reviews START'
 Review.create!(
-    review_comment_id: ReviewComment.all.first.id,
-    book_id: Book.all.first.id,
+    book_id: Book.first.id,
     reviewer: 'nah',
     score: 3.2,
-    is_buyer: true
-  )
-puts 'review_comments END'
+    is_buyer: true,
+    content: 'Review Content',
+    has_spoiler: false,
+)
+Review.create!(
+    book_id: Book.first.id,
+    reviewer: 'gwak',
+    score: 3.5,
+    is_buyer: true,
+    content: 'Review Content2',
+    has_spoiler: true,
+)
+puts 'reviews END'

@@ -45,7 +45,7 @@
         </ReadMore>
       </div>
       <div class="book__section">
-        <BookReviews />
+        <BookReviews :reviews="reviews" />
       </div>
     </div>
   </div>
@@ -57,6 +57,9 @@ import {
   onBeforeMount,
   onBeforeUnmount,
   onMounted,
+  ref,
+  useContext,
+  useFetch,
   useRoute,
   useStore,
 } from '@nuxtjs/composition-api'
@@ -71,7 +74,15 @@ export default defineComponent({
   setup() {
     const route = useRoute()
     const store = useStore()
-    console.log(route.value.params.id)
+    const { $repositories } = useContext()
+
+    const reviews = ref([])
+
+    useFetch(async () => {
+      const res = await $repositories('books', false).get.reviews(route.value.params.id)
+      reviews.value = res
+    })
+
     const bgColor = computed(() => {
       // FIXME: '1046000135' -> route.value.params.id
       if (store.getters['commonUI/getBookImgThemeColorList']['1046000135']) {
@@ -103,6 +114,7 @@ export default defineComponent({
     })
     return {
       bgColor,
+      reviews,
       innerBackgroundImages,
     }
   },
